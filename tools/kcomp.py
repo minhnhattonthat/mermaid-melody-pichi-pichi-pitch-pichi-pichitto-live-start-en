@@ -56,12 +56,79 @@ def decompress(rom, off, size, table=None):
     return bytes(out), p
 
 
+def compress(data):
+    """Optimal-parse encoder (flags 0, no scramble); decompress(compress(d), 0, len(d)) == d."""
+    n = len(data)
+    pos = {}  # 2-byte key -> positions, newest last
+    best = [(0, 0)] * n  # (longest match length, its distance) at i, window 256
+    near1 = [False] * n  # some d <= 64 matches 1 byte
+    near2 = [False] * n  # some d <= 64 matches 2 bytes
+    for i in range(n):
+        lo = max(0, i - 64)
+        near1[i] = data.rfind(data[i:i + 1], lo, i) >= 0
+        if i + 1 < n:
+            key = data[i:i + 2]
+            cands = pos.setdefault(key, [])
+            while cands and cands[0] < i - 256:
+                cands.pop(0)
+            bl, bd = 0, 0
+            for j in reversed(cands):
+                m = 2
+                while m < 65 and i + m < n and data[j + m] == data[i + m]:
+                    m += 1
+                if i - j <= 64:
+                    near2[i] = True
+                if m > bl:
+                    bl, bd = m, i - j
+                    if m == 65:
+                        break
+            best[i] = (bl, bd)
+            cands.append(i)
+    INF = 1 << 30
+    cost = [INF] * (n + 1)
+    step = [None] * (n + 1)
+    cost[n] = 0
+    for i in range(n - 1, -1, -1):
+        for k in range(1, min(64, n - i) + 1):
+            c = k + 1 + cost[i + k]
+            if c < cost[i]:
+                cost[i], step[i] = c, ("lit", k, 0)
+        if near1[i] and 1 + cost[i + 1] < cost[i]:
+            cost[i], step[i] = 1 + cost[i + 1], ("c1", 1, 0)
+        if near2[i] and 1 + cost[i + 2] < cost[i]:
+            cost[i], step[i] = 1 + cost[i + 2], ("c2", 2, 0)
+        bl, bd = best[i]
+        for m in range(3, bl + 1):
+            if 2 + cost[i + m] < cost[i]:
+                cost[i], step[i] = 2 + cost[i + m], ("cl", m, bd)
+    out = bytearray([0])
+    i = 0
+    while i < n:
+        kind, m, d = step[i]
+        if kind == "lit":
+            out.append(m - 1)
+            out += data[i:i + m]
+        elif kind == "cl":
+            out += bytes([0x40 | (m - 2), d - 1])
+        else:
+            dist = next(dd for dd in range(1, 65) if data[i - dd:i - dd + m] == data[i:i + m] if i - dd >= 0)
+            out.append((0x80 if kind == "c2" else 0xC0) | (dist - 1))
+        i += m
+    return bytes(out)
+
+
 def selftest():
     # literal run, long back-ref, short copies
     rom = bytes([0x00, 0x03, 1, 2, 3, 4, 0x41, 3, 0x80, 0xC0]) + bytes(200)
     data, end = decompress(rom, 0, 10, table=bytes(127))
     assert data == bytes([1, 2, 3, 4, 1, 2, 3, 3, 3, 3]), data
     assert end == 10, end
+    import random
+    rnd = random.Random(1)
+    for size in (1, 2, 3, 70, 700, 3000):
+        d = bytes(rnd.choice(b"\x00\x00\x11\x12\x21\xff") for _ in range(size))
+        c = compress(d)
+        assert decompress(c, 0, len(d), table=bytes(127)) == (d, len(c)), size
     print("selftest ok")
 
 

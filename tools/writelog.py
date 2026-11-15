@@ -14,6 +14,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 import boxes  # noqa: E402
+import gfx  # noqa: E402
 import msgtable  # noqa: E402
 import romdiff  # noqa: E402
 import vwf  # noqa: E402
@@ -47,8 +48,9 @@ def save(path, writes):
 
 def check(orig, new, writes):
     errs, _ = romdiff.check(orig, new, set(), writes)
+    zones = dict(ZONES, gfx=gfx.slots(orig))
     for off, x, _, name in writes:
-        if not any(lo <= off and off + len(x) <= hi for lo, hi in ZONES.get(name, [])):
+        if not any(lo <= off and off + len(x) <= hi for lo, hi in zones.get(name, [])):
             errs.append(f"0x{off:07X}: {name} writes {len(x)} bytes outside its zones")
     return errs
 

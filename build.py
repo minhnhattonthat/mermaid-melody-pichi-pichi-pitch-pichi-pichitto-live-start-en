@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import boxes  # noqa: E402
 import check_rom  # noqa: E402
 import enfont  # noqa: E402
+import gfx  # noqa: E402
 import marker  # noqa: E402
 import msgcodec  # noqa: E402
 import msgtable  # noqa: E402
@@ -48,6 +49,7 @@ def build(orig, lang="en", entries=None, log=None):
     stage("text", lambda: msgcodec.pack(rom, entries, Table(enfont.tbl_lines()), lang, REGIONS, fallback=jp))
     stage("boxes", lambda: boxes.grow(rom, entries, lang))
     stage("vwf", lambda: vwf.apply(rom))
+    stage("gfx", lambda: gfx.apply(rom))
     return bytes(rom)
 
 

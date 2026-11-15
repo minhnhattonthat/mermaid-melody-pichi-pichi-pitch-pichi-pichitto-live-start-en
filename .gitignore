@@ -29,3 +29,4 @@ tools/*/
 *.sstate
 *.ppst
 evidence/private/
+gfx/orig/

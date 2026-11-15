@@ -33,3 +33,20 @@ Most on-screen Japanese is pre-drawn graphics in kcomp-compressed blocks (`docs/
 
 Not yet visited (phase 2 debug tool will reach them): results, game over, collection (あつめて), options/save
 prompts, ending and credits, story scenes if any.
+
+## Redraws (phase 8)
+- Pipeline: `gfx/<group>.tsv` (offset, size, layout, png, English, Japanese) + `gfx/<group>.pal` (16 colours from a
+  palette dump) -> build stage `gfx` (`tools/gfx.py`): decode, png -> indices, `kcomp.compress`, write over the original
+  stream (must fit; the encoder is ~5% smaller than Konami's on all 258 unscrambled blocks tried). Write zones = each
+  row's original stream chain (`tools/writelog.py`). `python -X utf8 tools/gfx.py export GROUP` writes the originals to
+  `gfx/orig/<group>/` (gitignored); `gfx.py check` prints slot vs new size. Typesetting: `gfx.typeset` (dialogue font
+  `fonts/en12.txt`, bold column, fill/top/outline indices). One generator per group (`tools/gfx_<group>.py`).
+- **Chains:** many sweep "blocks" of size 0x1018/0x103E are really two (or more) 0x800-byte kcomp streams back to back
+  (caller 0x08000EA0). The sweep decoded them as one stream, so their second half renders garbled on the sweep sheets.
+  tsv size `800x2` decodes a chain; check that the chain ends at the next block (it did for all 6 menu captions).
+  **verified** (menu captions match VRAM tile rows 1-2 in `work/qa/ram2/ppu_000070`).
+- Group `menu` (done, pilot): main-menu captions 0x1708763..0x170B89B, OBJ pal 15, 2D OBJ map, tiles 896+ (4 sprites
+  64x32 at y 128); each chain = two 16x4-tile halves (`obj16x4*2`). Text uses only indices 12-15; the clean banner is
+  composed from the 6 captions (`tools/gfx_menu.py`). Cold-boot shots: `work/qa/p8menu/sheet/`.
+- Next: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
+  OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

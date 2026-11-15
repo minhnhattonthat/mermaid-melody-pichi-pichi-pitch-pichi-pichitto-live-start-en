@@ -1,0 +1,8 @@
+# main-menu captions: OBJ pal 15, 4 sprites 64x32 at y 128 (tiles 896+, 2D OBJ map); each a chain of two 0x800 streams of 16x4 tiles
+# offset	size	layout	png	English (| = line break)	Japanese
+1708763	800x2	obj16x4*2	gfx/out/menu/1708763.png	Go for a high score!	こうとくてんめざしてがんばろう！
+17090E9	800x2	obj16x4*2	gfx/out/menu/17090E9.png	Play with friends over the Link Cable!	つうしんケーブルで、みんなとあそぼう！
+1709A69	800x2	obj16x4*2	gfx/out/menu/1709A69.png	Use coins to collect goods|and decorate your room!	コインをつかってグッズをあつめて あなたのおへやにかざっちゃおう！
+170A611	800x2	obj16x4*2	gfx/out/menu/170A611.png	Write a song all your own!	じぶんだけのうたをつくろう！
+170AF65	800x2	obj16x4*2	gfx/out/menu/170AF65.png	Live Start with your saved data!	セーブしたデータで、ライブスタート！
+170B89B	800x2	obj16x4*2	gfx/out/menu/170B89B.png	Change all kinds of settings!	いろいろなせっていができるよ！
