@@ -96,6 +96,28 @@ prompts, ending and credits, story scenes if any.
   is boxed in by art-palette cells and shared tiles, so each card has its own dx/dy and ring count. Checked in
   `work/qa/p8solo` (cold-boot warps). Polish: small transparent holes at the cloud / star edges where the old
   rings were.
+- Group `options` (done): 1723EBE is a panelled atlas (`obj16x4*8/2`, 256x128; right half = background thumbnails).
+  Labels are rows of OBJs 24 px tall on 2D VRAM rows (row = tile // 32), NOT on the 32 px panels: なまえ (80,0)
+  はいけい (0,32) やじるし (64,32) ヘッドホン (0,56) あり (80,56) マーメイド (0,80) なし (80,80) -> Name / Background /
+  Arrows / Headphones / On / Mermaid / Off (`tools/gfx_options.py`), checked in scene 14 (`work/qa/p8opt`).
+  `gfx_where.py` rects are wrong for panelled layouts (it assumes 16-tile rows): take rects from the OAM tile numbers.
+- Group `songsel` (done): 173F4E9 high-score panel labels かんたん/ふつう/むずかしい -> Easy/Normal/Hard, 8 px rows,
+  plain font; group `pills`: 173FE48 six 16x8 difficulty pills か ふ む / い き き -> E N H / U M R (no warp shows the
+  pills yet). `tools/gfx_songsel.py`, checked in song_select / difficulty (`work/qa/p8ss`).
+- **Song titles (open):** 17403F7 1741079 1741389 17420A3 17426D4 1742B72 17430DC 17434B2 1743766 17439CC 1743CBB
+  1743F0B (800x1 each, 128x32: title line 1 at y 0-15, line 2 continues at y 16-31, ruby kana in the rest). The OBJ
+  list per title is data-driven, not a blank-tile scan: a test filling line 2 of 1742B72 showed only its first 40 px
+  (32x16 + 8x16), the original title width. Titles: Taiyou no Rakuen ~Promised Land~ (200 px), Daiji na Takarabako,
+  Koi wa Nan Darou, Sekai de Ichiban Hayaku Asa ga Kuru Basho, Yume no Sono Saki e, Kuro no Kyousoukyoku ~concerto~
+  (168 px), Aurora no Kaze ni Notte, ヒッポと アルプス/すいか/おんがくか/カエル (Hippo and the Alps / Watermelon /
+  the Musician / Frog), なにもないヨ! (Nothing here!). Romaji as in the credits (glossary). Byte/OAM-pattern searches
+  for the sprite table found nothing: next, watch who writes the title OBJs (`watch.lua` on the OAM buffer) to find the
+  table, then widen entries so the romaji fits.
+- Group `clear` (done): 180F0F8 Kaito cut-in (BG3, map = tiles in order, 30 a row, a palette per cell) すごいぞ! /
+  よくやったな -> Amazing! / Well done! on a white sticker over the old footprint (`tools/gfx_clear.py`), checked in
+  scene 39 (`work/qa/p8clear`). Siblings 1813332 / 18170D4 (table 16F6CC8 entries 145/146, same size) are two more
+  cut-ins: their per-cell palettes are not found yet (not a kcomp resource, not raw: `tools/findmap.py`); find what
+  picks the picture in scene 39, warp each, then reuse `gfx_clear.edit` with their dumps.
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
