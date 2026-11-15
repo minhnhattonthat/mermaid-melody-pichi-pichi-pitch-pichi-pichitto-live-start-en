@@ -2,7 +2,12 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 14, sha1 4a503740; smoke ok, write log clean, check 41 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 15, sha1 4ab9f1dc; smoke ok, write log clean, check 41 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-16, session 15):** minigame prompt panels English (`tools/gfx_cards.py` PANELS, notes
+  `docs/re/graphics.md` §Minigame prompt panels): `memo` 1C05A1E Match the same pictures! (checked `work/qa/p8memo`),
+  `crane` 1C05F03 Hold A to move, / let go to grab! (checked `work/qa/p8crane`), `guess` 1C047A6, `again` 1C0657A Keep
+  playing?, `nocoin` 1C06A00 Not enough coins! (these three drawn and previewed from the built ROM, not seen in game:
+  again needs a minigame win, nocoin coins < 100: find the coin RAM word). 1C06EBF: other frame, record not found.
 - **Phase 8 progress (2026-11-16, session 14):** card game (くらべてピッチ) fully English and checked in game
   (`work/qa/p8hilo`, `work/qa/p8win`): groups `hilo` `cont` (buttons), `pick` `hilotxt` `conttxt` (BG1 prompt
   panels), `zannen` (ざんねん -> Too bad!, 1C023B4, probably also the memory game's) and `atari` (あたり -> Right!),
@@ -10,8 +15,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   §Card game; new `gfx_minigame.retile_keep`). Title logos kept (D16): drop 1703236 1CA6F51 1C2D4F9. D17 wording.
   Reach the card game: warp `--var SCENE_ID=15 --var "ROUTE_AFTER=[[120 -;6 a;200 -;6 a;200 -;...]]"` or play.py
   session `work/play/cards` (step 0002 = higher/lower question). Memory game: `work/play/mem` (play.py, from
-  `work/states/minigame_2.mss`): panel おなじえをそろえてね。 (Match the same pictures!) shown at its start = next row
-  to do (likely 1C047A6/1C05A1E/1C05F03/1C06A00/1C06EBF; dump it from a step state on the original ROM:
+  `work/states/minigame_2.mss`): panel おなじえをそろえてね。 (Match the same pictures!) shown at its start (done
+  session 15; was: likely 1C047A6/1C05A1E/1C05F03/1C06A00/1C06EBF; dump it from a step state on the original ROM:
   `emu.py ROM --state-in work/play/mem/0008.mss --route-str ... --script ppudump.lua`, then `gfx_scenes.py` on a dir
   holding only that dump (it overwrites `work/gfx/scenes.tsv`: copy `scenes_full.tsv` back after), find its map
   record as in `docs/re/graphics.md` §Card game, add a `PANELS` row). Its win screen not reached yet (3 misses = lose).
@@ -26,8 +31,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   pill words かんたん ふつう むずかしい いつもの きぶん.. + small kana) 1722E8B (big digits, maybe no text) after the
   name keyboard chain, screen unknown; clear cut-ins 1813332 18170D4; minigame logos 1BF039E 1BF198F (くらべてピッチ,
   seen on the card game title) 1BF2D7E 1BF416C (design); character banners 1BFA943 1BFC919 1BFE551; sheet_055
-  1C01D37 1C03D2A (big lettering, other minigames' results?) 1C047A6 1C05A1E 1C05F03 1C0657A 1C06A00 1C06EBF (prompt
-  panels: memory / crane game); poster 1CE3D71 (どのポスターをはる?); card collection 1CFDD65 (★カードコレクション★);
+  1C01D37 1C03D2A (big lettering, other minigames' results?) 1C06EBF (prompt panel, other frame; the rest done in
+  session 15); poster 1CE3D71 (どのポスターをはる?); card collection 1CFDD65 (★カードコレクション★);
   story wallpaper 1B6AFB2 (kept, see Waiting). Then the full QA tour + visual-QA verdicts (Next 1). Digits rows,
   187E260, 1EFF70B, 179BEF6..179DE22, 171F78F, 17212DD, 1D0B2A4, 1D0CA42: no redraw (drop).
 - **Phase 8 progress (2026-11-15, session 12):** minigame title panels English (group `minipanel`, all 4 pages

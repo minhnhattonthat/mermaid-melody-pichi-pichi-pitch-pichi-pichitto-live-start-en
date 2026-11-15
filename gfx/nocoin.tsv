@@ -1,0 +1,3 @@
+# minigame panel (BG1, map record 0x1D25730; coins below 100, not reached yet); pal = memo's
+# offset	size	layout	png	English	Japanese
+1C06A00	800x2	tiles16	gfx/out/nocoin/1C06A00.png	Not enough coins! (tools/gfx_cards.py)	コインがたりないよ!

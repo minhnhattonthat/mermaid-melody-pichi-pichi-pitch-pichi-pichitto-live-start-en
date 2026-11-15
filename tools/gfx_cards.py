@@ -32,7 +32,16 @@ PANELS = {"pick": (["Pick any one card!"], 0x1D254B7, (2, 3, 20, 2), 1),  # 1C04
           "hilotxt": (["Is the face-down card", "higher or lower than the left?"], 0x1D25528, (3, 3, 20, 3),
                       2),  # 1C0537C ふせてあるカードは ひだりのカードより…?
           "conttxt": (["Keep going and your coins", "will double!"], 0x1D258E7, (2, 2, 20, 4),
-                      2)}  # 1C078DE つづけてやると コインがばいにふえるよ! (dump work/qa/ppu/card_cont)
+                      2),  # 1C078DE つづけてやると コインがばいにふえるよ! (dump work/qa/ppu/card_cont)
+          "memo": (["Match the same pictures!"], 0x1D255BC, (2, 3, 20, 2), 1, 4),  # 1C05A1E おなじえをそろえてね。
+          "crane": (["Hold A to move,", "let go to grab!"], 0x1D2563D, (3, 3, 18, 4), 1, 4),  # 1C05F03
+          # Aボタンでいどう、はなすとつかむよ! (crane game start)
+          "guess": (["Find the matching card", "among these!"], 0x1D25428, (3, 3, 18, 4), 1, 5)}  # 1C047A6
+          # このなかから おなじカードをあててね! (screen not reached; record matched by the panel frame + reading order)
+PANELS.update({"again": (["Keep playing?"], 0x1D256CE, (3, 2, 12, 3), 1, 7, 3),  # 1C0657A つづけてあそぶ? (after a win)
+               "nocoin": (["Not enough coins!"], 0x1D25730, (3, 2, 15, 3), 1, 7, 3)})  # 1C06A00 コインがたりないよ!
+# again / nocoin: smaller frame, records found by rendering each block with the records after 1D2563D
+# memory game start panel: dump work/qa/ppu/mem_panel (play.py state work/play/mem/0000.mss + "6 a;200 -")
 MAPS = gfx.GFX / "cards.maps"
 # Big result words on BG1 (map records found as for PANELS; the record must not grow: a new tile mid-run costs bytes,
 # so the text sits on cells with their own tiles, retile_keep, nudged DX px). Spec: word, record, rect (cells),
@@ -188,15 +197,18 @@ def wide_buttons(spec):
 
 
 def panel(group, maps):
-    lines, rec, rect, bg = PANELS[group]
+    lines, rec, rect, bg, *opt = PANELS[group]
+    core, keep = (opt + [7, 0][len(opt):])  # index of the original lettering's white core; top pixel rows kept
+    # (keep > 0: the rect's first cell row also holds the frame ornament, kept; the kana tops below it are erased)
 
     def fn(img, data, layout):
         rom = next((gfx.ROOT / "rom").glob("*.gba")).read_bytes()
         cells, end = decode_map(rom, rec)
-        im = [[bg] * len(r) for r in minigame.compose(img, cells, rect)]
-        for bold in (True, False):  # white core 7, as the original lettering
+        orig = minigame.compose(img, cells, rect)
+        im = [list(r) if y < keep else [bg] * len(r) for y, r in enumerate(orig)]
+        for bold in (True, False):  # white core, as the original lettering
             try:
-                gfx.typeset(im, lines, (2, 0, len(im[0]) - 2, len(im)), 7, [], bold=bold)
+                gfx.typeset(im, lines, (2, keep, len(im[0]) - 2, len(im)), core, [], bold=bold)
                 break
             except ValueError:
                 if not bold:
@@ -222,7 +234,9 @@ def main():
     for group, fn in (("cardbtn", buttons), ("roombub", bubbles), ("hint", hints), ("prompt", prompt),
                       ("bonus", bonus), ("hilo", wide_buttons(HILO)), ("cont", wide_buttons(CONT)),
                       ("pick", panel("pick", maps)), ("hilotxt", panel("hilotxt", maps)),
-                      ("conttxt", panel("conttxt", maps)),
+                      ("conttxt", panel("conttxt", maps)), ("memo", panel("memo", maps)),
+                      ("crane", panel("crane", maps)), ("guess", panel("guess", maps)),
+                      ("again", panel("again", maps)), ("nocoin", panel("nocoin", maps)),
                       ("zannen", bigword("zannen", maps)), ("atari", bigword("atari", maps))):
         (_, off, size, layout, png), = gfx.rows(group)
         data = gfx.decode(rom, off, size)[0]

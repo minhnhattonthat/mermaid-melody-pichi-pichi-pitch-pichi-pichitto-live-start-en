@@ -1,0 +1,3 @@
+# memory game start panel (BG1 pal 1, map from work/qa/ppu/mem_panel); pal from that dump, palfixed
+# offset	size	layout	png	English	Japanese
+1C05A1E	800x2	tiles16	gfx/out/memo/1C05A1E.png	Match the same pictures! (tools/gfx_cards.py)	おなじえをそろえてね。

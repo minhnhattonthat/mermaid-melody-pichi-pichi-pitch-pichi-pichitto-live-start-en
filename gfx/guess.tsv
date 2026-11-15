@@ -1,0 +1,3 @@
+# minigame panel (BG1, map record 0x1D25428; screen not reached); pal = memo's (same green panel)
+# offset	size	layout	png	English	Japanese
+1C047A6	800x2	tiles16	gfx/out/guess/1C047A6.png	Find the matching card / among these! (tools/gfx_cards.py)	このなかから おなじカードをあててね!

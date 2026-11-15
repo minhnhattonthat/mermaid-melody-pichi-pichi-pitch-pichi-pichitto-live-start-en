@@ -1,0 +1,3 @@
+# crane game start panel (BG1, map record 0x1D2563D); pal = memo's (same green panel)
+# offset	size	layout	png	English	Japanese
+1C05F03	800x2	tiles16	gfx/out/crane/1C05F03.png	Hold A to move, / let go to grab! (tools/gfx_cards.py)	Aボタンでいどう、はなすとつかむよ!

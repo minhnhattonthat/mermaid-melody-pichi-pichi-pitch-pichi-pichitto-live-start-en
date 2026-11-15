@@ -226,5 +226,16 @@ prompts, ending and credits, story scenes if any.
   (5-byte entries -> record - 7, which holds a self pointer to record - 2): relocation possible but not built. Big
   words use `gfx_minigame.retile_keep` (edit tiles in place; allocate only for edited shared tiles, reuse identical
   tiles) so the record does not grow. All checked in game (`work/qa/p8hilo`, `work/qa/p8win`).
+- **Minigame prompt panels (session 15, `tools/gfx_cards.py` PANELS):** same run-stream records, back to back:
+  1D25428 (`guess` 1C047A6 このなかから おなじカードをあててね!, screen unknown), 1D254B7 `pick`, 1D25528 `hilotxt`,
+  1D255BC (`memo` 1C05A1E おなじえをそろえてね。, memory game start; dump `work/qa/ppu/mem_panel`), 1D2563D (`crane`
+  1C05F03 Aボタンでいどう、はなすとつかむよ!, crane start), 1D256CE (`again` 1C0657A つづけてあそぶ?, smaller frame),
+  1D25730 (`nocoin` 1C06A00 コインがたりないよ!), then 1D25791 1D2587A (other frames), 1D258E7 `conttxt`. Found by
+  rendering each block through each record (the right pair reads cleanly). Each block letters with its own core index
+  (4, 5 or 7: most common non-fill index in the text tiles). In the small frame the kana tops reach the ornament's cell
+  row: PANELS `keep` keeps its top 3 pixel rows. 1C06EBF: another frame, record not found. Memory/crane games reached
+  from cold boot: warp SCENE_ID=0 WRITES 0x03003B98:<1 crane|2 memory>:2@200 + the minigame row's route + `6 a;200 -;6
+  a;200 -` (work/qa/p8crane, p8mg2b). The play.py session `work/play/mem` started from an original-ROM state, so its
+  OBJ tiles (hint Aきめる) are stale Japanese: not a bug (cold boot shows A OK).
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

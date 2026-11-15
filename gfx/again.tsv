@@ -1,0 +1,3 @@
+# minigame end prompt panel (BG1, map record 0x1D256CE; shown after a win, not reached yet); pal = memo's
+# offset	size	layout	png	English	Japanese
+1C0657A	800x2	tiles16	gfx/out/again/1C0657A.png	Keep playing? (tools/gfx_cards.py)	つづけてあそぶ?
