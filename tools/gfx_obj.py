@@ -58,7 +58,13 @@ class Sprites:
             return where.get(bytes(self.vram[0x10000 + 32 * t:0x10000 + 32 * t + 32]), [])
         # each stream of the block sits at one VRAM base: a tile with byte twins (e.g. the same kana twice) takes the
         # twin whose VRAM - block delta the unique matches use most
-        deltas = Counter(t - ks[0] for t in {c[2] for c in self.cells} for ks in [matches(t)] if len(ks) == 1)
+        uniq = [(t, ks[0]) for t in {c[2] for c in self.cells} for ks in [matches(t)] if len(ks) == 1]
+        deltas = Counter(t - k for t, k in uniq)
+        # a strided load (tw block tiles to each 32-tile VRAM row, e.g. tiles16) has one base for VRAM t - the 2D
+        # spot of block tile k: tried first (for tiles32 it equals the delta)
+        def base(t, k):
+            return t - (k // tw * 32 + k % tw)
+        bases = Counter(base(t, k) for t, k in uniq)
         done = {}
         for x, y, t, hf, vf in self.cells:
             px = [row[x - self.x0:x - self.x0 + 8] for row in img[y - self.y0:y - self.y0 + 8]]
@@ -69,10 +75,11 @@ class Sprites:
             if px == tile_px(self.vram, 0x10000 + 32 * t):
                 continue
             ks = matches(t)
-            if len(ks) > 1 and deltas:
-                best = max(ks, key=lambda k: deltas[t - k])
-                if deltas[t - best]:
-                    ks = [best]
+            for dl, f in ((bases, base), (deltas, lambda t, k: t - k)):
+                if len(ks) > 1 and dl:
+                    best = max(ks, key=lambda k: dl[f(t, k)])
+                    if dl[f(t, best)]:
+                        ks = [best]
             if len(ks) != 1:
                 raise SystemExit(f"OBJ tile {t} at {x},{y}: {len(ks)} matches in the block")
             if done.setdefault(ks[0], px) != px:

@@ -1,0 +1,6 @@
+# name-entry keyboard (scene 9): record 39 of 16F6CC8 = one chain of 16 0x800 streams 171EAB9..1721BEB, loaded
+# whole into OBJ VRAM (hiragana keys tiles 0+, katakana keys 512+ = chunk 4 171F78F). Compose loads the same record
+# for its kana keyboard and lyric glyphs, so this row is a gfx.FORKS fork: only the name screen reads the copy.
+# Keys -> Latin per tools/names.py (tools/gfx_names.py). Palette = name_entry OBJ pal 0, palfixed.
+# offset	size	layout	png	English	Japanese
+171EAB9	800x16	tiles16	gfx/out/names/171EAB9.png	A-Z a-z 0-9 keys	あ-ん ア-ン keys

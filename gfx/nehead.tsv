@@ -1,0 +1,5 @@
+# name-entry header (scene 9, record 0x76 of 16F6CC8, OBJ pal 15 at y 2): START ボタン けってい / SELECT ボタン きりかえ
+# -> START Button OK / SELECT Button A/a (tools/gfx_names.py). Both ボタン sprites share tiles. Palette = name_entry OBJ
+# pal 15, palfixed (index 15 = white repeat).
+# offset	size	layout	png	English	Japanese
+179B69F	800x2	tiles32	gfx/out/nehead/179B69F.png	Button / OK / A/a	ボタン / けってい / きりかえ
