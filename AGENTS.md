@@ -6,7 +6,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 - Build:    `python -X utf8 build.py` -> build/mermaid_en.gba (checks the dump against `rom.sha1` first; build.py arrives in phase 3)
 - Check:    `python -X utf8 tools/check.py` (tests + lint; the pre-commit hook runs this; hook path set by `git config core.hooksPath tools/hooks`)
 - Smoke:    `python -X utf8 $SKILL/scripts/emu.py build/mermaid_en.gba --out work/qa/smoke --route tools/routes/boot.txt --smoke`
-- Warp:     `python -X utf8 $SKILL/scripts/emu.py build/mermaid_en.gba --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 900 --sheet` (scenes: `tools/debug/scenes.tsv`, phase 2; never ask the user to play to a scene)
+- Warp:     `python -X utf8 $SKILL/scripts/emu.py build/mermaid_en.gba --sav work/saves/default.sav --out work/qa/w --script tools/debug/warp.lua --var "SCENE='<name>'" [--var EP=N | MSG=N] --frames 1200 --sheet` (scenes: `tools/debug/scenes.tsv`, notes `docs/re/scenes.md`; never ask the user to play to a scene). Save fixture: `python -X utf8 tools/debug/make_save.py`. All scenes + states: `python -X utf8 tools/debug/regen.py [ROM]`
 - Release:  `python -X utf8 tools/release.py` (patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 

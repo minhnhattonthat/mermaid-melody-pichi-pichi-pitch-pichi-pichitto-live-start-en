@@ -1,0 +1,51 @@
+name	id	expect	writes	route	note
+debug_menu	0		-		leftover debug menu (scene 0 run from the main loop); font text, message 4
+logo	1		-		KONAMI logo (~450 frames), then returns to the menu
+opening_movie	2		-		opening anime (FMV)
+title	3		-		title screen: logo, Push Start Button, copyright
+live_broken	4		-		ライブのデータがこわれているよ! (live data corrupt)
+results	5		-		results screen (うた/リズム/てん, すすむ/セーブ); direct warp = empty results
+results_save	6		-		results variant with セーブ
+song_select_live	7		-		song select (Star Jewel), live variant
+menu	8		-		main menu, item ひとりでピッチ
+menu_issho	8		-	60 -;6 down;40 -	main menu, item いっしょにピッチ + caption
+menu_atsumete	8		-	60 -;6 down;40 -;6 down;40 -	main menu, item あつめてピッチ + caption
+menu_hippo	8		-	60 -;6 down;40 -;6 down;40 -;6 down;40 -	main menu, item ヒッポでピッチ + caption
+menu_live	8		-	60 -;6 down;40 -;6 down;40 -;6 down;40 -;6 down;40 -	main menu, item ライブでピッチ + caption
+menu_anata	8		-	60 -;6 up;40 -	main menu, item あなたのピッチ + caption
+name_entry	9		-		name entry keyboard (first boot); header STARTボタン けってい / SELECTボタン きりかえ
+song_select	10		-		song select (Star Jewel / Rainbow Notes)
+difficulty	10		-	120 -;6 a;120 -	difficulty after song select: かんたん/ふつう/むずかしい/いつもの/きまぐれ
+link_check	11		-		いっしょにピッチ: つうしんせつぞくをしらべています (font, message 1028)
+live_list	12		-		ライブでピッチ: saved live list (なにもないヨ!)
+compose	13		-		ヒッポでピッチ: song composer (lyric list, kana keyboard)
+options	14		-		あなたのピッチ: options (ヘッドホン, はいけい, やじるし, マーメイド, おまえ)
+room	15		-		あつめてピッチ: room (ゲームをする?)
+card_game	15		-	120 -;6 a;200 -;6 a;200 -	room -> くらべてピッチ title -> card game (ゲームする? はい/しない)
+minigame_1	0	15	0x03003B98:1:2@200	60 -;6 right;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	debug ミニゲーム 1 (crane game); 0 or 3+ give the room
+minigame_2	0	15	0x03003B98:2:2@200	60 -;6 right;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	debug ミニゲーム 2 (memory game)
+hippo_talk	18		-		Hippo dialogue box over a picture (font text)
+live_list2	19		-		live list variant
+credits_cast	20		-		staff roll: ~キャスト~ (cast, part 1)
+credits_cast2	21		-		staff roll: cast part 2
+difficulty_tokoton	22		-		difficulty (girl + Hippo, A/B ボタン header)
+difficulty_anime	23		-		difficulty, green (アニメでピッチ)
+difficulty_tsuzukete	24		-		difficulty, green variant
+episode_select	25		-		episode grid 01-39
+story	0	26	0x03003B98:$EP:2@200	60 -;6 right;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	アニメでピッチ episode $EP (1-39) dialogue via debug アニメ; run with --var EP=N
+story_framed	27		-		framed dialogue with name tag (【るちあ】)
+solo_modes	28		-		ひとりでピッチ mode carousel: とことんピッチ
+solo_tsuzukete	28		-	120 -;6 right;84 -	mode carousel: つづけてピッチ
+solo_anime	28		-	120 -;6 right;84 -;6 right;84 -	mode carousel: アニメでピッチ
+story_start	28	26	-	120 -;6 right;84 -;6 right;84 -;6 a;60 -;6 a;100 -;6 a;100 -	アニメでピッチ the real way: mode -> difficulty -> episode dialogue
+gameplay	28	5	-	120 -;6 a;100 -;6 a;100 -;6 a;100 -;6 a;100 -	とことんピッチ -> song select -> difficulty -> gameplay (lyrics = messages 512+)
+pause	29		-		つづける / やめる
+song_list	32		-		song title list
+difficulty_35	35		-		difficulty (Hippo), reached by ids 33/34
+tokoton_progress	36		-		とことんピッチ progress: あと100きょく / のこり / クリアもくひょう, つづける/もういちど/やめる
+gameover_retry	37		-		ゲームオーバー with もういちど / やめる
+clear	39		-		すごいぞ!よくやったね (clear)
+tokoton_start	40		-		とことんピッチ start: あと100きょく / のこり100てん
+gameover	41		-		ゲームオーバー
+draw	42		-		ひきわけ (versus draw)
+msgview	0		0x03003B98:$MSG:2@260	60 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	debug メッセージ: message $MSG (0-2473) in the dialogue box, A pages; run with --var MSG=N
