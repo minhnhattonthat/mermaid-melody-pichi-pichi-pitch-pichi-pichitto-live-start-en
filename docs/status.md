@@ -26,9 +26,11 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   centred; "Nothing here!" centred (`gfx_songs.py` NUDGE). Polish pass done (`docs/polish.md` 0 unticked, 12 waived):
   dot runs -> "..." and no space before {FA:06}/{wait} in all English, ~85 reviewer Minors applied
   (`work/tl/polish_subs.tsv`, merged with `batches.py merge polish`).
-- **Interrupted (session 21):** the system killed the polish-pass commit (pre-commit check unfinished) and tour5
-  (61 runs) for low memory. Polish changes are staged, not committed; `README.md`, `docs/release-readme.txt` and
-  `tools/release.py` are new and unchecked. Resume: `git commit` (hook runs check.py), then tour5 from scratch.
+- **Session 22 (2026-11-16):** polish pass, README, `tools/release.py`, `docs/release-readme.txt` committed (check 43
+  passed; build sha1 44cb0bbd... in `work/qa/tour5.build`). Tour5 (`--jobs 4`) killed again by the harness for low
+  system memory (79 run dirs, 77 sheets, incomplete). Resume: free memory (close other apps/agents), then
+  `rm -rf work/qa/tour5` and re-run tour5, maybe `--jobs 2`, in the foreground or with
+  CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1.
 - **Next (phase 8):**
   1. Tour5 of the session-21 build (`python -X utf8 tools/tour.py --out work/qa/tour5`), then `qa_gate.py init
      work/qa/manifest.tsv work/qa/tour5/sheets --build build/mermaid_en.gba --glob "sheet*.png"`, `qa_gate.py todo
