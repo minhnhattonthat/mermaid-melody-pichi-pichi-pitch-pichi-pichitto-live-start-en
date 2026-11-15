@@ -7,7 +7,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   checked `work/qa/p8mini/sheet.png`): their BG1 maps are run-stream records (1D250BA 1D2502C 1D25156), re-tiled by
   `tools/gfx_minigame.py` -> `gfx/minipanel.maps`, applied by build stage `maps` (any `gfx/*.maps`). Minigame logos
   1BF198F 1BF2D7E 1BF039E 1BF416C mapped (records, chains) but not drawn: need a design, notes in
-  `docs/re/graphics.md` §Minigame logos. Poster banner 1CE3D71 and prompt 1C0657A: same execlog trick once reached.
+  `docs/re/graphics.md` §Minigame logos. Poster banner 1CE3D71 and prompt 1C0657A: same execlog trick once reached. A lost memory game
+  (minigame_2 state + right/a sweep route, `work/qa/mg2end`) shows ざんねん then goes straight back to the title, no
+  prompt: 1C0657A likely needs a win (find the result flag in RAM and force it, or add a debug warp).
 - **Phase 8 progress (2026-11-15, session 11):** all 40 episode titles English (group `eptitle`, build stage `maps`:
   the per-episode BG1 map records at 0x1881720 decoded and rewritten to one 24x5 rect; `docs/re/graphics.md`
   §eptitle). `nomosaic.lua` fixed (shadow 0x030000B0). New `tools/lua/execlog.lua`. Digits-only sweep rows
