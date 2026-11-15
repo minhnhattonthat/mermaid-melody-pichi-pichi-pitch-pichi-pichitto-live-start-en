@@ -1,0 +1,3 @@
+# poster picker banner (BG1 cells 6-18 x 1-3 = block tiles 1-45; tools/gfx_roomsel.py; warp `poster`); pal = poster BG pal 3
+# offset	size	layout	png	English	Japanese
+1CE3D71	800x4	tiles16	gfx/out/poster/1CE3D71.png	Which poster?	どのポスターをはる?

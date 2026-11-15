@@ -2,7 +2,14 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 17, sha1 340eade9; smoke ok, write log clean, check 42 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 18, sha1 693fb2f8; smoke ok, write log clean, check 42 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-16, session 18):** poster picker and card collection reached (room state machine
+  0x03003DFC, hotspot forced at its A read; warps `poster`, `card_coll`; warp.lua writes take `!0xPC`) and their
+  banners English: groups `poster` 1CE3D71 Which poster?, `cardcoll` 1CFDD65 ★Card Collection★ (checked
+  `work/qa/p8banners.png`). Memory-game win forced (warp `memory_win`): Hooray! / Stop it wherever you like! / Got it!
+  checked from cold boot, so drop 1C01D37 1C03D2A 1C06EBF 1CE3D71 1CFDD65. Slot game win/lose mapped. Character
+  banners 1BFA943.. still unlocated (not in room, memory or slot wins). Notes `docs/re/graphics.md` §Room state
+  machine, §Minigames. New probes `tools/lua/smlog.lua`, `tools/lua/poke.lua`.
 - **Phase 8 progress (2026-11-16, session 17):** sheet_055 big words matched to their BG1 map records by tile count
   (a block's last used tile = the record's max index): `getto` 1C01D37 ゲット! -> Got it! (record 1D251F3), `yatta`
   1C03D2A やったね -> Hooray! (1D2539F), panel `stop` 1C06EBF すきなところでとめてね! -> Stop it wherever you like!
@@ -41,6 +48,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   song titles (17434B2..1743F0B) drawn but unseen (not in the fixture save's list). Triage renders of the other
   remaining rows: `work/gfx/tri/` (sheet_055 1C047A6..1C078DE are BG prompt panels like 1C07510: need their maps,
   i.e. reach the screens; 1C01D37..1C03D2A big kana lettering, unread).
+- **Remaining graphics rows (after session 18):** 170633B, 1721BEB/1722E8B, minigame logos, character banners
+  1BFA943 1BFC919 1BFE551 (try the crane-game win next: crane update 08043278, sub-state 0x03003CB5), story wallpaper
+  (kept). Suggest: stop hunting after one crane-win try; waive unreached rows with evidence and run the full QA tour
+  (Next 1), which is the bulk of the phase.
 - **Remaining graphics rows (after session 14):** results 170633B (needs a real song's results); 1721BEB (difficulty
   pill words かんたん ふつう むずかしい いつもの きぶん.. + small kana) 1722E8B (big digits, maybe no text) after the
   name keyboard chain, screen unknown; minigame logos 1BF039E 1BF198F (くらべてピッチ,

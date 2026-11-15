@@ -21,9 +21,12 @@ live_list	12		-		ライブでピッチ: saved live list (なにもないヨ!)
 compose	13		-		ヒッポでピッチ: song composer (lyric list, kana keyboard)
 options	14		-		あなたのピッチ: options (ヘッドホン, はいけい, やじるし, マーメイド, おまえ)
 room	15		-		あつめてピッチ: room (ゲームをする?)
+poster	15		0x03003D7A:1:2!0x0803BB1A	100 -;6 a;200 -	room hotspot 1 forced at its A read -> poster picker (どのポスターをはる?), room state 3
+card_coll	15		0x03003D7A:4:2!0x0803BB1A	100 -;6 a;200 -	room hotspot 4 -> ★カードコレクション★, room state 5 (room state machine 0x03003DFC, tools/lua/smlog.lua)
 card_game	15		-	120 -;6 a;200 -;6 a;200 -	room -> くらべてピッチ title -> card game (ゲームする? はい/しない)
 minigame_1	0	15	0x03003B98:1:2@200	60 -;6 right;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	debug ミニゲーム 1 (crane game); 0 or 3+ give the room
 minigame_2	0	15	0x03003B98:2:2@200	60 -;6 right;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	debug ミニゲーム 2 (memory game)
+memory_win	0	15	0x03003B98:2:2@200 0x03003CB5:16!0x08040736	60 -;6 right;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -;6 a;200 -;6 a;200 -	memory game forced won (sub-state u8 0x03003CB5 = 16 at state 6): やったね, すきなところでとめてね!, ゲット!, つづけてあそぶ?
 hippo_talk	18		-		Hippo dialogue box over a picture (font text)
 live_list2	19		-		live list variant
 credits_cast	20		-		staff roll: ~キャスト~ (cast, part 1)

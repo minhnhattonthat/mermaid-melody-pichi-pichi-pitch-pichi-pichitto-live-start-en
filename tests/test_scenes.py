@@ -2,7 +2,7 @@ import os
 import re
 
 TSV = os.path.join(os.path.dirname(__file__), "..", "tools", "debug", "scenes.tsv")
-WRITE = re.compile(r"^0x[0-9A-Fa-f]+:(0x[0-9A-Fa-f]+|\d+|\$[A-Z]+)(:[124])?(@\d+)?$")
+WRITE = re.compile(r"^0x[0-9A-Fa-f]+:(0x[0-9A-Fa-f]+|\d+|\$[A-Z]+)(:[124])?(@\d+|!0x[0-9A-Fa-f]+)?$")
 STEP = re.compile(r"^\d+ (-|[a-z]+(\+[a-z]+)*)$")
 
 

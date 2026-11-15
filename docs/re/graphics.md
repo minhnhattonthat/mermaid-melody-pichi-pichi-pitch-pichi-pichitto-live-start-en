@@ -257,5 +257,22 @@ prompts, ending and credits, story scenes if any.
   Room (state work/states/room.mss): only `up` + A reacts (minigame title; up x3 = mascot); left/right/down, held
   or tapped, do nothing there. Next: break on the loaders above (execlog at the functions owning those literal
   pools) to learn which scene/sub-mode calls them, then add a warp.
+- **Room state machine (session 18):** scene 15 runs a state machine at 0x03003DFC (layout of 0x08049F70: +0 table,
+  +4 state, +5 next state; log it with `tools/lua/smlog.lua`), table 0x09F730C0: 0 0803AAC1, 1 0803B369 (room idle),
+  2 minigames, 3 0803C389 poster picker (loads 1CE3D71 = record 0x89), 4, 5 0803E79D card collection (1CFDD65 =
+  0xAD), 8 mascot. Room state 1 reads the hotspot u16 0x03003D7A at 0x0803BB1A on A (1 poster, 2 -> 4, 3 mascot, 4
+  card collection, else minigames); warp rows `poster`, `card_coll` force it there (warp.lua write `addr:val:size!pc`).
+  Groups `poster` (どのポスターをはる? -> Which poster?) and `cardcoll` (★カードコレクション★ -> ★Card Collection★),
+  `tools/gfx_roomsel.py` BANNERS, checked `work/qa/p8banners.png`.
+- **Minigames (session 18):** per-game update functions (sub-state u8 0x03003CB5 for all): memory 0803FD70 (jump
+  table 0x0803FD9C: 6-8 flips, 14/15 mismatch, 9-13 + 29-33 lose, 16 やったね, 20 すきなところでとめてね!, 21 ゲット!,
+  then つづけてあそぶ?), crane 08043278, card game 08045548 (room minigame page 1), slot 08048674 (page 2: reels
+  0x03003D9C/9E/A0 u16 positions, stop flags 0x03003D98-9A; state 7 spin, 8 check, 9-15 result; all reel positions 2
+  = あたり win, record 0x3A). Warp `memory_win` forces 16 at state 6 (0x08040736): Hooray! / Stop it wherever you
+  like! / Got it! all checked from a cold boot (`work/qa/w_memwin`; `tools/lua/poke.lua` pokes RAM at frames from a
+  state). A pink おなじえをそろえてね。 seen there from `work/play/mem` states was stale VRAM (original-ROM states).
+  Character banners 1BFA943 1BFC919 1BFE551 (records 0x32-0x34): no immediate 0x32-0x34 reaches table 1B9A7F8 in
+  0x0803A000-0x08050C2C, not loaded by the room, its sub-states, memory win, slot win or slot lose (reslog): still
+  unlocated (crane win? story?).
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

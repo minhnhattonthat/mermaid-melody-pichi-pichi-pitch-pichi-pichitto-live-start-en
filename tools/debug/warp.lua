@@ -40,16 +40,20 @@ sc.expect = sc.expect or sc.id
 
 -- writes: "addr:val[:size][@delay]" separated by spaces ("-" = none); size 1 (default), 2 or 4; hex with 0x.
 -- @delay applies it that many frames after the warp (for screens that reset the value on init).
+-- "!0xPC" instead of @delay writes it each time code at PC runs (a choice the game reads right there: room hotspot).
 -- "$NAME" is replaced by the global NAME (--var MSG=1028), so one row serves many ids.
 local later = {}
 local function apply(ws, now)
   ws = ws:gsub("%$(%u+)", function(k) return tostring(_G[k] or error("scene needs --var " .. k)) end)
   for item in ws:gmatch("%S+") do
     if item ~= "-" then
-      local a, v, n, d = item:match("^([^:]+):([^:@]+):?(%d*)@?(%d*)$")
+      local a, v, n, d, pc = item:match("^([^:]+):([^:@!]+):?(%d*)@?(%d*)!?(%w*)$")
       if not a then error("bad write " .. item) end
       a, v, n, d = tonumber(a), tonumber(v), tonumber(n ~= "" and n or "1"), tonumber(d ~= "" and d or "0")
-      if d > 0 then later[#later + 1] = { at = now + d, a = a, v = v, n = n } else wr(a, v, n) end
+      if pc ~= "" then
+        pc = tonumber(pc)
+        L.on_exec(pc, pc, function() wr(a, v, n) end)
+      elseif d > 0 then later[#later + 1] = { at = now + d, a = a, v = v, n = n } else wr(a, v, n) end
     end
   end
 end
