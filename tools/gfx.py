@@ -143,10 +143,14 @@ def edited_blocks(rom):
     return out
 
 
-def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lead=12):
+def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lead=12, shadow=None, gap=1):
     """Draw lines centred in box = (x0, y0, x1, y1) with the dialogue font (fonts/en12.txt): core pixels plus a bold
-    column, ink `fill` (`top` for the first `top_rows` core rows), and a 1 px `outline` ring (8-neighbour).
-    lead = px from one line's core top to the next. Raises if a line is wider than the box."""
+    column, ink `fill` (`top` for the first `top_rows` core rows), and a 1 px `outline` ring (8-neighbour); a list
+    of indices draws one ring per entry, innermost first. shadow = (index, dx, dy): the inked shape again, offset,
+    under the text. gap = px between letters. lead = px from one line's core top to the next. Raises if a line is
+    wider than the box (rings included)."""
+    rings = outline if isinstance(outline, list) else [outline]
+    pad = max(len(rings) - 1, 0)  # rings past the first need room inside the box
     import enfont
     font = {c: rows for c, rows in enfont.load()}
     x0, y0, x1, y1 = box
@@ -155,10 +159,10 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
     y = y0 + (y1 - y0 - total + 1) // 2 - 1
     ink = {}
     for ln in lines:
-        widths = [len(font[c][0]) + bold + 1 for c in ln]
-        w = sum(widths) - 1
-        if w > x1 - x0:
-            raise ValueError(f"{ln!r}: {w} px > box {x1 - x0}")
+        widths = [len(font[c][0]) + bold + gap for c in ln]
+        w = sum(widths) - gap
+        if w + 2 * pad > x1 - x0:
+            raise ValueError(f"{ln!r}: {w + 2 * pad} px > box {x1 - x0}")
         x = x0 + (x1 - x0 - w + 1) // 2
         for c, cw in zip(ln, widths):
             for r, row in enumerate(font[c]):
@@ -168,10 +172,16 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
                             ink[(x + i + dx, y + r)] = top if top is not None and r < top_rows else fill
             x += cw
         y += lead
-    for (px, py) in list(ink):
-        for dx in (-1, 0, 1):
-            for dy in (-1, 0, 1):
-                ink.setdefault((px + dx, py + dy), outline)
+    for ring in rings:
+        for (px, py) in list(ink):
+            for dx in (-1, 0, 1):
+                for dy in (-1, 0, 1):
+                    ink.setdefault((px + dx, py + dy), ring)
+    if shadow:
+        s, sx, sy = shadow
+        for (px, py) in list(ink):
+            if (px + sx, py + sy) not in ink and 0 <= py + sy < len(img) and 0 <= px + sx < len(img[0]):
+                img[py + sy][px + sx] = s
     for (px, py), v in ink.items():
         img[py][px] = v
     return img

@@ -1,0 +1,8 @@
+# main-menu mode labels: OBJ pal 1, two 64x32 sprites (tiles 768/776, 2D map) at y 51; one 0x800 stream of 16x4 tiles each
+# offset	size	layout	png	English	Japanese
+170D7EE	800x1	tiles16	gfx/out/modes/170D7EE.png	Solo Pitch	ひとりでピッチ
+170DBD3	800x1	tiles16	gfx/out/modes/170DBD3.png	Link Pitch	いっしょにピッチ
+170DFBA	800x1	tiles16	gfx/out/modes/170DFBA.png	Hippo Pitch	ヒッポでピッチ
+170E36E	800x1	tiles16	gfx/out/modes/170E36E.png	Your Pitch	あなたのピッチ
+170E757	800x1	tiles16	gfx/out/modes/170E757.png	Collect Pitch	あつめてピッチ
+170EB49	800x1	tiles16	gfx/out/modes/170EB49.png	Live Pitch	ライブでピッチ

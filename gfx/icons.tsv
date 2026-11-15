@@ -1,0 +1,3 @@
+# main-menu mode icons: OBJ pal 6 (in-game each icon has its own palette, same indices), 64x64 sprites from tile 0 (2D map)
+# offset	size	layout	png	English	Japanese
+170C1F2	800x6	tiles16	gfx/out/icons/170C1F2.png	Solo|Pitch, Link|Pitch, Hippo|Pitch, Your|Pitch, Collect|Pitch, Live|Pitch (tools/gfx_icons.py)	ひとりで/いっしょに/ヒッポで/あなたの/あつめて/ライブで ピッチ
