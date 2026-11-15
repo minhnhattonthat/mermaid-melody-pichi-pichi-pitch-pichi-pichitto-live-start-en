@@ -1,0 +1,40 @@
+# Graphics-sweep rows (docs/re/graphics_sweep.tsv, jp-text/mixed) with no gfx/*.tsv row of their own, and why.
+# tools/gfx_left.py lists rows in neither place (exit 1 if any). Kinds: chain (redrawn as part of another row's
+# chain), kept (a ruling keeps it Japanese), notext (no Japanese seen when read zoomed), unreached (no scene found).
+# offset	kind	reason
+171F78F	chain	inside 171EAB9 800x16 (groups names, cohead)
+17212DD	chain	inside 171EAB9 800x16 (groups names, cohead)
+1741079	chain	inside 17403F7 800x19 (group songs)
+1741389	chain	inside 17403F7 800x19 (group songs)
+17420A3	chain	inside 17403F7 800x19 (group songs)
+17426D4	chain	inside 17403F7 800x19 (group songs)
+1742B72	chain	inside 17403F7 800x19 (group songs)
+17430DC	chain	inside 17403F7 800x19 (group songs)
+17434B2	chain	inside 17403F7 800x19 (group songs)
+1743766	chain	inside 17403F7 800x19 (group songs)
+17439CC	chain	inside 17403F7 800x19 (group songs)
+1743CBB	chain	inside 17403F7 800x19 (group songs)
+1743F0B	chain	inside 17403F7 800x19 (group songs)
+179BEF6	chain	inside 179BC34 (group epnum; digits, 話 plate redrawn as EP)
+179C206	chain	inside 179BC34 (group epnum)
+179C571	chain	inside 179BC34 (group epnum)
+179C907	chain	inside 179BC34 (group epnum)
+179CC34	chain	inside 179BC34 (group epnum)
+179CFCD	chain	inside 179BC34 (group epnum)
+179D394	chain	inside 179BC34 (group epnum)
+179D7A5	chain	inside 179BC34 (group epnum)
+179DAB5	chain	inside 179BC34 (group epnum)
+179DE22	chain	inside 179BC34 (group epnum)
+1703236	kept	D16 title logo
+1CA6F51	kept	D16 title logo
+1C2D4F9	kept	D16 title logo
+1B6AFB2	kept	story wallpaper: series logo as a faded 64x16 repeat (status: Waiting on the user, non-blocking)
+170633B	notext	results atlas: bars, digits 0-9, icons; zoomed render work/qa/tri_1706b.png (session 19), results warp shows no kana
+1722E8B	notext	big digits + punctuation (record 48 of 16F6CC8); no scene loads it (reslog, every warp)
+187E260	notext	hex debug font 0-9A-F
+1EFF70B	notext	hex debug font 0-9A-F
+1D0B2A4	notext	card ranks A 2 3 4 5
+1721BEB	unreached	record 47 of 16F6CC8 (pill words かんたん ふつう..): no warp, room sub-state, minigame win or loss loads it (reslog, sessions 17-18); the live difficulty pills are group diff
+1BFA943	unreached	records 50-52 of 1B9A7F8: no immediate reaches them in 0x0803A000-0x08050C2C; not loaded by any warp, room sub-state, memory/slot win or loss (reslog, sessions 17-18)
+1BFC919	unreached	as 1BFA943
+1BFE551	unreached	as 1BFA943
