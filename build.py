@@ -19,6 +19,7 @@ import check_rom  # noqa: E402
 import enfont  # noqa: E402
 import gfx  # noqa: E402
 import gfx_eptitle  # noqa: E402
+import gfx_songs  # noqa: E402
 import marker  # noqa: E402
 import msgcodec  # noqa: E402
 import msgtable  # noqa: E402
@@ -54,6 +55,7 @@ def build(orig, lang="en", entries=None, log=None):
     stage("gfx", lambda: gfx.apply(rom))
     stage("names", lambda: names.apply(rom))
     stage("maps", lambda: gfx_eptitle.apply(rom))
+    stage("objs", lambda: gfx_songs.apply(rom))
     return bytes(rom)
 
 

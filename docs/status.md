@@ -2,7 +2,20 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 12, sha1 e0001e39; smoke ok, write log clean, check 39 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 13, sha1 f1a49141; smoke ok, write log clean, check 41 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-16, session 13):** all 12 Japanese song titles English (group `songs`,
+  `tools/gfx_songs.py`): the 19 titles are one chain 17403F7 800x19; their sprite lists (bank 0x1EFA714, format in
+  `docs/re/graphics.md` §Song titles) rewritten in place by new build stage `objs` (`gfx/songs.objs`). Checked in song
+  list (top + bottom, route `tools/routes/song_list_bottom.txt`) and song select (`work/qa/p8songs/sheet.png`). Hippo
+  song titles (17434B2..1743F0B) drawn but unseen (not in the fixture save's list). Triage renders of the other
+  remaining rows: `work/gfx/tri/` (sheet_055 1C047A6..1C078DE are BG prompt panels like 1C07510: need their maps,
+  i.e. reach the screens; 1C01D37..1C03D2A big kana lettering, unread).
+- **Remaining graphics rows (after session 13):** title logos 1703236 1CA6F51 1C2D4F9 (D5 + tour note say keep the
+  logo if no official English one: decide, record in decisions.md); results 170633B; 1721BEB 1722E8B (after the name
+  keyboard chain, unread); clear cut-ins 1813332 18170D4; minigame logos 1BF039E 1BF198F 1BF2D7E 1BF416C (design);
+  character banners 1BFA943 1BFC919 1BFE551; sheet_055 1C01D37..1C078DE (incl. prompt 1C0657A); poster 1CE3D71; card
+  collection 1CFDD65; おおあたり 1D02946; つづける 1D02DEB; story wallpaper 1B6AFB2 (kept, see Waiting). Digits rows,
+  187E260, 1EFF70B, 179BEF6..179DE22, 171F78F, 17212DD, 1D0B2A4, 1D0CA42: no redraw (drop).
 - **Phase 8 progress (2026-11-15, session 12):** minigame title panels English (group `minipanel`, all 4 pages
   checked `work/qa/p8mini/sheet.png`): their BG1 maps are run-stream records (1D250BA 1D2502C 1D25156), re-tiled by
   `tools/gfx_minigame.py` -> `gfx/minipanel.maps`, applied by build stage `maps` (any `gfx/*.maps`). Minigame logos

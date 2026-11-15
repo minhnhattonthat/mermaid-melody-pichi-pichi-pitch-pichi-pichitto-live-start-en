@@ -104,10 +104,21 @@ prompts, ending and credits, story scenes if any.
 - Group `songsel` (done): 173F4E9 high-score panel labels かんたん/ふつう/むずかしい -> Easy/Normal/Hard, 8 px rows,
   plain font; group `pills`: 173FE48 six 16x8 difficulty pills か ふ む / い き き -> E N H / U M R (no warp shows the
   pills yet). `tools/gfx_songsel.py`, checked in song_select / difficulty (`work/qa/p8ss`).
-- **Song titles (open):** 17403F7 1741079 1741389 17420A3 17426D4 1742B72 17430DC 17434B2 1743766 17439CC 1743CBB
-  1743F0B (800x1 each, 128x32: title line 1 at y 0-15, line 2 continues at y 16-31, ruby kana in the rest). The OBJ
-  list per title is data-driven, not a blank-tile scan: a test filling line 2 of 1742B72 showed only its first 40 px
-  (32x16 + 8x16), the original title width. Titles: Taiyou no Rakuen ~Promised Land~ (200 px), Daiji na Takarabako,
+- **Song titles (done, session 13, group `songs`, `tools/gfx_songs.py`, `tests/test_songs.py`):** all 19 titles are
+  ONE chain 17403F7 800x19 (the song list decodes it whole, so a title row written in place alone garbled every title
+  after it, English ones too: each chunk having its own pointer does not mean it is read alone). Sprite system: OAM
+  shadow 0x03001A98 (DMA at 0x08000624); 0x08008A74 draws an object: list = bank table 0x1D36F90[obj+0x1C] + obj+8;
+  list = u8 count, u8 flag, count x (u16 y<<6|shape<<2|flip<<4, u16 x<<6|size, u16 tile). Titles are bank 0x1EFA714
+  (entry 0); frame entries u8 + u16 offset (unaligned, 3 bytes) at 0x1EFEF2E. List per title (flag 0 / flag 1):
+  3350/3558 太陽, 33C8/35D0 大事, 33E8/35F0 恋, 3464/366C 世界, 34BA/36C2 夢, 34F4/36FC 黒, 352C/3734 オーロラ;
+  English titles 3388 33A8 3402 341C 3430 3444 34E6. Romaji (credits spelling) as one 16 px line in 32x16 pieces,
+  lists rewritten in place (`gfx/songs.objs`, build stage `objs`). Checked: `work/qa/p8songs/sheet.png` (list top,
+  list bottom, song select). Hippo songs 17434B2.. (ヒッポと.. / なにもないヨ!) are not in the song list with the
+  fixture save; their lists are among 3760 3788 37A8 37C2 37D6 (+B), all showing block x 0-95 of rows 0-15, so the
+  English is drawn there unchanged-list (unseen; may sit off-centre by up to 24 px).
+- Old notes (song titles, before session 13): 128x32 blocks: title line 1 at y 0-15, line 2 continues at y 16-31, ruby
+  kana in the rest. The OBJ list per title is data-driven, not a blank-tile scan: a test filling line 2 of 1742B72
+  showed only its first 40 px (32x16 + 8x16), the original title width. Titles: Taiyou no Rakuen ~Promised Land~ (200 px), Daiji na Takarabako,
   Koi wa Nan Darou, Sekai de Ichiban Hayaku Asa ga Kuru Basho, Yume no Sono Saki e, Kuro no Kyousoukyoku ~concerto~
   (168 px), Aurora no Kaze ni Notte, ヒッポと アルプス/すいか/おんがくか/カエル (Hippo and the Alps / Watermelon /
   the Musician / Frog), なにもないヨ! (Nothing here!). Romaji as in the credits (glossary). Byte/OAM-pattern searches

@@ -1,0 +1,7 @@
+# song titles (song list scene 32, song select; tools/gfx_songs.py): ONE chain of 19 titles, 128x32 each (image row
+# 32k = title k), OBJ pal 1 (song_list dump, palfix). Japanese titles -> romaji as in the credits; Hippo songs English:
+# 17403F7 太陽の楽園~Promised Land~ / 1741079 大事な宝箱 / 1741389 恋はなんだろう / 17420A3 世界で一番早く朝が来る場所 /
+# 17426D4 夢のその先へ / 1742B72 黒の協奏曲~concerto~ / 17430DC オーロラの風に乗って / 17434B2 ヒッポとアルプス /
+# 1743766 ヒッポとすいか / 17439CC ヒッポとおんがくか / 1743CBB ヒッポとカエル / 1743F0B なにもないヨ!
+# offset	size	layout	png	English	Japanese
+17403F7	800x19	tiles16	gfx/out/songs/chain.png	song titles (tools/gfx_songs.py TITLES)	曲名
