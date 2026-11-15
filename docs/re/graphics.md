@@ -173,5 +173,19 @@ prompts, ending and credits, story scenes if any.
   rewrites that chain in place (FORKS keyed by group, so the same offset has the fork and the in-place row).
   `gfx_obj.write` now resolves byte twins with a strided-load model first (VRAM t = base + k//tw*32 + k%tw), since
   the plain delta differs per VRAM row on such loads.
+- **Room sub-screens (session 10):** from the room warp state, `6 up;40 -;6 a` opens the minigame title (4 games,
+  left/right), `up` x3 + `a` the mascot picker (route in `work/qa/p8room`). Dumps (original ROM): `work/qa/ppu/minititle`
+  (page 1), `minititle2..4`, `mascot`. Group `roomsel` (done): 1CFC7D6 BG2 banner どのマスコットをおく? -> Place which
+  mascot? (`tools/gfx_roomsel.py`, checked in `work/qa/p8room/mascot_z.png`). Group `roombtn` (done, unseen: the save
+  owns no mascots): 1D0ADC0 slot buttons ひみつ★ / おかない / はらない -> Secret / No mascot / No poster. 1CE3D71 (poster
+  banner) has another map than the mascot one (composing it with the mascot map gives garbage): open until the poster
+  picker is reached (A on the wall did nothing with this save: probably needs an owned poster). 1CFDD65 (card
+  collection banner) likewise unreached.
+- **Minigame panels (parked):** 1C00CFF (pages 1-2) / 1C00403 (page 3) / 1C01554 (page 4), BG1 pal 10, map per page.
+  `tools/gfx_minigame.py` draws them (checker rebuilt by majority vote, coin kept), but the map dedups plain checker
+  tiles, so the text leaked onto every cell sharing a tile. `Layer.write` used to skip unchanged cells before its
+  sharing check and missed this; it now checks every cell (cards, solo, clear still pass). The map is not loaded by
+  kcomp (only tiles, `work/qa/kc_mt/log.txt`) and not raw in ROM: find its writer (watch VRAM 0x0600E800 on page load).
+  Logos of the four games: 1BF198F (くらべてピッチ) and likely 1BF039E 1BF2D7E 1BF416C; not started.
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

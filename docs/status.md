@@ -2,7 +2,15 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 9, sha1 a5437451; smoke ok, write log clean, check 37 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 10, sha1 8ca3833d; smoke ok, write log clean, check 37 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-15, session 10):** room sub-screens reached (routes + dumps in `docs/re/graphics.md`
+  §Room sub-screens). Groups `roomsel` (mascot banner -> Place which mascot?, checked) and `roombtn` (Secret / No
+  mascot / No poster, unseen) English, `tools/gfx_roomsel.py`. Minigame title panels drawn by `tools/gfx_minigame.py`
+  but PARKED (`gfx/minipanel.tsv` rows commented): their BG map shares checker tiles; find the map's source first.
+  Fixed `gfx_bg.Layer.write` missing tiles shared with unchanged cells. Remaining sweep rows (~90, list with
+  `docs/re/graphics_sweep.tsv` minus `gfx/*.tsv`): episode titles 18AF223.. (45, map source per episode unknown), song
+  titles (OBJ list table unknown), minigame logos/panels, title logo 1703236 (D5: official romanized logo exists ->
+  redraw), poster/card-collection banners (unreached), sheet_055 banners, 1813332/18170D4, 1C0657A.
 - **Phase 8 progress (2026-11-15, session 9):** name entry fully English: groups `names` (keyboard, a gfx.FORKS fork
   of the whole 16-stream chain 171EAB9 `800x16`; page 1 A-Z, page 2 a-z, digits/punct per `tools/names.py`),
   `nehead` (header Button / OK / A/a), `nametag` (opening-movie name tag なまえ -> Name), `tools/gfx_names.py`;

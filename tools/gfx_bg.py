@@ -80,7 +80,7 @@ class Layer:
         src = self.block_tiles(data)
         x0, y0, w, h = rect
         inside = {(x0 + i, y0 + j) for i in range(w) for j in range(h)}
-        done = {}
+        done, want = {}, {}
         for cx, cy in sorted(inside):
             t, hf, vf, _ = self.entry(cx, cy)
             px = [row[8 * (cx - x0):8 * (cx - x0) + 8] for row in img[8 * (cy - y0):8 * (cy - y0) + 8]]
@@ -88,6 +88,8 @@ class Layer:
                 px = px[::-1]
             if hf:
                 px = [r[::-1] for r in px]
+            if want.setdefault(t, px) != px:  # unchanged cells count too: a tile shared with an edited cell
+                raise SystemExit(f"cell {cx},{cy}: tile {t} is shared inside the rect with other pixels")
             if px == tile_px(self.vram, self.cb + t * 32):
                 continue
             k = src(t)

@@ -1,0 +1,3 @@
+# room picker slot buttons (OBJ, 64x24 at 0,0 / 64,0 / 0,24; tools/gfx_roomsel.py); pal = mascot OBJ pal 0 stand-in, palfixed
+# offset	size	layout	png	English	Japanese
+1D0ADC0	800x2	tiles16	gfx/out/roombtn/1D0ADC0.png	Secret / No mascot / No poster	ひみつ★ / おかない / はらない
