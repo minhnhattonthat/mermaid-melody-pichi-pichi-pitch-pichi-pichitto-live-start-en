@@ -6,6 +6,7 @@ gfx/hint.tsv 1D01FD9 (chain, OBJ tiles shared by every scene that shows it): A�
   button letter (x 0-10 of the 48x16 pair) stays, the word is redrawn pink (12) with a dark ring (4) and shadow (1).
   Edited through the room's sprites (OAM 4,3 and 2,1: tools/gfx_obj.py).
 gfx/prompt.tsv 1C07510 (BG1 of card_game, map cells 2-13 x 2-6): ゲームする? -> Play a game?, white (7), shadow 5.
+gfx/bonus.tsv 1D095BE: おまけムービー! banner (96x24 at 0,0: white 4 inside x 6-86 y 5-18) -> Bonus Movie! in gold 15.
     python -X utf8 tools/gfx_cards.py
 """
 import sys
@@ -72,9 +73,16 @@ def prompt(img, data, layout):
     L.write(img, data, rect, im, layout)
 
 
+def bonus(img, data, layout):
+    for y in range(5, 19):
+        img[y][6:87] = [4] * 81
+    fit(img, "Bonus Movie!", (6, 4, 87, 20), 15, [])
+
+
 def main():
     rom = next((gfx.ROOT / "rom").glob("*.gba")).read_bytes()
-    for group, fn in (("cardbtn", buttons), ("roombub", bubbles), ("hint", hints), ("prompt", prompt)):
+    for group, fn in (("cardbtn", buttons), ("roombub", bubbles), ("hint", hints), ("prompt", prompt),
+                      ("bonus", bonus)):
         (_, off, size, layout, png), = gfx.rows(group)
         data = gfx.decode(rom, off, size)[0]
         img = gfx.to_image(data, layout)

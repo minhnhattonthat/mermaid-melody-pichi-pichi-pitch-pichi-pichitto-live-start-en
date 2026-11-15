@@ -29,6 +29,23 @@ def test_layout_roundtrip():
 
 
 @needs_rom
+def test_no_pointerless_stream_after_a_row():
+    """A stream right after a row's chain with no pointer of its own is read as the chain's tail (179E33F behind the
+    episode numbers): a shorter in-place write would shift it, so the row must take it in (gfx/epnum.tsv)."""
+    import kcomp
+    rom = ROM.read_bytes()
+    for _, off, size, _, _ in gfx.rows():
+        end = gfx.decode(rom, off, size)[1]
+        if gfx.pointers(rom, end):
+            continue
+        try:
+            kcomp.decompress(rom, end, size[0])
+        except Exception:
+            continue
+        raise AssertionError(f"{off:X}: pointerless stream at {end:X} after the chain")
+
+
+@needs_rom
 def test_every_row_fits_its_slot_or_moves():
     rom = ROM.read_bytes()
     low = gfx.RELOC_TOP

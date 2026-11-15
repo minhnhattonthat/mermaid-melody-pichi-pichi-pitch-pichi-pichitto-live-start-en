@@ -34,3 +34,4 @@ references/graphics.md: a 0x800 kcomp chain can be panels (128x32 each) laid 2 a
 - references/emulator-qa.md: a PPU dump keeps BG control registers of layers DISPCNT has turned off, with stale VRAM behind them; read DISPCNT before picking a layer.
 - references/emulator-qa.md / graphics: a panelled OBJ atlas (obj16x4*N/2) keeps its sprites on 2D VRAM rows (row = tile // 32), not on the 32 px panels; gfx_where-style rects that assume 16-tile rows mislead there.
 - references/platform-gba.md: a sweep of resource tables can miss streams; logging the decoder entry (r0 dst, r1 src) with an exec hook (tools/lua/kcomplog.lua) finds the source of any VRAM tile in one run.
+- references/graphics.md: a run of compressed chunks can each have a pointer AND be read as one chain from the first (plus pointerless tail chunks); a shorter in-place re-encode of one chunk shifts the rest. Re-encode the whole run as one chain and repoint every chunk start.

@@ -1,0 +1,3 @@
+# room bonus-movie banner (room, OBJ, not shown in a warp yet): 96x24 white plate, gold text; pal from the room dump (OBJ pal 0), palfixed
+# offset	size	layout	png	English	Japanese
+1D095BE	800x2	tiles16	gfx/out/bonus/1D095BE.png	Bonus Movie! (tools/gfx_cards.py)	おまけムービー!

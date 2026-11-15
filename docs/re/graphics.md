@@ -126,7 +126,20 @@ prompts, ending and credits, story scenes if any.
   byte twins resolved by the VRAM - block delta). `tools/oamlist.py` lists sprites in a rect, `tools/objsrc.py` finds
   the swept block holding an OBJ tile. Open: 1C0657A (same frame tiles as 1C07510, another prompt, not seen yet);
   1D095BE おまけムービー! banner (room, unseen); 1D0B2A4 cards (no text: drop).
-- Read, not drawn yet (session 6): 179BC34 = the episode-select cursor OBJ (32x32, OAM 0 tile 4, pal 2; grid
+- **Relocation + chunk pointers (session 7):** `gfx.plan` moves a chain that outgrows its slot to just below
+  0x2000000 (0x00 padding; text fills upward from 0x1FE0200 and ends ~0x1FEA0A0) and repoints every 32-bit pointer
+  0x08000000|start (resource tables hold them unaligned, e.g. 16F6CC8 entries 5 bytes apart). Every chunk of a chain
+  whose start moves is repointed too: a chunk can have its own pointer. Gotcha met: 179BC34..179E1E1 each have a
+  pointer (episode cursor) but the grid reads the whole run as one chain, including pointerless 179E33F..179EFE4,
+  so shrinking one chunk in place garbled the grid. `tests/test_gfx.py` fails when a pointerless stream follows a row.
+- Group `epnum` (done): 179BC34 800x16 (cells 00-40, frames, tails): each cell's 話 plate -> "EP" (plain caps, pink 8 on
+  white), `tools/gfx_epnum.py`; checked in scene 25 (`work/qa/p8ep`: grid 01-39 clean, cursor 01 EP). Palette = pause
+  dump OBJ pal 0 (same ramp; scene 25 shows the locked grey fade).
+- Group `bonus` (done, unseen): 1D095BE おまけムービー! -> Bonus Movie! (`tools/gfx_cards.py`).
+- 1C0657A (open): second prompt panel, text つづけてあそぶ? (Keep playing?), frame tiles shared with 1C07510 but its own BG
+  map, which is not in ROM as raw u16s and not a kcomp block starting with it (`findmap.py`, a raw search of the
+  card_game map row): reach the screen (end of a minigame) and dump it, then reuse `gfx_cards.prompt`.
+- Read (session 6): 179BC34 = the episode-select cursor OBJ (32x32, OAM 0 tile 4, pal 2; grid
   numbers are separate 16x16 OBJs without 話): each cell is two digits plus a small 話 plate at x 14-31 y 18-30 that
   overlaps the right digit's foot (x 16-20 y 18-21) -> plan "EP" on the plate (en12 plain caps, 11x7 fits x 21-31);
   the dumped palette is the grey fade, so take a palette from a non-faded frame. 1B6AFB2 (story BG2) is the series

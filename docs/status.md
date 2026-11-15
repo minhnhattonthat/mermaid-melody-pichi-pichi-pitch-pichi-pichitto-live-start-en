@@ -2,7 +2,12 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba sha1 826f3b7b (2026-11-15 session 6; smoke ok, write log clean, check 34 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba sha1 28bed779 (2026-11-15 session 7; smoke ok, write log clean, check 35 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-15, session 7):** `gfx.apply` relocates chains that outgrow their slot (below
+  0x2000000) and repoints every moved chunk's pointers; new test: no pointerless stream may follow a row. Groups
+  `epnum` (179BC34 800x16: episode numbers 話 -> EP, grid + cursor checked in scene 25, `work/qa/p8ep`) and `bonus`
+  (1D095BE Bonus Movie!, unseen) English. 1C0657A つづけてあそぶ? needs its BG map (end of a minigame; notes in
+  `docs/re/graphics.md`).
 - **Phase 8 progress (2026-11-15, session 6):** room + card-game graphics English (`tools/gfx_cards.py`: buttons
   Play/Yes/Quit/No 1D031F4, room bubbles 1D09C87, top-right hints A OK / B Quit 1D01FD9, prompt Play a game? 1C07510),
   checked in warps room / card_game (`work/qa/p8cards`). New helpers: `tools/gfx_obj.py` (sprite compose/write-back,
@@ -42,8 +47,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Phase 7 (2026-11-15): build green: `batches.py check` 0 problems (control codes matched), fit lint 0 errors / 78 guess warnings, `tools/check.py` 31 passed. Every build writes `<out>.writes.log` (per stage: text, boxes, vwf); `tools/writelog.py` = romdiff (orig bytes, overlap, no unlogged change) + each stage only in its zones (`tests/test_writelog.py`). Debug menu units 0040/0110 keep Japanese (D13, status keep-jp): that menu draws with the original font, verified in a shot.
 - **Next (phase 8):**
   1. QA tour per `references/emulator-qa.md`: warp to every scene (`tools/debug/regen.py build/mermaid_en.gba`), story EP 1-39 with `--mash`, contact sheets, visual-QA verdicts (do them as an independent read-only pass: codex via `tools/codex_review.sh`), `qa_gate.py check` exit 0; `inkbox.py` on choice/centred menus; `textcover.py` from `tools/lua/msglog.lua`.
-  2. Graphics text (session 6 adds `cardbtn` `roombub` `hint` `prompt`; drop 1D031F4 1D09C87 1C07510 1D0B2A4 from the
-     list; next: 179BC34 "EP" plate, 1C0657A second prompt, 1D095BE bonus-movie banner, then the list below):
+  2. Graphics text (session 6 adds `cardbtn` `roombub` `hint` `prompt`, session 7 `epnum` `bonus`; drop 1D031F4
+     1D09C87 1C07510 1D0B2A4 179BC34..179DE22 1D095BE from the list; 1C0657A waits for a minigame-end warp; next:
+     1F0CEC0 なまえ (link_check), name entry 171EAB9 171F78F 17212DD 179B69F, then the list below):
      `menu`, `modes`, `icons`, `diff`, `btn`, `score` done (docs/re/graphics.md §Redraws). `btn`, `score`, `draw`, `winlose`, `gameover`, `solo`, 1F5ABD8, `options`, `songsel`, `pills`, `clear` done too (so drop 1723EBE, 173F4E9, 173FE48, 180F0F8 from the list below). BG-mapped screens (options, story, results, episode grid): use `tools/gfx_bg.py` like `tools/gfx_solo.py`. Next by screen from `work/gfx/scenes.tsv` (session-4 list above first): 1F0CEC0 なまえ; find the screens of 1F0DA41/1F0E3F7 (resource table 1EFF434), 1F12431/1F12CBD and 1F5ABD8 (1F56AB0 entry 58) and add warps; 1F0F059 pills + framed labels (see graphics.md) once a scene showing them is found; 1EFF70B (mixed, loaded by most scenes); song select labels 173F4E9 173FE48 1BF7155; mode carousel 1BF5582 1BF8856; song titles 17403F7..1743F0B (song_list); result banner 170633B; options 1723EBE; name entry 171EAB9 171F78F 17212DD 179B69F; room/card game 1D0xxxx 1C0657A 1C07510; clear 180F0F8; game over 174AB9D; story 1B6AFB2; episode grid numbers 179BC34..179DE22; then the 83 rows no warp loaded (episode titles, banners sheet_055). Then the remaining rows of `docs/re/graphics_sweep.tsv` (~145 jp/mixed blocks) by screen. Large static sets fit parallel `translate-retro-game:graphics` agents (`docs/graphics-brief.md` from the skill's assets, `work/gfx/<group>.txt`): episode-title strips 0x18AF223-0x18BFC9C (~45 rows), character banners sheet_055. Many sweep sizes 0x1018/0x103E are 0x800 chains (`800x2`): re-check each row's chain before drawing. Then zoomed cold-boot shots.
   3. Check in game: A44E/FC29/459A "Love Love Shower Pitch" with FD codes; 9D2D poem furigana codes kept with empty readings; credits pages (0859 0962 0A62 0B06 0C0F) got `{FA:06}` between songs: does the credits screen page?; 0B06 arranger glyph Ⓒ guess written "(C)"; profiles' "[Name]" header line.
   4. Units with a guess budget (78 warnings) warn only: confirm their boxes in the tour.
