@@ -9,6 +9,13 @@
 - **Strings**: one byte per character = glyph index in the frequency-ordered font below; `FF` ends a string.
   Range 0x18629DE..0x1872DD3 (last string end), 47,702 bytes of codes, then zeros. 2413 of 2473 offsets ascending.
   **verified** (decoded the link-check string glyph by glyph against the screen).
+- **Layout** (phase 3 scan): 1545 distinct offsets for 2474 ids (929 ids share an offset); text data ends
+  0x1872DD4, zero pad to 0x1872DE0. Scanning to the next FF from each sorted offset misses the next offset 310 times
+  (FF as a control argument, e.g. `07 FF FA FF`; bytes no id reaches, e.g. 0x00..0x24): FF alone does not bound a
+  string. The only 32-bit ROM literals into 0x1860CE0..0x1872DE0 sitting in code are the table and base (7 + 13 uses
+  in 0x5B58..0x7A88); other hits are in graphics data. So strings can be repacked or moved anywhere if the table
+  follows. **verified**: `build.py` repacks by table segments (`tools/msgtable.py`) and the output equals the dump
+  (`tests/test_identity.py`).
 - **Control codes / escapes**: all byte values 00-FE occur. Byte frequency falls with the code (font is frequency
   sorted) except E7 (166), F0 (53), F1 (307), F6 (18), F7 (249), F8 (1980), FA (720), FD (65), FE (1438): these are
   control codes and/or 2-byte prefixes for glyphs above 0xFF (font has ~1100 glyphs). **guess**; phase 4 must read
