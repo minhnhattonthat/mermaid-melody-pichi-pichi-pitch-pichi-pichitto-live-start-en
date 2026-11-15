@@ -16,3 +16,4 @@ All of D1-D7 came from the owner's standing answers injected into the one-shot r
 | D6 | 2026-11-15 | Specs and plans | need approval, pre-approved | Pre-approved: keep going through every checkpoint, report at the end. |
 | D7 | 2026-11-15 | Existing saves / savestates | user's saves, none | None provided; build the debug tool as usual. |
 | D8 | 2026-11-15 | Release / visibility | — | Never run `gh release create` or change repo visibility; the run ends at a built and verified release zip. |
+| D9 | 2026-11-15 | English font (agent default under D4/D6) | existing 12 px Latin glyphs at 12 px pitch; half-width 8 px mode; new proportional font + VWF | New hand-drawn proportional font with a VWF hook: ~38 chars per 216 px line vs 18 Japanese, so no abbreviation and boxes roughly keep their size; story bubbles grow per message in the build. |

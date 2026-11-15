@@ -46,6 +46,8 @@ def run(rom, name, route, a):
            "--shot-every", "60", "--state-out", str(Path(a.states).resolve() / f"{name}.mss"), "--timeout", "400"]
     for v in DEFAULT_VARS + a.var:
         cmd += ["--var", v]
+    for s in a.script:
+        cmd += ["--script", str(Path(s).resolve())]
     p = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     log = (out / "log.txt").read_text(encoding="utf-8", errors="replace") if (out / "log.txt").exists() else ""
     ok = p.returncode == 0 and "ARRIVED" in log
@@ -65,6 +67,7 @@ def main():
     ap.add_argument("--sav", default=str(ROOT / "work/saves/default.sav"))
     ap.add_argument("--settle", type=int, default=240, help="frames after the route before the shot")
     ap.add_argument("--var", action="append", default=[])
+    ap.add_argument("--script", action="append", default=[], help="extra Lua probe, e.g. tools/lua/boxlog.lua")
     a = ap.parse_args()
     if not Path(a.sav).exists():
         sys.exit(f"missing save fixture {a.sav}: run tools/debug/make_save.py first")

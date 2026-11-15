@@ -134,24 +134,43 @@ def encode(text, table):
     return bytes(out), fix
 
 
-def pack(rom, entries, table, lang="jp"):
-    """Write entries (address order: id, ids, text in `lang`, falling back to jp) back to back from BASE and
-    rebuild the message table and every text pointer inside the bytecode."""
-    blobs, pos, p = [], {}, 0
+TERMINATED = re.compile(r"(\{end\}|\{goto:@\w+\})$")
+
+
+def pack(rom, entries, table, lang="jp", regions=((BASE, END),), fallback=None):
+    """Write entries (address order: id, ids, text in `lang` encoded with `table`, else jp with `fallback`) into
+    `regions` (file offsets >= BASE, filled in order) and rebuild the message table and every text pointer inside
+    the bytecode. A unit with no terminator falls through to the next one, so such runs stay in one region.
+    The first region is zero-filled after its text (as in the original); later regions keep their other bytes."""
+    fallback = fallback or table
+    chains, cur = [], []
     for e in entries:
-        text = e.get(lang) or e["jp"]
-        b, fix = encode(text, table)
-        pos[e["id"]] = p
-        blobs.append((b, fix))
-        p += len(b)
-    if BASE + p > END:
-        raise ValueError(f"text overflows its region by {BASE + p - END} bytes")
-    data = bytearray()
-    for b, fix in blobs:
-        b = bytearray(b)
-        for q, t in fix:
-            b[q:q + 3] = pos[t].to_bytes(3, "little")
-        data += b
+        text = e.get(lang)
+        b, fix = encode(text, table) if text else encode(e["jp"], fallback)
+        cur.append((e["id"], b, fix))
+        if TERMINATED.search(text or e["jp"]):
+            chains.append(cur)
+            cur = []
+    if cur:
+        chains.append(cur)
+    pos, used, ri = {}, [0] * len(regions), 0
+    for ch in chains:
+        size = sum(len(b) for _, b, _ in ch)
+        while regions[ri][0] + used[ri] + size > regions[ri][1]:
+            ri += 1
+            if ri == len(regions):
+                raise ValueError(f"text overflows its regions ({size} bytes left to place)")
+        for uid, b, _ in ch:
+            pos[uid] = regions[ri][0] + used[ri] - BASE
+            used[ri] += len(b)
+    lo, hi = regions[0]
+    rom[lo + used[0]:hi] = bytes(hi - lo - used[0])
+    for ch in chains:
+        for uid, b, fix in ch:
+            b = bytearray(b)
+            for q, t in fix:
+                b[q:q + 3] = pos[t].to_bytes(3, "little")
+            rom[BASE + pos[uid]:BASE + pos[uid] + len(b)] = b
     offs = [None] * N
     for e in entries:
         for i in e["ids"]:
@@ -160,7 +179,6 @@ def pack(rom, entries, table, lang="jp"):
     if missing:
         raise ValueError(f"message ids with no unit: {missing[:10]}")
     rom[TAB:TAB + 3 * N] = b"".join(o.to_bytes(3, "little") for o in offs)
-    rom[BASE:END] = bytes(data) + bytes(END - BASE - len(data))
 
 
 def load_script():

@@ -4,6 +4,8 @@ local from, to = FROM or 0, TO or math.huge
 L.on_exec(CALL, CALL, function()
   if L.frame < from or L.frame > to then return end
   local s = emu.getState()
-  L.log(string.format("f%d r0=%08X r1=%08X r2=%08X r3=%08X lr=%08X", L.frame, s["cpu.r0"] or -1, s["cpu.r1"] or -1,
-    s["cpu.r2"] or -1, s["cpu.r3"] or -1, s["cpu.r14"] or -1))
+  local sp, m = s["cpu.r13"], emu.memType.gbaMemory
+  L.log(string.format("f%d r0=%08X r1=%08X r2=%08X r3=%08X lr=%08X sp0=%X sp4=%X sp8=%X", L.frame, s["cpu.r0"] or -1,
+    s["cpu.r1"] or -1, s["cpu.r2"] or -1, s["cpu.r3"] or -1, s["cpu.r14"] or -1, emu.read32(sp, m), emu.read32(sp + 4, m),
+    emu.read32(sp + 8, m)))
 end)
