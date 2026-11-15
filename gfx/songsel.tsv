@@ -1,0 +1,3 @@
+# song-select high-score panel (song_select / difficulty: OBJ pal 3); pal fixed with tools/palfix.py
+# offset	size	layout	png	English	Japanese
+173F4E9	800x1	tiles16	gfx/out/songsel/173F4E9.png	Easy / Normal / Hard (tools/gfx_songsel.py)	かんたん / ふつう / むずかしい

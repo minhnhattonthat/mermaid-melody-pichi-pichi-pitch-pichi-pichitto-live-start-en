@@ -16,10 +16,10 @@ import gfx  # noqa: E402
 from gfx_winlose import ring  # noqa: E402
 
 
-def mask(word, sx, sy, gap=1):
-    """Ink of `word` in the dialogue font (bold), scaled sx by sy, top-left at 0 -> (set of (x, y), w, h)."""
+def mask(word, sx, sy, gap=1, bold=True):
+    """Ink of `word` in the dialogue font, scaled sx by sy, top-left at 0 -> (set of (x, y), w, h)."""
     small = [[0] * 128 for _ in range(16)]
-    gfx.typeset(small, [word], (0, 0, 128, 16), fill=1, outline=[], bold=True, gap=gap)
+    gfx.typeset(small, [word], (0, 0, 128, 16), fill=1, outline=[], bold=bold, gap=gap)
     pts = {(x, y) for y in range(16) for x in range(128) if small[y][x]}
     x0, y0 = min(p[0] for p in pts), min(p[1] for p in pts)
     w, h = max(p[0] for p in pts) - x0 + 1, max(p[1] for p in pts) - y0 + 1
