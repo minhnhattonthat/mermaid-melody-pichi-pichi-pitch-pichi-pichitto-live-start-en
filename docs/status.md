@@ -2,13 +2,17 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 10, sha1 8ca3833d; smoke ok, write log clean, check 37 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 11, sha1 ad9c2669; smoke ok, write log clean, check 39 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-15, session 11):** all 40 episode titles English (group `eptitle`, build stage `maps`:
+  the per-episode BG1 map records at 0x1881720 decoded and rewritten to one 24x5 rect; `docs/re/graphics.md`
+  §eptitle). `nomosaic.lua` fixed (shadow 0x030000B0). New `tools/lua/execlog.lua`. Digits-only sweep rows
+  (1F0857E 1F0B17B 1F11200..1F11FD4 1D0CA42) and 179BEF6..179DE22 (inside the `epnum` chain) need no redraw.
 - **Phase 8 progress (2026-11-15, session 10):** room sub-screens reached (routes + dumps in `docs/re/graphics.md`
   §Room sub-screens). Groups `roomsel` (mascot banner -> Place which mascot?, checked) and `roombtn` (Secret / No
   mascot / No poster, unseen) English, `tools/gfx_roomsel.py`. Minigame title panels drawn by `tools/gfx_minigame.py`
   but PARKED (`gfx/minipanel.tsv` rows commented): their BG map shares checker tiles; find the map's source first.
-  Fixed `gfx_bg.Layer.write` missing tiles shared with unchanged cells. Remaining sweep rows (~90, list with
-  `docs/re/graphics_sweep.tsv` minus `gfx/*.tsv`): episode titles 18AF223.. (45, map source per episode unknown), song
+  Fixed `gfx_bg.Layer.write` missing tiles shared with unchanged cells. Remaining sweep rows (~40 after session 11,
+  list with `docs/re/graphics_sweep.tsv` minus `gfx/*.tsv`): song
   titles (OBJ list table unknown), minigame logos/panels, title logo 1703236 (D5: official romanized logo exists ->
   redraw), poster/card-collection banners (unreached), sheet_055 banners, 1813332/18170D4, 1C0657A.
 - **Phase 8 progress (2026-11-15, session 9):** name entry fully English: groups `names` (keyboard, a gfx.FORKS fork

@@ -1,0 +1,45 @@
+# episode-grid titles (scene 25, BG1 pal 12): 40 chains of two 0x800 streams, blank tile 0 + the title's tiles in
+# map order; the cells each title owns are in gfx/eptitle.cells (tools/gfx_eptitle.py maps). The English goes in the
+# largest rectangle of cells with unrepeated tiles; furigana and the rest are cleared. Pal: synthetic (the grid only
+# shows titles greyed/mosaicked in the fixture save), indices keep the original roles: 1 body, 7 / 4 edge rings.
+# offset	size	layout	png	English	Japanese
+18AF223	800x2	tiles16	gfx/out/eptitle/18AF223.png	Tears of a Pearl	真珠の涙
+18AF8BB	800x2	tiles16	gfx/out/eptitle/18AF8BB.png	The Unspoken Heart	言えない心
+18AFEAD	800x2	tiles16	gfx/out/eptitle/18AFEAD.png	Wavering Feelings	ゆれる想い
+18B0475	800x2	tiles16	gfx/out/eptitle/18B0475.png	The Lonely Princess	孤独な王女
+18B0B76	800x2	tiles16	gfx/out/eptitle/18B0B76.png	A Cold Kiss	冷たいキス
+18B10EA	800x2	tiles16	gfx/out/eptitle/18B10EA.png	The Flame of Love	愛の灯火
+18B170D	800x2	tiles16	gfx/out/eptitle/18B170D.png	Mermaid Jealousy	人魚の嫉妬 (マーメイドのジェラシー)
+18B1EF9	800x2	tiles16	gfx/out/eptitle/18B1EF9.png	Frozen Feelings	凍った気持
+18B25BF	800x2	tiles16	gfx/out/eptitle/18B25BF.png	The Stolen Melody	盗まれた曲 (メロディー)
+18B2CFE	800x2	tiles16	gfx/out/eptitle/18B2CFE.png	Shadows of the Past	過去の面影
+18B3518	800x2	tiles16	gfx/out/eptitle/18B3518.png	The Wishing Ring	願いの指輪
+18B3C7A	800x2	tiles16	gfx/out/eptitle/18B3C7A.png	Hearts Drifting Apart	すれ違う心
+18B432F	800x2	tiles16	gfx/out/eptitle/18B432F.png	The Mermaid Ritual	人魚の儀式 (マーメイドのぎしき)
+18B4A81	800x2	tiles16	gfx/out/eptitle/18B4A81.png	Memories of a Starry Sky	星空の記憶
+18B52CC	800x2	tiles16	gfx/out/eptitle/18B52CC.png	A Promise on the Beach	渚の約束
+18B599B	800x2	tiles16	gfx/out/eptitle/18B599B.png	Hidden Feelings	秘めた想い
+18B6067	800x2	tiles16	gfx/out/eptitle/18B6067.png	A Gentle Kiss	優しいキス
+18B652F	800x2	tiles16	gfx/out/eptitle/18B652F.png	The Little Visitor	幼い訪問者
+18B6D38	800x2	tiles16	gfx/out/eptitle/18B6D38.png	Summer Temptation	夏の誘惑
+18B742C	800x2	tiles16	gfx/out/eptitle/18B742C.png	A Love Letter from the Sea	海から恋文 (ラブレター)
+18B7B3B	800x2	tiles16	gfx/out/eptitle/18B7B3B.png	A Little First Love	小さな初恋
+18B8200	800x2	tiles16	gfx/out/eptitle/18B8200.png	The Bewitching Girl	幻惑の少女
+18B8987	800x2	tiles16	gfx/out/eptitle/18B8987.png	A Touch of Love Fever	恋の微熱
+18B901B	800x2	tiles16	gfx/out/eptitle/18B901B.png	Dreams of Being a Bride	夢は花嫁
+18B96C1	800x2	tiles16	gfx/out/eptitle/18B96C1.png	The Moonlit Boy	月光の少年
+18B9D70	800x2	tiles16	gfx/out/eptitle/18B9D70.png	Karen's Song	かれんの唄
+18BA33B	800x2	tiles16	gfx/out/eptitle/18BA33B.png	A Believing Heart	信じる心
+18BA8A2	800x2	tiles16	gfx/out/eptitle/18BA8A2.png	Bonds	KIZUNA (きずな)
+18BADB9	800x2	tiles16	gfx/out/eptitle/18BADB9.png	The Masked Confession	仮面の告白
+18BB50D	800x2	tiles16	gfx/out/eptitle/18BB50D.png	Eyes of Ice	氷の瞳
+18BBA84	800x2	tiles16	gfx/out/eptitle/18BBA84.png	A Dangerous Trap	危険な罠
+18BC238	800x2	tiles16	gfx/out/eptitle/18BC238.png	Love Is the Color of Dreams	恋は夢色
+18BC99A	800x2	tiles16	gfx/out/eptitle/18BC99A.png	Amusement Park Panic	遊園地騒動 (ゆうえんちパニック)
+18BD33E	800x2	tiles16	gfx/out/eptitle/18BD33E.png	Auri's Day	アウリの日
+18BD85C	800x2	tiles16	gfx/out/eptitle/18BD85C.png	Melody of Sorrow	悲しみの曲 (メロディー)
+18BDFE2	800x2	tiles16	gfx/out/eptitle/18BDFE2.png	Beloved Baby	愛のベビー (いとしの)
+18BE5FE	800x2	tiles16	gfx/out/eptitle/18BE5FE.png	The Talk of the Town	噂の二人
+18BEC09	800x2	tiles16	gfx/out/eptitle/18BEC09.png	A Christmas Gift	聖夜の贈物 (クリスマスのおくりもの)
+18BF601	800x2	tiles16	gfx/out/eptitle/18BF601.png	Panic in Pearl Piari	P in P (パニック イン パールピアリ)
+18BFC9C	800x2	tiles16	gfx/out/eptitle/18BFC9C.png	Bonus ♥	おまけ♥

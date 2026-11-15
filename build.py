@@ -18,6 +18,7 @@ import boxes  # noqa: E402
 import check_rom  # noqa: E402
 import enfont  # noqa: E402
 import gfx  # noqa: E402
+import gfx_eptitle  # noqa: E402
 import marker  # noqa: E402
 import msgcodec  # noqa: E402
 import msgtable  # noqa: E402
@@ -52,6 +53,7 @@ def build(orig, lang="en", entries=None, log=None):
     stage("vwf", lambda: vwf.apply(rom))
     stage("gfx", lambda: gfx.apply(rom))
     stage("names", lambda: names.apply(rom))
+    stage("maps", lambda: gfx_eptitle.apply(rom))
     return bytes(rom)
 
 

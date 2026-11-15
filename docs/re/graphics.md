@@ -145,10 +145,17 @@ prompts, ending and credits, story scenes if any.
   the dumped palette is the grey fade, so take a palette from a non-faded frame. 1B6AFB2 (story BG2) is the series
   logo ぴちぴちピッチ tiled as a 64x16 wallpaper, many cell palettes: kept for now (see status). 170633B (results)
   showed only bars, numerals and icons in the warp: re-check its "small kana labels" after a real song.
-- Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
-  (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
-  (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
-  title text inside the block still unread; the map is per episode (find its source before redrawing).
+- Group `eptitle` (done, session 11, `tools/gfx_eptitle.py`, `tests/test_eptitle.py`): 40 episode titles 18AF223..
+  18BFC9C (800x2 each, blank tile 0 + the title's tiles; BG1 char 0x100+, pal 12, scene 25, cursor moves load the
+  next). The BG1 map of title N is a record at u16 table 0x1881720 entry N (offset from the table; entry 0 = another
+  screen): 5-byte header, then a stream that fills 1024 cells: byte < 0x80 = BE u16 literal (flips in the high byte),
+  0x80|n = n+1 cells of last+1, 0xC0|n = n+1 repeats of last (writer: 0x08001FFC.., IWRAM fill 0x03000BF0). Our
+  encoder reproduces all 40 records byte for byte. Build stage `maps` rewrites every record in place to one 24x5 cell
+  rect at (3,8) (44 bytes; smallest old record 54; the rest is never read: decoding stops at 1024 cells), and each
+  title is redrawn as one 2x-tall en12 line in it (roles kept: 1 body, 7/4 edge rings). The fixture save shows every
+  title greyed + mosaicked (locked): `tools/lua/nomosaic.lua` now zeroes the mosaic shadow 0x030000B0 before the
+  VBlank copy (0x08000B6C), which works. Checked: `work/qa/p8ept2/zc.png` (title 2). Unlocked colours not seen.
+  `tools/lua/execlog.lua` logs registers at a PC (found the map stream via r7/r12 of the fill calls).
 - **Name entry (session 8, read, not drawn yet):** the kana keyboard is OBJ pal 0 sprites (OAM 14-~60, tiles 0-210)
   from 171EAB9 (800x4), loaded as table 16F6CC8 record 39 (0x27) by the name screen (0x08010C44, table literal at
   0x08010E10, read only by the ldr at 0x08010C3A; r8 keeps it for record 0x76 = 179B69F header) AND by compose
