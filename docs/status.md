@@ -23,8 +23,8 @@ phase 8: graphics redraws, see `git log` and `docs/re/graphics.md` §Redraws).
   New probes: `tools/lua/objlog.lua` (text object fields), `pathlog.lua` (VWF/orig/8 px path per glyph),
   `tilepool.lua` (pool use); `msglog.lua` lines now carry flags/sp/W/H.
 - **Next (phase 8):**
-  1. Full tour of build e27acfa6 was started into `work/qa/tour3` (`tools/tour.py build/mermaid_en.gba --out
-     work/qa/tour3`; if `work/qa/tour3.log` has no "episodes 39/39" line, run it again). Then:
+  1. Full tour of build e27acfa6 done: `work/qa/tour3` (53/53 scenes, 39/39 episodes, 393 sheets; text coverage
+     872/1591 units from its logs). The old run's 49 verdict files in `work/qa/verdicts/` are for the old tour. Then:
      `python -X utf8 $SKILL/scripts/qa_gate.py init work/qa/manifest.tsv work/qa/tour3/sheets --build
      build/mermaid_en.gba --glob "sheet*.png"`, clear `work/qa/verdicts/` (old tour), `qa_gate.py todo
      work/qa/manifest.tsv work/qa/verdicts --size 8 --out-dir work/qa/chunks`, `sh tools/codex_vqa.sh work/qa/chunks 4`
