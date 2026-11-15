@@ -1,156 +1,65 @@
 # Status
 
-Updated at the end of every session. Keep it to what the next session needs; history is in git.
+Updated at the end of every session. Keep it to what the next session needs; history is in git (sessions 1-18 of
+phase 8: graphics redraws, see `git log` and `docs/re/graphics.md` §Redraws).
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 18, sha1 693fb2f8; smoke ok, write log clean, check 42 passed); marker build `build.py --marker --out build/marker.gba`.
-- **Phase 8 progress (2026-11-16, session 18):** poster picker and card collection reached (room state machine
-  0x03003DFC, hotspot forced at its A read; warps `poster`, `card_coll`; warp.lua writes take `!0xPC`) and their
-  banners English: groups `poster` 1CE3D71 Which poster?, `cardcoll` 1CFDD65 ★Card Collection★ (checked
-  `work/qa/p8banners.png`). Memory-game win forced (warp `memory_win`): Hooray! / Stop it wherever you like! / Got it!
-  checked from cold boot, so drop 1C01D37 1C03D2A 1C06EBF 1CE3D71 1CFDD65. Slot game win/lose mapped. Character
-  banners 1BFA943.. still unlocated (not in room, memory or slot wins). Notes `docs/re/graphics.md` §Room state
-  machine, §Minigames. New probes `tools/lua/smlog.lua`, `tools/lua/poke.lua`.
-- **Phase 8 progress (2026-11-16, session 17):** sheet_055 big words matched to their BG1 map records by tile count
-  (a block's last used tile = the record's max index): `getto` 1C01D37 ゲット! -> Got it! (record 1D251F3), `yatta`
-  1C03D2A やったね -> Hooray! (1D2539F), panel `stop` 1C06EBF すきなところでとめてね! -> Stop it wherever you like!
-  (1D25791), all in `tools/gfx_cards.py`, previewed from the maps, screens not reached (crane / memory win?). Stage
-  `maps` now moves a record that grows to `MAP_RELOC` 0x1FF0000 and repoints its pointer at record - 6
-  (`gfx_eptitle.placed`); proven by moving zannen's record in a scratch ROM with the old stream wiped: Too bad! still
-  drew. Drop 1C01D37 1C03D2A 1C06EBF. Loader leads for the unreached rows (1721BEB 1722E8B banners poster card
-  collection): `docs/re/graphics.md` §Unreached rows, loaders. Next: find their scenes from those loaders, add warps,
-  redraw; minigame logos (design); then the full tour.
-- **Phase 8 progress (2026-11-16, session 16):** clear cut-ins 1813332 / 18170D4 English (よくがんばりましたね -> You
-  worked hard!, `tools/gfx_clear.py` `rainbow`, checked `work/qa/p8clr12.png`; warp SCENE_ID=39 WRITES
-  0x0202FA0D:<1|2>). New build stage `raw` (`gfx/*.raw`, in-place rows; `gfx/clear.raw` rewrites two BG3 map records to
-  move light-palette cells). Map format notes in `docs/re/graphics.md` §clear. Next: the remaining rows below
-  (drop 1813332 18170D4).
-- **Phase 8 progress (2026-11-16, session 15):** minigame prompt panels English (`tools/gfx_cards.py` PANELS, notes
-  `docs/re/graphics.md` §Minigame prompt panels): `memo` 1C05A1E Match the same pictures! (checked `work/qa/p8memo`),
-  `crane` 1C05F03 Hold A to move, / let go to grab! (checked `work/qa/p8crane`), `guess` 1C047A6, `again` 1C0657A Keep
-  playing?, `nocoin` 1C06A00 Not enough coins! (these three drawn and previewed from the built ROM, not seen in game:
-  again needs a minigame win, nocoin coins < 100: find the coin RAM word). 1C06EBF: other frame, record not found.
-- **Phase 8 progress (2026-11-16, session 14):** card game (くらべてピッチ) fully English and checked in game
-  (`work/qa/p8hilo`, `work/qa/p8win`): groups `hilo` `cont` (buttons), `pick` `hilotxt` `conttxt` (BG1 prompt
-  panels), `zannen` (ざんねん -> Too bad!, 1C023B4, probably also the memory game's) and `atari` (あたり -> Right!),
-  all in `tools/gfx_cards.py`; their BG1 map records rewritten via `gfx/cards.maps` (notes `docs/re/graphics.md`
-  §Card game; new `gfx_minigame.retile_keep`). Title logos kept (D16): drop 1703236 1CA6F51 1C2D4F9. D17 wording.
-  Reach the card game: warp `--var SCENE_ID=15 --var "ROUTE_AFTER=[[120 -;6 a;200 -;6 a;200 -;...]]"` or play.py
-  session `work/play/cards` (step 0002 = higher/lower question). Memory game: `work/play/mem` (play.py, from
-  `work/states/minigame_2.mss`): panel おなじえをそろえてね。 (Match the same pictures!) shown at its start (done
-  session 15; was: likely 1C047A6/1C05A1E/1C05F03/1C06A00/1C06EBF; dump it from a step state on the original ROM:
-  `emu.py ROM --state-in work/play/mem/0008.mss --route-str ... --script ppudump.lua`, then `gfx_scenes.py` on a dir
-  holding only that dump (it overwrites `work/gfx/scenes.tsv`: copy `scenes_full.tsv` back after), find its map
-  record as in `docs/re/graphics.md` §Card game, add a `PANELS` row). Its win screen not reached yet (3 misses = lose).
-- **Phase 8 progress (2026-11-16, session 13):** all 12 Japanese song titles English (group `songs`,
-  `tools/gfx_songs.py`): the 19 titles are one chain 17403F7 800x19; their sprite lists (bank 0x1EFA714, format in
-  `docs/re/graphics.md` §Song titles) rewritten in place by new build stage `objs` (`gfx/songs.objs`). Checked in song
-  list (top + bottom, route `tools/routes/song_list_bottom.txt`) and song select (`work/qa/p8songs/sheet.png`). Hippo
-  song titles (17434B2..1743F0B) drawn but unseen (not in the fixture save's list). Triage renders of the other
-  remaining rows: `work/gfx/tri/` (sheet_055 1C047A6..1C078DE are BG prompt panels like 1C07510: need their maps,
-  i.e. reach the screens; 1C01D37..1C03D2A big kana lettering, unread).
-- **Remaining graphics rows (after session 18):** 170633B, 1721BEB/1722E8B, minigame logos, character banners
-  1BFA943 1BFC919 1BFE551 (try the crane-game win next: crane update 08043278, sub-state 0x03003CB5), story wallpaper
-  (kept). Suggest: stop hunting after one crane-win try; waive unreached rows with evidence and run the full QA tour
-  (Next 1), which is the bulk of the phase.
-- **Remaining graphics rows (after session 14):** results 170633B (needs a real song's results); 1721BEB (difficulty
-  pill words かんたん ふつう むずかしい いつもの きぶん.. + small kana) 1722E8B (big digits, maybe no text) after the
-  name keyboard chain, screen unknown; minigame logos 1BF039E 1BF198F (くらべてピッチ,
-  seen on the card game title) 1BF2D7E 1BF416C (design); character banners 1BFA943 1BFC919 1BFE551; sheet_055
-  1C01D37 1C03D2A (big lettering, other minigames' results?) 1C06EBF (prompt panel, other frame; the rest done in
-  session 15); poster 1CE3D71 (どのポスターをはる?); card collection 1CFDD65 (★カードコレクション★);
-  story wallpaper 1B6AFB2 (kept, see Waiting). Then the full QA tour + visual-QA verdicts (Next 1). Digits rows,
-  187E260, 1EFF70B, 179BEF6..179DE22, 171F78F, 17212DD, 1D0B2A4, 1D0CA42: no redraw (drop).
-- **Phase 8 progress (2026-11-15, session 12):** minigame title panels English (group `minipanel`, all 4 pages
-  checked `work/qa/p8mini/sheet.png`): their BG1 maps are run-stream records (1D250BA 1D2502C 1D25156), re-tiled by
-  `tools/gfx_minigame.py` -> `gfx/minipanel.maps`, applied by build stage `maps` (any `gfx/*.maps`). Minigame logos
-  1BF198F 1BF2D7E 1BF039E 1BF416C mapped (records, chains) but not drawn: need a design, notes in
-  `docs/re/graphics.md` §Minigame logos. Poster banner 1CE3D71 and prompt 1C0657A: same execlog trick once reached. A lost memory game
-  (minigame_2 state + right/a sweep route, `work/qa/mg2end`) shows ざんねん then goes straight back to the title, no
-  prompt: 1C0657A likely needs a win (find the result flag in RAM and force it, or add a debug warp).
-- **Phase 8 progress (2026-11-15, session 11):** all 40 episode titles English (group `eptitle`, build stage `maps`:
-  the per-episode BG1 map records at 0x1881720 decoded and rewritten to one 24x5 rect; `docs/re/graphics.md`
-  §eptitle). `nomosaic.lua` fixed (shadow 0x030000B0). New `tools/lua/execlog.lua`. Digits-only sweep rows
-  (1F0857E 1F0B17B 1F11200..1F11FD4 1D0CA42) and 179BEF6..179DE22 (inside the `epnum` chain) need no redraw.
-  **Lead for the parked maps** (minigame panels 1C00CFF.., prompt 1C0657A, poster banner 1CE3D71): their BG maps
-  are "not in ROM": likely the same run-stream format (`gfx_eptitle.decode_map`, writer 0x08001FFC): run
-  `tools/lua/execlog.lua --var PC_LO=0x03000BF0` while the screen loads; r12 = the record. Then give the text cells
-  unique tiles by rewriting the record (as `maps` does) instead of fighting shared checker tiles.
-- **Phase 8 progress (2026-11-15, session 10):** room sub-screens reached (routes + dumps in `docs/re/graphics.md`
-  §Room sub-screens). Groups `roomsel` (mascot banner -> Place which mascot?, checked) and `roombtn` (Secret / No
-  mascot / No poster, unseen) English, `tools/gfx_roomsel.py`. Minigame title panels drawn by `tools/gfx_minigame.py`
-  but PARKED (`gfx/minipanel.tsv` rows commented): their BG map shares checker tiles; find the map's source first.
-  Fixed `gfx_bg.Layer.write` missing tiles shared with unchanged cells. Remaining sweep rows (~40 after session 11,
-  list with `docs/re/graphics_sweep.tsv` minus `gfx/*.tsv`): song
-  titles (OBJ list table unknown), minigame logos/panels, title logo 1703236 (D5: official romanized logo exists ->
-  redraw), poster/card-collection banners (unreached), sheet_055 banners, 1813332/18170D4, 1C0657A.
-- **Phase 8 progress (2026-11-15, session 9):** name entry fully English: groups `names` (keyboard, a gfx.FORKS fork
-  of the whole 16-stream chain 171EAB9 `800x16`; page 1 A-Z, page 2 a-z, digits/punct per `tools/names.py`),
-  `nehead` (header Button / OK / A/a), `nametag` (opening-movie name tag なまえ -> Name), `tools/gfx_names.py`;
-  checked: both pages, header, compose still kana (`work/qa/p8names`), tag (`work/qa/p8tag`). Katakana-page dump:
-  `work/qa/ppu/name_kata`. Compose header ボタン メニューへ -> Button Menu (`cohead`: the original 171EAB9 chain
-  rewritten in place; `gfx.FORKS` is now keyed by group so one offset can have a fork and an in-place edit).
-- **Phase 8 progress (2026-11-15, session 8):** build stage `names` (`tools/names.py`, `tests/test_names.py`): name
-  charset 0x187EA84 maps every keyboard code to the English letter on that key; `gfx.FORKS` (new chain + resource
-  table copy, one literal moved); `tools/lua/reslog.lua` logs resource-record loads with the asking code.
-- **Phase 8 progress (2026-11-15, session 7):** `gfx.apply` relocates chains that outgrow their slot (below
-  0x2000000) and repoints every moved chunk's pointers; new test: no pointerless stream may follow a row. Groups
-  `epnum` (179BC34 800x16: episode numbers 話 -> EP, grid + cursor checked in scene 25, `work/qa/p8ep`) and `bonus`
-  (1D095BE Bonus Movie!, unseen) English. 1C0657A つづけてあそぶ? needs its BG map (end of a minigame; notes in
-  `docs/re/graphics.md`).
-- **Phase 8 progress (2026-11-15, session 6):** room + card-game graphics English (`tools/gfx_cards.py`: buttons
-  Play/Yes/Quit/No 1D031F4, room bubbles 1D09C87, top-right hints A OK / B Quit 1D01FD9, prompt Play a game? 1C07510),
-  checked in warps room / card_game (`work/qa/p8cards`). New helpers: `tools/gfx_obj.py` (sprite compose/write-back,
-  the OBJ twin of gfx_bg), `tools/oamlist.py`, `tools/objsrc.py`, `tools/lua/kcomplog.lua` (logs every kcomp call's
-  src: finds blocks the sweep missed). Read but not drawn: 179BC34 episode cursor 話 plate, 1B6AFB2 story logo
-  wallpaper, 170633B (see `docs/re/graphics.md`).
-- **Phase 8 progress (2026-11-15, session 5):** groups `options` (scene 14 labels Name/Background/Arrows/Headphones/
-  On/Off/Mermaid, `work/qa/p8opt`), `songsel` (score panel Easy/Normal/Hard) + `pills` (E N H / U M R, unseen),
-  `clear` (Kaito cut-in Amazing! / Well done!, `work/qa/p8clear`) English. Open, with what was tried, in
-  `docs/re/graphics.md`: song titles (per-title OBJ list is data; find its table before redrawing), clear siblings
-  1813332 / 18170D4 (per-cell palettes not found). Helper `tools/findmap.py`.
-- **Phase 8 progress (2026-11-15, session 1):** graphics pipeline built and piloted: `kcomp.compress` (optimal parse, roundtrip-tested), `tools/gfx.py` (tsv rows, chained 0x800 streams, OBJ/tile layouts, png <-> indices, `typeset`, build stage `gfx` writing in place, write zones), `tools/gfx_menu.py`; group `menu` (6 main-menu captions) English in cold-boot warps (`work/qa/p8menu/sheet/`). Notes: `docs/re/graphics.md` §Redraws. Order chosen: graphics first, then the full QA tour + visual-QA verdicts (a tour before the redraws would lose its verdicts when sheets change).
-- **Phase 8 progress (2026-11-15, session 2):** groups `modes` (6 mode labels), `icons` (6 menu icons), `diff` (difficulty bubbles Easy/Normal/Hard/Usual/Mood/Random + header pieces Button/Start/Back/OK) English, checked in cold-boot warps (`work/qa/p8modes`, `work/qa/p8diff`). Main menu and difficulty screens fully English. Screen map: `work/gfx/scenes.tsv` from `tools/gfx_scenes.py` (needs `work/qa/ppu` dumps + `tools/gfx_chain.py`, both regenerate in ~5 min). `gfx.typeset` gained ring lists, shadow, gap.
-- **Phase 8 progress (2026-11-15, session 3):** groups `btn` (pause / game over / continue cloud buttons, Yes/No
-  prompt) and `score` (HUD atlas 1F0F059 words) English, checked in warps (`work/qa/p8btn`, `work/qa/p8score`);
-  1F59B31 = copy of the diff sheet, done by the same png; 1F5ABD8 Part/Mix/Sync; `draw` (DRAW, checked in scene 42);
-  `winlose` (WIN/LOSE, unwarped). Last build sha1 a0ca757e (smoke ok, write log clean). Helpers `tools/gfx_where.py` (sprite -> block rect, palette)
-  and `tools/gfx_grid.py`; layout `objWxH*N/R` for panelled atlases. Notes in `docs/re/graphics.md` §Redraws.
-- **Phase 8 progress (2026-11-15, session 4):** groups `gameover` (174AB9D GAME OVER / CLEAR GOAL / CLEAR!, checked
-  in scene 37, `work/qa/p8go`) and `solo` (carousel cards Marathon / Nonstop / Anime Pitch, D15, checked in
-  `work/qa/p8solo`). New `tools/gfx_bg.py` for text on BG maps (show a layer with a grid; compose/write map cells
-  back into a block's tiles), `tools/palfix.py` (dumped palettes with repeated colours). Full warp tour of the
-  English build: 50/50 (`work/qa/en/sheet`, overview `work/qa/en/all1.png`/`all2.png`). Japanese graphics still
-  visible there: options menu labels (1723EBE), room/card game prompt ゲームする？ する/しない (1D0xxxx/1C0xxxx),
-  name entry / compose keyboards, song select & song list labels (173F4E9 173FE48 1743F0B..), hippo_talk banner,
-  story 1B6AFB2, clear 180F0F8, results 170633B, episode numbers 179BC34.. (00話 -> needs a design), link_check なまえ
-  1F0CEC0. 1EFF70B looked like digits/hex font only (no Japanese seen): confirm and drop from the list.
-- **Done:**
-  - Step 0 (2026-11-15): template, rom.sha1, MesenCE 2.2.1 + GBA BIOS in tools/mesen, guard hook proven, pre-commit (tools/check.py) rejects a failing test, original ROM smoke-boots, scripted input and Lua probe ok.
-  - Phase 1 (2026-11-15): no prior English patch; no SJIS. Graphics: kcomp decoder (`tools/kcomp.py`), resource tables (`tools/restables.py`), static sweep of every block (`tools/sweep.py`, 104 sheets) reviewed read-only by codex (`tools/codex_review.sh`) -> 170 text blocks in `docs/re/graphics_sweep.tsv`; tour list in `docs/re/graphics.md`. Script: message table 0x1860CE0 (2474 x 24-bit offsets from 0x18629DE), 1 byte per char = glyph index, FF end, 47.7k bytes; 12x12 2bpp frequency-ordered font at 0x18745E0 (`tools/font12.py`, `tools/fontstr.py`); name-entry buffer and charset (`docs/re/text.md`). Free space: 0x1FDF760-0x1FFFFFF trap-filled with FF, see compression.md.
-  - Phase 2 (2026-11-15): scene dispatcher found (u8 0x0300287C, table 0x09D37060, 43 ids); `tools/debug/warp.lua` + `scenes.tsv` (50 entries: every scene id with a screen, menu items, modes, minigames, story episodes via `--var EP=1..39`, any message via `--var MSG=0..2473` in the leftover debug menu's message viewer). Save fixture made by the game (`tools/debug/make_save.py`). `tools/debug/regen.py` reached 50/50 from cold boot; shots `work/qa/warp/sheet/`, states `work/states/<name>.mss`. Notes: `docs/re/scenes.md`. Story text advances with `--mash 30` (emu.py A-mash).
-  - Phase 3 (2026-11-15): `build.py` -> `tools/msgtable.py` unpacks/repacks the message table; `tests/test_identity.py`.
-  - Phase 4 (2026-11-15): control codes (`docs/re/text.md`, `tools/msgparse.py`); `tbl/jp.tbl`; `tools/msgcodec.py` -> `script/msg_00..16.json` (1617 units), roundtrip + relocation tests.
-  - Phase 5 (2026-11-15): English font `fonts/en12.txt` + VWF patch `tools/vwf.py`; text packs into two regions; `build.py --marker` / `--qa ID=text`; box probes `tools/lua/boxlog.lua`, `tilelog.lua`. Width gate: `tools/boxes.py` (bubble geometry from the event scripts, range budgets, fit lint, bubble auto-grow in the English build), `tests/test_fit.py` (Japanese calibration 0 errors; English script must have 0 errors: this gates every commit). `python -X utf8 tools/boxes.py [--warn]` prints the report. All facts: `docs/re/vwf.md` §Boxes, §Width gate.
-  - Phase 6 (2026-11-15): 16 batches (1519 units, `work/tl/bNNN.tsv` -> `.out.tsv`) by 4 translator agents, every batch reviewed (`tools/pairs.py` -> `work/qa/review/`, reviewer agents), all Critical/Important fixed, merged into `script/`; every used unit has English. Glossary + rulings D10-D12 added; Minors deferred in `docs/polish.md`. `batches.py`: wrap now measures the line before a page code, glossary match ignores line breaks, `{call}s` plural lint, a call may be written out as its text.
-  - Phase 6 review fixes (2026-11-15): 32 flattened-voice lines reworked; style-reference rows for every recurring speaker; every batch re-reviewed by an independent codex pass (`tools/codex_tl_review.sh`, reports `work/qa/review/*.report.md`, outcomes `docs/review-log.md`), 1 Critical + 40 Important fixed and re-checked (approved); new Minors appended to `docs/polish.md`. Honorific lint after calls; glossary rows Pichi Pichi, Eek/Eee; lyric long-vowel exception.
-  - Phase 7 (2026-11-15): build green: `batches.py check` 0 problems (control codes matched), fit lint 0 errors / 78 guess warnings, `tools/check.py` 31 passed. Every build writes `<out>.writes.log` (per stage: text, boxes, vwf); `tools/writelog.py` = romdiff (orig bytes, overlap, no unlogged change) + each stage only in its zones (`tests/test_writelog.py`). Debug menu units 0040/0110 keep Japanese (D13, status keep-jp): that menu draws with the original font, verified in a shot.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba
+  (2026-11-16 session 19, sha1 e27acfa6; smoke ok, write log clean, check 43 passed); marker build
+  `build.py --marker --out build/marker.gba`.
+- **Session 19 (2026-11-16):** a codex visual-QA pass over the session-18 tour (`work/qa/tour`, verdicts
+  `work/qa/verdicts/chunk_000..022`, 37 issues; list `work/qa/issues_so_far.tsv`) found, now fixed:
+  - in-song dialogue and credits/profile `{FD:01}` runs drew English codes through the 8 px kana font (mode 1,
+    flags bit 0): `tools/vwf.py` sends mode 1 to the VWF path (not message ids < 7: debug menu keeps kana, D13);
+  - lyric strip lost letters / showed stale tiles on long lines: lyric predraw copies only pool slots 0..103 and the
+    allocator cursor never went back to freed slots; VWF free_col now rewinds the cursor (`docs/re/vwf.md`);
+  - in-song dialogue boxes are event op 0x7006 records (`boxes.song_boxes`, 121 messages): budgeted at W 22
+    (cols 4..26, 8 px wrap), grown by the `boxes` build stage, 57 units rewrapped, 7 shortened (94AD 9EA8 A054
+    A475 AEE4 B634 B913);
+  - tail-less boxes off col 1 (15, e.g. EP 13 Aqua Regina over a drawn frame) no longer grow (`boxes.fixed`);
+  - one-word last lines: `batches.py unwidow` (141 units) and `wrap()` now avoids them; `batches.py rewrap` joins and
+    rewraps units a box rule change broke;
+  - bold `gfx.typeset` filled the 1 px gaps of m/w (solid block): wider bold m/w (`gfx.BOLD_WIDE`), all groups
+    regenerated.
+  New probes: `tools/lua/objlog.lua` (text object fields), `pathlog.lua` (VWF/orig/8 px path per glyph),
+  `tilepool.lua` (pool use); `msglog.lua` lines now carry flags/sp/W/H.
 - **Next (phase 8):**
-  1. QA tour per `references/emulator-qa.md`: warp to every scene (`tools/debug/regen.py build/mermaid_en.gba`), story EP 1-39 with `--mash`, contact sheets, visual-QA verdicts (do them as an independent read-only pass: codex via `tools/codex_review.sh`), `qa_gate.py check` exit 0; `inkbox.py` on choice/centred menus; `textcover.py` from `tools/lua/msglog.lua`.
-  2. Graphics text (session 6 adds `cardbtn` `roombub` `hint` `prompt`, session 7 `epnum` `bonus`; drop 1D031F4
-     1D09C87 1C07510 1D0B2A4 179BC34..179DE22 1D095BE from the list; 1C0657A waits for a minigame-end warp; session 9
-     did 1F0CEC0 and name entry 171EAB9 171F78F 17212DD 179B69F: drop them too (and compose's header); next: the list
-     below):
-     `menu`, `modes`, `icons`, `diff`, `btn`, `score` done (docs/re/graphics.md §Redraws). `btn`, `score`, `draw`, `winlose`, `gameover`, `solo`, 1F5ABD8, `options`, `songsel`, `pills`, `clear` done too (so drop 1723EBE, 173F4E9, 173FE48, 180F0F8 from the list below). BG-mapped screens (options, story, results, episode grid): use `tools/gfx_bg.py` like `tools/gfx_solo.py`. Next by screen from `work/gfx/scenes.tsv` (session-4 list above first): 1F0CEC0 なまえ; find the screens of 1F0DA41/1F0E3F7 (resource table 1EFF434), 1F12431/1F12CBD and 1F5ABD8 (1F56AB0 entry 58) and add warps; 1F0F059 pills + framed labels (see graphics.md) once a scene showing them is found; 1EFF70B (mixed, loaded by most scenes); song select labels 173F4E9 173FE48 1BF7155; mode carousel 1BF5582 1BF8856; song titles 17403F7..1743F0B (song_list); result banner 170633B; options 1723EBE; name entry 171EAB9 171F78F 17212DD 179B69F; room/card game 1D0xxxx 1C0657A 1C07510; clear 180F0F8; game over 174AB9D; story 1B6AFB2; episode grid numbers 179BC34..179DE22; then the 83 rows no warp loaded (episode titles, banners sheet_055). Then the remaining rows of `docs/re/graphics_sweep.tsv` (~145 jp/mixed blocks) by screen. Large static sets fit parallel `translate-retro-game:graphics` agents (`docs/graphics-brief.md` from the skill's assets, `work/gfx/<group>.txt`): episode-title strips 0x18AF223-0x18BFC9C (~45 rows), character banners sheet_055. Many sweep sizes 0x1018/0x103E are 0x800 chains (`800x2`): re-check each row's chain before drawing. Then zoomed cold-boot shots.
-  3. Check in game: A44E/FC29/459A "Love Love Shower Pitch" with FD codes; 9D2D poem furigana codes kept with empty readings; credits pages (0859 0962 0A62 0B06 0C0F) got `{FA:06}` between songs: does the credits screen page?; 0B06 arranger glyph Ⓒ guess written "(C)"; profiles' "[Name]" header line.
-  4. Units with a guess budget (78 warnings) warn only: confirm their boxes in the tour.
-  5. The msgview debug box (warp `MSG=N`) draws through the non-VWF debug font, so English shows as junk there: use story warps for visual QA, msgview only for text logging. Phase 9: pass 0040/0110 to `jp_left.py --known` (intended Japanese).
+  1. Full tour of build e27acfa6 was started into `work/qa/tour3` (`tools/tour.py build/mermaid_en.gba --out
+     work/qa/tour3`; if `work/qa/tour3.log` has no "episodes 39/39" line, run it again). Then:
+     `python -X utf8 $SKILL/scripts/qa_gate.py init work/qa/manifest.tsv work/qa/tour3/sheets --build
+     build/mermaid_en.gba --glob "sheet*.png"`, clear `work/qa/verdicts/` (old tour), `qa_gate.py todo
+     work/qa/manifest.tsv work/qa/verdicts --size 8 --out-dir work/qa/chunks`, `sh tools/codex_vqa.sh work/qa/chunks 4`
+     (independent read-only codex verdicts, ~3 min a chunk), fix every issue, re-tour changed scenes, until
+     `qa_gate.py check` exits 0. (A session-18 codex_vqa run on the old tour may still be running when this starts:
+     let it end before clearing verdicts.)
+  2. Text coverage: `python -X utf8 tools/cover.py work/qa/tour3/runs` (per unit), then msgview sweeps for unshown ids
+     (warp `msgview --var MSG=N`; its debug box is mode 1, so since session 19 it draws English through the VWF:
+     check once) and waivers in `docs/text_unshown.tsv`; `textcover.py` must exit 0 for phase 9.
+  3. `inkbox.py` on choice / centred menu boxes (Yes/No prompts, main menu, song select).
+  4. Graphics left (`python -X utf8 tools/gfx_left.py`, release gate): minigame logos 1BF039E 1BF198F 1BF2D7E 1BF416C
+     (くらべてピッチ, そろえてピッチ, あわせてピッチ, キャッチでピッチ; the game names appear nowhere else in English).
+     Default under D5: redraw (notes `docs/re/graphics.md` §Minigame logos: tile slots nearly full, design needed);
+     if that proves impossible, waive in `docs/gfx_waived.tsv` with a D18 entry. Character banners 1BFA943 1BFC919
+     1BFE551 and 1721BEB/1722E8B/170633B are waived/unreached in `docs/gfx_waived.tsv`.
+  5. Check in game: A44E/FC29/459A "Love Love Shower Pitch" with FD codes; credits pages (0859 0962 0A62 0B06 0C0F,
+     `{FA:06}` between songs; credits use `{FD:01}` runs, now VWF: re-check their layout) and glyph 0x167 `Ⓒ`;
+     profiles' "[Name]" header line; units with a guess budget (69 warnings, `tools/boxes.py --warn`).
 - **Later:**
-  - F6 name width in the lint is a 60 px guess: measure once the Latin keyboard is in (max name length?).
-  - Katakana-page ー may be code 0xC2 (glyph 0x16F, not in jp.tbl), not 0x67: type it on page 2 and check it prints "-".
-  - Debug tool gaps (add when needed): GOD mode for gameplay (life gauge address unknown), scenes 17/30/31 blank when warped, 止め絵チェック item, results after a real song (only empty results warp).
-  - Text coverage (phase 8): `tools/lua/msglog.lua` logs `TEXT <hex id>`; msgview sweep over all ids plus story EP 1-39 (with `--mash`).
-  - Glyph 0x167 (circled, song credits) read as `Ⓒ`, a guess: zoom it in game when the credits are QA'd.
-- **Open bugs:** none.
-- **Known limits:** msgview's debug box garbles rows when a message runs past 7 lines with no page break (real pages are <= 4 lines; story boxes clean). Japanese fallback text in an English build draws as junk (its glyph slots hold English letters): every used unit needs English.
+  - F6 name width in the lint is a 60 px guess: measure with the Latin keyboard (max name length?).
+  - Katakana-page ー may be code 0xC2 (glyph 0x16F, not in jp.tbl), not 0x67: type it on page 2, check it prints "-".
+  - Debug tool gaps: GOD mode (life gauge address unknown), scenes 17/30/31 blank when warped, 止め絵チェック item,
+    results after a real song.
+- **Done:**
+  - Step 0, phases 1-7 (2026-11-15): see `docs/re/*` (encoding, pointers, free space, scenes, VWF, width gate),
+    `tools/debug/` (50 warps), `build.py` (identity test), `tools/msgcodec.py` (1617 units), 16 translated and
+    reviewed batches (`docs/review-log.md`), build green (control codes, fit lint, write log zones).
+  - Phase 8 graphics (sessions 1-18): every graphics-sweep row redrawn (`gfx/*.tsv`) or waived
+    (`docs/gfx_waived.tsv`) except the 4 minigame logos; checked in cold-boot warps (`work/qa/p8*`).
+- **Open bugs:** none known in build e27acfa6 (issues from the old tour fixed; the new tour is unreviewed).
+- **Known limits:** Japanese fallback text in an English build draws as junk (its glyph slots hold English letters):
+  every used unit needs English.
 - **Waiting on the user:** (non-blocking) story background 1B6AFB2 tiles the series logo ぴちぴちピッチ as a faded
-  64x16 wallpaper; kept Japanese (a 64x16 repeat can't hold "Pichi Pichi Pitch" legibly); say if it should be redrawn. (non-blocking) song lyrics shipped as romaji (D10); English meaning is the alternative. (non-blocking) "Love Love Shower Pitch" for ラブ②シャワーピッチ (D11). (non-blocking) staff name readings unverified: 佐藤和朗 Kazuaki Sato, 堀田健志 Takeshi Hotta, ポリン Porin. (non-blocking) GUI keyboard input in tools/mesen not checked by hand; emu.py wrote default key mappings.
+  64x16 wallpaper; kept Japanese (a 64x16 repeat can't hold "Pichi Pichi Pitch" legibly); say if it should be
+  redrawn. (non-blocking) song lyrics shipped as romaji (D10); English meaning is the alternative. (non-blocking)
+  "Love Love Shower Pitch" for ラブ②シャワーピッチ (D11). (non-blocking) staff name readings unverified: 佐藤和朗
+  Kazuaki Sato, 堀田健志 Takeshi Hotta, ポリン Porin. (non-blocking) GUI keyboard input in tools/mesen not checked by
+  hand; emu.py wrote default key mappings.
