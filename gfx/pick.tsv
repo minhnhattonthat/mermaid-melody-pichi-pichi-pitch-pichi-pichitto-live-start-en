@@ -1,0 +1,3 @@
+# card game prompt panel (BG1 pal 2, map from work/qa/ppu/card_pick); pal from that dump, palfixed
+# offset	size	layout	png	English	Japanese
+1C04DE8	800x2	tiles16	gfx/out/pick/1C04DE8.png	Pick any one card! (tools/gfx_cards.py)	どれかいちまいえらんでね。

@@ -1,0 +1,3 @@
+# card game keep-going buttons, 80x28 OBJ, 2 stacked; pal copied from cardbtn (png only)
+# offset	size	layout	png	English	Japanese
+1D02DEB	800x2	tiles16	gfx/out/cont/1D02DEB.png	Keep going / Stop here (tools/gfx_cards.py)	つづける / やめておく

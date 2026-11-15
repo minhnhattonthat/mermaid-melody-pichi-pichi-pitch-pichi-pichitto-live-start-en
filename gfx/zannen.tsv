@@ -1,0 +1,3 @@
+# big ざんねん lettering of a lost card / memory game (BG1 pal 2, map record 0x1D252A4); pal from card_lose, palfixed
+# offset	size	layout	png	English	Japanese
+1C023B4	800x4	tiles16	gfx/out/zannen/1C023B4.png	Too bad! (tools/gfx_cards.py)	ざんねん

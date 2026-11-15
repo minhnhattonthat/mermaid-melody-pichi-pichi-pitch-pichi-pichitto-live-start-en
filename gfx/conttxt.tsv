@@ -1,0 +1,3 @@
+# card game keep-going panel after a win (BG1 pal 2, map record 0x1D258E7); pal from card_cont, palfixed
+# offset	size	layout	png	English	Japanese
+1C078DE	800x2	tiles16	gfx/out/conttxt/1C078DE.png	Keep going and your coins / will double! (tools/gfx_cards.py)	つづけてやると コインがばいにふえるよ!

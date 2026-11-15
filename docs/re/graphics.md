@@ -216,5 +216,15 @@ prompts, ending and credits, story scenes if any.
   stars, and the 256 tile slots are nearly full (max tile 229-258), so a redraw needs a design (top word + "Pitch"
   lettering over the art, retile by content) and maybe a longer chain (check the loader's chunk count first). Some
   logo cells use tiles loaded from another chain (composite `work/qa/p8mini/logos.png` showed blanks there).
+- **Card game (session 14, `tools/gfx_cards.py`, D17):** reached by warp `SCENE_ID=15` + A presses (route in
+  status) or `work/play/cards` (play.py; step 0002 = the higher/lower question; right+a wins with left K). Dumps
+  (original ROM): `work/qa/ppu/card_pick|card_hilo|card_lose|card_win|card_cont`. Groups `hilo` 1D02946 (Higher!/
+  Lower! buttons), `cont` 1D02DEB (Keep going/Stop here), panels `pick` 1C04DE8, `hilotxt` 1C0537C, `conttxt` 1C078DE,
+  big words `zannen` 1C023B4 (Too bad!) and `atari` 1C030D4 (Right!). Their BG1 maps are run-stream records
+  0x1D254B7 0x1D25528 0x1D258E7 0x1D252A4 0x1D2532D (found by decoding every offset near the minigame records and
+  matching the dumped map), rewritten through `gfx/cards.maps`. Each record sits behind resource table 0x1D1E6xx
+  (5-byte entries -> record - 7, which holds a self pointer to record - 2): relocation possible but not built. Big
+  words use `gfx_minigame.retile_keep` (edit tiles in place; allocate only for edited shared tiles, reuse identical
+  tiles) so the record does not grow. All checked in game (`work/qa/p8hilo`, `work/qa/p8win`).
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

@@ -43,8 +43,8 @@ def orient(px, v):
     return px[::-1] if v & 0x800 else px
 
 
-def compose(img, cells):
-    x0, y0, w, h = RECT
+def compose(img, cells, rect=RECT):
+    x0, y0, w, h = rect
     im = [[0] * (8 * w) for _ in range(8 * h)]
     for j in range(h):
         for i in range(w):
@@ -68,10 +68,10 @@ def letter(im, lines):
     gfx.typeset(im, [COST], (COIN_END, SPLIT, x1, y1), 1, [10], bold=False)
 
 
-def retile(img, cells, im):
+def retile(img, cells, im, rect=RECT):
     """every rect cell gets its own tile (in reading order, from the slots no cell outside the rect uses: content
     dedup broke the map's increment runs and outgrew the record) -> new map cells (img edited)."""
-    x0, y0, w, h = RECT
+    x0, y0, w, h = rect
     inside = {(y0 + j) * 32 + x0 + i for j in range(h) for i in range(w)}
     keep = {cells[n] & 0x3FF for n in range(1024) if n not in inside}
     free = [k for k in range(len(img) // 8 * 16) if k not in keep]
@@ -87,6 +87,46 @@ def retile(img, cells, im):
     for k in free:  # unused slots blank (smaller stream)
         for r in range(8):
             img[k // 16 * 8 + r][k % 16 * 8:k % 16 * 8 + 8] = [0] * 8
+    return new
+
+
+def retile_keep(img, cells, im, rect):
+    """like retile, but a cell keeps its tile when its pixels are unchanged or no other cell uses that tile (edited
+    in place, flips undone); only edited cells on shared tiles take a free slot. Keeps the record's runs (size)."""
+    x0, y0, w, h = rect
+    uses = Counter(c & 0x3FF for c in cells)
+    free = [k for k in range(len(img) // 8 * 16) if not uses[k]]
+    new = list(cells)
+    want = {}  # tile -> its un-flipped new pixels per user cell (None: a user outside the rect)
+    for n, v in enumerate(cells):
+        cx, cy = n % 32 - x0, n // 32 - y0
+        inside = 0 <= cx < w and 0 <= cy < h
+        px = orient([im[8 * cy + r][8 * cx:8 * cx + 8] for r in range(8)], v) if inside else None
+        want.setdefault(v & 0x3FF, []).append(px)
+    for j in range(h):
+        for i in range(w):
+            n = (y0 + j) * 32 + x0 + i
+            v = cells[n]
+            px = [im[8 * j + r][8 * i:8 * i + 8] for r in range(8)]
+            if px == orient(tile(img, v & 0x3FF), v):
+                continue
+            ws = want[v & 0x3FF]
+            if None not in ws and all(p == ws[0] for p in ws):  # every user changes the same way: edit in place
+                k, px = v & 0x3FF, orient(px, v)
+            else:
+                same = [t for t in uses if tile(img, t) == px and all(p in (None, px) for p in want[t])]
+                # ^ a tile already holding these pixels whose users all keep them (e.g. the blank tile)
+                if same:
+                    new[n] = same[0]
+                    continue
+                if not free:
+                    raise SystemExit(f"retile_keep: no free tile for cell {x0 + i},{y0 + j}")
+                k = new[n - 1] + 1  # prev + 1 continues the record's increment run
+                k = k if k in free else free[0]
+                free.remove(k)
+                new[n] = k
+            for r in range(8):
+                img[k // 16 * 8 + r][k % 16 * 8:k % 16 * 8 + 8] = px[r]
     return new
 
 

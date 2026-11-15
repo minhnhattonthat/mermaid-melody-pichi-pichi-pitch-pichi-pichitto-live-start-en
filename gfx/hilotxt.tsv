@@ -1,0 +1,3 @@
+# card game higher/lower question panel (BG1 pal 2, map from work/qa/ppu/card_hilo); pal from that dump, palfixed
+# offset	size	layout	png	English	Japanese
+1C0537C	800x2	tiles16	gfx/out/hilotxt/1C0537C.png	Is the face-down card / higher or lower than the left? (tools/gfx_cards.py)	ふせてあるカードは ひだりのカードより…?

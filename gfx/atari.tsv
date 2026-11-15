@@ -1,0 +1,3 @@
+# big あたり lettering of a won card round (BG1 pal 2, map record 0x1D2532D); pal from card_win, palfixed
+# offset	size	layout	png	English	Japanese
+1C030D4	800x4	tiles16	gfx/out/atari/1C030D4.png	Right! (tools/gfx_cards.py)	あたり

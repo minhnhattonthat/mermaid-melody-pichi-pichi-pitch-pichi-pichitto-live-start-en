@@ -1,0 +1,3 @@
+# card game (くらべてピッチ) answer buttons, 96x28 OBJ, 2 stacked; pal copied from cardbtn (png only)
+# offset	size	layout	png	English	Japanese
+1D02946	800x2	tiles16	gfx/out/hilo/1D02946.png	Higher! / Lower! (tools/gfx_cards.py)	おおきい! / ちいさい!
