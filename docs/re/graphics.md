@@ -92,10 +92,14 @@ prompts, ending and credits, story scenes if any.
   each pixel's nearest index in its own cell's palette (`gfx_solo.edit`).
 - Group `solo` (done): mode-carousel cards (scene 28, BG2 cb 0x4000, 64x32 map; the current card can be in either
   half) 1BF5582 とことん / 1BF7155 つづけて / 1BF8856 アニメで -> Marathon / Nonstop / Anime Pitch (D15),
-  `tools/gfx_solo.py`: erase the fill strokes +3 px in banner-palette cells, redraw 1x wide 2x tall. The lettering
-  is boxed in by art-palette cells and shared tiles, so each card has its own dx/dy and ring count. Checked in
-  `work/qa/p8solo` (cold-boot warps). Polish: small transparent holes at the cloud / star edges where the old
-  rings were.
+  `tools/gfx_solo.py`: the old lettering +3 px, closed by 4 px, becomes a white plate edged in its old outline
+  colour, painted in every non-shared cell it covers in that cell's nearest colour (art cells held outline bits:
+  erasing banner cells only left them loose, tour3 verdicts); English 1x wide 2x tall, centred on the old lettering.
+  Ring pixels on shared tiles or with no near colour are left out (Nonstop: 26). Checked in `work/qa/p8s`.
+- Group `live` (done session 21, `tools/gfx_live.py`): live-data error (warp `live_broken`) BG3 picture chain 1747BC1
+  800x10 (not in the sweep: `tools/lua/kcomplog.lua` at the warp). Bubble text cells use BG pals 4/5, gaps between
+  letters pal 3 (no dark colour) and the map is not raw in ROM, so "Your live data / is broken!" sits in the two
+  all-pal-4/5 bands (map rows 5-6, 9-10).
 - Group `options` (done): 1723EBE is a panelled atlas (`obj16x4*8/2`, 256x128; right half = background thumbnails).
   Labels are rows of OBJs 24 px tall on 2D VRAM rows (row = tile // 32), NOT on the 32 px panels: なまえ (80,0)
   はいけい (0,32) やじるし (64,32) ヘッドホン (0,56) あり (80,56) マーメイド (0,80) なし (80,80) -> Name / Background /

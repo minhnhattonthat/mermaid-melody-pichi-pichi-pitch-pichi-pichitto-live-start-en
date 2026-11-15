@@ -1,0 +1,3 @@
+# live-data error screen: BG3 picture chain, bubble text in BG pals 4/5 (tools/gfx_live.py); pal = BG pal 5
+# offset	size	layout	png	English	Japanese
+1747BC1	800x10	tiles16	gfx/out/live/1747BC1.png	Your live data is broken!	ライブのデータがこわれているよ!

@@ -17,7 +17,7 @@ from gfx_winlose import ring  # noqa: E402
 
 CARDS = {  # scene -> English, map column of the card, cell rows of the lettering, Style
     "solo_modes": ("Marathon Pitch", 0, (13, 15), (5, 8, 15, None, (5, 3), 5, 1, 0)),  # rows 14-15 only
-    "solo_tsuzukete": ("Nonstop Pitch", 32, (13, 16), (6, 8, 15, 4, (6,), 7, 1, -8)),
+    "solo_tsuzukete": ("Nonstop Pitch", 32, (13, 16), (6, 8, 15, 4, (6,), 4, 1, 0)),
     "solo_anime": ("Anime Pitch", 0, (13, 17), (5, 9, 15, 5, (5,), 6, 1, 0, 14)),  # erase to the white cloud (14)
 }
 # Style = (banner palette, fill, white ring, outer ring or None, palettes whose cells may be erased, dy and dx from
@@ -27,20 +27,39 @@ CARDS = {  # scene -> English, map column of the card, cell rows of the letterin
 
 def edit(L, word, x0, rows, style):
     """Card at map columns x0..x0+31, lettering in cell rows `rows` (lo, hi)."""
-    PAL, fill, white, outer, erasable, dy, whites, dx, *backing = style
-    backing = backing[0] if backing else 0
+    PAL, fill, white, outer, _, dy, whites, dx, *_ = style
     rect = (x0, rows[0] - 1, 32, rows[1] - rows[0] + 3)
     cx0, cy0, w, h = rect
     img = L.compose(rect)
     palof = {(x, y): L.entry(cx0 + x // 8, cy0 + y // 8)[3] for y in range(8 * h) for x in range(8 * w)}
     band = range(8, 8 * h - 8)
     strokes = {(x, y) for y in band for x in range(8 * w) if palof[(x, y)] == PAL and img[y][x] == fill}
+    uses = Counter(L.entry(x, y)[0] for x in range(L.w) for y in range(L.h))
+    want = L.colours(PAL)
+
+    def nearest(x, y, rgb):
+        cols = L.colours(palof[(x, y)])
+        return min((sum(abs(a - b) for a, b in zip(cols[i], rgb)), i) for i in range(1, 16))
+
+    # plate: the old lettering grown 3 px (it and its outline), closed by 4 px into one smooth blob, painted white with
+    # a 1 px edge in the old outline colour over every cell it covers (art cells too: outline bits there were the old
+    # lettering's), so nothing of the old lettering is left loose; shared tiles (blank tile 0 etc.) stay as they are
     grown = strokes
     for _ in range(3):
         grown = grown | ring(grown)
-    for x, y in grown:
-        if 0 <= y < 8 * h and palof[(x, y)] in erasable:  # banner palette or plain background, not the art
-            img[y][x] = backing if palof[(x, y)] == PAL else 0
+    edge = Counter(img[y][x] for x, y in grown - strokes if 0 <= x < 8 * w and 0 <= y < 8 * h
+                   and palof[(x, y)] == PAL and img[y][x] not in (0, fill, white)).most_common(1)[0][0]
+    blob = grown
+    for _ in range(4):
+        blob = blob | ring(blob)
+    for _ in range(4):
+        blob = blob - ring({(x + i, y + j) for x, y in blob for i in (-1, 0, 1) for j in (-1, 0, 1)} - blob)
+    border = blob & ring({(x + i, y + j) for x, y in blob for i in (-1, 0, 1) for j in (-1, 0, 1)} - blob)
+    for x, y in blob:
+        if 0 <= x < 8 * w and 0 <= y < 8 * h and uses[L.entry(cx0 + x // 8, cy0 + y // 8)[0]] == 1:
+            err, k = nearest(x, y, want[edge if (x, y) in border else white])
+            if err <= 80:
+                img[y][x] = k
     ink, iw, ih = mask(word, 1, 2)
     xs, ys = [p[0] for p in strokes], [p[1] for p in strokes]
     cx, cy = (min(xs) + max(xs)) // 2, (min(ys) + max(ys)) // 2  # centre of the old lettering
@@ -49,17 +68,21 @@ def edit(L, word, x0, rows, style):
     for _ in range(whites):
         wr |= ring(ink | wr)
     r3 = ring(ink | wr) if outer is not None else set()
-    want = L.colours(PAL)
-    uses = Counter(L.entry(x, y)[0] for x in range(L.w) for y in range(L.h))
+    skipped = 0
     for layer, v in ((r3, outer), (wr, white), (ink, fill)):
         for x, y in layer:
             if uses[L.entry(cx0 + x // 8, cy0 + y // 8)[0]] > 1:
+                if layer is not ink:  # a ring pixel over a shared blank tile is left out
+                    continue
                 raise SystemExit(f"{word!r}: px {x},{y} lands on a shared tile (cell {cx0 + x // 8},{cy0 + y // 8})")
-            cols = L.colours(palof[(x, y)])
-            err, k = min((sum(abs(a - b) for a, b in zip(cols[i], want[v])), i) for i in range(1, 16))
+            err, k = nearest(x, y, want[v])
+            if err > 80 and layer is not ink:  # an art palette with no such colour: that ring pixel is left out
+                skipped += 1
+                continue
             if err > 80:  # 75 = pal 3's light pink standing in for the pink fill
                 raise SystemExit(f"{word!r}: px {x},{y} in a pal-{palof[(x, y)]} cell, nearest colour off by {err}")
             img[y][x] = k
+    print(f"{word!r}: {skipped} ring pixels left out (no near colour)")
     return rect, img
 
 

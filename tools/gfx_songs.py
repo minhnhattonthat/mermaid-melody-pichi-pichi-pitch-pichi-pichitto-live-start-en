@@ -36,6 +36,7 @@ TITLES = {  # block -> (list offsets in the bank, flag 0 and 1; English)
     0x1743F0B: ((), "Nothing here!"),           # なにもないヨ!
 }
 Y = -7  # line top relative to the object, as the English titles' lists (Legend of Mermaid..)
+NUDGE = {"Nothing here!": -7}  # px left inside the 96 px strip: centred on screen (live_list, tour3 margins 68/54)
 
 
 def strip(text, width):
@@ -70,8 +71,9 @@ def draw(text, lists):
     block = [[0] * 128 for _ in range(32)]
     if not lists:
         s = strip(text, 96)
+        dx = NUDGE.get(text, 0)
         for y in range(16):
-            block[y][:96] = s[y]
+            block[y][:96] = (s[y][-dx:] + [0] * -dx) if dx < 0 else s[y]
         return block, None
     wide = strip(text, 256)
     xs = [x for row in wide for x, v in enumerate(row) if v]
