@@ -2,7 +2,7 @@
 # codex_vqa.sh [CHUNKDIR] [PAR]: independent read-only visual-QA verdicts by codex, one run per qa_gate chunk file.
 #   python -X utf8 $SKILL/scripts/qa_gate.py todo work/qa/manifest.tsv work/qa/verdicts --size 8 --out-dir work/qa/chunks
 #   sh tools/codex_vqa.sh work/qa/chunks 4      -> work/qa/verdicts/<chunk>.tsv (id<TAB>ok|issue<TAB>note)
-# Sheet ids are paths under work/qa/tour/sheets without .png; the original ROM's sheet is the same id under tour_jp.
+# Sheet ids are paths under the tour's sheets dir without .png; the original ROM's sheet is the same id under tour_jp.
 cd "$(dirname "$0")/.." || exit 1
 dir=${1:-work/qa/chunks}; par=${2:-4}
 mkdir -p work/qa/verdicts work/qa/vqa_log
@@ -18,6 +18,7 @@ for c in "$dir"/chunk_*.txt; do
     list="$list
 $id	$p	(original: work/qa/tour_jp/sheets/$id.png)"
   done < "$c"
+  rm -f "work/qa/vqa_log/$n.out"  # a failed run must not leave the previous tour's verdicts to grep
   ( timeout 1800 codex exec --sandbox read-only --skip-git-repo-check $args -o "work/qa/vqa_log/$n.out" \
 "$brief
 

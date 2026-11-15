@@ -61,7 +61,8 @@ def token(d, p):
     # FA
     s = d[p + 1]
     if s == 0xFF:  # scene callback n (table set in RAM at 0x030063EC) + one byte
-        return "c", p + 4, [], False
+        # callback 4 reads 9 more bytes (EP 28 unit 5053: English text there drew streaks)
+        return "c", p + (13 if d[p + 2] == 4 else 4), [], False
     if s >= 0x80:  # colour
         return "c", p + 2, [], False
     if s == 0x7F or s >= len(FA_ARGS):

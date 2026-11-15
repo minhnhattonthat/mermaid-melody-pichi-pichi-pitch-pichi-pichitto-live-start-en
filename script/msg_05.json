@@ -27,8 +27,8 @@
    1394
   ],
   "used": true,
-  "jp": "{FA:FF0101}なんかくらくて、うすきみわるい\nね～、{call:@2AB0}？{wait}{FA:FF0301}…………{call:@2AB0}？{FA:06}えっ……{call:@2AB0}、どこいったの～！\n…………………………{FA:FF0303}きゃっ！！\n{FA:FF0406}　、　た　ゅ　　　{FA:FF0100}{end}",
-  "en": "{FA:FF0101}It's kinda dark and creepy in here,\nhuh, {call:@2AB0}?{wait}{FA:FF0301}......{call:@2AB0}?{FA:06}Huh... {call:@2AB0}, where'd you go~?!\n..........{FA:FF0303}Eek!!\n{FA:FF0406}{FA:FF0100}{end}",
+  "jp": "{FA:FF0101}なんかくらくて、うすきみわるい\nね～、{call:@2AB0}？{wait}{FA:FF0301}…………{call:@2AB0}？{FA:06}えっ……{call:@2AB0}、どこいったの～！\n…………………………{FA:FF0303}きゃっ！！\n{FA:FF040600030004003C000000}{FA:FF0100}{end}",
+  "en": "{FA:FF0101}It's kinda dark and creepy in here,\nhuh, {call:@2AB0}?{wait}{FA:FF0301}......{call:@2AB0}?{FA:06}Huh... {call:@2AB0}, where'd you go~?!\n..........{FA:FF0303}Eek!!\n{FA:FF040600030004003C000000}{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -835,8 +835,8 @@
    1331
   ],
   "used": true,
-  "jp": "{FA:FF0101}…………ここは……ダンスホール？{wait}あそこで、おどっているのは……！{FA:06}ノエル、{call:@2AAC}、しっかりしろ！{FA:06}{call:@2B23}！　ふたりになにをした！{wait}{FA:FF0401}　た　い　ゅ　　　……あたまが……ぼんやり……す…\nる…………。{FA:06}ふたり…を、もと……に……………\nもど…せ……………ガイ…………ト\n………………………………………。\n\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}......Where is this... a dance hall?{wait}The ones dancing over there are...!{FA:06}Noelle, {call:@2AAC}, snap out of it!{FA:06}{call:@2B23}! What did you do to them?!{wait}{FA:FF0401}  u  g  h    ......My head... is going...\nfoggy......{FA:06}Turn... them... back...... Gai......to\n..................\n\n{FA:FF0100}{end}",
+  "jp": "{FA:FF0101}…………ここは……ダンスホール？{wait}あそこで、おどっているのは……！{FA:06}ノエル、{call:@2AAC}、しっかりしろ！{FA:06}{call:@2B23}！　ふたりになにをした！{wait}{FA:FF040100040002003C000000}……あたまが……ぼんやり……す…\nる…………。{FA:06}ふたり…を、もと……に……………\nもど…せ……………ガイ…………ト\n………………………………………。\n\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}......Where is this... a dance hall?{wait}The ones dancing over there are...!{FA:06}Noelle, {call:@2AAC}, snap out of it!{FA:06}{call:@2B23}! What did you do to them?!{wait}{FA:FF040100040002003C000000}......My head... is going...\nfoggy......{FA:06}Turn... them... back...... Gai......to\n..................\n\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
