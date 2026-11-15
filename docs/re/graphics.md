@@ -48,5 +48,19 @@ prompts, ending and credits, story scenes if any.
 - Group `menu` (done, pilot): main-menu captions 0x1708763..0x170B89B, OBJ pal 15, 2D OBJ map, tiles 896+ (4 sprites
   64x32 at y 128); each chain = two 16x4-tile halves (`obj16x4*2`). Text uses only indices 12-15; the clean banner is
   composed from the 6 captions (`tools/gfx_menu.py`). Cold-boot shots: `work/qa/p8menu/sheet/`.
-- Next: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
+- Finding a screen's blocks: `tools/gfx_chain.py` (every sweep row's chain spec -> `work/gfx/chain.tsv`, decoded
+  blocks `work/gfx/blocks/`, grey sheets), `tools/gfx_scenes.py` (vramfind of each scene's PPU dump from
+  `regen.py --script ppudump.lua` -> `work/gfx/scenes.tsv`: 62 jp/mixed rows seen in a warped scene, 83 not).
+  OAM tells the layout: OBJ VRAM is 2D (32 tiles a row), so a block of 16-tile rows at OBJ tile T is `tiles16`.
+  `tools/gfx_render.py OFF SPEC LAYOUT OUT [PAL]` renders one block. Palette for a group: 16 distinct colours
+  (`gfx.load_pal` asserts it), else erased text keeps its index and shows under another palette.
+- Group `modes` (done): 6 mode labels 170D7EE..170EB49 (one 0x800 stream each, 128x32), `tools/gfx_modes.py`.
+- Group `icons` (done): 170C1F2 (800x6, 128x192 sheet of six 64x64 icons, OBJ tile 0), `tools/gfx_icons.py`.
+- Group `diff` (done): 17264E2 (800x4, 128x128 at OBJ tile 272): 6 difficulty bubbles (affine-scaled when not
+  selected) + 32x16 header pieces ボタン/スタート/もどる/けってい -> Button/Start/Back/OK, `tools/gfx_diff.py`.
+- Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
+  (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
+  (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
+  title text inside the block still unread; the map is per episode (find its source before redrawing).
+- Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

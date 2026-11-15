@@ -74,6 +74,12 @@ or that uses an Avoid spelling.
 ## Items / skills / terms
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| ひとりでピッチ | Solo Pitch | | main-menu mode (graphics, D14) | |
+| いっしょにピッチ | Link Pitch | | main-menu mode, link cable | |
+| ヒッポでピッチ | Hippo Pitch | | main-menu mode, song composer | |
+| あなたのピッチ | Your Pitch | | main-menu mode, options | |
+| あつめてピッチ | Collect Pitch | | main-menu mode, room/goods | |
+| ライブでピッチ | Live Pitch | | main-menu mode, saved lives | |
 | すいよう / 水妖 | water demon | | 水妖, Gaito's sea monsters (written in kana) | |
 | ダーク・ラゔァーズ | Dark Lovers | | Izuru, Eriru, Yuri | |
 | ブラック・ビューティー・シスターズ | Black Beauty Sisters | | Sheshe and Mimi | |
