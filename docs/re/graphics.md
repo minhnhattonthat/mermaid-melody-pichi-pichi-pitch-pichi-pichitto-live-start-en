@@ -118,6 +118,14 @@ prompts, ending and credits, story scenes if any.
   scene 39 (`work/qa/p8clear`). Siblings 1813332 / 18170D4 (table 16F6CC8 entries 145/146, same size) are two more
   cut-ins: their per-cell palettes are not found yet (not a kcomp resource, not raw: `tools/findmap.py`); find what
   picks the picture in scene 39, warp each, then reuse `gfx_clear.edit` with their dumps.
+- Groups `cardbtn` `roombub` `hint` `prompt` (done, `tools/gfx_cards.py`, checked in room / card_game, `work/qa/p8cards`):
+  1D031F4 buttons あそぶ/する/やめる/しない -> Play/Yes/Quit/No; 1D09C87 room bubbles (5 x 96x24) -> Put up a poster? /
+  Play a game? / Place a mascot? / Listen to a song? / View cards?; 1D01FD9 chain (not in the sweep: found with
+  `tools/lua/kcomplog.lua`, which logs every kcomp call's src/dst) Aきめる / Bやめる -> A OK / B Quit; 1C07510 BG1 prompt
+  ゲームする? -> Play a game?. `tools/gfx_obj.py` = gfx_bg for sprites (compose OAM cells, write back by byte match;
+  byte twins resolved by the VRAM - block delta). `tools/oamlist.py` lists sprites in a rect, `tools/objsrc.py` finds
+  the swept block holding an OBJ tile. Open: 1C0657A (same frame tiles as 1C07510, another prompt, not seen yet);
+  1D095BE おまけムービー! banner (room, unseen); 1D0B2A4 cards (no text: drop).
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the

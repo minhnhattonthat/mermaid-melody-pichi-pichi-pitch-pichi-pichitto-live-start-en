@@ -1,0 +1,3 @@
+# card / minigame prompt panel (card_game, minigame_1/2: BG1 pal 2, map from the scene); pal masked + palfixed
+# offset	size	layout	png	English	Japanese
+1C07510	800x2	tiles16	gfx/out/prompt/1C07510.png	Play a game? (tools/gfx_cards.py)	ゲームする?

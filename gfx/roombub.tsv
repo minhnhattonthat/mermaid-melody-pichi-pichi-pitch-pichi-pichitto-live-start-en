@@ -1,0 +1,3 @@
+# room action bubbles (room: OBJ pal 1, 96x24 from 32x16 + 32x8 sprites)
+# offset	size	layout	png	English	Japanese
+1D09C87	800x4	tiles16	gfx/out/roombub/1D09C87.png	Put up a poster? / Play a game? / Place a mascot? / Listen to a song? / View cards? (tools/gfx_cards.py)	ポスターをはる? / ゲームをする? / マスコットをおく? / きょくをきく? / カードをみる?

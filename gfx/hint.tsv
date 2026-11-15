@@ -1,0 +1,3 @@
+# button hints at the top right (room, card_game, minigames: OBJ pal 0, 48x16 each)
+# offset	size	layout	png	English	Japanese
+1D01FD9	800x2	tiles32	gfx/out/hint/1D01FD9.png	A OK / B Quit (tools/gfx_cards.py)	Aきめる / Bやめる

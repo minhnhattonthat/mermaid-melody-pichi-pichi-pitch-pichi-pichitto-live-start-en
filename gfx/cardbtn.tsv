@@ -1,0 +1,3 @@
+# card / minigame buttons (card_game: OBJ pal 11, 64x32 sprites); pal fixed with tools/palfix.py
+# offset	size	layout	png	English	Japanese
+1D031F4	800x2	tiles16	gfx/out/cardbtn/1D031F4.png	Play / Yes / Quit / No (tools/gfx_cards.py)	あそぶ / する / やめる / しない
