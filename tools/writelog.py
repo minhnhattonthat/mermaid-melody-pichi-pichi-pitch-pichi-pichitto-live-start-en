@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import boxes  # noqa: E402
 import gfx  # noqa: E402
 import msgtable  # noqa: E402
+import names  # noqa: E402
 import romdiff  # noqa: E402
 import vwf  # noqa: E402
 
@@ -26,6 +27,7 @@ ZONES = {
     "vwf": [(vwf.BLIT_SITE, vwf.BLIT_SITE + 10), (vwf.BLIT_POOL, vwf.BLIT_POOL + 4),
             (vwf.DRAWCHAR - 0x08000000, vwf.DRAWCHAR - 0x08000000 + 8),
             (vwf.FONT - 0x08000000, vwf.ATTR), (vwf.ATTR, vwf.ATTR + 2 * vwf.NWIDTH), (vwf.CODE, vwf.FREE_END)],
+    "names": [(names.CHARSET, names.CHARSET + 2 * names.NCODES)],  # name charset: kana key codes -> Latin
 }
 
 

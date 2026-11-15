@@ -21,6 +21,7 @@ import gfx  # noqa: E402
 import marker  # noqa: E402
 import msgcodec  # noqa: E402
 import msgtable  # noqa: E402
+import names  # noqa: E402
 import vwf  # noqa: E402
 import writelog  # noqa: E402
 from tbl import Table  # noqa: E402
@@ -50,6 +51,7 @@ def build(orig, lang="en", entries=None, log=None):
     stage("boxes", lambda: boxes.grow(rom, entries, lang))
     stage("vwf", lambda: vwf.apply(rom))
     stage("gfx", lambda: gfx.apply(rom))
+    stage("names", lambda: names.apply(rom))
     return bytes(rom)
 
 

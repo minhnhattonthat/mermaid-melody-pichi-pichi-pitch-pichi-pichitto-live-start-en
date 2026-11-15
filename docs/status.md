@@ -2,7 +2,18 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba sha1 28bed779 (2026-11-15 session 7; smoke ok, write log clean, check 35 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 8, sha1 3b3c756c; smoke ok, write log clean, check 37 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-15, session 8):** Latin name entry, half done. Build stage `names` (`tools/names.py`,
+  `tests/test_names.py`): name charset 0x187EA84 maps every keyboard code to the English letter planned for that key
+  (hiragana page A-Z + digits/punct, katakana page a-z; key map `python -X utf8 tools/names.py`); checked: fixture
+  name あい prints "AB", typed keys give A / B / b (`work/qa/ne_en`). `gfx.FORKS` (tested only by build so far): a row
+  in FORKS gets a new chain + a copy of its resource table, and only the named literal moves, so name entry can have
+  its own keyboard while compose keeps kana (notes `docs/re/graphics.md` §Name entry). `tools/lua/reslog.lua` logs
+  resource-record loads with the asking code. **Next:** gfx group `names`: 171EAB9 (800x4) png with Latin keys drawn
+  at the kana positions (both pages: dump the katakana page's OAM/VRAM too, SELECT toggles; ゛゜ keys blank), via
+  `gfx_obj.Sprites("name_entry", OAM 14..)`; then `gfx.py check` shows the fork, build, warp name_entry (Latin keys)
+  AND compose (still kana keyboard + lyric glyphs). Then header 179B69F (record 0x76) STARTボタン けってい / SELECTボタン
+  きりかえ -> START OK / SELECT ABC/abc; compose uses its own header (check which block).
 - **Phase 8 progress (2026-11-15, session 7):** `gfx.apply` relocates chains that outgrow their slot (below
   0x2000000) and repoints every moved chunk's pointers; new test: no pointerless stream may follow a row. Groups
   `epnum` (179BC34 800x16: episode numbers 話 -> EP, grid + cursor checked in scene 25, `work/qa/p8ep`) and `bonus`
@@ -55,7 +66,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   4. Units with a guess budget (78 warnings) warn only: confirm their boxes in the tour.
   5. The msgview debug box (warp `MSG=N`) draws through the non-VWF debug font, so English shows as junk there: use story warps for visual QA, msgview only for text logging. Phase 9: pass 0040/0110 to `jp_left.py --known` (intended Japanese).
 - **Later:**
-  - English name entry needs Latin letters in the name charset (0x187EA84 has 0-9 A-F only) and a redrawn keyboard; F6 name width in the lint is a 60 px guess until then.
+  - F6 name width in the lint is a 60 px guess: measure once the Latin keyboard is in (max name length?).
+  - Katakana-page ー may be code 0xC2 (glyph 0x16F, not in jp.tbl), not 0x67: type it on page 2 and check it prints "-".
   - Debug tool gaps (add when needed): GOD mode for gameplay (life gauge address unknown), scenes 17/30/31 blank when warped, 止め絵チェック item, results after a real song (only empty results warp).
   - Text coverage (phase 8): `tools/lua/msglog.lua` logs `TEXT <hex id>`; msgview sweep over all ids plus story EP 1-39 (with `--mash`).
   - Glyph 0x167 (circled, song credits) read as `Ⓒ`, a guess: zoom it in game when the credits are QA'd.

@@ -150,13 +150,14 @@ def chunk_starts(rom, off, size):
     return starts
 
 
-def edited_blocks(rom):
+def edited_blocks(rom, forks=False):
     """-> [(offset, old stream end, new compressed chain, [(old chunk start, new chunk offset in the chain)])] for
-    every row whose png exists. A chunk may have its own pointer (179BC34: the episode grid reads the whole chain,
-    the cursor each chunk), so plan() repoints every chunk that moves."""
+    every row whose png exists (forks=True: only FORKS rows, else only the others). A chunk may have its own pointer
+    (179BC34: the episode grid reads the whole chain, the cursor each chunk), so plan() repoints every chunk that
+    moves."""
     out = []
     for group, off, size, layout, png in rows():
-        if not (ROOT / png).exists():
+        if not (ROOT / png).exists() or (off in FORKS) != forks:
             continue
         data, end = decode(rom, off, size)
         oimg = to_image(data, layout)
@@ -213,6 +214,10 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
 
 
 RELOC_TOP = 0x2000000  # blocks that outgrow their slot go here, downward (0x00 padding; text fills upward from 0x1FE0200)
+# A block shared by two scenes, redrawn for one: offset -> (resource table, records, record, literal). The new chain
+# and a copy of the table (that record -> the new chain) go below the relocated blocks; only the literal (the one
+# scene's table pointer) moves to the copy, so the other scene keeps the original.
+FORKS = {0x171EAB9: (0x16F6CC8, 197, 39, 0x10E10)}  # name keyboard; compose keeps kana (docs/re/graphics.md)
 
 
 def pointers(rom, off):
@@ -240,25 +245,55 @@ def plan(rom):
     return out
 
 
+def fork_plan(rom, top):
+    """-> [(new chain at, chain, table copy at, table, records, record, literal)] for FORKS rows, below `top`."""
+    out = []
+    for off, _, comp, _ in edited_blocks(rom, forks=True):
+        table, n, rec, lit = FORKS[off]
+        at = top = top - len(comp)
+        copy = top = top - 5 * n
+        out.append((at, comp, copy, table, n, rec, lit))
+    return out
+
+
+def low(p):
+    """Lowest relocated offset of a plan (RELOC_TOP when nothing moved)."""
+    return min([at for off, _, _, at, _ in p if at != off], default=RELOC_TOP)
+
+
 def slots(rom):
-    """The gfx stage's write zones: every row's original stream chain, relocated streams and moved pointers."""
+    """The gfx stage's write zones: every row's original stream chain, relocated streams and moved pointers, forks."""
     zones = [(off, decode(rom, off, size)[1]) for _, off, size, _, _ in rows()]
-    for off, _, comp, at, moves in plan(rom):
+    p = plan(rom)
+    for off, _, comp, at, moves in p:
         if at != off:
             zones.append((at, at + len(comp)))
-        zones += [(p, p + 4) for p, _ in moves]
+        zones += [(ptr, ptr + 4) for ptr, _ in moves]
+    for at, comp, copy, _, n, _, lit in fork_plan(rom, low(p)):
+        zones += [(at, at + len(comp)), (copy, copy + 5 * n), (lit, lit + 4)]
     return zones
 
 
 def apply(rom):
     """Write edited chains over their original streams, or below RELOC_TOP when they outgrow the slot (the old
-    stream stays, unused), and repoint every chunk that moved."""
-    for off, end, comp, at, moves in plan(rom):
+    stream stays, unused), and repoint every chunk that moved. Then the forks: their chain and table copy (taken
+    after the moves, so it carries them) below that, and the scene's literal -> the copy."""
+    p = plan(rom)
+    forks = fork_plan(rom, low(p))
+    for off, end, comp, at, moves in p:
         if at != off and any(rom[at:at + len(comp)]):
             raise SystemExit(f"gfx block {off:X}: relocation spot {at:X} is not free (text grew into it?)")
         rom[at:at + len(comp)] = comp
-        for p, v in moves:
-            rom[p:p + 4] = v.to_bytes(4, "little")
+        for ptr, v in moves:
+            rom[ptr:ptr + 4] = v.to_bytes(4, "little")
+    for at, comp, copy, table, n, rec, lit in forks:
+        if any(rom[copy:at + len(comp)]):
+            raise SystemExit(f"gfx fork at {copy:X}: not free (text grew into it?)")
+        t = bytearray(rom[table:table + 5 * n])
+        t[5 * rec:5 * rec + 4] = (0x08000000 | at).to_bytes(4, "little")
+        rom[at:at + len(comp)] = comp
+        rom[copy:copy + 5 * n] = t
+        rom[lit:lit + 4] = (0x08000000 | copy).to_bytes(4, "little")
 
 
 def main():
@@ -272,9 +307,12 @@ def main():
             save_png(to_image(data, layout), pal, GFX / "orig" / group / f"{off:07X}.png")
         print("exported", group)
     elif cmd == "check":
-        for off, end, comp, at, moves in plan(rom):
+        p = plan(rom)
+        for off, end, comp, at, moves in p:
             print(f"{off:07X} slot {end - off} new {len(comp)}{f'  moved to {at:07X}' if at != off else ''}"
                   f"{f', {len(moves)} pointers' if moves else ''}")
+        for at, comp, copy, table, _, rec, lit in fork_plan(rom, low(p)):
+            print(f"fork {len(comp)} bytes at {at:07X}, table {table:X} copy at {copy:07X} (record {rec}), literal {lit:X}")
 
 
 if __name__ == "__main__":

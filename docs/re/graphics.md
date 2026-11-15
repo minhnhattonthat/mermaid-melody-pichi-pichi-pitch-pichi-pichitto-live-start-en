@@ -149,5 +149,18 @@ prompts, ending and credits, story scenes if any.
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
   title text inside the block still unread; the map is per episode (find its source before redrawing).
+- **Name entry (session 8, read, not drawn yet):** the kana keyboard is OBJ pal 0 sprites (OAM 14-~60, tiles 0-210)
+  from 171EAB9 (800x4), loaded as table 16F6CC8 record 39 (0x27) by the name screen (0x08010C44, table literal at
+  0x08010E10, read only by the ldr at 0x08010C3A; r8 keeps it for record 0x76 = 179B69F header) AND by compose
+  (0x0800E768, record 39; compose also loads record 42 = the same block for its lyric glyphs, record 38 into BG).
+  Compose lyrics are sung kana, so compose keeps the kana keyboard: give the name screen its own copy (new chain +
+  a copy of the 197-record table with record 39 repointed, literal 0x08010E10 -> the copy). `tools/lua/reslog.lua`
+  logs record loads (lr of 0x080012D4 = the scene code). Records 39/40/42 all point at 171EAB9 (attr fa/3a/70);
+  record 40 changed nothing visible in either scene. Layout per page (SELECT toggles hiragana/katakana): row 1
+  あいうえお たちつてと まみむめも わをん゛゜, row 2 かきくけこ なにぬねの やゆよー ぁぃぅぇぉ, row 3 さしすせそ
+  はひふへほ らりるれろ っゃゅょ (56 code keys a page). In the English build a kana name draws as junk: the name
+  charset 0x187EA84 maps codes to glyph slots that now hold English letters. Plan: Latin keys (page 1 upper, page 2
+  lower, digits/punctuation in the spare keys), charset entries of those codes -> en.tbl slots, ゛゜ keys blank
+  (voiced codes -> the base letter). Shots of both original pages: `work/qa/ne_orig/kb.png`.
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.
