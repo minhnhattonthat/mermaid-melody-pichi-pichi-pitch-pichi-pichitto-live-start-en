@@ -1,0 +1,4 @@
+# HUD atlas: score / goal words (+ difficulty pills, digits): OBJ pal 0/1/2/8/11, pieces copied by tile rect
+# layout: eight 0x800 chunks = 128x32 panels, 2 across (256x128), as OBJ VRAM holds them
+# offset	size	layout	png	English	Japanese
+1F0F059	800x8	obj16x4*8/2	gfx/out/score/1F0F059.png	pts, songs, Left, Song, Clear goal, pts, High|Score, Rhythm (tools/gfx_score.py)	てん あと きょく のこり うた クリアもくひょう てん さいこう|とくてん リズム

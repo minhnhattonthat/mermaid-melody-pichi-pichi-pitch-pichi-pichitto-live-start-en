@@ -38,45 +38,52 @@ def load_pal(group):
 
 
 def parse_layout(layout):
-    """-> (tile columns per unit, tile rows, units). A tile sheet is one unit."""
+    """-> (tile columns per unit, tile rows, units, units per image row). A tile sheet is one unit.
+    objWxH*N/R: N units of WxH tiles, R to an image row (default all N side by side)."""
     if layout.startswith("obj"):
         wh, n = layout[3:].split("*")
+        n, _, r = n.partition("/")
         w, h = wh.split("x")
-        return int(w), int(h), int(n)
-    return int(layout[5:]), None, 1
+        return int(w), int(h), int(n), int(r or n)
+    return int(layout[5:]), None, 1, 1
+
+
+def _place(t, tw, th, per_row):
+    """tile index -> (tile x, tile y) in the image."""
+    u, r = divmod(t, tw * th)
+    ty, tx = divmod(r, tw)
+    return (u % per_row) * tw + tx, (u // per_row) * th + ty
 
 
 def to_image(data, layout):
     """4bpp tiles -> rows of palette indices."""
-    tw, th, units = parse_layout(layout)
+    tw, th, units, per_row = parse_layout(layout)
     ntiles = len(data) // 32
     if th is None:
         th = -(-ntiles // tw)
-    img = [[0] * (tw * 8 * units) for _ in range(th * 8)]
+    img = [[0] * (tw * 8 * per_row) for _ in range(th * 8 * -(-units // per_row))]
     for t in range(min(ntiles, tw * th * units)):
-        u, r = divmod(t, tw * th)
-        ty, tx = divmod(r, tw)
+        X, Y = _place(t, tw, th, per_row)
         for y in range(8):
             for x in range(8):
                 b = data[t * 32 + y * 4 + x // 2]
-                img[ty * 8 + y][(u * tw + tx) * 8 + x] = b >> 4 if x & 1 else b & 15
+                img[Y * 8 + y][X * 8 + x] = b >> 4 if x & 1 else b & 15
     return img
 
 
 def from_image(img, layout, orig):
     """Inverse of to_image; bytes beyond the laid-out tiles keep `orig`."""
-    tw, th, units = parse_layout(layout)
+    tw, th, units, per_row = parse_layout(layout)
     ntiles = len(orig) // 32
     if th is None:
         th = -(-ntiles // tw)
     out = bytearray(orig)
     for t in range(min(ntiles, tw * th * units)):
-        u, r = divmod(t, tw * th)
-        ty, tx = divmod(r, tw)
+        tX, tY = _place(t, tw, th, per_row)
         for y in range(8):
             for x in range(0, 8, 2):
-                row = img[ty * 8 + y]
-                X = (u * tw + tx) * 8 + x
+                row = img[tY * 8 + y]
+                X = tX * 8 + x
                 out[t * 32 + y * 4 + x // 2] = row[X] | row[X + 1] << 4
     return bytes(out)
 

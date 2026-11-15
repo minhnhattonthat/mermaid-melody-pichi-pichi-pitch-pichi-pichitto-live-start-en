@@ -1,0 +1,6 @@
+# cloud buttons: pause (29), game over retry (37), tokoton start (40); OBJ pal 8/10, 2D map, two 64x32 sprites a row
+# offset	size	layout	png	English	Japanese
+1F0D0FC	800x1	tiles16	gfx/out/btn/1F0D0FC.png	Quit, Continue (tools/gfx_btn.py)	やめる つづける
+1F0D56D	800x1	tiles16	gfx/out/btn/1F0D56D.png	Quit, Retry	やめる もういちど
+1F0DA41	800x2	tiles16	gfx/out/btn/1F0DA41.png	Continue, New Game, crossed Continue, Select (screen not warped yet)	つづきから はじめから つづ✗から えらぶ
+1F0E3F7	800x3	tiles16	gfx/out/btn/1F0E3F7.png	Yes, No; prompt Start a New Game? (screen not warped yet)	はい いいえ; ほんとうにはじめからでいいですか?

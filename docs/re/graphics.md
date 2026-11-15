@@ -58,6 +58,22 @@ prompts, ending and credits, story scenes if any.
 - Group `icons` (done): 170C1F2 (800x6, 128x192 sheet of six 64x64 icons, OBJ tile 0), `tools/gfx_icons.py`.
 - Group `diff` (done): 17264E2 (800x4, 128x128 at OBJ tile 272): 6 difficulty bubbles (affine-scaled when not
   selected) + 32x16 header pieces ボタン/スタート/もどる/けってい -> Button/Start/Back/OK, `tools/gfx_diff.py`.
+- `tools/gfx_where.py SCENE OFF SPEC LAYOUT`: a block's VRAM runs in a scene dump, each OAM sprite on it with its
+  rect in the block render, BG cells, and a render in the most-used palette (`work/gfx/w_<off>.png/.pal`).
+  Rects of blank/duplicate tiles can map to the wrong copy: check odd ones by eye. `tools/gfx_grid.py` zooms a band
+  with a tile grid.
+- **Panelled atlases:** a 0x800 chain can be eight 128x32 panels laid 2 across in OBJ VRAM (256 px wide): layout
+  `obj16x4*8/2` (`objWxH*N/R`, R units per image row). A word can straddle panels (big てん in 1F0F059 is 32x24).
+- Group `btn` (done): cloud buttons 1F0D0FC (Quit/Continue), 1F0D56D (Quit/Retry), 1F0DA41 (Continue/New Game/
+  crossed Continue/Select), 1F0E3F7 (Yes/No + prompt "Start a New Game?"), `tools/gfx_btn.py`; checked in pause,
+  game over retry, tokoton (`work/qa/p8btn`). 1F0DA41/1F0E3F7 are on a screen no warp reaches yet (resource table
+  1EFF434 entries 26/42): the prompt is drawn as one line in the first 128 px; check it when reached.
+- Group `score` (done): HUD atlas 1F0F059 words pts/songs/Left/Song/Clear goal/High|Score/Rhythm, `tools/gfx_score.py`;
+  checked in game over, tokoton, draw, results (`work/qa/p8score`). とくてん alone = と left half at (216,16) + x 48-87
+  of さいこうとくてん. Left in the atlas (not seen in a warp yet): difficulty pills (128-224, 32-128: かんたん ふつう
+  むずかしい いつもの きぶん きまぐれ パート ミックス, white 14-15 on the pill fill) and framed labels セー.. / あおあ.. /
+  ポ / プ at (224-255, 16-64).
+- 1F59B31 is a byte-identical copy of 17264E2 (difficulty sheet): a second row in `gfx/diff.tsv` with the same png.
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
