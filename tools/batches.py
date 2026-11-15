@@ -71,7 +71,8 @@ def _ctx():
 
 
 def box_limit(entry):
-    """-> (kind, px, lines) the English must fit: measured boxes as boxes.py; a guessed box grows to what the JP uses."""
+    """-> (kind, px, lines) the English must fit: measured boxes as boxes.py; a guessed box grows to the lines the JP
+    uses, not its width (the game char-wraps long lines: a Japanese line wider than the box proves nothing)."""
     c = _ctx()
     b = c["budgets"].get(entry["id"])
     if not b or b[1] is None:
@@ -79,7 +80,7 @@ def box_limit(entry):
     kind, px, lines, guess = b
     if guess:
         pg = c["boxes"].pages(entry["jp"], "jp", c["units"], c["widths"])
-        px, lines = max(px, c["boxes"].need_px(pg)), max(lines, c["boxes"].lines_needed(pg))
+        lines = max(lines, c["boxes"].lines_needed(pg))
     return kind + ("?" if guess else ""), px, lines
 
 
@@ -112,7 +113,7 @@ def unwidow(entry, en):
     """A page whose last line is one word takes the previous line's last word too, when that line doesn't end a
     sentence and the result fits the box (visual QA flags one-word last lines)."""
     b = box_limit(entry)
-    if not b or b[0].rstrip("?") not in ("bubble", "narration", "guess", "song dialogue"):
+    if not b or b[0].rstrip("?") not in ("bubble", "narration", "guess", "song dialogue", "seen"):
         return en
     c = _ctx()
     parts = re.split(r"(\{FA:06\}|\{wait\})", en)
@@ -120,6 +121,9 @@ def unwidow(entry, en):
         lines = parts[i].split("\n")
         if re.search(r"\{(FC|FB|FA:05|FA:11)", parts[i]):  # menus, number fields, column layouts
             continue
+        codes = []  # trailing code-only lines ("tomorrow!\n{FA:FF0110}{end}"): the widow is the line above them
+        while len(lines) > 2 and not re.sub(r"\{[^}]*\}", "", lines[-1]).strip():
+            codes.insert(0, lines.pop())
         tail = re.sub(r"\{[^}]*\}", "", lines[-1]).strip()
         if len(lines) < 2 or not tail or " " in tail or len(tail) > 14:
             continue
@@ -127,7 +131,7 @@ def unwidow(entry, en):
         if " " not in prev.strip() or re.search(r"[.!?~…♪」)]\s*$|\}$", prev):
             continue
         head, word = prev.rstrip(" ").rsplit(" ", 1)
-        cand = lines[:-2] + [head, word + " " + lines[-1]]
+        cand = lines[:-2] + [head, word + " " + lines[-1]] + codes
         meas = re.sub(r"\{end\}$", "", "\n".join(cand))
         if c["boxes"].need_px(c["boxes"].pages(meas, "en", c["units"], c["widths"])) <= b[1]:
             parts[i] = "\n".join(cand)
@@ -140,7 +144,8 @@ def rewrap_batch():
     rows = []
     for e in index().values():
         if e.get("en") and e.get("status") != "keep-jp" and width_problems(e, e["en"]):
-            rows.append((e, re.sub(r" *\n(?!\{end\}|$)", " ", e["en"])))
+            rows.append((e, re.sub(r"(?<![\n\]]) *\n(?!\{end\}|\{FA:FF|\{FD|\n|$)", " ", e["en"])))
+            # ^ blank-line runs, "[Name]" header lines and {FD} reading lines stay
     (TL / "rewrap.tsv").write_text("".join(f"{e['id']}\t\t\t\t\n" for e, _ in rows), encoding="utf-8", newline="\n")
     out = [e["id"] + "\t" + n.replace("\n", "\\n") + "\n" for e, n in rows]
     (TL / "rewrap.out.tsv").write_text("".join(out), encoding="utf-8", newline="\n")

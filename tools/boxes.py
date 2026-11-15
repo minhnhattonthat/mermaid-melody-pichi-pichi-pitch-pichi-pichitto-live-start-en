@@ -16,6 +16,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import enfont  # noqa: E402
+import msgboxes  # noqa: E402
 from msgcodec import TOKEN  # noqa: E402
 
 EVENTS = (0x1F5C660, 0x1F67000)  # event-script u16 stream; past ~0x1F67000 the linear walk desyncs in data (false bubbles)
@@ -65,12 +66,15 @@ def song_boxes(rom):
 # (first id, last id, kind, last-glyph start limit px, lines per page); None limit = not lint-checked
 RANGES = [
     (0, 6, "numbers/debug", None, None),
+    (252, 255, "font test", None, None),  # 1ADE: debug charset line, no spaces to wrap at
+    (128, 141, "profiles", 212, 9),  # 【name】 + text; box unseen: the game char-wraps (Japanese lines run to 76 kana)
     (80, 80, "credits", 220, 9), (88, 98, "credits", 220, 9),  # Japanese runs to 216: no wrap, screen edge at col 1
     (256, 305, "lyrics", 180, 1), (512, 1023, "lyrics", 180, 1),  # = longest Japanese line; UI sprites cover x > ~200
     (1024, 1030, "link messages", 212, 1),
     (1281, 1329, "narration", 196, 6),
 ]
 GUESS = ("guess", 196, 3)
+SEEN = msgboxes.load()
 
 
 def fixed(box):
@@ -97,7 +101,11 @@ def budget(e, bub, song=None):
                 out.append((kind, limit, lines, False))
                 break
         else:
-            out.append(GUESS + (True,))
+            if mid in SEEN:  # box measured in game (docs/re/msgboxes.tsv); 8 px mode: last glyph <= W*8 - 8
+                w, h, flags = SEEN[mid]
+                out.append(("seen", w * 8 - (8 if flags & 1 else 12), h // 2, False))
+            else:
+                out.append(GUESS + (True,))
     return min(out, key=lambda b: (b[3], b[1] is None, b[1] or 0, b[2] or 0))  # measured before guessed, then tightest
 
 
@@ -189,7 +197,8 @@ def lint(entries, lang="en", bub=None, song=None):
         jp_lines = lines_needed(pages(e["jp"], "jp", units, widths, sp))
         level = "warn" if guess else "error"
         need = need_px(pgs)
-        if need > limit and not (lang == "jp" and sp == 8):  # kana song lines wrap at any glyph (engine auto-wrap)
+        if need > limit and not (lang == "jp" and (sp == 8 or kind in ("profiles", "seen"))):
+            # ^ kana lines the engine auto-wraps at any glyph (song lines; Japanese written as one long line)
             out.append((level, e["id"], f"{kind}: line needs {need} px, limit {limit}"))
         n = lines_needed(pgs)
         if n > max(lines, jp_lines):

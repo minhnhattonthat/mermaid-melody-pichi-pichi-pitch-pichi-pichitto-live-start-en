@@ -39,7 +39,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ふふふ…………つかまえたよ。\nきたたいへいようの\n{call:@2B27}。{wait}いまから、\nわたしのきゅうでんに、\nおまねきしよう……。{FA:06}プリンセスのしんじゅもね…。\n　\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Heh heh... I have caught you,\n{call:@2B27} of the North Pacific.{wait}Now, allow me to invite you to my palace...{FA:06}Along with the princess's pearl, of\ncourse...\n \n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Heh heh... I have caught you,\n{call:@2B27} of the North Pacific.{wait}Now, allow me to invite you to my palace...{FA:06}Along with the princess's pearl,\nof course...\n \n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あれがうみをつかさどるめがみ、\n{call:@2AC6}……。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}So that is the goddess who rules the sea,\n{call:@2AC6}...\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}So that is the goddess who rules the\nsea, {call:@2AC6}...\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -325,7 +325,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}……おあそびは、もうおわり。{FA:06}こおりづけにして、\n{call:@2B23}さまのところまで、\nつれていくわ。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}...Playtime is over.{FA:06}I'll freeze you solid and take you to\n{call:@2B23}-sama.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}...Playtime is over.{FA:06}I'll freeze you solid and take you\nto {call:@2B23}-sama.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -985,7 +985,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}きもだめしっていったら、\nまなつのこいをいろどる、\nじゅうようなイベント。{FA:06}{call:@2B27}たちが、\nこないわけがないですわ。\nあはは……………。{wait}でも、こうやってアベックを\nおどかして、きょうでもう、\n１しゅうかん。{call:@2B13}、ちょっと\nつかれちゃった…………。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}A test of courage is simply essential to a\nmidsummer romance.{FA:06}Surely the Mermaid Princesses wouldn't\nmiss it. Ahaha.........{wait}But I've been scaring couples like this for\na whole week now. {call:@2B13} is a teeny bit\ntired.........\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}A test of courage is simply essential to a\nmidsummer romance.{FA:06}Surely the Mermaid Princesses wouldn't\nmiss it. Ahaha.........{wait}But I've been scaring couples like this for\na whole week now. {call:@2B13} is a teeny\nbit tired.........\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

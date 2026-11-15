@@ -314,7 +314,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}そちらのステージは、\nもうおわったのかしら？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Is your little show over already, I\nwonder?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Is your little show over already,\nI wonder?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

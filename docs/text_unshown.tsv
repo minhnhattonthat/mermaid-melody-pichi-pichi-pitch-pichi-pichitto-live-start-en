@@ -1,0 +1,47 @@
+# unit	reason (tools/cover.py waivers: units no message id shows; each is a {call} target drawn inside its callers)
+0040	call target of 0033 (no message id)
+0110	call target of 0033 (no message id)
+022D	call target of 0215: box codes only
+0DCA	call target: "Dark Lovers" in the profiles
+0DDA	call target: Kaito in the profiles
+2A5B	call target: name Lucia (273 callers)
+2A5F	call target: Lucia Nanami
+2A70	call target: name Hanon
+2A74	call target: Hanon
+2A82	call target: Hanon Hosho
+2A96	call target: name Rina
+2A99	call target: Rina Toin
+2AAC	call target: name Karen
+2AB0	call target: name Hippo
+2AB4	call target: name Meru
+2AB9	call target: Meru
+2AC6	call target: Aqua Regina
+2ADC	call target: name Auri
+2AE0	call target: name Taki
+2AE3	call target: name Nikora
+2AE7	call target: name Kaito
+2AEA	call target: Kaito
+2AF8	call target: Kaito Domoto
+2B0A	call target: name Izuru
+2B0F	call target: name Eriru
+2B13	call target: name Yuri
+2B17	call target: name Maria
+2B1B	call target: name Sheshe
+2B20	call target: name Mimi
+2B23	call target: name Gaito
+2B27	call target: Mermaid Princess
+2B32	call target: Mermaid
+2B38	call target: Mitsuki-sensei
+2B3F	call target: Mitsuki-sensei
+2B4F	call target: name Taro
+2B54	call target: Taro
+2B72	call target: name Makoto
+2B76	call target: name Sara
+2B7B	call target: Sara
+2B88	call target: ??? speaker
+2B8C	call target: speaker-tag colour code
+2B92	call target: speaker-tag colour code
+2B99	call target: colour code
+2B9F	call target: empty code unit
+2BA5	call target: empty code unit
+2BAB	call target: I'm Lucia Nanami!

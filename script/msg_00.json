@@ -871,7 +871,7 @@
   ],
   "used": true,
   "jp": "【イズール】\nガイトのてした、{call:@0DCA}のひとり。すいりゅうをつかってこうげきしてくるんだ。\nガイトのことがだいすきで、てがらを\nたてようとるちあたちをねらっているけ\nど、なかなかいいさくせんがたてられな\nくてしっぱいばかりしているよ。{end}",
-  "en": "[Izuru]\nOne of Gaito's minions, the {call:@0DCA}. She attacks with water currents. She adores\nGaito and keeps going after Lucia and the others to earn his praise, but she can never come up\nwith a good plan, so she keeps on failing.{end}",
+  "en": "[Izuru]\nOne of Gaito's minions, the\n{call:@0DCA}. She attacks with water\ncurrents. She adores Gaito and keeps\ngoing after Lucia and the others to earn\nhis praise, but she can never come up with\na good plan, so she keeps on failing.{end}",
   "status": "done",
   "notes": ""
  },
@@ -882,7 +882,7 @@
   ],
   "used": true,
   "jp": "【エリル】\nガイトのてした、{call:@0DCA}のひとり。くるくるまわるとかおが\nこわくなる、ふしぎなキャラクター。\nのうてんきでなにもかんがえてないよう\nにみえるけど、るちあたちのうたをふう\nじる、いいさくせんをかんがえてくるこ\nともある、ゆだんのできないてきなの。{end}",
-  "en": "[Eriru]\nOne of Gaito's minions, the {call:@0DCA}. A mysterious\ncharacter whose face turns scary when she spins round and round. She\nlooks carefree, like she isn't thinking about anything, but sometimes\nshe comes up with clever plans to seal away Lucia and the others'\nsongs. She's an enemy you can't let your guard down around.{end}",
+  "en": "[Eriru]\nOne of Gaito's minions, the\n{call:@0DCA}. A mysterious character\nwhose face turns scary when she spins\nround and round. She looks carefree, but\nsometimes she comes up with clever plans\nto seal away Lucia and the others' songs.\nNever let your guard down around her!{end}",
   "status": "done",
   "notes": ""
  },
@@ -893,7 +893,7 @@
   ],
   "used": true,
   "jp": "【ユーリ】\nガイトのてした、{call:@0DCA}のひとり。ちょうのうりょくや、いやなねいろのピアノでこうげきしてくるよ。\nノエルをつかまえたのもユーリなの。\nびしょうねんのすがたのヒッポとこいに\nおちちゃって、いつかいっしょになれる\nひをゆめみているんだ。{end}",
-  "en": "[Yuri]\nOne of Gaito's minions, the {call:@0DCA}. She attacks with psychic powers and nasty-sounding piano music.\nYuri is also the one who captured Noelle. She fell in love with Hippo in his handsome-boy form, and dreams of the day\nthey can be together.{end}",
+  "en": "[Yuri]\nOne of Gaito's minions, the\n{call:@0DCA}. She attacks with psychic\npowers and nasty-sounding piano music.\nYuri is also the one who captured Noelle.\nShe fell in love with Hippo in his\nhandsome-boy form, and dreams of the\nday they can be together.{end}",
   "status": "done",
   "notes": ""
  },
@@ -904,7 +904,7 @@
   ],
   "used": true,
   "jp": "【マリア】\nガイトのてした、{call:@0DCA}のひとり。うみをこおらせたり、こおりをなげつけてこうげきしてくるよ。\nガイトにみとめられたくて、{call:@0DB2}にとりいろうとしたこともあるんだ。\nふしぎなちからをもつ{call:@0DDA}をねらったことも。{end}",
-  "en": "[Maria]\nOne of Gaito's minions, the {call:@0DCA}. She attacks by freezing the sea and hurling ice. Wanting Gaito to\nrecognize her, she once tried to win over the {call:@0DB2}. She's even gone after {call:@0DDA} and\nhis mysterious power.{end}",
+  "en": "[Maria]\nOne of Gaito's minions, the\n{call:@0DCA}. She attacks by freezing\nthe sea and hurling ice. Wanting Gaito to\nrecognize her, she once tried to win over\nthe {call:@0DB2}. She's even\ngone after {call:@0DDA} and his mysterious\npower.{end}",
   "status": "done",
   "notes": ""
  },
@@ -915,7 +915,7 @@
   ],
   "used": true,
   "jp": "【シスター・シェシェ】\n{call:@0DB2}のあねで、\nしっぽがマイクになっているの。\nふたりでうたううたはマーメイドをくるしめるちからをもっているんだ。\nいつもいもうとのミミとふたりでこうどうしていて{call:@0DCA}をしたにみているの。ふつうのうたはつうようしないおそろしいてきなんだよ。{end}",
-  "en": "[Sister Sheshe]\nThe older of the {call:@0DB2}. Her tail is a microphone. The songs the two of them sing have the power to torment mermaids. She\nalways acts together with her little sister Mimi, and looks down on the {call:@0DCA}. She's a terrifying enemy, and ordinary songs don't work\non her.{end}",
+  "en": "[Sister Sheshe]\nThe older of the {call:@0DB2}.\nHer tail is a microphone. The songs the\ntwo of them sing have the power to\ntorment mermaids. She always acts\ntogether with her little sister Mimi, and\nlooks down on the {call:@0DCA}. She's a\nterrifying enemy, and ordinary songs\ndon't work on her.{end}",
   "status": "done",
   "notes": ""
  },
@@ -926,7 +926,7 @@
   ],
   "used": true,
   "jp": "【シスター・ミミ】\n{call:@0DB2}のいもうと\nで、いつもあねのシェシェといっしょにこうどうしているよ。\nふたりでうたう「くろのコンチェルト」\nは、とてもきょうりょくで、なんども\nるちあたちをおいつめているんだ。\n「ほんとだよねえ」と「そうだよねえ」\nがくちぐせ。{end}",
-  "en": "[Sister Mimi]\nThe younger of the {call:@0DB2}. She\nalways acts together with her big sister Sheshe. \"Kuro no\nConcerto,\" the song the two of them sing, is super powerful,\nand it's cornered Lucia and the others again and again. Her\ncatchphrases are \"Sooo true~\" and \"Totally~.\"{end}",
+  "en": "[Sister Mimi]\nThe younger of the\n{call:@0DB2}. She always acts\ntogether with her big sister Sheshe.\n\"Kuro no Concerto,\" the song the two of\nthem sing, is super powerful, and it's\ncornered Lucia and the others again and\nagain. Her catchphrases are \"Sooo true~\"\nand \"Totally~.\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -948,7 +948,7 @@
   ],
   "used": true,
   "jp": "【七海　るちあ】　{FD:01}ななみ　るちあ\n{FD:00}きたたいへいよう・ピンクしんじゅの\nマーメイドプリンセス。\n７ねんまえにたすけたおとこのコにあげ\nたしんじゅをさがしに、にんげんかいへ\nやってきたんだ。その、はつこいのおとこのコ・{call:@0DDA}とであったの。\nちょっぴりドジだけど、こいにたたかい\nにがんばってるんだよ！{end}",
-  "en": "[Lucia Nanami]{FD:01}\n{FD:00}The Mermaid Princess of the North Pacific, with the pink pearl. She came to\nthe human world to look for the pearl she gave a boy she saved seven years\nago. There she met that boy, her first love: {call:@0DDA}. She's a little clumsy, but\nshe's doing her best in love and in battle!{end}",
+  "en": "[Lucia Nanami]{FD:01}\n{FD:00}The Mermaid Princess of the North\nPacific, with the pink pearl. She came to\nthe human world to look for the pearl she\ngave a boy she saved seven years ago.\nThere she met that boy, her first love:\n{call:@0DDA}. She's a little clumsy, but she's\ndoing her best in love and in battle!{end}",
   "status": "done",
   "notes": ""
  },

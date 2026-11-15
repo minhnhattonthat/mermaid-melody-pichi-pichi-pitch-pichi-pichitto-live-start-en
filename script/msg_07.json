@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B13}{call:@2B92}このユーリのかなでるふきょうわおんを\nきいて、にんげんたちはみ～んな、\nわれをわすれてしまうの。{FA:06}つまり、ユーリのおもいどおりに、\nうごいてくれるの！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}あれは…………{call:@2B3F}！？{end}",
-  "en": "{call:@2B8C}{call:@2B13}{call:@2B92}Why, when humans hear Yuri's dissonant\nmusic, every last one of them loses all\nsense of self!{FA:06}And then they do exactly as Yuri wishes!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}That's...... {call:@2B3F}?!{end}",
+  "en": "{call:@2B8C}{call:@2B13}{call:@2B92}Why, when humans hear Yuri's\ndissonant music, every last one of\nthem loses all sense of self!{FA:06}And then they do exactly as\nYuri wishes!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}That's...... {call:@2B3F}?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -831,7 +831,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}やっぱりあらわれたわね、\n{call:@2B27}。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}So you've shown up after all,\n{call:@2B27}.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}So you've shown up after\nall, {call:@2B27}.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

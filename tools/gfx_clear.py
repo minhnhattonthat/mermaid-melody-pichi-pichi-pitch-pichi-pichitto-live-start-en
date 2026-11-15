@@ -50,12 +50,16 @@ def edit(L):
     white = Counter(rgb[p] for p in foot if kind[p] == "W").most_common(1)[0][0]
     grey = Counter(rgb[p] for p in foot if kind[p] == "G").most_common(1)[0][0]
     ys = sorted({y for _, y in letters})
-    mid = (ys[0] + ys[-1]) // 2  # bands: upper line above mid, lower below
+    rows = Counter(y for _, y in letters)  # bands split at the emptiest row of the middle third (the lines overlap
+    third = (ys[-1] - ys[0]) // 3  # in y: a plain half put the lower line's tall kana in the upper band)
+    mid = min(range(ys[0] + third, ys[-1] - third + 1), key=lambda y: rows[y])
     sticker, inks = {p for p in foot if kind[p] != "G"}, set()
     for word, line in LINES:
         band = [p for p in letters if (p[1] < mid) == (line == 0)]
         bx = [p[0] for p in band]
         by = [p[1] for p in band]
+        if line == 0:  # the hair right of すごいぞ! has pink specks that pulled Amazing! right (visual QA)
+            bx = sorted(bx)[:len(bx) - len(bx) // 50]
         ink, iw, ih = mask(word, 2, 2)
         cx, cy = (min(bx) + max(bx)) // 2, (min(by) + max(by)) // 2
         ink = {(x + cx - iw // 2, y + cy - ih // 2) for x, y in ink}

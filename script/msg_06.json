@@ -974,7 +974,7 @@
   ],
   "used": true,
   "jp": "これが、マーメイドプリンセスのちから…。{end}",
-  "en": "So this is the power of a Mermaid Princess...{end}",
+  "en": "So this is the power of a\nMermaid Princess...{end}",
   "status": "done",
   "notes": ""
  },

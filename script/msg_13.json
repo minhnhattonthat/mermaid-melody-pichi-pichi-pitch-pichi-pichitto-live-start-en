@@ -391,7 +391,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}よくまあ、ここまで\nたどりついたわねぇ。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Well, well. You actually made it all the way\nhere.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Well, well. You actually made it all the\nway here.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -831,7 +831,7 @@
   ],
   "used": true,
   "jp": "…ブラック・ビューティー・シスターズよりの\nあいず！　それっ！{end}",
-  "en": "...A signal from the Black Beauty Sisters!\nHere goes!{end}",
+  "en": "...A signal from the Black Beauty\nSisters! Here goes!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "さすがの{call:@2B27}も、\nうたがうたえないようじゃ、おてあげのようね。{end}",
-  "en": "Even the Mermaid Princesses are helpless if they\ncan't sing, it seems.{end}",
+  "en": "Even the Mermaid Princesses are\nhelpless if they can't sing, it seems.{end}",
   "status": "done",
   "notes": ""
  },

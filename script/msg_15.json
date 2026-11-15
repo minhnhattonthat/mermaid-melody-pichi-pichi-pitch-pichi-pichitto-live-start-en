@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}もうすこし……もうすこしでいいから、\nこのままオレのそばにいてくれ……。{wait}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}Just a little longer... Just a little longer,\nstay here by my side like this......{wait}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}Just a little longer... Just a little\nlonger, stay here by my side\nlike this......{wait}",
   "status": "done",
   "notes": ""
  },
@@ -732,7 +732,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ちょっとみんな、きいてよ！{FA:06}なんと、めだまきかくの\nライブコンサートが、\nちゅうしになっちゃったん\nですって！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Hey, everyone, listen to this!{FA:06}Get this: the big headline live concert got\ncanceled!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Hey, everyone, listen to this!{FA:06}Get this: the big headline live concert\ngot canceled!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -809,7 +809,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}さあ、こんやのライブ\nコンサートをかいさいして\nもらうために、\nみなさんにはなかなおりして\nもらいま～す！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Now then, so that tonight's live concert\ncan go ahead, you're all going to make\nup~!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Now then, so that tonight's live concert\ncan go ahead, you're all going to\nmake up~!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

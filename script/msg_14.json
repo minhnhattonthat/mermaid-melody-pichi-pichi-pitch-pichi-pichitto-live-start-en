@@ -732,7 +732,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あら？　あそこにいるのは\nなんですの？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh my? And what might that be over\nthere?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh my? And what might that be\nover there?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -765,7 +765,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}うまれたての、にんげんよ。{FA:06}どうしたのかしらこんな\nところで？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}A newborn human, of course.{FA:06}I wonder what it's doing in a place like\nthis?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}A newborn human, of course.{FA:06}I wonder what it's doing in a place\nlike this?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

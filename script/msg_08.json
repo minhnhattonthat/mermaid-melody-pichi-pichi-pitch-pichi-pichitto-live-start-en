@@ -50,7 +50,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}うるさい！{FA:06}おまえみたいなこむすめに\nせっきょうされるおぼえは\nないわ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Silence!{FA:06}I don't need a lecture from a little girl like\nyou!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Silence!{FA:06}I don't need a lecture from a little girl\nlike you!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "このおんがくは、{call:@2B32}だけにくつうをあたえる、\nせんりつでつくられているの。{FA:06}これをきいてくるしんだら、\nそれがマーメイドよ！{FA:06}あたしって、あったまいい～！{end}",
-  "en": "This music is made of a melody that only hurts {call:@2B32}s.{FA:06}Whoever suffers when they hear it is a Mermaid!{FA:06}Aren't I just brilliant~!{end}",
+  "en": "This music is made of a melody that only\nhurts {call:@2B32}s.{FA:06}Whoever suffers when they hear it is\na Mermaid!{FA:06}Aren't I just brilliant~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -424,7 +424,7 @@
   ],
   "used": true,
   "jp": "……いや、わたしもおなじ\nだなと、おもったんだ……。{FA:06}かこをふりかえっていてばかり\nいたな、とおもって……。\n{end}",
-  "en": "...No, I was just thinking I'm the same...{FA:06}I've done nothing but look back at the\npast...\n{end}",
+  "en": "...No, I was just thinking I'm the same...{FA:06}I've done nothing but look back at\nthe past...\n{end}",
   "status": "done",
   "notes": ""
  },
@@ -457,7 +457,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ふふふ…どうくつのなかにいる\nにんげんよ……………………。\nさあ、ゆっくりおやすみ……。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Fufufu... you humans inside the\ncave.................. Now, have a nice long\nsleep......\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Fufufu... you humans inside the\ncave.................. Now, have a nice\nlong sleep......\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1049,7 +1049,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ピンクしんじゅの\n{call:@2B27}、\nみつけた！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Found you, {call:@2B27} of the pink\npearl!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Found you, {call:@2B27} of the\npink pearl!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

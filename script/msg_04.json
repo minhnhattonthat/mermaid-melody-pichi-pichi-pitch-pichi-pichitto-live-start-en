@@ -826,7 +826,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\nきたたいへいようのくにの、\n{call:@2B27}なんだ。{FA:06}{call:@2B32}のあかし、あたしのピンク\nしんじゅをさがすため、\nちじょうのせかいにやってきたの。\n　\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}\nI'm the {call:@2B27} of the North\nPacific kingdom.{FA:06}I came to the world above to find my\npink pearl, the proof that I'm a\n{call:@2B32}.\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}\nI'm the {call:@2B27} of the North\nPacific kingdom.{FA:06}I came to the world above to find my\npink pearl, the proof that I'm\na {call:@2B32}.\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -945,7 +945,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}{FA:FF0301}{call:@2AEA}は、{call:@2A96}のこと、\nほんとうはどうおもっているんだろ\nう……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}{FA:06}{FA:FF0301}I wonder how {call:@2AEA} really feels about\n{call:@2A96}...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}{FA:FF0301}I wonder how {call:@2AEA} really feels\nabout {call:@2A96}...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -956,7 +956,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}もう！　じれったいなあ……。{FA:06}ほら、{call:@2A5B}。\nこれあげるから、{call:@2AE7}くんをさそって\nみて、ほんとうのことをきいてみた\nら！？\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}Ugh! This is driving me crazy...{FA:06}Here, {call:@2A5B}. Take these, invite\n{call:@2AE7}-kun, and ask him how he really\nfeels!\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}Ugh! This is driving me crazy...{FA:06}Here, {call:@2A5B}. Take these, invite\n{call:@2AE7}-kun, and ask him how he\nreally feels!\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -967,7 +967,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0300}なにこれ？\n……ピアノコンサートのチケット？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{FA:FF0300}What's this? ...Tickets to a piano\nconcert?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{FA:FF0300}What's this? ...Tickets to a\npiano concert?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1022,7 +1022,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}えっ、なに？　このさわぎは？\nイルカショーのステージのほうから\nきこえたみたいだけど……。{FA:06}おねがい、{call:@2AEA}！\nモモちゃんをみてて！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}Huh, what? What's all this commotion?\nIt sounded like it came from the dolphin\nshow stage...{FA:06}Please, {call:@2AEA}! Watch Momo-chan for\nme!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}Huh, what? What's all this commotion?\nIt sounded like it came from the dolphin\nshow stage...{FA:06}Please, {call:@2AEA}! Watch Momo-chan\nfor me!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1108,7 +1108,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}じつは、{call:@2AEA}さんには、\nとしうえのこいびとが、\nいたんですね～。{FA:06}しかも{call:@2A5B}さんは、{call:@2AE7}さんと\n「にんぎょのひとみ」をみにいった\nそのばで、ふたりのなかをみせつけ\nられてしまったのです。{wait}まぁ、このほうが{call:@2A5B}さんのため\nには、よかったんじゃないですかね\n…って、あら？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}You see, it turns out {call:@2AEA}-san had an\nolder girlfriend~.{FA:06}What's more, right where {call:@2A5B}-san\nwent with {call:@2AE7}-san to see the\n\"Mermaid's Eye,\"{FA:06}she had to watch him and his girlfriend\nbeing all lovey-dovey.{wait}Well, perhaps this is for the best for\n{call:@2A5B}-san, don't you think... Hm? Oh\nmy?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}You see, it turns out {call:@2AEA}-san had an\nolder girlfriend~.{FA:06}What's more, right where {call:@2A5B}-san\nwent with {call:@2AE7}-san to see the\n\"Mermaid's Eye,\"{FA:06}she had to watch him and his girlfriend\nbeing all lovey-dovey.{wait}Well, perhaps this is for the best for\n{call:@2A5B}-san, don't you think... Hm?\nOh my?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1196,7 +1196,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}よ～し、わたしもまけられない！{FA:06}わたしも、いとしの{call:@2B54}ちゃんに、あいじょうたっぷりの\nおべんとうをつくって、たべて\nもらうの！{FA:06}{FA:FF0303}そうして、あ～んなことや、こ～ん\nなことも………きゃあ～！！{end}",
-  "en": "{FA:FF0101}Okaaay, I can't lose either!{FA:06}I'm gonna make a lunch packed with love for my darling {call:@2B54}-chan\ntoo, and have him eat it!{FA:06}{FA:FF0303}And then we'll do all sooorts of things... Eee~!!{end}",
+  "en": "{FA:FF0101}Okaaay, I can't lose either!{FA:06}I'm gonna make a lunch packed with\nlove for my darling {call:@2B54}-chan too, and\nhave him eat it!{FA:06}{FA:FF0303}And then we'll do all sooorts of\nthings... Eee~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1240,7 +1240,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}だって、{call:@2A96}がおしゃれしたところ\nみてみたいんだもん！\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}But I really wanna see {call:@2A96} all dressed\nup!\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}But I really wanna see {call:@2A96} all\ndressed up!\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },

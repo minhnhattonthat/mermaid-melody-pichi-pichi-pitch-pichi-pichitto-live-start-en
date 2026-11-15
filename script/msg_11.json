@@ -204,7 +204,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あらわれたわね、マーメイド\nプリンセスたち！{FA:06}わたしのあいを、おみまいして\nさしあげてよ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}So you've appeared,\nMermaid Princesses! {FA:06}Allow me to treat you to a taste of my\nlove!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}So you've appeared,\nMermaid Princesses! {FA:06}Allow me to treat you to a taste of\nmy love!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -380,7 +380,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}うわあっ！　まって～！\nまだセッティングが、\nおわってないのよ～！！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Waah! Wait~! I'm not done setting up\nyet~!!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Waah! Wait~! I'm not done setting\nup yet~!!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -699,7 +699,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}{call:@2B8C}{call:@2A74}{call:@2B92}オトメがゆめみる、\nしあわせなこのばしょで！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}{call:@2B8C}{call:@2A74}{call:@2B92}In this happy place every maiden dreams\nof!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}{call:@2B8C}{call:@2A74}{call:@2B92}In this happy place every maiden\ndreams of!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -710,7 +710,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}ふらちなあくぎょうざんまい、\nぜったいにゆるさない！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}Your outrageous wicked deeds, I'll never\nforgive!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}Your outrageous wicked deeds, I'll\nnever forgive!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -831,7 +831,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}そうとわかったからには、\nもうてかげんは、\nいたしませんことよ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Now that I know, I shan't hold back any\nlonger!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Now that I know, I shan't hold back\nany longer!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
