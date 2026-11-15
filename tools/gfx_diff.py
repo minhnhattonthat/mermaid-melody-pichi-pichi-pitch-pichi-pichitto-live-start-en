@@ -30,19 +30,25 @@ def bubble(img, cx, cy, word):
     gfx.typeset(img, [word], (cx + 5, cy + 6, cx + 59, cy + 25), fill=15, outline=[], gap=2)
 
 
+SHEETS = {0x17264E2: BUBBLES, 0x1F5ABD8: ["Part", "Mix", "Sync"]}  # 1F5ABD8: パート ミックス シンクロ, same layout
+# (1F59B31 is a byte-identical copy of 17264E2 and shares its png)
+
+
 def main():
     rom = next((gfx.ROOT / "rom").glob("*.gba")).read_bytes()
     pal = gfx.load_pal("diff")
-    (_, off, size, layout, png), = gfx.rows("diff")
-    img = gfx.to_image(gfx.decode(rom, off, size)[0], layout)
-    for i, word in enumerate(BUBBLES):
-        bubble(img, i % 2 * 64, i // 2 * 32, word)
-    for i, word in enumerate(PIECES):
-        for y in range(112, 128):
-            img[y][i * 32:i * 32 + 32] = [0] * 32
-        gfx.typeset(img, [word], (i * 32, 112, i * 32 + 32, 124), fill=15, outline=10, bold=False)
-    gfx.save_png(img, pal, gfx.ROOT / png)
-    print(png)
+    for _, off, size, layout, png in gfx.rows("diff"):
+        if off not in SHEETS:
+            continue
+        img = gfx.to_image(gfx.decode(rom, off, size)[0], layout)
+        for i, word in enumerate(SHEETS[off]):
+            bubble(img, i % 2 * 64, i // 2 * 32, word)
+        for i, word in enumerate(PIECES):
+            for y in range(112, 128):
+                img[y][i * 32:i * 32 + 32] = [0] * 32
+            gfx.typeset(img, [word], (i * 32, 112, i * 32 + 32, 124), fill=15, outline=10, bold=False)
+        gfx.save_png(img, pal, gfx.ROOT / png)
+        print(png)
 
 
 if __name__ == "__main__":

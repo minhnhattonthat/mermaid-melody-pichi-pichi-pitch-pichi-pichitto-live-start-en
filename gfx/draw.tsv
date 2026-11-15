@@ -1,0 +1,3 @@
+# draw screen (scene 42): four 32x32 OBJ cells (pal 10, 2D map from OBJ tile 0)
+# offset	size	layout	png	English	Japanese
+1F1345A	800x2	tiles16	gfx/out/draw/1F1345A.png	DRAW (tools/gfx_draw.py)	ひきわけ

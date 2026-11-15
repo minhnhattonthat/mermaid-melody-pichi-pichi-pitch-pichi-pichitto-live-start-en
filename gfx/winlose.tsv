@@ -1,0 +1,4 @@
+# big win / lose lettering (screen not warped yet); pal = a stand-in with 16 distinct colours (score.pal), indices kept
+# offset	size	layout	png	English	Japanese
+1F12431	800x2	tiles16	gfx/out/winlose/1F12431.png	WIN (tools/gfx_winlose.py)	かち
+1F12CBD	800x2	tiles16	gfx/out/winlose/1F12CBD.png	LOSE	まけ

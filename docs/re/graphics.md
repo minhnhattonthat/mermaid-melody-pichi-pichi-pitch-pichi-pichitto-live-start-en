@@ -74,6 +74,12 @@ prompts, ending and credits, story scenes if any.
   むずかしい いつもの きぶん きまぐれ パート ミックス, white 14-15 on the pill fill) and framed labels セー.. / あおあ.. /
   ポ / プ at (224-255, 16-64).
 - 1F59B31 is a byte-identical copy of 17264E2 (difficulty sheet): a second row in `gfx/diff.tsv` with the same png.
+  1F5ABD8 (800x4) has the same layout with パート/ミックス/シンクロ -> Part/Mix/Sync (`gfx_diff.SHEETS`; not warped yet).
+- Group `draw` (done): 1F1345A is an 800x2 chain (not 0x40003): four 32x32 OBJ cells ひ/き/わ/け, each a separate
+  bouncing sprite -> one letter of DRAW per cell at 3x (`tools/gfx_draw.py`), checked in scene 42.
+- Group `winlose`: 1F12431 かち / 1F12CBD まけ (800x2: coloured word + silhouette, 64x32 each) -> WIN / LOSE at 2x
+  centred across both 32x32 cells (`tools/gfx_winlose.py`); screen not warped yet (probably link/vs results): if the
+  cells move apart like the draw screen, redo as one letter group per cell.
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
