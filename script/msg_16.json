@@ -1,0 +1,189 @@
+[
+ {
+  "id": "1021B",
+  "ids": [
+   2449
+  ],
+  "used": true,
+  "jp": "……ライブコンサートどころか、\nダーク・ラゔァーズまでよんで、\nなにしてるのあいつら……！？{wait}……………………よしっ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10257",
+  "ids": [
+   2450
+  ],
+  "used": true,
+  "jp": "{FA:FF0201}……あれは、マーメイド\nプリンセス！{FA:06}みんな、おうわよ！\n{FA:FF0200}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "1027E",
+  "ids": [
+   2451
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2B0A}・{call:@2B0F}・{call:@2B13}{call:@2B92}おう！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10298",
+  "ids": [
+   2452
+  ],
+  "used": true,
+  "jp": "……だれを\nおっていったの？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "102A7",
+  "ids": [
+   2453
+  ],
+  "used": true,
+  "jp": "おそらく、\n{call:@2AAC}だろう。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "102B6",
+  "ids": [
+   2454
+  ],
+  "used": true,
+  "jp": "ここから、おびきだして\nくれるために？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "102CA",
+  "ids": [
+   2455
+  ],
+  "used": true,
+  "jp": "{call:@2AAC}ひとりで、\nだいじょうぶかな～？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "102DF",
+  "ids": [
+   2456
+  ],
+  "used": true,
+  "jp": "ダーク・ラゔァーズに\nつかまるような、\n{call:@2AAC}じゃないだろ。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "102FF",
+  "ids": [
+   2457
+  ],
+  "used": true,
+  "jp": "だよね～。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10305",
+  "ids": [
+   2458
+  ],
+  "used": true,
+  "jp": "そっか！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "1030A",
+  "ids": [
+   2459
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AAC}{call:@2B92}……のこのこついてきて、ホント\nおまぬけカルテットね！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10332",
+  "ids": [
+   2460
+  ],
+  "used": true,
+  "jp": "ただおいかけても、いみがなかった\nですわ～！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10349",
+  "ids": [
+   2461
+  ],
+  "used": true,
+  "jp": "みんな、あたしたちの\nライブコンサートにきてくれて\nほんとうにありがとう！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10378",
+  "ids": [
+   2462
+  ],
+  "used": true,
+  "jp": "わたしたち、\nいっしょうけんめい\nうたいます！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "10399",
+  "ids": [
+   2463
+  ],
+  "used": true,
+  "jp": "みんな、\nおうえんよろしくな！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "103B2",
+  "ids": [
+   2472
+  ],
+  "used": true,
+  "jp": "※オートモードです。\nライブコンサートをたのしんでね！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "103CF",
+  "ids": [
+   2464
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}・{call:@2A70}・{call:@2A96}{call:@2B92}みんな！　どうも、ありがとう！！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ }
+]

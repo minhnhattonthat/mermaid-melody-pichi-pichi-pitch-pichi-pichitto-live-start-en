@@ -1,0 +1,1103 @@
+[
+ {
+  "id": "950C",
+  "ids": [
+   1850
+  ],
+  "used": true,
+  "jp": "ありがとう。\nあなたがたのおかげで、\nぼくたちはふたたび\nであうことができました。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9536",
+  "ids": [
+   1851
+  ],
+  "used": true,
+  "jp": "よかった……。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "953E",
+  "ids": [
+   1852
+  ],
+  "used": true,
+  "jp": "……すきなひとと、\nまたであう、か…。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9552",
+  "ids": [
+   1853
+  ],
+  "used": true,
+  "jp": "あなたがたには、ほんとうに\nかんしゃしています。{FA:06}でも、あともうひとつだけ、\nおねがいがあるのです…。{wait}……もういちどだけ、\nふれあい…たい…の…。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "959E",
+  "ids": [
+   1854
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（なにこれ！？\n　ゆうれいが、あたしのからだの\n　なかに、はいってきたの……？{FA:06}　からだが、\n　ぜんぜんいうこときかない……。）{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "95EC",
+  "ids": [
+   1855
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（えっ、{call:@2AE7}……………！？{FA:06}　ううんちがう、これはあのふたりの\n　たましい……………。）{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9628",
+  "ids": [
+   2361
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（{call:@2AE7}はいま、どうおもっているの…？{FA:06}　あたしのことを、どうおもって\n　いるの……？{FA:06}　{call:@2AE7}が、あたしをみつめている…。）\n　{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "967A",
+  "ids": [
+   1856
+  ],
+  "used": true,
+  "jp": "{call:@2AB4}、おきていたのね……。{FA:06}あさごはんたべたら、\nどこかいこうか？{FA:06}にんげんかいは、あそべるところ\nいっぱいあるよ。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "96B9",
+  "ids": [
+   1857
+  ],
+  "used": true,
+  "jp": "……そんなとこ、\nいきたくない！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "96CA",
+  "ids": [
+   1858
+  ],
+  "used": true,
+  "jp": "{call:@2AB4}、どうしたの……。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "96D8",
+  "ids": [
+   1859
+  ],
+  "used": true,
+  "jp": "{call:@2A70}さまは、たのしい\nにんげんかいでくらしていて、\n{call:@2B32}のくにのことなんて\nもうわすれたんでしょ！{FA:06}いま、{call:@2A70}さまはしあわせ\nだから、ほんきでくにの\nみんなをさがすきも、\nなくなっちゃって……。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9741",
+  "ids": [
+   1860
+  ],
+  "used": true,
+  "jp": "……わたしは、くにのみんなの\nことを、１にちだってわすれた\nことはないわ。{wait}{call:@2AB4}のママだって、きっとみつけ\nだしてあげる。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9781",
+  "ids": [
+   1861
+  ],
+  "used": true,
+  "jp": "そんなのウソよ！{wait}わたしは、すいようにママを\n見つけてもらうの！{FA:06}プリンセスさまのバカ～！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "97B1",
+  "ids": [
+   1862
+  ],
+  "used": true,
+  "jp": "まって、{call:@2AB4}！\n……えっ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "97C1",
+  "ids": [
+   1863
+  ],
+  "used": true,
+  "jp": "きゃー！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "97C6",
+  "ids": [
+   1864
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2B13}{call:@2B92}ふふっ、でかしたわね。{FA:06}どう？　なかまにうらぎられた\nきぶんは？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "97F4",
+  "ids": [
+   1865
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}……………………{call:@2AB4}！\n{call:@2AB4}がなぜ、{call:@2B13}なんかに！？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9821",
+  "ids": [
+   1866
+  ],
+  "used": true,
+  "jp": "よくやったわね、{call:@2AB4}ちゃん。{FA:06}でもね、ママなんてあきらめ\nなさい。{FA:06}あなたのママさがしなんて\nめんどうくさいこと、{call:@2B13}は\nまっぴら。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "986A",
+  "ids": [
+   1867
+  ],
+  "used": true,
+  "jp": "そ、そんな！　それじゃ\nやくそくが……きゃあ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9882",
+  "ids": [
+   1868
+  ],
+  "used": true,
+  "jp": "{FA:FF0201}キャハハハ。\n{FA:FF0200}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9892",
+  "ids": [
+   1869
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}{call:@2A5B}！　{call:@2A96}！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "98AA",
+  "ids": [
+   1870
+  ],
+  "used": true,
+  "jp": "ちいさなこをだますなんて、\nゆるさないからね！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "98C2",
+  "ids": [
+   1871
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}よかったな。\n芽流のははおやが、るちあのくにに\nにげていたとは。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}まさか、モモちゃんがしらせに\nきてくれるなんてね！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}{call:@2AB4}がもってきた、\n「ありあけのつきのオルゴール」は\nわたしのくにの{call:@2B32}にだけ、\nきこえるの。{FA:06}それで、うみのどうぶつたちに\nおねがいして、これをきいた\n{call:@2B32}のいばしょを、しらべて\nもらっていたの。{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}…………すごいです！{FA:06}やっぱり{call:@2A70}さまは、わたしの\nあこがれのプリンセスさまです！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "99C7",
+  "ids": [
+   1872
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}まて、{call:@2B0F}！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "99DC",
+  "ids": [
+   1873
+  ],
+  "used": true,
+  "jp": "{FA:FF0201}あら？\n{call:@2B32}のかっこうを\nしていたら、ほんとうに\nプリンセスがあらわれた！{FA:06}あたしってばやっぱり、\nうんがいいのね～！\n{FA:FF0200}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9A24",
+  "ids": [
+   1874
+  ],
+  "used": true,
+  "jp": "ピンクしんじゅの\nプリンセスはどこ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9A37",
+  "ids": [
+   1875
+  ],
+  "used": true,
+  "jp": "えっ！　ピンクちゃん\nもいるの！？\nどこ？　どこ？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9A51",
+  "ids": [
+   1876
+  ],
+  "used": true,
+  "jp": "……おまえが、とらえて\nいるんじゃないのか？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9A68",
+  "ids": [
+   1877
+  ],
+  "used": true,
+  "jp": "へ？　なんで？\nあんたたち、\nなにいってんの？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9A80",
+  "ids": [
+   1878
+  ],
+  "used": true,
+  "jp": "ちがったみたい。{FA:06}リナ、もどって\n{call:@2A5B}をさがそう。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9A9D",
+  "ids": [
+   1879
+  ],
+  "used": true,
+  "jp": "ああ。\nわるい、じゃましたな。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9AAD",
+  "ids": [
+   1880
+  ],
+  "used": true,
+  "jp": "ちょ、ちょっと！\nあたしをほうって、\nどこへいくのよ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9AC9",
+  "ids": [
+   1881
+  ],
+  "used": true,
+  "jp": "{FA:FF0201}ふざけるな！\nにがさん！\n{FA:FF0200}{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9ADF",
+  "ids": [
+   1882
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}にがさんって、そのカッコでか？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9AFB",
+  "ids": [
+   1883
+  ],
+  "used": true,
+  "jp": "へっ？\n……ありゃ！？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B07",
+  "ids": [
+   1884
+  ],
+  "used": true,
+  "jp": "な～にが「きれいなうみ」よ！\nおおなみ・おおあらし・あらくれる\nうみじゃないの！　ゲほッ、ぷはっ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B39",
+  "ids": [
+   1885
+  ],
+  "used": true,
+  "jp": "まだまだ、いくよ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B43",
+  "ids": [
+   1886
+  ],
+  "used": true,
+  "jp": "もうカンベンして～！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B4E",
+  "ids": [
+   1887
+  ],
+  "used": true,
+  "jp": "おい、まてよ！　わたしは\nまだうたっていないぞ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B67",
+  "ids": [
+   1888
+  ],
+  "used": true,
+  "jp": "わたしのうたを、\nきけーーーーーーっ！！！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B7D",
+  "ids": [
+   1889
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}オレのおんなに、てをだすな！{wait}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9B98",
+  "ids": [
+   1890
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}リョウ{call:@2B92}…………おまえが{call:@2AE7}か？{FA:06}…………まったく、\nおまえがうらやましいよ。\n{FA:06}{call:@2A5B}はおまえをしんじて、\nずっとまっていたんだぜ………。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9BEB",
+  "ids": [
+   1891
+  ],
+  "used": true,
+  "jp": "{call:@2AE7}！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9BF1",
+  "ids": [
+   1892
+  ],
+  "used": true,
+  "jp": "ばかやろう！\nさんざんひとを、\nしんぱいさせておいて！{FA:06}なにやってんだ、おまえは！\n　{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9C1E",
+  "ids": [
+   1893
+  ],
+  "used": true,
+  "jp": "ゴメン……。{FA:06}でも{call:@2AE7}、さっきあたしのこと\n「オレのおんな」って！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9C43",
+  "ids": [
+   1894
+  ],
+  "used": true,
+  "jp": "あっ、あのときは……、\nああでもいわないと、\nおさまりがつかねえだろ！{FA:06}…なにマジになってんだよ、\nバーカ……。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9C7D",
+  "ids": [
+   1895
+  ],
+  "used": true,
+  "jp": "なあんだ。\nびっくりしちゃった。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9C8E",
+  "ids": [
+   2362
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（でも、うれしかった……。\n　たとえそれがウソでも…………、\n　とってもうれしかった！）{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9CC7",
+  "ids": [
+   1896
+  ],
+  "used": true,
+  "jp": "…ほら、くだらねえこと\nいってないで、いくぞ。{FA:06}みんなしんぱいしている\nだろうからな。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9CF4",
+  "ids": [
+   1897
+  ],
+  "used": true,
+  "jp": "うん……！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9CFA",
+  "ids": [
+   1898
+  ],
+  "used": true,
+  "jp": "なんだろう、これ……？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9D06",
+  "ids": [
+   1899
+  ],
+  "used": true,
+  "jp": "なかになにか、はいって\nいるよ……？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9D19",
+  "ids": [
+   1900
+  ],
+  "used": true,
+  "jp": "てがみかな？\n",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9D20",
+  "ids": [
+   1901,
+   1902
+  ],
+  "used": true,
+  "jp": "どれどれ…？　えっと…。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9D2D",
+  "ids": [
+   1903
+  ],
+  "used": true,
+  "jp": "蒼深き　水面に浮かぶ　我が心\n{FA:0C0008}{FD:01}（あおふかき　みなもにうかぶ　わがこころ）\n{FA:0C0088}{FD:00}{FA:06}思いの深さ海に　まさりし\n{FA:0C0008}{FD:01}（おもいのふかさうみに　まさりし）\n{FA:0C0088}{FD:00}{FA:06}星降る入り江で　あなたを待つ\n{FA:0C0008}{FD:01}（ほしふるいりえで　あなたをまつ）\n{FA:0C0088}{FD:00}　\n　　　　　染五郎{FD:01}（そめごろう）{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9DDF",
+  "ids": [
+   1904
+  ],
+  "used": true,
+  "jp": "えっと…つまり、その～？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9DEC",
+  "ids": [
+   1905
+  ],
+  "used": true,
+  "jp": "すきなひとに、\n「ほしふるよる、\n　いりえでまってます」\nってことだろうな。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9E13",
+  "ids": [
+   1906
+  ],
+  "used": true,
+  "jp": "ってことは…？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9E1B",
+  "ids": [
+   1907
+  ],
+  "used": true,
+  "jp": "おそらく、ラブレター。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9E27",
+  "ids": [
+   1908
+  ],
+  "used": true,
+  "jp": "すてき～！　うみからの\nラブレターなんて～！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9E3E",
+  "ids": [
+   1909
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B99}…いずれにしても、だいじな\nてがみをひろってしまったせきにんが\nあるよ、わたしたちには。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9E77",
+  "ids": [
+   1910
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}そうよね………。\n「うみからのラブレターひろいました」\nこれでいいかな？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9EA8",
+  "ids": [
+   1911
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}そうね～。ラブレターって\nいうより、こいぶみってかんじじゃない？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9ED5",
+  "ids": [
+   1912
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B99}じゃあ、こうだな。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9EEB",
+  "ids": [
+   2465
+  ],
+  "used": true,
+  "jp": "「うみからのこいぶみひろいました。\n　こころあたりのあるかたは\n　プチホテル・パールピアリまで」{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9F1C",
+  "ids": [
+   1913
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}うん！\n",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9F2C",
+  "ids": [
+   1914
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}かんぺき！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9F3E",
+  "ids": [
+   1915
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}……そういえばおねえちゃんってさあ\n真木（まき）さんのこと、すきなの？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9F70",
+  "ids": [
+   1916
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE3}{call:@2B99}！！！\nとつぜんなにいいだすの、{call:@2A5B}！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9F92",
+  "ids": [
+   1917
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}だって、さっき真木さんが\nきたとき、あかくなってたから！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9FBD",
+  "ids": [
+   1918
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}え～！　なになに！？\nそうなの！？　おしえておしえて！？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "9FE6",
+  "ids": [
+   1919
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE3}{call:@2B99}うふふふ……。ヒ・ミ・ツ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A000",
+  "ids": [
+   1920
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}ずるい、ずるい～！！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A017",
+  "ids": [
+   1921
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE3}{call:@2B99}あら～、ひみつだからステキ\nなんじゃない～。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A03A",
+  "ids": [
+   1922
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}ひみつだから、ステキ……？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A054",
+  "ids": [
+   1923
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}…おや、ようやくわたしの\nうらないをしんじるきになったかい？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A07F",
+  "ids": [
+   1924
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}なにもしないより、マシだからね……。\n",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A09E",
+  "ids": [
+   1925
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}あら……。\nで、なにをうらなってほしいんだい？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A0C2",
+  "ids": [
+   1926
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}このラブレターなんだけど…。\n",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A0DD",
+  "ids": [
+   1927
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}…………こ、これは……！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A0F6",
+  "ids": [
+   1928
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}……でも、あたしね。\nしりたいってはんめん、このままわからない\nほうがいいのかなっておもっているの。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A135",
+  "ids": [
+   1929
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}どうして？\n",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A147",
+  "ids": [
+   1930
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}だって、ひみつのほうが、\nドキドキしたままでいられるんだもん。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A173",
+  "ids": [
+   1931
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A96}{call:@2B99}…よくかんがえたら、とくめいの\nてがみなんだよな。もしかしたら、そっと\nしておくべきなのかも……。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A1B1",
+  "ids": [
+   1932
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}……そうね。ほんとうのこと、\nわからないほうがよさそうね。\n",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A1DB",
+  "ids": [
+   1933
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}…このてがみが、みんなを\nハッピーにしてくれたのかもね！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A204",
+  "ids": [
+   1934
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}だったら、わたしがうらなうまでも\nないね。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A226",
+  "ids": [
+   1935
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}そういえば、タキさんもいっしょに、\nりゅうせいぐんをみにいかない？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A254",
+  "ids": [
+   1936
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2AE0}{call:@2B92}いやあ、わたしはひとごみはにがてでね。\nわかいもんだけで、いっといで。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A284",
+  "ids": [
+   1937
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}タキさん…………。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A29A",
+  "ids": [
+   1938
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}タキ{call:@2B92}うみのおもいと、ほしのねがい……。{FA:06}うみとそらほど、\nはなればなれのこいびとたちも、{FA:06}こんやのようなほしふるよるは、\nふしぎとめぐりあうことが、\nできるんだとさ………。{wait}{call:@2B8C}タキ{call:@2B92}ほしふるいりえで、\nあなたをまつ、か……………。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A31E",
+  "ids": [
+   1939
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2B72}{call:@2B92}どいてどいて～！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A333",
+  "ids": [
+   1940
+  ],
+  "used": true,
+  "jp": "キャー！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A338",
+  "ids": [
+   1941
+  ],
+  "used": true,
+  "jp": "なんなのよ～！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A340",
+  "ids": [
+   1942
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2B72}{call:@2B92}それそれそれ…………えっ！？{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A35B",
+  "ids": [
+   1943
+  ],
+  "used": true,
+  "jp": "このわたしにみずをかけるとは、\nいいどきょうですわね。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A377",
+  "ids": [
+   1944
+  ],
+  "used": true,
+  "jp": "にがしませんわ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A380",
+  "ids": [
+   1945
+  ],
+  "used": true,
+  "jp": "おしおきだよ！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A388",
+  "ids": [
+   1946
+  ],
+  "used": true,
+  "jp": "{call:@2B8C}{call:@2B72}{call:@2B92}うわあっ……！{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ },
+ {
+  "id": "A39C",
+  "ids": [
+   1947
+  ],
+  "used": true,
+  "jp": "え……にんぎょ…さん？{FA:06}……きてくれたんだ。{end}",
+  "en": "",
+  "status": "",
+  "notes": ""
+ }
+]

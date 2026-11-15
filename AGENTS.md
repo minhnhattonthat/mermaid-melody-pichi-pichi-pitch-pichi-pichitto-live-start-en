@@ -12,7 +12,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 
 ## Paths
 - Original ROM: `rom/Mermaid Melody - Pichi Pichi Pitch - Pichi Pichitto Live Start! (Japan).gba` (32 MiB, gitignored; SHA-1 in `rom.sha1`, checked by `tools/check_rom.py`). Emulator: this repo's own copy in `tools/mesen/` (MesenCE 2.2.1, https://github.com/nesdev-org/MesenCE/releases/download/2.2.1/Mesen_2.2.1_Windows.zip; gitignored; GBA BIOS in `tools/mesen/Firmware/gba_bios.bin`; settings in `tools/emu-config/`). Savestates: `work/states/`.
-- Text: `script/` (<format, phase 4>). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`.
+- Text: `script/msg_NN.json` (units in address order: id, ids, used, jp, en, status, notes; text form and codes in `tools/msgcodec.py`, `docs/re/text.md`). Dump: `python -X utf8 tools/msgcodec.py dump [--force]` (--force keeps en/status/notes). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`.
 - Build helpers copied from the skill: `tools/tbl.py`, `tools/bps.py`, `tools/romdiff.py`. QA tools (`emu.py`, `play.py`, `qa_gate.py`, `jp_left.py`) run from `$SKILL/scripts/`.
 
 ## Rulings
