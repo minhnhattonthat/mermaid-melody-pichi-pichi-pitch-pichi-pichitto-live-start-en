@@ -126,6 +126,12 @@ prompts, ending and credits, story scenes if any.
   byte twins resolved by the VRAM - block delta). `tools/oamlist.py` lists sprites in a rect, `tools/objsrc.py` finds
   the swept block holding an OBJ tile. Open: 1C0657A (same frame tiles as 1C07510, another prompt, not seen yet);
   1D095BE おまけムービー! banner (room, unseen); 1D0B2A4 cards (no text: drop).
+- Read, not drawn yet (session 6): 179BC34 = the episode-select cursor OBJ (32x32, OAM 0 tile 4, pal 2; grid
+  numbers are separate 16x16 OBJs without 話): each cell is two digits plus a small 話 plate at x 14-31 y 18-30 that
+  overlaps the right digit's foot (x 16-20 y 18-21) -> plan "EP" on the plate (en12 plain caps, 11x7 fits x 21-31);
+  the dumped palette is the grey fade, so take a palette from a non-faded frame. 1B6AFB2 (story BG2) is the series
+  logo ぴちぴちピッチ tiled as a 64x16 wallpaper, many cell palettes: kept for now (see status). 170633B (results)
+  showed only bars, numerals and icons in the warp: re-check its "small kana labels" after a real song.
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
