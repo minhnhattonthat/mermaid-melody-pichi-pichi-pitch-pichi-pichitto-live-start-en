@@ -1,0 +1,3 @@
+# prompt panel under a card frame (BG1, map record 0x1D25791, not reached); pal = memo's
+# offset	size	layout	png	English	Japanese
+1C06EBF	800x2	tiles16	gfx/out/stop/1C06EBF.png	Stop it wherever you like! (tools/gfx_cards.py)	すきなところでとめてね!

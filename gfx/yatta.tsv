@@ -1,0 +1,3 @@
+# big やったね lettering (memory win?, BG1, map record 0x1D2539F, not reached); pal = zannen's
+# offset	size	layout	png	English	Japanese
+1C03D2A	800x4	tiles16	gfx/out/yatta/1C03D2A.png	Hooray! (tools/gfx_cards.py)	やったね

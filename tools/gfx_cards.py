@@ -39,7 +39,9 @@ PANELS = {"pick": (["Pick any one card!"], 0x1D254B7, (2, 3, 20, 2), 1),  # 1C04
           "guess": (["Find the matching card", "among these!"], 0x1D25428, (3, 3, 18, 4), 1, 5)}  # 1C047A6
           # このなかから おなじカードをあててね! (screen not reached; record matched by the panel frame + reading order)
 PANELS.update({"again": (["Keep playing?"], 0x1D256CE, (3, 2, 12, 3), 1, 7, 3),  # 1C0657A つづけてあそぶ? (after a win)
-               "nocoin": (["Not enough coins!"], 0x1D25730, (3, 2, 15, 3), 1, 7, 3)})  # 1C06A00 コインがたりないよ!
+               "nocoin": (["Not enough coins!"], 0x1D25730, (3, 2, 15, 3), 1, 7, 3),  # 1C06A00 コインがたりないよ!
+               "stop": (["Stop it wherever you like!"], 0x1D25791, (5, 15, 20, 2), 1, 4)})  # 1C06EBF 800x2
+# すきなところでとめてね! (wide bottom panel under a card frame; record matched by tile count, screen not reached)
 # again / nocoin: smaller frame, records found by rendering each block with the records after 1D2563D
 # memory game start panel: dump work/qa/ppu/mem_panel (play.py state work/play/mem/0000.mss + "6 a;200 -")
 MAPS = gfx.GFX / "cards.maps"
@@ -51,7 +53,11 @@ MAPS = gfx.GFX / "cards.maps"
 # あたり (won round, 1C030D4 800x4): the kana touch the stars, so erase = ink within 7 px of the kana's fill
 #   (index 3, components of 30+ px; stars hold only specks of 3) -> Right!: fill 3, rings 1 5 5 4, shadow 1 (+2,+2).
 BIGWORDS = {"zannen": ("Too bad!", 0x1D252A4, (5, 0, 19, 8), (42, 16, 184, 43), 0, "components", [4, 5, 1], None),
-            "atari": ("Right!", 0x1D2532D, (4, 0, 18, 8), (36, 8, 162, 56), 0, "near3", [4, 5, 5, 1], 1)}
+            "atari": ("Right!", 0x1D2532D, (4, 0, 18, 8), (36, 8, 162, 56), 0, "near3", [4, 5, 5, 1], 1),
+            # ゲット! (1C01D37 800x2, crane win?) and やったね (1C03D2A 800x4, memory win?): same palette roles as
+            # ざんねん; records matched by tile count (last tile used = record's max index), screens not reached
+            "getto": ("Got it!", 0x1D251F3, (4, 0, 18, 8), (38, 8, 174, 56), 0, "components", [4, 5, 1], None),
+            "yatta": ("Hooray!", 0x1D2539F, (6, 0, 20, 8), (48, 8, 204, 58), 0, "components", [4, 5, 1], None)}
 
 
 def erase_near(im, ox, span, idx=3, dist=7, minpx=30):
@@ -111,9 +117,7 @@ def bigword(group, maps):
                 im[y][x] = c
         new = minigame.retile_keep(img, cells, im, rect)
         assert minigame.compose(img, new, rect) == im
-        stream = encode_map(new)
-        if len(stream) > end - rec:
-            raise SystemExit(f"{rec:X}: new map {len(stream)} bytes > old {end - rec}")
+        stream = encode_map(new)  # a longer stream is moved by the maps stage (gfx_eptitle.placed)
         maps.append(f"{rec:07X}\t{stream.hex()}")
     return fn
 
@@ -237,7 +241,9 @@ def main():
                       ("conttxt", panel("conttxt", maps)), ("memo", panel("memo", maps)),
                       ("crane", panel("crane", maps)), ("guess", panel("guess", maps)),
                       ("again", panel("again", maps)), ("nocoin", panel("nocoin", maps)),
-                      ("zannen", bigword("zannen", maps)), ("atari", bigword("atari", maps))):
+                      ("zannen", bigword("zannen", maps)), ("atari", bigword("atari", maps)),
+                      ("getto", bigword("getto", maps)), ("yatta", bigword("yatta", maps)),
+                      ("stop", panel("stop", maps))):
         (_, off, size, layout, png), = gfx.rows(group)
         data = gfx.decode(rom, off, size)[0]
         img = gfx.to_image(data, layout)

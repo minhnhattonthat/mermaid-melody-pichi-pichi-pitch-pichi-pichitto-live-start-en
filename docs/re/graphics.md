@@ -243,5 +243,11 @@ prompts, ending and credits, story scenes if any.
   from cold boot: warp SCENE_ID=0 WRITES 0x03003B98:<1 crane|2 memory>:2@200 + the minigame row's route + `6 a;200 -;6
   a;200 -` (work/qa/p8crane, p8mg2b). The play.py session `work/play/mem` started from an original-ROM state, so its
   OBJ tiles (hint Aきめる) are stale Japanese: not a bug (cold boot shows A OK).
+- **Unreached minigame words (session 17):** match a block to its run-stream record by tile count: decode the
+  block's chain until its last non-blank tile, then the record (scan `00 c4` + stream near 0x1D24000-0x1D26200) whose
+  max cell index equals it. 1C01D37 800x2 (last 106) -> 1D251F3 ゲット!; 1C03D2A 800x4 (143) -> 1D2539F やったね;
+  1C06EBF 800x2 (95) -> 1D25791 (card frame + bottom panel すきなところでとめてね!). Same palette roles as ざんねん.
+  A record that grows is moved by stage `maps` (`gfx_eptitle.placed`: `00 c4` + stream at MAP_RELOC, pointer at
+  record - 6 repointed); checked by moving zannen's record with the old stream zeroed (card game loss still drew it).
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

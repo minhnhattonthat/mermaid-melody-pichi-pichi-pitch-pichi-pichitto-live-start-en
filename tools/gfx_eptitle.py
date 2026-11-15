@@ -92,17 +92,39 @@ def records(rom):
     return [(record(rom, n), new) for n in range(1, 41)] + other_maps()
 
 
-def apply(rom):
-    """Rewrite every map record in place (build stage "maps"); the old tail is never read (1024 cells)."""
+# shortcut: fixed spot in the free gap between the packed text (ends ~0x1FEA100) and the relocated gfx (~0x1FFD500),
+# growing up; apply fails loudly if either side ever reaches it.
+MAP_RELOC = 0x1FF0000
+
+
+def placed(rom):
+    """-> [(record, new stream, written at, pointer or None)]. A stream longer than its record moves to MAP_RELOC
+    behind a copy of its `00 c4` header, and the 32-bit pointer at record - 6 (-> the header) is repointed; only the
+    minigame records (gfx/*.maps) have that pointer, so an episode title that grows is an error."""
+    out, top = [], MAP_RELOC
     for p, new in records(rom):
-        end = decode_map(rom, p)[1]
-        if len(new) > end - p:
-            raise SystemExit(f"map {p:X}: new {len(new)} bytes > old {end - p}")
-        rom[p:p + len(new)] = new
+        if len(new) <= decode_map(rom, p)[1] - p:
+            out.append((p, new, p, None))
+            continue
+        if rom[p - 2:p] != b"\x00\xc4" or int.from_bytes(rom[p - 6:p - 2], "little") != 0x08000000 | p - 2:
+            raise SystemExit(f"map {p:X}: new {len(new)} bytes > old, and no record pointer to move it")
+        out.append((p, rom[p - 2:p] + new, top, p - 6))
+        top += len(new) + 2
+    return out
+
+
+def apply(rom):
+    """Rewrite every map record in place (build stage "maps"; the old tail is never read: 1024 cells), or move it."""
+    for p, new, at, ptr in placed(bytes(rom)):
+        if ptr is not None:
+            if any(rom[at:at + len(new)]):
+                raise SystemExit(f"map {p:X}: relocation spot {at:X} is not free (move MAP_RELOC)")
+            rom[ptr:ptr + 4] = (0x08000000 | at).to_bytes(4, "little")
+        rom[at:at + len(new)] = new
 
 
 def zones(rom):
-    return [(p, p + len(new)) for p, new in records(rom)]
+    return [z for p, new, at, ptr in placed(rom) for z in [(at, at + len(new))] + ([(ptr, ptr + 4)] if ptr else [])]
 
 
 def tile(img, k):

@@ -1,0 +1,3 @@
+# big ゲット! lettering (crane win?, BG1, map record 0x1D251F3, not reached); pal = zannen's
+# offset	size	layout	png	English	Japanese
+1C01D37	800x2	tiles16	gfx/out/getto/1C01D37.png	Got it! (tools/gfx_cards.py)	ゲット!

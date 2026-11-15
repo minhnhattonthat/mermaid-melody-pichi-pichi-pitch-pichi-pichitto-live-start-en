@@ -2,7 +2,14 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 16, sha1 0d5ffed8; smoke ok, write log clean, check 41 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 17, sha1 340eade9; smoke ok, write log clean, check 42 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-16, session 17):** sheet_055 big words matched to their BG1 map records by tile count
+  (a block's last used tile = the record's max index): `getto` 1C01D37 ゲット! -> Got it! (record 1D251F3), `yatta`
+  1C03D2A やったね -> Hooray! (1D2539F), panel `stop` 1C06EBF すきなところでとめてね! -> Stop it wherever you like!
+  (1D25791), all in `tools/gfx_cards.py`, previewed from the maps, screens not reached (crane / memory win?). Stage
+  `maps` now moves a record that grows to `MAP_RELOC` 0x1FF0000 and repoints its pointer at record - 6
+  (`gfx_eptitle.placed`); proven by moving zannen's record in a scratch ROM with the old stream wiped: Too bad! still
+  drew. Drop 1C01D37 1C03D2A 1C06EBF.
 - **Phase 8 progress (2026-11-16, session 16):** clear cut-ins 1813332 / 18170D4 English (よくがんばりましたね -> You
   worked hard!, `tools/gfx_clear.py` `rainbow`, checked `work/qa/p8clr12.png`; warp SCENE_ID=39 WRITES
   0x0202FA0D:<1|2>). New build stage `raw` (`gfx/*.raw`, in-place rows; `gfx/clear.raw` rewrites two BG3 map records to
