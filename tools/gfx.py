@@ -157,7 +157,7 @@ def edited_blocks(rom, forks=False):
     moves."""
     out = []
     for group, off, size, layout, png in rows():
-        if not (ROOT / png).exists() or (off in FORKS) != forks:
+        if not (ROOT / png).exists() or (group in FORKS) != forks:
             continue
         data, end = decode(rom, off, size)
         oimg = to_image(data, layout)
@@ -214,10 +214,11 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
 
 
 RELOC_TOP = 0x2000000  # blocks that outgrow their slot go here, downward (0x00 padding; text fills upward from 0x1FE0200)
-# A block shared by two scenes, redrawn for one: offset -> (resource table, records, record, literal). The new chain
+# A block shared by two scenes, redrawn for one: group -> (resource table, records, record, literal). The new chain
 # and a copy of the table (that record -> the new chain) go below the relocated blocks; only the literal (the one
-# scene's table pointer) moves to the copy, so the other scene keeps the original.
-FORKS = {0x171EAB9: (0x16F6CC8, 197, 39, 0x10E10)}  # name keyboard; compose keeps kana (docs/re/graphics.md)
+# scene's table pointer) moves to the copy, so the other scene keeps the original (which another, non-fork group may
+# still edit in place: `cohead`).
+FORKS = {"names": (0x16F6CC8, 197, 39, 0x10E10)}  # name keyboard; compose keeps kana (docs/re/graphics.md)
 
 
 def pointers(rom, off):
@@ -247,9 +248,9 @@ def plan(rom):
 
 def fork_plan(rom, top):
     """-> [(new chain at, chain, table copy at, table, records, record, literal)] for FORKS rows, below `top`."""
-    out = []
+    out, of = [], {off: FORKS[g] for g, off, *_ in rows() if g in FORKS}
     for off, _, comp, _ in edited_blocks(rom, forks=True):
-        table, n, rec, lit = FORKS[off]
+        table, n, rec, lit = of[off]
         at = top = top - len(comp)
         copy = top = top - 5 * n
         out.append((at, comp, copy, table, n, rec, lit))

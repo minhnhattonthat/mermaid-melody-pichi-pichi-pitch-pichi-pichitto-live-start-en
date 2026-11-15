@@ -4,6 +4,8 @@ page 1 = hiragana dump `name_entry`, page 2 = katakana dump `name_kata`: warp na
 Each key gets the letter tools/names.py prints for its code (page 1 upper, page 2 lower), white 15 with a 13
 shadow like the kana; the small-kana keys (group 4, rows 2-3) keep their lower band; ゛゜ and っゃゅょ go blank.
 gfx/nehead.tsv 179B69F: header ボタン / けってい / きりかえ -> Button / OK / A/a (START, SELECT already Latin).
+gfx/nametag.tsv 1F0CEC0: the player's name tag label なまえ -> Name (opening movie).
+gfx/cohead.tsv 171EAB9 (the original chain compose reads): compose header ボタン メニューへ -> Button Menu.
     python -X utf8 tools/gfx_names.py
 """
 import sys
@@ -65,17 +67,31 @@ def keys(img, data, layout):
 HEADER = [([7], "Button", 15, (0, 0, 30, 12)), ([6, 5], "OK", 8, (2, 0, 24, 12)), ([1], "A/a", 15, (0, 0, 32, 12))]
 
 
-def header(img, data, layout):
-    for ids, word, fill, box in HEADER:
-        s = Sprites("name_entry", ids)
+# compose's header: OBJ 2 ボタン (46-77), OBJ 0+1 メニューへ (70-117; OBJ 0's first 8 columns overlap OBJ 2)
+COHEAD = [([2], "Button", 15, (0, 0, 30, 12)), ([0, 1], "Menu", 15, (8, 0, 48, 12))]
+
+
+def header(img, data, layout, scene="name_entry", pieces=HEADER):
+    for ids, word, fill, box in pieces:
+        s = Sprites(scene, ids)
         im = [[0] * s.w for _ in range(s.h)]
         fit(im, word, box, fill, [5])
         s.write(img, data, im, layout)
 
 
+def nametag(img, data, layout):
+    s = Sprites("opening_movie", [9, 5])
+    im = s.compose()
+    for y in range(5, 19):
+        im[y][2:34] = [3] * 32
+    fit(im, "Name", (2, 5, 34, 19), 6, [1])
+    s.write(img, data, im, layout)
+
+
 def main():
     rom = next((gfx.ROOT / "rom").glob("*.gba")).read_bytes()
-    for group, fn in (("names", keys), ("nehead", header)):
+    cohead = lambda img, data, layout: header(img, data, layout, "compose", COHEAD)  # noqa: E731
+    for group, fn in (("names", keys), ("nehead", header), ("nametag", nametag), ("cohead", cohead)):
         (_, off, size, layout, png), = gfx.rows(group)
         data = gfx.decode(rom, off, size)[0]
         img = gfx.to_image(data, layout)

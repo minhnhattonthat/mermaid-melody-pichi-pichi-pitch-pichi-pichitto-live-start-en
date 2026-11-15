@@ -162,5 +162,16 @@ prompts, ending and credits, story scenes if any.
   charset 0x187EA84 maps codes to glyph slots that now hold English letters. Plan: Latin keys (page 1 upper, page 2
   lower, digits/punctuation in the spare keys), charset entries of those codes -> en.tbl slots, ゛゜ keys blank
   (voiced codes -> the base letter). Shots of both original pages: `work/qa/ne_orig/kb.png`.
+- Groups `names` `nehead` `nametag` (done, session 9, `tools/gfx_names.py`, checked in `work/qa/p8names`, `p8tag`):
+  record 39 is ONE chain of 16 streams 171EAB9..1721BEB loaded whole into OBJ VRAM, 16 block tiles per 32-tile VRAM
+  row (hiragana keys tiles 0+, katakana keys 512+ = chunk 4 171F78F, record 41; SELECT only swaps OAM tile numbers),
+  so the fork row is `800x16` (a shorter fork would leave the game reading the rest past the copy). Keys: 8 px apart,
+  groups at x 16/64/112/160, rows y 110/124/138, OAM 18-44 both pages (`name_kata` dump = warp + SELECT). Compose
+  still shows kana (checked). Header 179B69F (800x2, OBJ pal 15): ボタン (OBJ 7 and 2 share tiles) けってい きりかえ ->
+  Button / OK / A/a. Name tag 1F0CEC0 (opening movie, link_check; OBJ 9+5 at 122,136) なまえ -> Name. Compose's
+  header (OBJ pal 3: ボタン OBJ 2, メニューへ OBJ 0+1) sits in the original 171EAB9 chain itself: group `cohead`
+  rewrites that chain in place (FORKS keyed by group, so the same offset has the fork and the in-place row).
+  `gfx_obj.write` now resolves byte twins with a strided-load model first (VRAM t = base + k//tw*32 + k%tw), since
+  the plain delta differs per VRAM row on such loads.
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

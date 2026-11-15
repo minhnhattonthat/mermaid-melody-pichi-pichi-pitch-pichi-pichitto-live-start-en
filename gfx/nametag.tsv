@@ -1,0 +1,4 @@
+# player name tag (opening movie, link_check: OBJ pal 0 at 122,136): label なまえ in OAM 9 + 5 -> Name, white 6 in a red
+# ring 1 on the tag fill 3 (tools/gfx_names.py). Palette = opening_movie OBJ pal 0, palfixed.
+# offset	size	layout	png	English	Japanese
+1F0CEC0	800x1	tiles32	gfx/out/nametag/1F0CEC0.png	Name	なまえ

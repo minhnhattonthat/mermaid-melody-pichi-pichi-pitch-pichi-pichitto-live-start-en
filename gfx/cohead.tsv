@@ -1,0 +1,5 @@
+# compose header (scene compose, OBJ pal 3 at y 2): START ボタン メニューへ -> START Button Menu, in the ORIGINAL
+# 171EAB9 chain (compose reads it; the name screen reads the `names` fork), rewritten in place as one 16-stream chain
+# (records 41/43 point into it: gfx.plan repoints them). tools/gfx_names.py. Palette = compose OBJ pal 3, palfixed.
+# offset	size	layout	png	English	Japanese
+171EAB9	800x16	tiles16	gfx/out/cohead/171EAB9.png	Button / Menu	ボタン / メニューへ
