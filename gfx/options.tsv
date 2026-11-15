@@ -1,0 +1,3 @@
+# Your Pitch options labels (scene 14 options: OBJ pal 2, selected pal 1; panelled atlas, right half = thumbnails)
+# offset	size	layout	png	English	Japanese
+1723EBE	800x8	obj16x4*8/2	gfx/out/options/1723EBE.png	Name / Background / Arrows / Headphones / On / Mermaid / Off (tools/gfx_options.py)	なまえ / はいけい / やじるし / ヘッドホン / あり / マーメイド / なし
