@@ -80,6 +80,11 @@ prompts, ending and credits, story scenes if any.
 - Group `winlose`: 1F12431 かち / 1F12CBD まけ (800x2: coloured word + silhouette, 64x32 each) -> WIN / LOSE at 2x
   centred across both 32x32 cells (`tools/gfx_winlose.py`); screen not warped yet (probably link/vs results): if the
   cells move apart like the draw screen, redo as one letter group per cell.
+- Group `gameover` (done): 174AB9D (800x3, OBJ pal 1, tile 0): ゲ ム オ バ cells at screen x 32/74/104/152 + 32x8
+  dash ×3 (x animated, no table in ROM: byte/halfword/Thumb-immediate searches found nothing) -> GAME (cell 1) OVER
+  (cell 2), 1x wide 2x tall; クリアもくひょう strip -> CLEAR GOAL; big クリア -> CL/EA/R! one pair per 32 px cell
+  (`tools/gfx_gameover.py`). GAME OVER checked in scene 37 (`work/qa/p8go`); CLEAR GOAL / CLEAR! not seen yet.
+  Palettes dumped from a scene may repeat colours: `tools/palfix.py` nudges repeats so `gfx.load_pal` accepts them.
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
