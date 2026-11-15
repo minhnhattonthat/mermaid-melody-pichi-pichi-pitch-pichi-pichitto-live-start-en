@@ -7,6 +7,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   the per-episode BG1 map records at 0x1881720 decoded and rewritten to one 24x5 rect; `docs/re/graphics.md`
   §eptitle). `nomosaic.lua` fixed (shadow 0x030000B0). New `tools/lua/execlog.lua`. Digits-only sweep rows
   (1F0857E 1F0B17B 1F11200..1F11FD4 1D0CA42) and 179BEF6..179DE22 (inside the `epnum` chain) need no redraw.
+  **Lead for the parked maps** (minigame panels 1C00CFF.., prompt 1C0657A, poster banner 1CE3D71): their BG maps
+  are "not in ROM": likely the same run-stream format (`gfx_eptitle.decode_map`, writer 0x08001FFC): run
+  `tools/lua/execlog.lua --var PC_LO=0x03000BF0` while the screen loads; r12 = the record. Then give the text cells
+  unique tiles by rewriting the record (as `maps` does) instead of fighting shared checker tiles.
 - **Phase 8 progress (2026-11-15, session 10):** room sub-screens reached (routes + dumps in `docs/re/graphics.md`
   §Room sub-screens). Groups `roomsel` (mascot banner -> Place which mascot?, checked) and `roombtn` (Secret / No
   mascot / No poster, unseen) English, `tools/gfx_roomsel.py`. Minigame title panels drawn by `tools/gfx_minigame.py`
