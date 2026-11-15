@@ -798,8 +798,8 @@
   ],
   "used": true,
   "jp": "{FD:01}「ブラック・ビューティー・シスターズ」{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FD:01}\"Black Beauty Sisters\"{FD:00}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -807,8 +807,8 @@
   "ids": [],
   "used": true,
   "jp": "{FD:01}「ダーク・ラゔァーズ」{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FD:01}\"Dark Lovers\"{FD:00}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -816,8 +816,8 @@
   "ids": [],
   "used": true,
   "jp": "海斗{FD:01}（かいと）{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "Kaito{end}",
+  "status": "done",
   "notes": ""
  },
  {

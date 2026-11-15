@@ -378,8 +378,8 @@
   "ids": [],
   "used": true,
   "jp": "るちあ{end}",
-  "en": "",
-  "status": "",
+  "en": "Lucia{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -387,8 +387,8 @@
   "ids": [],
   "used": true,
   "jp": "七海{FD:01}（ななみ）{FD:00}{call:@2A5B}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2A5B} Nanami{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -396,8 +396,8 @@
   "ids": [],
   "used": true,
   "jp": "波音{end}",
-  "en": "",
-  "status": "",
+  "en": "Hanon{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -405,8 +405,8 @@
   "ids": [],
   "used": true,
   "jp": "{call:@2A70}{FD:01}（はのん）{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2A70}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -414,8 +414,8 @@
   "ids": [],
   "used": true,
   "jp": "宝生{FD:01}（ほうしょう）{FD:00}{call:@2A74}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2A74} Hosho{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -423,8 +423,8 @@
   "ids": [],
   "used": true,
   "jp": "リナ{end}",
-  "en": "",
-  "status": "",
+  "en": "Rina{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -432,8 +432,8 @@
   "ids": [],
   "used": true,
   "jp": "洞院{FD:01}（とういん）{FD:00}{call:@2A96}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2A96} Toin{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -441,8 +441,8 @@
   "ids": [],
   "used": true,
   "jp": "かれん{end}",
-  "en": "",
-  "status": "",
+  "en": "Karen{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -450,8 +450,8 @@
   "ids": [],
   "used": true,
   "jp": "ヒッポ{end}",
-  "en": "",
-  "status": "",
+  "en": "Hippo{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -459,8 +459,8 @@
   "ids": [],
   "used": true,
   "jp": "芽流{end}",
-  "en": "",
-  "status": "",
+  "en": "Meru{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -468,8 +468,8 @@
   "ids": [],
   "used": true,
   "jp": "{call:@2AB4}{FD:01}（める）{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2AB4}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -477,8 +477,8 @@
   "ids": [],
   "used": true,
   "jp": "アクア・レジーナ{end}",
-  "en": "",
-  "status": "",
+  "en": "Aqua Regina{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -495,8 +495,8 @@
   "ids": [],
   "used": true,
   "jp": "アウリ{end}",
-  "en": "",
-  "status": "",
+  "en": "Auri{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -504,8 +504,8 @@
   "ids": [],
   "used": true,
   "jp": "タキ{end}",
-  "en": "",
-  "status": "",
+  "en": "Taki{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -513,8 +513,8 @@
   "ids": [],
   "used": true,
   "jp": "にこら{end}",
-  "en": "",
-  "status": "",
+  "en": "Nikora{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -522,8 +522,8 @@
   "ids": [],
   "used": true,
   "jp": "海斗{end}",
-  "en": "",
-  "status": "",
+  "en": "Kaito{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -531,8 +531,8 @@
   "ids": [],
   "used": true,
   "jp": "{call:@2AE7}{FD:01}（かいと）{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2AE7}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -540,8 +540,8 @@
   "ids": [],
   "used": true,
   "jp": "堂本{FD:01}（どうもと）{FD:00}{call:@2AEA}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2AEA} Domoto{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -549,8 +549,8 @@
   "ids": [],
   "used": true,
   "jp": "イズール{end}",
-  "en": "",
-  "status": "",
+  "en": "Izuru{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -558,8 +558,8 @@
   "ids": [],
   "used": true,
   "jp": "エリル{end}",
-  "en": "",
-  "status": "",
+  "en": "Eriru{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -567,8 +567,8 @@
   "ids": [],
   "used": true,
   "jp": "ユーリ{end}",
-  "en": "",
-  "status": "",
+  "en": "Yuri{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -576,8 +576,8 @@
   "ids": [],
   "used": true,
   "jp": "マリア{end}",
-  "en": "",
-  "status": "",
+  "en": "Maria{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -585,8 +585,8 @@
   "ids": [],
   "used": true,
   "jp": "シェシェ{end}",
-  "en": "",
-  "status": "",
+  "en": "Sheshe{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -594,8 +594,8 @@
   "ids": [],
   "used": true,
   "jp": "ミミ{end}",
-  "en": "",
-  "status": "",
+  "en": "Mimi{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -603,8 +603,8 @@
   "ids": [],
   "used": true,
   "jp": "ガイト{end}",
-  "en": "",
-  "status": "",
+  "en": "Gaito{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -612,8 +612,8 @@
   "ids": [],
   "used": true,
   "jp": "マーメイドプリンセス{end}",
-  "en": "",
-  "status": "",
+  "en": "Mermaid Princess{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -621,8 +621,8 @@
   "ids": [],
   "used": true,
   "jp": "マーメイド{end}",
-  "en": "",
-  "status": "",
+  "en": "Mermaid{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -630,8 +630,8 @@
   "ids": [],
   "used": true,
   "jp": "海月せんせい{end}",
-  "en": "",
-  "status": "",
+  "en": "Mitsuki-sensei{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -639,8 +639,8 @@
   "ids": [],
   "used": true,
   "jp": "海月{FD:01}（みつき）{FD:00}せんせい{end}",
-  "en": "",
-  "status": "",
+  "en": "Mitsuki-sensei{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -648,8 +648,8 @@
   "ids": [],
   "used": true,
   "jp": "太郎{end}",
-  "en": "",
-  "status": "",
+  "en": "Taro{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -657,8 +657,8 @@
   "ids": [],
   "used": true,
   "jp": "{call:@2B4F}{FD:01}（たろう）{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2B4F}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -675,8 +675,8 @@
   "ids": [],
   "used": true,
   "jp": "マコト{end}",
-  "en": "",
-  "status": "",
+  "en": "Makoto{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -684,8 +684,8 @@
   "ids": [],
   "used": true,
   "jp": "沙羅{end}",
-  "en": "",
-  "status": "",
+  "en": "Sara{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -693,8 +693,8 @@
   "ids": [],
   "used": true,
   "jp": "{call:@2B76}{FD:01}（さら）{FD:00}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2B76}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -702,8 +702,8 @@
   "ids": [],
   "used": true,
   "jp": "？？？{end}",
-  "en": "",
-  "status": "",
+  "en": "???{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -711,8 +711,8 @@
   "ids": [],
   "used": true,
   "jp": "{FA:0C0008}【{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:0C0008}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -720,8 +720,8 @@
   "ids": [],
   "used": true,
   "jp": "】\n{FA:0C0088}{end}",
-  "en": "",
-  "status": "",
+  "en": "\n{FA:0C0088}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -729,8 +729,8 @@
   "ids": [],
   "used": true,
   "jp": "】{FA:0C0088}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:0C0088}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -756,8 +756,8 @@
   "ids": [],
   "used": true,
   "jp": "あたし、{call:@2A5F}。{end}",
-  "en": "",
-  "status": "",
+  "en": "I'm {call:@2A5F}!{end}",
+  "status": "done",
   "notes": ""
  },
  {
