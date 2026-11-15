@@ -1,8 +1,6 @@
-# Cold boot to past the title screen.
-900 -
-6 start
-300 -
-6 start
-300 -
-6 a
+# Cold boot to the main menu. Start skips the intro movie; the title ignores A and takes Start only after ~2100 frames.
+1800 -
+10 start
+320 -
+10 start
 300 -

@@ -12,4 +12,5 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+| compression.md | header, free-space candidate, graphics compression (`tools/kcomp.py`), 5-byte resource tables (`tools/restables.py`), how menu text is drawn | decoder verified; table list partly guessed |
+| screens.md | screens seen so far, routes and savestates | partial |
