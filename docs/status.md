@@ -9,7 +9,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (1D25791), all in `tools/gfx_cards.py`, previewed from the maps, screens not reached (crane / memory win?). Stage
   `maps` now moves a record that grows to `MAP_RELOC` 0x1FF0000 and repoints its pointer at record - 6
   (`gfx_eptitle.placed`); proven by moving zannen's record in a scratch ROM with the old stream wiped: Too bad! still
-  drew. Drop 1C01D37 1C03D2A 1C06EBF.
+  drew. Drop 1C01D37 1C03D2A 1C06EBF. Loader leads for the unreached rows (1721BEB 1722E8B banners poster card
+  collection): `docs/re/graphics.md` §Unreached rows, loaders. Next: find their scenes from those loaders, add warps,
+  redraw; minigame logos (design); then the full tour.
 - **Phase 8 progress (2026-11-16, session 16):** clear cut-ins 1813332 / 18170D4 English (よくがんばりましたね -> You
   worked hard!, `tools/gfx_clear.py` `rainbow`, checked `work/qa/p8clr12.png`; warp SCENE_ID=39 WRITES
   0x0202FA0D:<1|2>). New build stage `raw` (`gfx/*.raw`, in-place rows; `gfx/clear.raw` rewrites two BG3 map records to

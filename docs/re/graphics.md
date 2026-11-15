@@ -249,5 +249,13 @@ prompts, ending and credits, story scenes if any.
   1C06EBF 800x2 (95) -> 1D25791 (card frame + bottom panel すきなところでとめてね!). Same palette roles as ざんねん.
   A record that grows is moved by stage `maps` (`gfx_eptitle.placed`: `00 c4` + stream at MAP_RELOC, pointer at
   record - 6 repointed); checked by moving zannen's record with the old stream zeroed (card game loss still drew it).
+- **Unreached rows, loaders (session 17):** 1721BEB (800x4, pill words かんたん ふつう むずかしい いつもの きぶん, NOT
+  part of the names chain, which ends at 1721BA8) and 1722E8B (800x4) = records 47 / 48 of table 16F6CC8. Table
+  1B9A7F8 (193 records; literal pools 0x3AEC8 0x3B5A8 0x3C250 0x3C784 0x3CED0 0x3D90C = the loading code): character
+  banners 1BFA943 1BFC919 1BFE551 = records 50-52, poster banner 1CE3D71 = 137, card collection 1CFDD65 = 173.
+  `reslog.lua` on warps to the uncovered scene ids 16 17 26 30 31 33 34 38 (original ROM): none loads any of these.
+  Room (state work/states/room.mss): only `up` + A reacts (minigame title; up x3 = mascot); left/right/down, held
+  or tapped, do nothing there. Next: break on the loaders above (execlog at the functions owning those literal
+  pools) to learn which scene/sub-mode calls them, then add a warp.
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.
