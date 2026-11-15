@@ -4,6 +4,8 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 
 ## Commands (run from repo root)
 - Build:    `python -X utf8 build.py` -> build/mermaid_en.gba (checks the dump against `rom.sha1` first; build.py arrives in phase 3)
+- Write log: every build writes `<out>.writes.log`; `python -X utf8 tools/writelog.py [BUILT]` = romdiff + per-stage zones.
+- Review: `sh tools/codex_tl_review.sh bNNN..` -> `work/qa/review/<batch>.report.md` (outcomes in `docs/review-log.md`).
 - Check:    `python -X utf8 tools/check.py` (tests + lint; the pre-commit hook runs this; hook path set by `git config core.hooksPath tools/hooks`)
 - Smoke:    `python -X utf8 $SKILL/scripts/emu.py build/mermaid_en.gba --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 $SKILL/scripts/emu.py build/mermaid_en.gba --sav work/saves/default.sav --out work/qa/w --script tools/debug/warp.lua --var "SCENE='<name>'" [--var EP=N | MSG=N] --frames 1200 --sheet` (scenes: `tools/debug/scenes.tsv`, notes `docs/re/scenes.md`; never ask the user to play to a scene). Save fixture: `python -X utf8 tools/debug/make_save.py`. All scenes + states: `python -X utf8 tools/debug/regen.py [ROM]`

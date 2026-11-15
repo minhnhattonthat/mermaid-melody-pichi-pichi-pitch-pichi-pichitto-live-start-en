@@ -39,7 +39,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ふふふ…………つかまえたよ。\nきたたいへいようの\n{call:@2B27}。{wait}いまから、\nわたしのきゅうでんに、\nおまねきしよう……。{FA:06}プリンセスのしんじゅもね…。\n　\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Fufufu... I've caught you,\n{call:@2B27} of the North Pacific.{wait}Now, allow me to invite you to my palace...{FA:06}Along with the princess's pearl, of\ncourse...\n \n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Heh heh... I have caught you,\n{call:@2B27} of the North Pacific.{wait}Now, allow me to invite you to my palace...{FA:06}Along with the princess's pearl, of\ncourse...\n \n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "よかった、ぶじで。\nリナも、このこも。{end}",
-  "en": "Thank goodness you're safe. You, Rina,\nand this little one too.{end}",
+  "en": "Thank goodness, Rina. You and this little\none are both safe.{end}",
   "status": "done",
   "notes": ""
  },
@@ -985,7 +985,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}きもだめしっていったら、\nまなつのこいをいろどる、\nじゅうようなイベント。{FA:06}{call:@2B27}たちが、\nこないわけがないですわ。\nあはは……………。{wait}でも、こうやってアベックを\nおどかして、きょうでもう、\n１しゅうかん。{call:@2B13}、ちょっと\nつかれちゃった…………。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}A test of courage is a vital event that\nadds color to a midsummer romance.{FA:06}There's no way the Mermaid Princesses\nwon't come. Ahaha.........{wait}But I've been scaring couples like this for\na whole week now. {call:@2B13} is a teeny bit\ntired.........\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}A test of courage is simply essential to a\nmidsummer romance.{FA:06}Surely the Mermaid Princesses wouldn't\nmiss it. Ahaha.........{wait}But I've been scaring couples like this for\na whole week now. {call:@2B13} is a teeny bit\ntired.........\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あれ～、おかしいですわ。\nうまくコントロールできない……。{FA:06}ちょうりつしてなかったから\nかしら？　やっぱり、ちゅうこは\nダメですわね。{wait}ふう、もういいです。{FA:06}ちょくせつ{call:@2B13}がいって\nあげますわ。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh~, how odd. I can't control it properly...{FA:06}Maybe because it wasn't tuned?\nSecondhand things really are no good.{wait}Phew, never mind.{FA:06}{call:@2B13} will just go there herself.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh my~, how peculiar. I can't control it\nproperly...{FA:06}Could it be because I hadn't tuned it, I\nwonder? Secondhand things simply won't\ndo.{wait}Well, never mind.{FA:06}{call:@2B13} shall go there herself.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

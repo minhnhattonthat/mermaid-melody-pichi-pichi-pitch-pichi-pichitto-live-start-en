@@ -61,7 +61,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（えっ、{call:@2AE7}……………！？{FA:06}　ううんちがう、これはあのふたりの\n　たましい……………。）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(Huh, {call:@2AE7}...?! {FA:06}No, wait... This is the soul of those two...){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(Huh, {call:@2AE7}...?! {FA:06}No, wait... These are the souls of those\ntwo...){end}",
   "status": "done",
   "notes": ""
  },
@@ -193,7 +193,7 @@
   ],
   "used": true,
   "jp": "よくやったわね、{call:@2AB4}ちゃん。{FA:06}でもね、ママなんてあきらめ\nなさい。{FA:06}あなたのママさがしなんて\nめんどうくさいこと、{call:@2B13}は\nまっぴら。{end}",
-  "en": "Good job, {call:@2AB4}-chan. {FA:06}But you know, you should give up on your\nmom. {FA:06}Searching for your mom is such a bother.\n{call:@2B13} wants no part of it.{end}",
+  "en": "Well done, {call:@2AB4}-chan. {FA:06}But do give up on finding your mother, my\ndear. {FA:06}Searching for her would be such a\nbother. {call:@2B13} wants no part of it.{end}",
   "status": "done",
   "notes": ""
  },
@@ -215,7 +215,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}キャハハハ。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Kyahahaha.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Ahahahaha!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

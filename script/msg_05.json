@@ -662,7 +662,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}そういえば、{call:@2AB0}さんがおとして\nいったきかいが、しろの{call:@2B32}\nに、はんのうしていましたわ……。{FA:06}もしかして、{call:@2AB0}さんは\n{call:@2B27}のなかま\nなんですの？{wait}そうだとしたら、わたしは……！{FA:06}{call:@2AB0}さん………………………。\n{FA:FF0101}{end}",
-  "en": "{FA:FF0101}Now that I think of it, the device\n{call:@2AB0}-san dropped was reacting to the\nwhite {call:@2B32}...{FA:06}Could it be that {call:@2AB0}-san is an ally of\nthe Mermaid Princesses?{wait}If that is so, then I...!{FA:06}{call:@2AB0}-san..........\n{FA:FF0101}{end}",
+  "en": "{FA:FF0101}Now that I recall, the device {call:@2AB0}-san\ndropped was reacting to the {call:@2B32}\nat the castle...{FA:06}Could it be that {call:@2AB0}-san is an ally of\nthe Mermaid Princesses?{wait}If that is so, then I...!{FA:06}{call:@2AB0}-san..........\n{FA:FF0101}{end}",
   "status": "done",
   "notes": ""
  },
@@ -825,7 +825,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2B32}カードでしめされた、\nさんごしょうのかいていには、\nパンタラッサのしろが……。{FA:06}ふっ、わたしたちがやってきたことは\nむこうにはバレているみたいだな。{FA:06}なら、このドレスはしょうたいじょう\nの、かわりというわけか…………。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}On the seabed of the coral reef the\n{call:@2B32} Card pointed to stands the\ncastle of Panthalassa...{FA:06}Hmph, looks like they know we're\ncoming.{FA:06}Then I suppose this dress is their idea\nof an invitation......\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}On the seabed of the coral reef the\n{call:@2B32} Card pointed to stands the\ncastle of Panthalassa...{FA:06}Heh, looks like they know we're here.{FA:06}Then I suppose this dress is their idea\nof an invitation......\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -968,7 +968,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}で、{call:@2B23}じょうにはいる\nちょくぜんに、わたしをたすけ\nだせばOKと、いうわけだな。\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}Then, right before we enter {call:@2B23}'s\ncastle, you rescue me, and we're set.\nThat's the idea.\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}So you rescue me right before they\ntake me into {call:@2B23}'s castle. That's the\nplan.\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },

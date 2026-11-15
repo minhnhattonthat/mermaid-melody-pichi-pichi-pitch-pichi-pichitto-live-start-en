@@ -578,7 +578,7 @@
   ],
   "used": true,
   "jp": "すっご～い！\nほんとうにへいきだ！{end}",
-  "en": "Amazing~! She's really fine!{end}",
+  "en": "Amazing~! Her singing really doesn't\nhurt us!{end}",
   "status": "done",
   "notes": ""
  },
@@ -631,7 +631,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（……ねがいのゆびわは、みつから\n　なかったけど、わたしのねがいは、\n　かなっちゃったみたい！）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(...I didn't find the wishing ring, but it\nlooks like my wish came true anyway!){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(...I didn't find the Ring of Wishes, but it\nlooks like my wish came true anyway!){end}",
   "status": "done",
   "notes": ""
  },
@@ -807,7 +807,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}まさか、エリルのさくせん\nでしたの？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Don't tell me this was Eriru's plan?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}My, was this actually Eriru's plan?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

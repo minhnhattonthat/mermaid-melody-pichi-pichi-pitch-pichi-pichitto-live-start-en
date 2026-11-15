@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2ADC}{call:@2B92}（ちえっ！　なにやってんだよまったく\n　あいつらは～！{FA:06}　いまにみてろ～！　くろしんじゅを\n　ゲットしたら、あたしだって～！）{end}",
-  "en": "{call:@2B8C}{call:@2ADC}{call:@2B92}(Tch! What are those two even doing?!{FA:06}Just you wait~! Once I get my hands on\nthat black pearl, I'll show them~!){end}",
+  "en": "{call:@2B8C}{call:@2ADC}{call:@2B92}(Tch! What are those two even doing?!{FA:06}Just you wait~! Once I get my hands on\nthat black pearl, it'll be my turn too~!){end}",
   "status": "done",
   "notes": ""
  },
@@ -699,7 +699,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B88}{call:@2B92}……しまった！　ミルクをのんだら、\nついウトウトしちゃって………。{FA:06}{call:@2A5B}さまは？{end}",
-  "en": "{call:@2B8C}{call:@2B88}{call:@2B92}...Oh no! The milk made me so sleepy......{FA:06}Where's {call:@2A5B}-sama?{end}",
+  "en": "{call:@2B8C}{call:@2B88}{call:@2B92}...Oh no! I dozed off after drinking the\nmilk......{FA:06}Where's {call:@2A5B}-sama?{end}",
   "status": "done",
   "notes": ""
  },
@@ -985,7 +985,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}にこら{call:@2B92}{call:@2A5B}ったら、あんがいうまく\nやっていたようね。{wait}{call:@2B8C}タキ{call:@2B92}げんきそうな、{call:@2A5B}をみて、サンゴの\nせいも、ほっとしただろうさ。{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}えっ…！？　「サンゴのせい」ですか？{FA:06}きたたいへいようの、しろをまもって\nいる？{wait}{call:@2B8C}タキ{call:@2B92}まえまえから、{call:@2A5B}がどんなくらしを\nしているのか、ないしょでみせてくれと\nせがまれていてね。{wait}{call:@2B8C}にこら{call:@2B92}サンゴのせいも、ちょっとはあんしん\nしてくれたかしら………。{end}",
-  "en": "{call:@2B8C}Nikora{call:@2B92}{call:@2A5B}'s done surprisingly well, hasn't she?{wait}{call:@2B8C}Taki{call:@2B92}Seeing {call:@2A5B} so lively, the Coral Spirit\nmust be relieved, I'd wager.{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}Huh...?! The \"Coral Spirit\"?{FA:06}The guardian of the North Pacific castle?{wait}{call:@2B8C}Taki{call:@2B92}The Coral Spirit had been begging me for\nages to secretly show her how {call:@2A5B}\nlives.{wait}{call:@2B8C}Nikora{call:@2B92}I hope the Coral Spirit feels a little more\nat ease now......{end}",
+  "en": "{call:@2B8C}Nikora{call:@2B92}{call:@2A5B}'s done surprisingly well, hasn't she?{wait}{call:@2B8C}Taki{call:@2B92}Seeing {call:@2A5B} so lively, the Coral Spirit\nmust be relieved, I'd wager.{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}Huh...?! The \"Coral Spirit\"?{FA:06}The guardian of the North Pacific castle?{wait}{call:@2B8C}Taki{call:@2B92}The Coral Spirit had been begging me for\nages for a secret peek at how {call:@2A5B} lives.{wait}{call:@2B8C}Nikora{call:@2B92}I hope the Coral Spirit feels a little more\nat ease now......{end}",
   "status": "done",
   "notes": ""
  },
@@ -1095,7 +1095,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A5B}、{call:@2A70}！\nぜんこうほうそうのスイッチが\nはいってる！{wait}{call:@2B8C}{call:@2A5B}・{call:@2A70}{call:@2B92}え～っ！！！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A5B}, {call:@2A70}! The school PA switch is on!{wait}{call:@2B8C}{call:@2A5B} & {call:@2A70}{call:@2B92}Whaaat?!!!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A5B}, {call:@2A70}! The school intercom's on!{wait}{call:@2B8C}{call:@2A5B} & {call:@2A70}{call:@2B92}Whaaat?!!!{end}",
   "status": "done",
   "notes": ""
  }

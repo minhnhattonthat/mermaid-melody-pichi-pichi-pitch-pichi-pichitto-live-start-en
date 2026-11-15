@@ -61,7 +61,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B0A}{call:@2B92}…………なかなか、しぶといね。{wait}{call:@2B8C}{call:@2B17}{call:@2B92}でも、あともうひとおしですわ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}（もうそろそろ、いいだろう。\n　つかまってやるか………。）{end}",
-  "en": "{call:@2B8C}{call:@2B0A}{call:@2B92}............You're pretty stubborn. {wait}{call:@2B8C}{call:@2B17}{call:@2B92}But just one more push will do it! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}(That should be about enough. Time to let\nthem catch me.........){end}",
+  "en": "{call:@2B8C}{call:@2B0A}{call:@2B92}............You're pretty stubborn. {wait}{call:@2B8C}{call:@2B17}{call:@2B92}But I daresay one more push will do it! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}(That should be about enough. Time to let\nthem catch me.........){end}",
   "status": "done",
   "notes": ""
  },

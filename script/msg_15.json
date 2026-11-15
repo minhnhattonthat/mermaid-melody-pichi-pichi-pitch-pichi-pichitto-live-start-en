@@ -842,7 +842,7 @@
   ],
   "used": true,
   "jp": "ジャ～ン！　こんやの\nスペシャル・ディナー！{FA:06}こうれいの、\nダークなべたいか～い！！{end}",
-  "en": "Ta-daaa! Tonight's special dinner!{FA:06}It's our traditional Dark Hot Pot\nTournament!!{end}",
+  "en": "Ta-daaa! Tonight's special dinner!{FA:06}It's our traditional Dark Hot Pot Party!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "なあに？\nダークなべって……？{end}",
-  "en": "Huh? What's a dark hot pot...?{end}",
+  "en": "Huh? What's Dark Hot Pot...?{end}",
   "status": "done",
   "notes": ""
  },

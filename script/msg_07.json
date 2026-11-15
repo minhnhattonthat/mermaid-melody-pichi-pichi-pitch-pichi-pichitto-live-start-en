@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}……どうしたら、おまえに\nあえるんだ！？{FA:06}オレ、おまえのこと！\nおまえのことを…………！{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}...How can I see you again?!{FA:06}I... I feel... about you...! I really......!{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}...How can I see you again?!{FA:06}I... You're... You're the one I......!{end}",
   "status": "done",
   "notes": ""
  },
@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B13}{call:@2B92}このユーリのかなでるふきょうわおんを\nきいて、にんげんたちはみ～んな、\nわれをわすれてしまうの。{FA:06}つまり、ユーリのおもいどおりに、\nうごいてくれるの！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}あれは…………{call:@2B3F}！？{end}",
-  "en": "{call:@2B8C}{call:@2B13}{call:@2B92}When humans hear the dissonance Yuri\nplays, every last one of them loses\nthemselves.{FA:06}In other words, they do just what\nYuri wants!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}That's...... {call:@2B3F}?!{end}",
+  "en": "{call:@2B8C}{call:@2B13}{call:@2B92}Why, when humans hear Yuri's dissonant\nmusic, every last one of them loses all\nsense of self!{FA:06}And then they do exactly as Yuri wishes!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}That's...... {call:@2B3F}?!{end}",
   "status": "done",
   "notes": ""
  },

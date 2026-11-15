@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}だれが、あんたたちとなんか！{wait}{call:@2B8C}{call:@2A74}{call:@2B92}ぜったい、おことわりだし！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}わたしたちを、なめやがって！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Like we'd ever go with you! {wait}{call:@2B8C}{call:@2A74}{call:@2B92}No way, not in a million years! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}Don't underestimate us!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Like we'd ever go with you! {wait}{call:@2B8C}{call:@2A74}{call:@2B92}No way, not in a million years! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}How dare you look down on us!{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}…………{call:@2A5B}のやつ、\nほんとうのこくはくをしている……。{FA:06}このままじゃ、あわになってしまう\nかも……！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}で、でもこれは、おしばいだよねっ！？{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}............{call:@2A5B}, that idiot... She's confessing\nfor real...{FA:06}At this rate, she might turn into foam...! {wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}............{call:@2A5B}... that girl... She's confessing\nfor real...{FA:06}At this rate, she might turn into foam...! {wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
   "status": "done",
   "notes": ""
  },
