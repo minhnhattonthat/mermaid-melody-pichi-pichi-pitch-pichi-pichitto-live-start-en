@@ -413,7 +413,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………{call:@2A96}？{wait}・{FA:0B28}{FA:0B04}\n・{FA:0B28}{FA:0B04}\n・{FA:0B28}{FA:0B04}{FA:12}あれっ？　あのこのいちげい……、\n「ラブ②シャワーピッチ！」って、\nなんでアレをしっているの？{wait}{FA:FF0303}……もしかして、すいよう！？{FA:06}{FA:FF0300}でもなんで、すいようがコンテスト\nなんて、でているの？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}.........{call:@2A96}?{wait}.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}{FA:12}Huh? That girl's talent... \"Love Love\nShower Pitch!\"? How does she\nknow that?{wait}{FA:FF0303}...Could she be a water demon?!{FA:06}{FA:FF0300}But why would a water demon enter\na contest?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}.........{call:@2A96}?{wait}  .{FA:0B28}{FA:0B04}\n  .{FA:0B28}{FA:0B04}\n  .{FA:0B28}{FA:0B04}{FA:12}Huh? That girl's talent... \"Love Love\nShower Pitch!\"? How does she\nknow that?{wait}{FA:FF0303}...Could she be a water demon?!{FA:06}{FA:FF0300}But why would a water demon enter\na contest?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1001,7 +1001,7 @@
   ],
   "used": true,
   "jp": "{call:@2B9F}・\n・\n・{wait}ここは……もりのなか？{FA:06}………ふかい…きり……うみのそば\n…………{call:@2AE7}っ！！\n{call:@2BA5}{end}",
-  "en": "{call:@2B9F}.\n.\n.{wait}Where... is this, a forest?{FA:06}......Thick... fog...... by\nthe sea......{call:@2AE7}!!\n{call:@2BA5}{end}",
+  "en": "{call:@2B9F}  .\n  .\n  .{wait}Where... is this, a forest?{FA:06}......Thick... fog...... by\nthe sea......{call:@2AE7}!!\n{call:@2BA5}{end}",
   "status": "done",
   "notes": ""
  },
