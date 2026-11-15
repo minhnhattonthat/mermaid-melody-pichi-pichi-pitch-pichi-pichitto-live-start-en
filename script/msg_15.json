@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "{call:@2B13}、もうあいのきせきなんて、\nしんじませんわ～！{end}",
-  "en": "I, {call:@2B13}, will never believe in miracles\nof love again~!{end}",
+  "en": "I, {call:@2B13}, will never believe in\nmiracles of love again~!{end}",
   "status": "done",
   "notes": ""
  },

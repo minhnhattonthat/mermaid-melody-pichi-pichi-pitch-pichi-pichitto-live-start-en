@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "さあ、うたいなさいよ。てんすうつけてあげるから。\nたぶん０てんでしょうけどね！{end}",
-  "en": "Go on, sing. I'll even give you a score. Probably zero\npoints, though!{end}",
+  "en": "Go on, sing. I'll even give you a\nscore. Probably zero\npoints, though!{end}",
   "status": "done",
   "notes": ""
  },
@@ -259,7 +259,7 @@
   ],
   "used": true,
   "jp": "すっご～い！　{call:@2A70}、ぶりぶり！{end}",
-  "en": "Amazing~! {call:@2A70}, you're so cutesy!{end}",
+  "en": "Amazing~! {call:@2A70}, you're\nso cutesy!{end}",
   "status": "done",
   "notes": ""
  },
@@ -281,7 +281,7 @@
   ],
   "used": true,
   "jp": "あ～ん、くやし～！　ふたりとも\nかわいくってムカついちゃう～。\n{call:@2B23}さま～！{end}",
-  "en": "Waaah, it's not fair~! You're both so\ncute it makes me mad~. {call:@2B23}-sama~!{end}",
+  "en": "Waaah, it's not fair~! You're both\nso cute it makes me mad~.\n{call:@2B23}-sama~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -578,7 +578,7 @@
   ],
   "used": true,
   "jp": "グリーンしんじゅの…{call:@2B27}！？{end}",
-  "en": "The green pearl... {call:@2B27}?!{end}",
+  "en": "The green pearl...\n{call:@2B27}?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -743,7 +743,7 @@
   ],
   "used": true,
   "jp": "さ～て！\nつづきましては、だいにんきの\nモモちゃんに、スペシャルプレゼント！\nモモちゃんのママイルカだよ！{end}",
-  "en": "Aaand now! Up next, a special present\nfor our super-popular Momo-chan! It's\nMomo-chan's mama dolphin!{end}",
+  "en": "Aaand now! Up next, a special\npresent for our super-popular\nMomo-chan! It's Momo-chan's\nmama dolphin!{end}",
   "status": "done",
   "notes": ""
  },
@@ -754,7 +754,7 @@
   ],
   "used": true,
   "jp": "アンコールはママのこもりうた、かな？{end}",
-  "en": "Maybe the encore will be Mama's lullaby?{end}",
+  "en": "Maybe the encore will be\nMama's lullaby?{end}",
   "status": "done",
   "notes": ""
  },
@@ -886,7 +886,7 @@
   ],
   "used": true,
   "jp": "あいのあつさを、おもいしったでしょ？{end}",
-  "en": "Now you know how hot love can burn!{end}",
+  "en": "Now you know how hot love\ncan burn!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "そうはうまくいかないんだよ！\nなぜってここは、あたしのステージ\nだからね！{end}",
-  "en": "It won't go that easy! 'Cause this is\nmy stage!{end}",
+  "en": "It won't go that easy! 'Cause this\nis my stage!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1029,7 +1029,7 @@
   ],
   "used": true,
   "jp": "あなたたちのうたなんて、ぜ～んぜん\nきこえな～い。さ、ガイトさまのもとへ\nつれてってあげる！{end}",
-  "en": "I can't hear your song at a~ll. Now, I'll\ntake you to Gaito-sama!{end}",
+  "en": "I can't hear your song at a~ll.\nNow, I'll take you to Gaito-sama!{end}",
   "status": "done",
   "notes": ""
  },

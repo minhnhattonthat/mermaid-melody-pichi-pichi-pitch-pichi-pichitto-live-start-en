@@ -3,6 +3,7 @@
     python -X utf8 tools/batches.py split [--size 3500]   work/tl/bNNN.tsv and build/terms_bNNN.txt for untranslated JP
     python -X utf8 tools/batches.py check [bNNN ...]      a batch's .out.tsv; with no batch, all shipped English (for check.py)
     python -X utf8 tools/batches.py merge bNNN ... [--overwrite]   check, then write the English into script/
+    python -X utf8 tools/batches.py rewrap | unwidow       batch of units to rewrap (box rule changed) / unwidow
 
 Copied from the skill's assets/batches.py. Fit the ADAPTER section to this game's text format; the rest is shared.
 Batch TSV: id, speaker, form, limit, JP. Output: work/tl/bNNN.out.tsv, id<TAB>English, every id once, same order.
@@ -62,8 +63,9 @@ def _ctx():
         import enfont
         units = index()
         roms = sorted((ROOT / "rom").glob("*.gba"))
-        bub = boxes.bubbles(roms[0].read_bytes()) if roms else {}
-        _CTX.update(boxes=boxes, units=units, budgets=boxes.unit_budgets(list(units.values()), bub),
+        rom = roms[0].read_bytes() if roms else None
+        bub, song = (boxes.bubbles(rom), boxes.song_boxes(rom)) if rom else ({}, {})
+        _CTX.update(boxes=boxes, units=units, budgets=boxes.unit_budgets(list(units.values()), bub, song),
                     widths={ch: enfont.width(rows) for ch, rows in enfont.load()})
     return _CTX
 
@@ -130,6 +132,19 @@ def unwidow(entry, en):
         if c["boxes"].need_px(c["boxes"].pages(meas, "en", c["units"], c["widths"])) <= b[1]:
             parts[i] = "\n".join(cand)
     return "".join(parts)
+
+
+def rewrap_batch():
+    """work/tl/rewrap.tsv + .out.tsv: shipped units that no longer fit their box (a box rule changed), line breaks
+    joined so `merge rewrap --overwrite` wraps them afresh. Units still too long after that need shorter English."""
+    rows = []
+    for e in index().values():
+        if e.get("en") and e.get("status") != "keep-jp" and width_problems(e, e["en"]):
+            rows.append((e, re.sub(r" *\n(?!\{end\}|$)", " ", e["en"])))
+    (TL / "rewrap.tsv").write_text("".join(f"{e['id']}\t\t\t\t\n" for e, _ in rows), encoding="utf-8", newline="\n")
+    out = [e["id"] + "\t" + n.replace("\n", "\\n") + "\n" for e, n in rows]
+    (TL / "rewrap.out.tsv").write_text("".join(out), encoding="utf-8", newline="\n")
+    print(f"{len(rows)} units in {TL / 'rewrap.out.tsv'}")
 
 
 def unwidow_batch():
@@ -352,6 +367,8 @@ def main(argv):
         return split(int(args[args.index("--size") + 1]) if "--size" in args else 3500)
     if cmd == "unwidow":
         return unwidow_batch()
+    if cmd == "rewrap":
+        return rewrap_batch()
     overwrite = "--overwrite" in args
     names = [a for a in args if a != "--overwrite"]
     entries, terms = index(), glossary()

@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "ひきょうなわなは、ゆるさない！\nこいするおとめのそこぢから、\nおもいしらせてあげるから！{end}",
-  "en": "I won't forgive dirty tricks! I'll show\nyou the hidden strength of a girl\nin love!{end}",
+  "en": "I won't forgive dirty tricks! I'll\nshow you the hidden strength of a\ngirl in love!{end}",
   "status": "done",
   "notes": ""
  },
@@ -556,7 +556,7 @@
   ],
   "used": true,
   "jp": "{call:@2B27}？\nなんでこんなとこに？{end}",
-  "en": "A {call:@2B27}? What are you\ndoing here?{end}",
+  "en": "A {call:@2B27}? What are\nyou doing here?{end}",
   "status": "done",
   "notes": ""
  },
@@ -567,7 +567,7 @@
   ],
   "used": true,
   "jp": "ちょうどいいですわ！\nセイレーンのつぼよ、{call:@2B32}の\nうたのちからを、すいとっちゃって！{end}",
-  "en": "How perfectly timely! O Siren's Jar,\nsuck up this {call:@2B32}'s singing power!{end}",
+  "en": "How perfectly timely! O Siren's\nJar, suck up this {call:@2B32}'s\nsinging power!{end}",
   "status": "done",
   "notes": ""
  },
@@ -578,7 +578,7 @@
   ],
   "used": true,
   "jp": "すっご～い！\nほんとうにへいきだ！{end}",
-  "en": "Amazing~! Her singing really doesn't\nhurt us!{end}",
+  "en": "Amazing~! Her singing really\ndoesn't hurt us!{end}",
   "status": "done",
   "notes": ""
  },
@@ -589,7 +589,7 @@
   ],
   "used": true,
   "jp": "ちょっと、ふくらんでるじゃない！\nど～すんのよ、これ！{end}",
-  "en": "Hey, it's swelling up! What're we gonna\ndo about this?!{end}",
+  "en": "Hey, it's swelling up! What're we\ngonna do about this?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -840,7 +840,7 @@
   ],
   "used": true,
   "jp": "さ、{call:@2B0F}。あのうたをふうじる\nさくせんは、どんなですの？{end}",
-  "en": "Now then, {call:@2B0F}. And what, pray tell, is\nyour plan for sealing away that song?{end}",
+  "en": "Now then, {call:@2B0F}. And what, pray\ntell, is your plan for sealing away\nthat song?{end}",
   "status": "done",
   "notes": ""
  },
@@ -862,7 +862,7 @@
   ],
   "used": true,
   "jp": "きょうこそ、あの{call:@2B27}\nたちに、おもいしらせてやるときだわ。{end}",
-  "en": "Today is the day we teach those Mermaid\nPrincesses a lesson.{end}",
+  "en": "Today is the day we teach those\nMermaid Princesses a lesson.{end}",
   "status": "done",
   "notes": ""
  },
@@ -884,7 +884,7 @@
   ],
   "used": true,
   "jp": "{call:@2B0F}！\nさくせんはどうしたのよ！{end}",
-  "en": "{call:@2B0F}! What happened to the plan?!{end}",
+  "en": "{call:@2B0F}! What happened to\nthe plan?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -895,7 +895,7 @@
   ],
   "used": true,
   "jp": "まさか、なにもかんがえてなかった\nなんてこと、ありませんわよね～！{end}",
-  "en": "Surely you don't mean you didn't think\nof anything at all, my dear~?!{end}",
+  "en": "Surely you don't mean you didn't\nthink of anything at all,\nmy dear~?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -928,7 +928,7 @@
   ],
   "used": true,
   "jp": "{call:@2B0F}！　さくせんをかんがえて\nなかったなんて、ほんとうのバカね！{end}",
-  "en": "{call:@2B0F}! You didn't even think up a plan?\nYou really are a fool!{end}",
+  "en": "{call:@2B0F}! You didn't even think up a\nplan? You really are a fool!{end}",
   "status": "done",
   "notes": ""
  },
@@ -939,7 +939,7 @@
   ],
   "used": true,
   "jp": "おバカさんとは、\nつきあいきれませんわ！{end}",
-  "en": "I simply cannot abide such a ninny, I\ndo declare!{end}",
+  "en": "I simply cannot abide such a\nninny, I do declare!{end}",
   "status": "done",
   "notes": ""
  },

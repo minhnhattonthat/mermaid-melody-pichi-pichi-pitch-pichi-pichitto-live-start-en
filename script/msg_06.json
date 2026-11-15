@@ -391,7 +391,7 @@
   ],
   "used": true,
   "jp": "……めをさますのです。\nグリーンしんじゅのマーメイド\nプリンセス、{call:@2A96}。{end}",
-  "en": "...Awaken, {call:@2A96}, Mermaid Princess of the\ngreen pearl.{end}",
+  "en": "...Awaken, {call:@2A96}, Mermaid\nPrincess of the green pearl.{end}",
   "status": "done",
   "notes": ""
  },
@@ -545,7 +545,7 @@
   ],
   "used": true,
   "jp": "ピンクしんじゅ、\nみずいろしんじゅ、\nそして、グリーンしんじゅの\n{call:@2B27}たちよ。{wait}わたしのこのすがたは、\nまぼろしのようなもの。{FA:06}これいじょうここにとどまって\nいることはできません……。{wait}７つのうみの\n{call:@2B27}たちが、\nみんなでちからをあわせて、{FA:06}わたしを、ほんとうにめざめ\nさせてくれることを、いのって\nいます…………。{wait}わすれないでください……。\nわたしはいつもあなたたちと、\nともにいます。{end}",
-  "en": "Mermaid Princesses of the pink pearl, the\naqua pearl, and the green pearl.{wait}This form of mine is no more than\na phantom.{FA:06}I cannot remain here any longer......{wait}I pray that all the Mermaid Princesses of\nthe seven seas will join their\nstrength together,{FA:06}and truly awaken me......{wait}Please do not forget... I am always\nwith you.{end}",
+  "en": "Mermaid Princesses of the pink\npearl, the aqua pearl, and the\ngreen pearl.{wait}This form of mine is no more than\na phantom.{FA:06}I cannot remain here\nany longer......{wait}I pray that all the Mermaid\nPrincesses of the seven seas will\njoin their strength together,{FA:06}and truly awaken me......{wait}Please do not forget... I am always\nwith you.{end}",
   "status": "done",
   "notes": ""
  },
@@ -677,7 +677,7 @@
   ],
   "used": true,
   "jp": "ばかな！　このわたしたちに\nダメージをあたえるうたなんて！{end}",
-  "en": "Impossible! A song that can actually\nhurt us?!{end}",
+  "en": "Impossible! A song that can\nactually hurt us?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -963,7 +963,7 @@
   ],
   "used": true,
   "jp": "このうた……あたしがちいさいころに、\nよくうたっていた…？{end}",
-  "en": "This song... I used to sing it all the time\nwhen I was little...?{end}",
+  "en": "This song... I used to sing it all\nthe time when I was little...?{end}",
   "status": "done",
   "notes": ""
  },

@@ -26,7 +26,8 @@ DIGIT_PX = 7  # shortcut: FB numbers guessed at (format & 0xF, at least 2) digit
 
 
 def bubbles(rom):
-    """-> {message id: (file offset of the op-9 word, col, row, W, H)}: the last set-bubble before each show-message."""
+    """-> {message id: (file offset of the op-9 word, col, row, W, H, tail)}: the last set-bubble before each
+    show-message. tail 0 = no bubble tail (framed story boxes at col 1 W 28, or text straight on the scene)."""
     a, b = EVENTS
     ws = struct.unpack_from(f"<{(b - a) // 2}H", rom, a)
     out, box, i = {}, None, 0
@@ -36,10 +37,28 @@ def bubbles(rom):
             i += 1
             continue
         if op == 9 and n == 4:
-            box = (a + 2 * i, ws[i + 1] >> 8, ws[i + 1] & 0xFF, ws[i + 2] >> 8, ws[i + 2] & 0xFF)
+            box = (a + 2 * i, ws[i + 1] >> 8, ws[i + 1] & 0xFF, ws[i + 2] >> 8, ws[i + 2] & 0xFF, ws[i + 3] >> 8)
         elif op == 10 and n == 3 and box:
             out.setdefault((ws[i + 1] & 0x7FFF) + MSG_BASE, box)
         i += n
+    return out
+
+
+SONG = (0x1F5C660, 0x1F74000)  # gameplay event stream holding op 6 (in-song dialogue boxes)
+SONG_COLS = (4, 26)  # a song box stays between the side gauges: col >= 4, col + W <= 26 (Japanese uses 4..24)
+
+
+def song_boxes(rom):
+    """-> {message id: [(file offset of the op-6 word, col, row, W, H), ...]}: op 0x7006 = t, message - 0x500,
+    duration, col<<8|row, W<<8|H, 0; drawn in 8 px mode (flags bit 0) through the VWF (docs/re/vwf.md)."""
+    a, b = SONG
+    ws = struct.unpack_from(f"<{(b - a) // 2}H", rom, a)
+    out = {}
+    for i in range(len(ws) - 6):
+        msg, cr, wh, z = ws[i + 2], ws[i + 4], ws[i + 5], ws[i + 6]
+        if ws[i] == 0x7006 and msg < 0x800 and cr >> 8 < 30 and cr & 0xFF < 20 and 1 <= wh >> 8 <= 30 \
+                and wh & 0xFF in (2, 4, 6, 8) and z == 0:
+            out.setdefault(msg + MSG_BASE, []).append((a + 2 * i, cr >> 8, cr & 0xFF, wh >> 8, wh & 0xFF))
     return out
 
 
@@ -54,12 +73,24 @@ RANGES = [
 GUESS = ("guess", 196, 3)
 
 
-def budget(e, bub):
+def fixed(box):
+    """A tail-less box off col 1 is text straight on the scene (EP 13 Aqua Regina inside a drawn frame): grown to col
+    1 it covers the frame, so it keeps its width (15 boxes)."""
+    return box[5] == 0 and box[1] > 1
+
+
+def budget(e, bub, song=None):
     """-> (kind, limit, lines, guess) for unit `e` (its tightest message id)."""
     out = []
     for mid in e["ids"]:
+        if song and mid in song:  # may grow to SONG_COLS (`grow`); 8 px mode: last glyph starts <= W*8 - 8
+            out.append(("song dialogue", (SONG_COLS[1] - SONG_COLS[0]) * 8 - 8, min(b[4] for b in song[mid]) // 2,
+                        False))
+            if mid not in bub:
+                continue
         if mid in bub:  # any bubble may grow to W 28 at col 1 (`grow`; checked in EP 1, work/p5/g1.png)
-            out.append(("bubble", MAX_W * 8 - 12, bub[mid][4] // 2, False))
+            w = bub[mid][3] if fixed(bub[mid]) else MAX_W
+            out.append(("bubble", w * 8 - 12, bub[mid][4] // 2, False))
             continue
         for lo, hi, kind, limit, lines in RANGES:
             if lo <= mid <= hi:
@@ -70,9 +101,9 @@ def budget(e, bub):
     return min(out, key=lambda b: (b[3], b[1] is None, b[1] or 0, b[2] or 0))  # measured before guessed, then tightest
 
 
-def unit_budgets(entries, bub):
+def unit_budgets(entries, bub, song=None):
     """-> {unit id: budget}. A unit with no message id takes the budget of a unit that jumps to it (not a call)."""
-    out = {e["id"]: budget(e, bub) for e in entries if e["ids"]}
+    out = {e["id"]: budget(e, bub, song) for e in entries if e["ids"]}
     for e in entries:
         for m in re.finditer(r"\{(\w+):([0-9A-F@]*)\}", e["jp"]):
             if m[1] != "call" and e["id"] in out:
@@ -140,11 +171,11 @@ def need_px(pgs):
     return max((px - last for p in pgs for px, last in p if px), default=0)
 
 
-def lint(entries, lang="en", bub=None):
+def lint(entries, lang="en", bub=None, song=None):
     """-> [(level, unit id, message)], level 'error' or 'warn'. Only units with `lang` text (all used units for jp)."""
     widths = {ch: enfont.width(rows) for ch, rows in enfont.load()}
     units = {e["id"]: e for e in entries}
-    budgets = unit_budgets(entries, bub or {})
+    budgets = unit_budgets(entries, bub or {}, song)
     out = []
     for e in entries:
         text = e.get(lang) if lang != "jp" else (e["jp"] if e["used"] else "")
@@ -153,11 +184,12 @@ def lint(entries, lang="en", bub=None):
         kind, limit, lines, guess = budgets[e["id"]]
         if limit is None:
             continue
-        pgs = pages(text, lang, units, widths)
-        jp_lines = lines_needed(pages(e["jp"], "jp", units, widths))
+        sp = 8 if kind == "song dialogue" else 12
+        pgs = pages(text, lang, units, widths, sp)
+        jp_lines = lines_needed(pages(e["jp"], "jp", units, widths, sp))
         level = "warn" if guess else "error"
         need = need_px(pgs)
-        if need > limit:
+        if need > limit and not (lang == "jp" and sp == 8):  # kana song lines wrap at any glyph (engine auto-wrap)
             out.append((level, e["id"], f"{kind}: line needs {need} px, limit {limit}"))
         n = lines_needed(pgs)
         if n > max(lines, jp_lines):
@@ -177,16 +209,26 @@ def grow(rom, entries, lang="en"):
         if not e.get(lang):
             continue
         for mid in e["ids"]:
-            if mid in bub:
+            if mid in bub and not fixed(bub[mid]):
                 w = math.ceil((need_px(pages(e[lang], lang, units, widths)) + 12) / 8)
                 need[bub[mid]] = max(need.get(bub[mid], 0), w)
     changed = 0
-    for (off, col, row, w, h), nw in need.items():
+    for (off, col, row, w, h, _), nw in need.items():
         nw = min(nw, MAX_W)
         if nw > w:
             col = min(col, MAX_W + 1 - nw)
             rom[off + 2:off + 6] = struct.pack("<HH", col << 8 | row, nw << 8 | h)
             changed += 1
+    lo, hi = SONG_COLS  # song boxes: geometry words at +8/+10 of the op-6 record; 8 px mode wraps at W*8 - 8
+    song = song_boxes(rom)
+    for e in entries:
+        for mid in e["ids"] if e.get(lang) else ():
+            nw = min(math.ceil((need_px(pages(e[lang], lang, units, widths, 8)) + 8) / 8), hi - lo)
+            for off, col, row, w, h in song.get(mid, ()):
+                if nw > w:
+                    col = max(lo, min(col, hi - nw))
+                    rom[off + 8:off + 12] = struct.pack("<HH", col << 8 | row, nw << 8 | h)
+                    changed += 1
     return changed
 
 
@@ -198,7 +240,7 @@ def main():
     ap.add_argument("--warn", action="store_true", help="also print warnings")
     a = ap.parse_args()
     rom = next((Path(__file__).resolve().parents[1] / "rom").glob("*.gba")).read_bytes()
-    res = lint(msgcodec.load_script(), a.lang, bubbles(rom))
+    res = lint(msgcodec.load_script(), a.lang, bubbles(rom), song_boxes(rom))
     for level, uid, msg in res:
         if a.warn or level == "error":
             print(f"{level} {uid} {msg}")

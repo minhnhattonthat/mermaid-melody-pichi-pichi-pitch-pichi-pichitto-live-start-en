@@ -171,7 +171,7 @@
   ],
   "used": true,
   "jp": "※オートモードです。\nライブコンサートをたのしんでね！{end}",
-  "en": "*Auto mode. Enjoy the live concert!{end}",
+  "en": "*Auto mode. Enjoy the\nlive concert!{end}",
   "status": "done",
   "notes": ""
  },

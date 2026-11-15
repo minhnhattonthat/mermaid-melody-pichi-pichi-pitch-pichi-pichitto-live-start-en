@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "わたしはうみのめがみ、\n{call:@2AC6}…。{wait}あなたが、\nきたたいへいようの\n{call:@2B27}、\nるちあね…………。{end}",
-  "en": "I am the goddess of the\nsea, {call:@2AC6}... {wait}So you are Lucia, the {call:@2B27}\nof the North Pacific...{end}",
+  "en": "I am the goddess of the\nsea, {call:@2AC6}... {wait}So you are Lucia, the\n{call:@2B27} of the\nNorth Pacific...{end}",
   "status": "done",
   "notes": ""
  },
@@ -105,7 +105,7 @@
   ],
   "used": true,
   "jp": "うみのせかいはすき……？{end}",
-  "en": "Do you love the world of the sea...?{end}",
+  "en": "Do you love the world of\nthe sea...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "ふふっ。よくおききなさい、\n{call:@2B27}、\n{call:@2A5B}。{wait}ちからをうしなってしまった\nわたしを、かんぜんによびも\nどすには、{FA:06}７つのうみの、７にんの\n{call:@2B27}と、{FA:06}そのしんじゅのちからが、\nひつようなのです。{FA:06}うみを、へいわを、そして\nあなたのあいするひとを\nまもるために、{FA:06}はやくわたしをよびおこして\n……{call:@2B27}、\n{call:@2A5B}……。{end}",
-  "en": "Fufu. Listen well, {call:@2B27}\n{call:@2A5B}. {wait}I have lost my power. To fully call\nme back, {FA:06}I need the seven Mermaid Princesses of\nthe seven seas, {FA:06}and the power of their pearls. {FA:06}To protect the sea, and peace, and the\none you love, {FA:06}awaken me soon... {call:@2B27}\n{call:@2A5B}...{end}",
+  "en": "Fufu. Listen\nwell, {call:@2B27} {call:@2A5B}. {wait}I have lost my power. To fully\ncall me back, {FA:06}I need the seven Mermaid\nPrincesses of the\nseven seas, {FA:06}and the power of\ntheir pearls. {FA:06}To protect the sea, and\npeace, and the one you love, {FA:06}awaken me soon...\n{call:@2B27} {call:@2A5B}...{end}",
   "status": "done",
   "notes": ""
  },
@@ -204,7 +204,7 @@
   ],
   "used": true,
   "jp": "７つのうみにへいわを\nとりもどすために、\nあなたたちにあたらしい\nちからを、あげましょう。{FA:06}うたはあい、そしてちから。\n　{wait}さあ、あたらしいきょくを\nうけとりなさい。{FA:06}うたうのです。\n{call:@2B27}\nたちよ…。{end}",
-  "en": "To bring peace back to the seven seas, I\nshall give you new power.{FA:06}Song is love, and song is power.{wait}Now, receive this new song.{FA:06}Sing, Mermaid Princesses...{end}",
+  "en": "To bring peace back to the\nseven seas, I shall give you\nnew power.{FA:06}Song is love, and song\nis power.{wait}Now, receive this new song.{FA:06}Sing, Mermaid Princesses...{end}",
   "status": "done",
   "notes": ""
  },
@@ -215,7 +215,7 @@
   ],
   "used": true,
   "jp": "ふっ……まだまだだな。もっと\nレッスンをかさねておくがいい！{end}",
-  "en": "Hmph... You've still got a long way to\ngo. Keep up your lessons!{end}",
+  "en": "Hmph... You've still got a long way\nto go. Keep up your lessons!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1040,7 +1040,7 @@
   ],
   "used": true,
   "jp": "やっとあらわれましたわね、\nマーメイドプリンセス！\nきょうこそ{call:@2B13}のピアノで……。{end}",
-  "en": "Well, well, so you've finally shown up,\nMermaid Princesses! Today, with\n{call:@2B13}'s piano...{end}",
+  "en": "Well, well, so you've finally shown\nup, Mermaid Princesses! Today,\nwith {call:@2B13}'s piano...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1062,7 +1062,7 @@
   ],
   "used": true,
   "jp": "ずるいですわ！　{call:@2B13}がピアノから\nはなれたスキに、うたうなんて～！！{end}",
-  "en": "How very unfair! Singing the moment\n{call:@2B13} stepped away from the piano~!!{end}",
+  "en": "How very unfair! Singing the\nmoment {call:@2B13} stepped away from\nthe piano~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1073,7 +1073,7 @@
   ],
   "used": true,
   "jp": "「ゆうれいのしょうたい、みたり」\nっていうけど、まさかこんなこと\nだったとはね……………。{end}",
-  "en": "\"Look closely at a ghost and it's only a\nwithered reed,\" as they say. But who\nknew it would turn out like this...........{end}",
+  "en": "\"Up close, a ghost is just a\nwithered reed,\" as they say. Who\nknew it'd be this...........{end}",
   "status": "done",
   "notes": ""
  },

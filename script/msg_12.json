@@ -6,7 +6,7 @@
   ],
   "used": true,
   "jp": "さあ、きょうのあたしたちは、ひとあじ\nちがうってことを、おしえてあげるよ！{end}",
-  "en": "Now then, we'll show you that we're a cut\nabove today!{end}",
+  "en": "Now then, we'll show you that\nwe're a cut above today!{end}",
   "status": "done",
   "notes": ""
  },
@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "しまった、まだなかまがいたのか！{end}",
-  "en": "Drat, there was another one of them?!{end}",
+  "en": "Drat, there was another one?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -347,7 +347,7 @@
   ],
   "used": true,
   "jp": "ウフフ…。マーメイドのちからなんて\nうみのもくずもどうぜん。{end}",
-  "en": "Ufufu... The power of Mermaids is as\ngood as sunk to the bottom of the sea.{end}",
+  "en": "Ufufu... Mermaid power is as good\nas sunk to the sea floor.{end}",
   "status": "done",
   "notes": ""
  },
@@ -908,7 +908,7 @@
   ],
   "used": true,
   "jp": "ただえさえ、おぼれているのに～！\nじぶんがたすかるのにひっしで、\nおうせんできない～！{end}",
-  "en": "We're already drowning as it is~! We're\ntoo busy saving ourselves to\nfight back~!{end}",
+  "en": "We're already drowning as it is~!\nWe're too busy saving ourselves\nto fight back~!{end}",
   "status": "done",
   "notes": ""
  },

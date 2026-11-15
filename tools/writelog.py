@@ -25,7 +25,7 @@ import vwf  # noqa: E402
 # (lo, hi) half-open file offsets each stage may write
 ZONES = {
     "text": [(msgtable.TAB, msgtable.END), (vwf.FREE_END, 0x2000000)],  # pointer table + old region, free space
-    "boxes": [boxes.EVENTS],  # bubble geometry in the event scripts
+    "boxes": [boxes.EVENTS, boxes.SONG],  # bubble and song-box geometry in the event scripts
     "vwf": [(vwf.BLIT_SITE, vwf.BLIT_SITE + 10), (vwf.BLIT_POOL, vwf.BLIT_POOL + 4),
             (vwf.DRAWCHAR - 0x08000000, vwf.DRAWCHAR - 0x08000000 + 8),
             (vwf.FONT - 0x08000000, vwf.ATTR), (vwf.ATTR, vwf.ATTR + 2 * vwf.NWIDTH), (vwf.CODE, vwf.FREE_END)],

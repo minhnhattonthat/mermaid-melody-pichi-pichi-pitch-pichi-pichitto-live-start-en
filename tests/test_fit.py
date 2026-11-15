@@ -34,20 +34,34 @@ def with_en(entries, uid, text):
 def test_bubbles_parse_the_story_boxes(rom):
     bub = boxes.bubbles(rom)
     assert len(bub) == 799 and 1480 <= min(bub) and max(bub) <= 2473
-    assert all(6 <= w <= 28 and col >= 1 and col + w <= 29 and 2 <= h <= 14 for _, col, _, w, h in bub.values())
-    assert bub[1531][1:] == (4, 11, 20, 4)  # EP 1 villain bubble, as boxlog.lua saw it
+    assert all(6 <= w <= 28 and col >= 1 and col + w <= 29 and 2 <= h <= 14 for _, col, _, w, h, _ in bub.values())
+    assert bub[1531][1:5] == (4, 11, 20, 4)  # EP 1 villain bubble, as boxlog.lua saw it
+    assert bub[1760][1:] == (5, 11, 20, 6, 0) and boxes.fixed(bub[1760])  # EP 13 Aqua Regina, no tail: never grows
 
 
 @needs_rom
 def test_japanese_script_fits_its_budgets(rom, entries):
     # calibration: the measured budgets must hold the original text
-    assert [r for r in boxes.lint(entries, "jp", boxes.bubbles(rom)) if r[0] == "error"] == []
+    jp = boxes.lint(entries, "jp", boxes.bubbles(rom), boxes.song_boxes(rom))
+    assert [r for r in jp if r[0] == "error"] == []
 
 
 @needs_rom
 def test_english_script_fits_its_budgets(rom, entries):
-    errors = [r for r in boxes.lint(entries, "en", boxes.bubbles(rom)) if r[0] == "error"]
+    errors = [r for r in boxes.lint(entries, "en", boxes.bubbles(rom), boxes.song_boxes(rom)) if r[0] == "error"]
     assert errors == [], "\n".join(map(str, errors[:20]))
+
+
+@needs_rom
+def test_song_boxes_parse_and_grow(rom, entries):
+    song = boxes.song_boxes(rom)  # in-song dialogue (op 6), 121 messages; EP 1 1544 as msglog.lua saw it
+    assert len(song) == 121 and song[1544][0][1:] == (5, 11, 18, 6)
+    assert all(boxes.SONG_COLS[0] <= c and c + w <= boxes.SONG_COLS[1] for v in song.values() for _, c, _, w, _ in v)
+    out = bytearray(rom)
+    bare = [dict(e, en="") for e in entries]
+    unit = next(e["id"] for e in entries if 1544 in e["ids"])
+    assert boxes.grow(out, with_en(bare, unit, "This song... I used to sing it all the time{end}")) == 1
+    assert struct.unpack_from("<HH", out, song[1544][0][0] + 8) == (4 << 8 | 11, 22 << 8 | 6)  # W 22 at col 4
 
 
 @needs_rom

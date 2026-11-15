@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "よくかんがえたら、とうめいになる\nくすりのために、くろしんじゅを\nさがしていたんだっけ。{end}",
-  "en": "Come to think of it, I was looking for\nthe black pearl for my invisibility\npotion, wasn't I?{end}",
+  "en": "Come to think of it, I was looking\nfor the black pearl for my\ninvisibility potion, wasn't I?{end}",
   "status": "done",
   "notes": ""
  },
@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "やばっ！　ちょっとながく、\nにこみすぎたか～！？{end}",
-  "en": "Uh-oh! Did I leave it simmering a little\ntoo long~?!{end}",
+  "en": "Uh-oh! Did I leave it simmering a\nlittle too long~?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -963,7 +963,7 @@
   ],
   "used": true,
   "jp": "せっかくチャンスだったのに！{end}",
-  "en": "And it was such a perfect chance!{end}",
+  "en": "And it was such a\nperfect chance!{end}",
   "status": "done",
   "notes": ""
  },
@@ -974,7 +974,7 @@
   ],
   "used": true,
   "jp": "あの３にん、ペンダントで\nよびあっているようだね！{end}",
-  "en": "Looks like those three call each other\nwith their pendants!{end}",
+  "en": "Looks like those three call each\nother with their pendants!{end}",
   "status": "done",
   "notes": ""
  },

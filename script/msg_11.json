@@ -61,7 +61,7 @@
   ],
   "used": true,
   "jp": "これでかんぺきに、おぼえましたわ！\nと、いうことで、つぎにあうときは\nこうはいきませんわよ！{end}",
-  "en": "There, I've committed it perfectly to\nmemory! So, my dears, you shan't have\nsuch an easy time when next we meet!{end}",
+  "en": "There, I've memorized it\nperfectly! So next time we meet,\nyou shan't have it so easy!{end}",
   "status": "done",
   "notes": ""
  },
@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "う～ん。あのモノマネが\nひょっとしてあいつらのあいだで、\nはやっているとか……………？{end}",
-  "en": "Hmm. Could that impression be all the\nrage among them, maybe.............?{end}",
+  "en": "Hmm. Could that impression be all\nthe rage among them,\nmaybe.............?{end}",
   "status": "done",
   "notes": ""
  },
@@ -424,7 +424,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}なによ{call:@2AE7}…あたしにキス、\nなんどもしたくせに……。\n",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}What's with you, {call:@2AE7}... after you\nkissed me over and over...\n",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}What's with you, {call:@2AE7}... after\nyou kissed me over and over...\n",
   "status": "done",
   "notes": ""
  },
@@ -446,7 +446,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（どうしちゃったんだろう、あたし。\n　なんか、へん…………。\n　このきもちをおさえられない…。）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(What's happening to me? I feel kind of\nstrange... I can't hold back\nthese feelings...){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(What's happening to me? I feel\nkind of strange... I can't hold\nback these feelings...){end}",
   "status": "done",
   "notes": ""
  },
@@ -457,7 +457,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（あたしが、{call:@2AE7}がさがしている……。\n　このきもちをつたえられれば…、\n　あたしは…あわになったって…。）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(That I'm the one {call:@2AE7} is looking for...\nIf I could tell him how I feel... even if I\nturned into sea foam...){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(That I'm the one {call:@2AE7} is looking\nfor... If I could tell him how I\nfeel... even if I turned into\nsea foam...){end}",
   "status": "done",
   "notes": ""
  },
@@ -468,7 +468,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あのね、あたし、ほんとうはね…。\n{call:@2AE7}のさがしている………。\n{call:@2AE7}のだいすきな……………！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}You know, the truth is, I'm... the one\n{call:@2AE7} is looking for... The one {call:@2AE7}\nloves.............!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}You know, the truth is, I'm... the\none {call:@2AE7} is looking for... The one\n{call:@2AE7} loves.............!{end}",
   "status": "done",
   "notes": ""
  },
@@ -732,7 +732,7 @@
   ],
   "used": true,
   "jp": "ずるいわ！　あたしたちがけんかして\nいるあいだに、うたいはじめるなんて！{end}",
-  "en": "No fair! Starting to sing while we were\nbusy fighting!{end}",
+  "en": "No fair! Starting to sing while we\nwere busy fighting!{end}",
   "status": "done",
   "notes": ""
  },
@@ -743,7 +743,7 @@
   ],
   "used": true,
   "jp": "けっこんしきはオトメのゆめ！\nそれをぶちこわすすいようには、\n３人あわせてぴちぴちっと、\nウェディングコーラスよ！{end}",
-  "en": "A wedding is every maiden's dream! For\nwater demons who would ruin it, the\nthree of us together bring a Pichi\nPichi Wedding Chorus!{end}",
+  "en": "A wedding is every maiden's\ndream! For water demons who'd\nruin it, the three of us bring a\nPichi Pichi Wedding Chorus!{end}",
   "status": "done",
   "notes": ""
  },
