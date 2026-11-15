@@ -51,4 +51,5 @@ clear	39		-		すごいぞ!よくやったね (clear)
 tokoton_start	40		-		とことんピッチ start: あと100きょく / のこり100てん
 gameover	41		-		ゲームオーバー
 draw	42		-		ひきわけ (versus draw)
+minititles	15		-	30 -;6 up;40 -;6 a;200 -;6 right;150 -;6 right;150 -;6 right;150 -	room -> minigame title pages: Compare, Line Up, Match, Catch Pitch logos (D18)
 msgview	0		0x03003B98:$MSG:2@260	60 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -;6 a;60 -	debug メッセージ: message $MSG (0-2473) in the dialogue box, A pages; run with --var MSG=N

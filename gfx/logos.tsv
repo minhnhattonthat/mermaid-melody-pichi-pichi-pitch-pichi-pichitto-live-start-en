@@ -1,0 +1,7 @@
+# minigame title logos (room minigame pages 1-4, BG2, 4 pals per tile map; tools/gfx_logos.py writes the
+# pngs (tile indices shown as greys) and the new map records gfx/logos.maps)
+# offset	size	layout	png	English	Japanese
+1BF198F	800x4	tiles16	gfx/out/logos/1BF198F.png	Compare Pitch	くらべてピッチ
+1BF2D7E	800x4	tiles16	gfx/out/logos/1BF2D7E.png	Line Up Pitch	そろえてピッチ
+1BF039E	800x6	tiles16	gfx/out/logos/1BF039E.png	Match Pitch	あわせてピッチ
+1BF416C	800x4	tiles16	gfx/out/logos/1BF416C.png	Catch Pitch	キャッチでピッチ

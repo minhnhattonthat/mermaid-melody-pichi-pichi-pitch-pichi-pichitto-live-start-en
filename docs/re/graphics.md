@@ -215,7 +215,14 @@ prompts, ending and credits, story scenes if any.
   cell of the text rect its own tile (content dedup broke the increment runs: 189 > 149 bytes; unique = 124 bytes,
   114 of 117 free slots) and writes `gfx/minipanel.maps`; build stage `maps` (`gfx_eptitle.apply`) now also applies
   every `gfx/*.maps` row in place (zones too).
-- **Minigame logos (open):** BG2 (char 0x4000, map 0x600D000 64x32; pages 2/4 go to the right screen 0x600D800), map
+- **Minigame logos (done session 20, `tools/gfx_logos.py`, D18):** the loader adds 2 (pages 1, 3) or 6 (pages 2, 4)
+  to the record's pal bits 0-3 and a tile base (VRAM 256 for pages 1/3, 640 for 2/4: each slot holds 384 tiles);
+  palettes cut from the dumps into `gfx/logos.pals`. The generator renders the whole screen in RGB, erases the kana
+  (fill components in a box, letter colours only, plus joined shadow), inpaints holes from neighbours, letters
+  English, re-picks each cell's palette, and retiles the whole screen (dedup with flips: 223-253 tiles); records
+  that grow are moved by stage `maps`. In game the first page is くらべて (Compare), right -> Line Up, Match, Catch
+  (warp `SCENE_ID=15` route `30 -;6 up;40 -;6 a;200 -` then `6 right;150 -`, `work/qa/p8logos`). Old notes:
+  BG2 (char 0x4000, map 0x600D000 64x32; pages 2/4 go to the right screen 0x600D800), map
   records also run-stream with palette bits in the stream (pals 0-3): page 1 くらべてピッチ chain 1BF198F 800x4 map
   1D243B9 (280 bytes); p2 そろえてピッチ 1BF2D7E 800x4 map 1D244D8 (316); p3 あわせてピッチ 1BF039E 800x6 map 1D24266
   (332); p4 キャッチでピッチ 1BF416C 800x4 map 1D2461B (327). Lettering is interleaved with card/character art and

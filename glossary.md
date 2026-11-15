@@ -83,6 +83,10 @@ or that uses an Avoid spelling.
 | とことんピッチ | Marathon Pitch | | Solo Pitch sub-mode, 100 songs in a row (graphics, D15) | |
 | つづけてピッチ | Nonstop Pitch | | Solo Pitch sub-mode (graphics, D15) | |
 | アニメでピッチ | Anime Pitch | | Solo Pitch sub-mode, anime episodes (graphics, D15) | |
+| くらべてピッチ | Compare Pitch | | room minigame 1, card higher/lower (logo graphics, D18) | |
+| そろえてピッチ | Line Up Pitch | | room minigame 2, slot reels (logo graphics, D18) | |
+| あわせてピッチ | Match Pitch | | room minigame 3, memory pairs (logo graphics, D18) | |
+| キャッチでピッチ | Catch Pitch | | room minigame 4, crane game (logo graphics, D18) | |
 | すいよう / 水妖 | water demon | | 水妖, Gaito's sea monsters (written in kana) | |
 | ダーク・ラゔァーズ | Dark Lovers | | Izuru, Eriru, Yuri | |
 | ブラック・ビューティー・シスターズ | Black Beauty Sisters | | Sheshe and Mimi | |
