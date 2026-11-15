@@ -11,7 +11,7 @@ def test_english_build_writes_only_its_zones():
     orig = build.ROM.read_bytes()
     log = []
     new = build.build(orig, "en", None, log)
-    assert {w[3] for w in log} == {"text", "boxes", "vwf", "gfx", "names", "maps", "objs"}
+    assert {w[3] for w in log} == {"text", "boxes", "vwf", "gfx", "names", "maps", "objs", "raw"}
     assert writelog.check(orig, new, log) == []
     # a stage writing outside its zones, or a byte changed with no write, fails
     bad = bytearray(new)

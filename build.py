@@ -56,6 +56,7 @@ def build(orig, lang="en", entries=None, log=None):
     stage("names", lambda: names.apply(rom))
     stage("maps", lambda: gfx_eptitle.apply(rom))
     stage("objs", lambda: gfx_songs.apply(rom))
+    stage("raw", lambda: gfx.apply_raw(rom))
     return bytes(rom)
 
 

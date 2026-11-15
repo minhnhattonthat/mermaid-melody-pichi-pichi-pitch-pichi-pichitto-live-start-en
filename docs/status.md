@@ -2,7 +2,12 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 15, sha1 4ab9f1dc; smoke ok, write log clean, check 41 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-16 session 16, sha1 0d5ffed8; smoke ok, write log clean, check 41 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-16, session 16):** clear cut-ins 1813332 / 18170D4 English (よくがんばりましたね -> You
+  worked hard!, `tools/gfx_clear.py` `rainbow`, checked `work/qa/p8clr12.png`; warp SCENE_ID=39 WRITES
+  0x0202FA0D:<1|2>). New build stage `raw` (`gfx/*.raw`, in-place rows; `gfx/clear.raw` rewrites two BG3 map records to
+  move light-palette cells). Map format notes in `docs/re/graphics.md` §clear. Next: the remaining rows below
+  (drop 1813332 18170D4).
 - **Phase 8 progress (2026-11-16, session 15):** minigame prompt panels English (`tools/gfx_cards.py` PANELS, notes
   `docs/re/graphics.md` §Minigame prompt panels): `memo` 1C05A1E Match the same pictures! (checked `work/qa/p8memo`),
   `crane` 1C05F03 Hold A to move, / let go to grab! (checked `work/qa/p8crane`), `guess` 1C047A6, `again` 1C0657A Keep
@@ -29,7 +34,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   i.e. reach the screens; 1C01D37..1C03D2A big kana lettering, unread).
 - **Remaining graphics rows (after session 14):** results 170633B (needs a real song's results); 1721BEB (difficulty
   pill words かんたん ふつう むずかしい いつもの きぶん.. + small kana) 1722E8B (big digits, maybe no text) after the
-  name keyboard chain, screen unknown; clear cut-ins 1813332 18170D4; minigame logos 1BF039E 1BF198F (くらべてピッチ,
+  name keyboard chain, screen unknown; minigame logos 1BF039E 1BF198F (くらべてピッチ,
   seen on the card game title) 1BF2D7E 1BF416C (design); character banners 1BFA943 1BFC919 1BFE551; sheet_055
   1C01D37 1C03D2A (big lettering, other minigames' results?) 1C06EBF (prompt panel, other frame; the rest done in
   session 15); poster 1CE3D71 (どのポスターをはる?); card collection 1CFDD65 (★カードコレクション★);

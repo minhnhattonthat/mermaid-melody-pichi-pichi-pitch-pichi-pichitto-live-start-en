@@ -126,9 +126,15 @@ prompts, ending and credits, story scenes if any.
   table, then widen entries so the romaji fits.
 - Group `clear` (done): 180F0F8 Kaito cut-in (BG3, map = tiles in order, 30 a row, a palette per cell) すごいぞ! /
   よくやったな -> Amazing! / Well done! on a white sticker over the old footprint (`tools/gfx_clear.py`), checked in
-  scene 39 (`work/qa/p8clear`). Siblings 1813332 / 18170D4 (table 16F6CC8 entries 145/146, same size) are two more
-  cut-ins: their per-cell palettes are not found yet (not a kcomp resource, not raw: `tools/findmap.py`); find what
-  picks the picture in scene 39, warp each, then reuse `gfx_clear.edit` with their dumps.
+  scene 39 (`work/qa/p8clear`). Siblings 1813332 / 18170D4 (done, session 16, checked `work/qa/p8clr12.png`): the
+  scene code 0x08013E3C picks r4 = s8 0x0202FA0D (0 Kaito, 1, 2): block 0xBA + r4 of table 16F6CC8, BG palettes 0-13
+  raw at 0x183AC40 + 32 * (14 * r4 + 0x5E9), map = table 0x184ECF4 entry 0x43 + r4 -> 3 bytes (?, u16 offset from the
+  table) -> u16 0x8400 (compressed, 1024 cells) + stream for IWRAM decoder 0x080091A0: op n = (b & 0x3F) + 1,
+  b < 0x80: n LE u16 literals, 0x80|: n x last+1, 0xC0|: n x last (`gfx_clear.decode_rec/encode_rec`). Warp: SCENE_ID=39
+  WRITES 0x0202FA0D:<r4>. Both read よくがんばりましたね -> "You worked hard!" (2x3 en12, one tone, white sticker,
+  blue sticker shadow; `gfx_clear.rainbow`). Cells whose palette lacks the tone or white (all 15 slots in use) move to
+  a palette that has both, unpainted pixels remapped; the map record is rewritten in place via `gfx/clear.raw` (new
+  build stage `raw`: in-place byte rows from `gfx/*.raw`, the generator checks each fits).
 - Groups `cardbtn` `roombub` `hint` `prompt` (done, `tools/gfx_cards.py`, checked in room / card_game, `work/qa/p8cards`):
   1D031F4 buttons あそぶ/する/やめる/しない -> Play/Yes/Quit/No; 1D09C87 room bubbles (5 x 96x24) -> Put up a poster? /
   Play a game? / Place a mascot? / Listen to a song? / View cards?; 1D01FD9 chain (not in the sweep: found with

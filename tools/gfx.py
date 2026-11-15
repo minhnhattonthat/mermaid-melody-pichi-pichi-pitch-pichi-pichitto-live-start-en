@@ -297,6 +297,23 @@ def apply(rom):
         rom[lit:lit + 4] = (0x08000000 | copy).to_bytes(4, "little")
 
 
+def raw_rows():
+    """gfx/*.raw (written by generators such as gfx_clear.py, which check each row fits its old bytes):
+    [(file offset, new bytes)] written in place."""
+    lines = [ln for f in sorted(GFX.glob("*.raw")) for ln in f.read_text(encoding="utf-8").splitlines()]
+    return [(int(a, 16), bytes.fromhex(b)) for a, b in (ln.split("\t")[:2] for ln in lines if ln and ln[0] != "#")]
+
+
+def apply_raw(rom):
+    """Build stage raw: palette words, map records and other small in-place patches."""
+    for at, new in raw_rows():
+        rom[at:at + len(new)] = new
+
+
+def raw_zones():
+    return [(at, at + len(new)) for at, new in raw_rows()]
+
+
 def main():
     cmd = sys.argv[1]
     rom = next((ROOT / "rom").glob("*.gba")).read_bytes()

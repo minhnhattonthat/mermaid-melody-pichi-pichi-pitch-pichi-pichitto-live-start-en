@@ -1,3 +1,5 @@
-# song-clear cut-in, Kaito (scene clear: BG3, many palettes; png shown in BG pal 0, palfixed)
+# song-clear cut-ins (scene clear: BG3, many palettes; png shown in BG pal 0, palfixed), tools/gfx_clear.py
 # offset	size	layout	png	English	Japanese
-180F0F8	800x10	tiles16	gfx/out/clear/180F0F8.png	Amazing! / You did great! (tools/gfx_clear.py)	すごいぞ! / よくやったな
+180F0F8	800x10	tiles16	gfx/out/clear/180F0F8.png	Amazing! / Well done! (Kaito)	すごいぞ! / よくやったな
+1813332	800x10	tiles16	gfx/out/clear/1813332.png	You worked hard! (0x0202FA0D = 1)	よくがんばりましたね
+18170D4	800x10	tiles16	gfx/out/clear/18170D4.png	You worked hard! (0x0202FA0D = 2)	よくがんばりましたね
