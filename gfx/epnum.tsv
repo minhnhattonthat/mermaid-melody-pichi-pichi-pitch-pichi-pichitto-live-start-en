@@ -1,0 +1,7 @@
+# episode-select numbers (scene 25): one chain of 16 0x800 streams 179BC34..179F027 (12-15 have no pointer: read
+# as the tail of an earlier chunk, so the chain must stay contiguous), each 128x32 = four 32x32 cells
+# (two digits + a 話 plate at x 15-29 y 18-28 -> "EP", tools/gfx_epnum.py). The grid reads the whole chain from
+# 179BC34; the cursor (OBJ 0, pal 2) reads each chunk by its own pointer (16F6CC8 table): gfx.plan repoints them.
+# Palette from the pause dump's OBJ pal 0 (same ramp as the unlocked cursor), palfixed.
+# offset	size	layout	png	English	Japanese
+179BC34	800x16	tiles16	gfx/out/epnum/179BC34.png	00-40 EP	話

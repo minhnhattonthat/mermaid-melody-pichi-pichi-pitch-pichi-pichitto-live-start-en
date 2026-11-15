@@ -29,7 +29,11 @@ def test_layout_roundtrip():
 
 
 @needs_rom
-def test_every_row_fits_its_slot():
+def test_every_row_fits_its_slot_or_moves():
     rom = ROM.read_bytes()
-    for off, end, comp in gfx.edited_blocks(rom):
-        assert len(comp) <= end - off, f"{off:X}"
+    low = gfx.RELOC_TOP
+    for off, end, comp, at, moves in gfx.plan(rom):
+        assert len(comp) <= end - off if at == off else moves and at < gfx.RELOC_TOP, f"{off:X}"
+        if at != off:
+            low = min(low, at)
+    assert not any(rom[low:gfx.RELOC_TOP])  # relocations land in the 0x00 padding

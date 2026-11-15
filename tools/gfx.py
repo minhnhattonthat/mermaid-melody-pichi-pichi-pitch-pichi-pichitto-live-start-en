@@ -141,8 +141,19 @@ def encode(data, size):
     return b"".join(kcomp.compress(data[i:i + size[0]]) for i in range(0, len(data), size[0]))
 
 
+def chunk_starts(rom, off, size):
+    """File offset of each stream in a chain."""
+    starts = []
+    for _ in range(size[1]):
+        starts.append(off)
+        off = kcomp.decompress(rom, off, size[0])[1]
+    return starts
+
+
 def edited_blocks(rom):
-    """-> [(offset, old stream end, new compressed stream)] for every row whose png exists."""
+    """-> [(offset, old stream end, new compressed chain, [(old chunk start, new chunk offset in the chain)])] for
+    every row whose png exists. A chunk may have its own pointer (179BC34: the episode grid reads the whole chain,
+    the cursor each chunk), so plan() repoints every chunk that moves."""
     out = []
     for group, off, size, layout, png in rows():
         if not (ROOT / png).exists():
@@ -151,7 +162,9 @@ def edited_blocks(rom):
         oimg = to_image(data, layout)
         new = from_image(load_png(ROOT / png, load_pal(group), oimg), layout, data)
         if new != data:
-            out.append((off, end, encode(new, size)))
+            parts = [kcomp.compress(new[i:i + size[0]]) for i in range(0, len(new), size[0])]
+            rel = [sum(map(len, parts[:k])) for k in range(len(parts))]
+            out.append((off, end, b"".join(parts), list(zip(chunk_starts(rom, off, size), rel))))
     return out
 
 
@@ -199,18 +212,53 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
     return img
 
 
+RELOC_TOP = 0x2000000  # blocks that outgrow their slot go here, downward (0x00 padding; text fills upward from 0x1FE0200)
+
+
+def pointers(rom, off):
+    """File offsets of every 32-bit pointer 0x08000000|off (resource tables hold them unaligned)."""
+    pat, hits, i = (0x08000000 | off).to_bytes(4, "little"), [], rom.find((0x08000000 | off).to_bytes(4, "little"))
+    while 0 <= i < 0x1FDF760:  # original data only: past it is the patch's own text and code
+        hits.append(i)
+        i = rom.find(pat, i + 1)
+    return hits
+
+
+def plan(rom):
+    """-> [(offset, old stream end, new chain, target, [(pointer offset, new value)])]; target = offset when the
+    chain fits in place, else a spot below RELOC_TOP. Every chunk that lands elsewhere gets its pointers moved."""
+    out, top = [], RELOC_TOP
+    for off, end, comp, chunks in edited_blocks(rom):
+        at = off
+        if len(comp) > end - off:
+            top -= len(comp)
+            at = top
+            if not pointers(rom, off):
+                raise SystemExit(f"gfx block {off:X}: {len(comp)} bytes > slot {end - off} and no pointer to move it")
+        moves = [(p, 0x08000000 | (at + rel)) for start, rel in chunks if at + rel != start for p in pointers(rom, start)]
+        out.append((off, end, comp, at, moves))
+    return out
+
+
 def slots(rom):
-    """(start, end) of every row's original stream chain: the gfx stage's write zones."""
-    return [(off, decode(rom, off, size)[1]) for _, off, size, _, _ in rows()]
+    """The gfx stage's write zones: every row's original stream chain, relocated streams and moved pointers."""
+    zones = [(off, decode(rom, off, size)[1]) for _, off, size, _, _ in rows()]
+    for off, _, comp, at, moves in plan(rom):
+        if at != off:
+            zones.append((at, at + len(comp)))
+        zones += [(p, p + 4) for p, _ in moves]
+    return zones
 
 
 def apply(rom):
-    """Write edited blocks over their original streams; a block that outgrows its slot stops the build (no
-    relocation yet: the encoder beat the original on all 258 unscrambled blocks it was tried on)."""
-    for off, end, comp in edited_blocks(rom):
-        if len(comp) > end - off:
-            raise SystemExit(f"gfx block {off:X}: {len(comp)} bytes > slot {end - off}: add relocation")
-        rom[off:off + len(comp)] = comp
+    """Write edited chains over their original streams, or below RELOC_TOP when they outgrow the slot (the old
+    stream stays, unused), and repoint every chunk that moved."""
+    for off, end, comp, at, moves in plan(rom):
+        if at != off and any(rom[at:at + len(comp)]):
+            raise SystemExit(f"gfx block {off:X}: relocation spot {at:X} is not free (text grew into it?)")
+        rom[at:at + len(comp)] = comp
+        for p, v in moves:
+            rom[p:p + 4] = v.to_bytes(4, "little")
 
 
 def main():
@@ -224,8 +272,9 @@ def main():
             save_png(to_image(data, layout), pal, GFX / "orig" / group / f"{off:07X}.png")
         print("exported", group)
     elif cmd == "check":
-        for off, end, comp in edited_blocks(rom):
-            print(f"{off:07X} slot {end - off} new {len(comp)}{'  TOO BIG' if len(comp) > end - off else ''}")
+        for off, end, comp, at, moves in plan(rom):
+            print(f"{off:07X} slot {end - off} new {len(comp)}{f'  moved to {at:07X}' if at != off else ''}"
+                  f"{f', {len(moves)} pointers' if moves else ''}")
 
 
 if __name__ == "__main__":
