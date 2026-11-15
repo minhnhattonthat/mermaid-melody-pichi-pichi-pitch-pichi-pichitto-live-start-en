@@ -49,9 +49,9 @@ H / step. textobj_open(slot, msg, col, row, W, H, flags) = 0x080046E4 (24 caller
 | Story speech bubble | 806 msgs 1330-2471 with an event-script set-box (op 0x4009) | per msg | 8-28 (per msg; build may grow to 28) | H/2, max 3 (H 6) | W*8-12 (212 at W 28) | work/p5/bub_cmp.png (W 16 -> 28 widened in ROM draws fine, tail kept) |
 | Episode narration | 1281-1329 (lr 0x08035CF1) | 2 | 26 | 6 | 196 | boxep/*, story warp |
 | Framed story box (name tag) | in 1530+ (fl CD60/C560) | 1 | 28 | 3 | 212 | story_framed |
-| Lyrics strip / song list | 256-305, 512-1027 (colour 8, white) | 0 | 28 | 1 | 212, but UI sprites cover x > ~200 in gameplay: keep lyrics <= ~184 px | work/p5/play_z.png |
-| Credits | 80, 88-98 | 1 | 28 | 9 | 212 | credits_cast |
-| Link check | 1028 | 1 | 28 | 1 | 212 | link_check |
+| Lyrics strip | 256-305, 512-1023 (colour 8, white) | 0 | 28 | 1 | 212, but UI sprites cover x > ~200 in gameplay: lint at 180 (longest Japanese) | work/p5/play_z.png |
+| Credits | 80, 88-98 | 1 | 28 | 9 | 220 (no auto-wrap; Japanese reaches 216) | credits_cast |
+| Link messages | 1024-1030 | 1 | 28 | 1 | 212 | link_check |
 | Debug menu | 4 | 1 | 28 (mode 1: 8 px monospace) | 9 | debug only | debug_menu |
 | Number fields | 0-3, 6 (mode C103, sp 8) | - | 1-3 | 1 | numbers only | |
 
@@ -61,6 +61,24 @@ Event scripts (raw u16 stream, 0x1F5C660..~0x1F73000): word = len<<12 | op (len 
 messages, each with exactly one box. 1456 used ids were not observed in any box yet (mostly 7-255, 306-511,
 540-1027 lyrics, 1029-1280, scattered 1330-2473): give them the narration limit (196 px, 3 lines) as a **guess**
 until a tour sees them.
+
+## Width gate (`tools/boxes.py`, tests `tests/test_fit.py`, run by `tools/check.py`)
+- `boxes.bubbles(rom)`: the walk above, stopped at 0x1F67000 (past it the stream is data and gives false bubbles for
+  1330-1335): 799 message ids (1480-2471) with col/row/W/H. W 6-28, H 2-14 (1903 = H 14), col + W <= 29.
+- Budgets: bubble = 212 px (any bubble may grow to W 28), lines H/2; ranges: credits 80, 88-98 = 220 px (the Japanese
+  runs to 216: no auto-wrap there, screen edge), lyrics 256-305 and 512-1023 = 180 px (= longest Japanese line),
+  link messages 1024-1030 = 212, narration 1281-1329 = 196 / 6 lines, 0-6 not checked; the rest a guess (warn only).
+  A unit with no message id takes the budget of a unit that jumps to it.
+- Measuring: `{call}`s are inlined (speaker names); text between `{FA:0C0008}` and `{FA:0C0088}` is the name tag
+  (its own window, not counted); `{FA:06}` and `{wait}` start a page; `{FA:11..}` (credits column move) starts a line;
+  `{FD:01}` = 8 px monospace, `{FD:80}` = 16; trailing spaces don't count; F6 names guessed 60 px, FB numbers 7 px a
+  digit (shortcuts in boxes.py).
+- **verified** calibration: the Japanese script gives 0 errors. Lines: 71 Japanese bubble pages run 4-5 lines in an
+  H 6 box (the box scrolls), so extra lines are an error only past both H/2 and the Japanese unit's longest page.
+- Auto-grow (`boxes.grow`, in `build.py` for English builds): W = ceil((need + 12) / 8) up to 28, col moved left so
+  col + W <= 29; never shrinks. **verified** EP 1: msg 1531 (col 4 W 20) at col 2 W 27 and col 1 W 28, msg 1533
+  (col 6 W 18) at col 3 W 26 draw clean, tail kept (work/p5/g1.png, grow4.png). A bubble that looks translucent at its
+  edges in a shot is the scene fade-out, not a layer problem (checked: no windows, no blend at that frame).
 
 ## Known limits
 - msgview's debug box with more than 7 lines (no page break) garbles earlier rows while the 8th+ line draws; real

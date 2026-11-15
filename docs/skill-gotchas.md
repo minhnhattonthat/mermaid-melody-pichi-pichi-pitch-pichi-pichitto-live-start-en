@@ -19,3 +19,5 @@ One line each: the skill reference file it belongs in, then the fact.
 - references/pipeline.md (Width gate): story speech bubbles are sized per message by event-script data (op 0x4009), not by the text; widening W/col in that data draws a correct bigger bubble, so auto-grow in the build beats per-bubble limits.
 - scripts/lua (keystone): assembling a prefix to get label offsets includes the auto-appended literal pool, so offsets come out wrong; put a fixed branch table at the top of the blob instead.
 - docs/re/compression.md wording: the free space at 0x1FDF760.. is zero-filled in the dump (FF only in the trap-test build).
+- references/emulator-qa.md (Visual QA): a text box that looks translucent or cut at its edges in one shot can be a scene fade-out in progress; look at the frames before it before chasing layers/windows (cost a probe and two test builds here).
+- references/pipeline.md (Width gate): calibrate the fit lint on the original script first (Japanese must give 0 errors); it exposed wrong ranges (lyrics vs link messages), no-wrap credits, scrolling bubbles and false event-stream hits past its end.

@@ -5,7 +5,7 @@
 Packs script/msg_*.json (each unit's `lang` text, falling back to jp) into the message regions and rebuilds the
 message table and the text pointers inside the bytecode (tools/msgcodec.py). With only jp text the output equals the
 dump (tests/test_identity.py). An English build encodes en text with the VWF font (tools/enfont.py, tbl/en.tbl),
-jp fallback text with tbl/jp.tbl, and patches in the VWF (tools/vwf.py). --marker replaces every used unit with
+jp fallback text with tbl/jp.tbl, widens story bubbles to fit (tools/boxes.py) and patches in the VWF (tools/vwf.py). --marker replaces every used unit with
 marker text (tools/marker.py); --qa ID=text overrides one unit's en text (unit id, e.g. 1A2B)."""
 import argparse
 import sys
@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
+import boxes  # noqa: E402
 import check_rom  # noqa: E402
 import enfont  # noqa: E402
 import marker  # noqa: E402
@@ -35,6 +36,7 @@ def build(orig, lang="en", entries=None):
         msgcodec.pack(rom, entries, jp, "jp")
         return bytes(rom)
     msgcodec.pack(rom, entries, Table(enfont.tbl_lines()), lang, REGIONS, fallback=jp)
+    boxes.grow(rom, entries, lang)
     vwf.apply(rom)
     return bytes(rom)
 
