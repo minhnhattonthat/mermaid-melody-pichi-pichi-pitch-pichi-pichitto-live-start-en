@@ -1,7 +1,12 @@
 # Compression and resource tables
 
 ## Header and map
-- Game code `B3MJ`, maker `A4` (Konami), title `PICHIPICHI02`. 32 MiB ROM; data ends at 0x1FDF760, rest is 0x00 padding (candidate free space 0x1FDF760-0x1FFFFFF, ~133 KB, not yet trap-tested). **verified** (byte scan).
+- Game code `B3MJ`, maker `A4` (Konami), title `PICHIPICHI02`. 32 MiB ROM; data ends at 0x1FDF760, rest is 0x00 padding (candidate free space 0x1FDF760-0x1FFFFFF, ~133 KB). **verified** (byte scan).
+- Free-space trap test (2026-11-15): `work/trap.gba` = original with 0x1FDF760.. filled with FF; cold boot smoke ok and
+  menu items 0/3/4 toured to frame 5000 next to the original: same screens (runs are not frame-deterministic: two
+  runs of the original also differ in note positions, so diffs were checked by eye). No code literal points there
+  (107 u32 values in 0x09FDF760.. in the first MiB are odd data words). Treat as free; **verified** for the routes
+  toured only.
 - Save: `SRAM_V112` string at 0x4D24C -> SRAM. **verified** (string present).
 - No Shift-JIS text anywhere (scan of every 2-byte SJIS run found only noise). **verified** (`work/` scan, 2026-11-15).
 - Pointers use both mirrors: 0x08xxxxxx for the first 16 MiB, 0x09xxxxxx (= file offset + 0x08000000) for the second.
