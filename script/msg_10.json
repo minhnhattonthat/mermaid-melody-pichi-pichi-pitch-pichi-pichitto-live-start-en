@@ -667,7 +667,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B99}…いずれにしても、だいじな\nてがみをひろってしまったせきにんが\nあるよ、わたしたちには。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B99}...Either way, we picked up an\nimportant letter, so it's our\nresponsibility now.{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B99}...Either way, we picked up\nan important letter, so it's our\nresponsibility now.{end}",
   "status": "done",
   "notes": ""
  },
@@ -678,7 +678,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}そうよね………。\n「うみからのラブレターひろいました」\nこれでいいかな？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}You're right... \"Found: a love\nletter from the sea.\" How's that?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}You're right... \"Found: a\nlove letter from the sea.\"\nHow's that?{end}",
   "status": "done",
   "notes": ""
  },
@@ -689,7 +689,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}そうね～。ラブレターって\nいうより、こいぶみってかんじじゃない？{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}True~. More an old-time \"love\nnote\" than a \"love letter.\"{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}True~. More an old-time\n\"love note\" than a \"love letter.\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -766,7 +766,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}だって、さっき真木さんが\nきたとき、あかくなってたから！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Because you turned red when\nMaki-san came by earlier!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Because you turned red\nwhen Maki-san came by earlier!{end}",
   "status": "done",
   "notes": ""
  },
@@ -777,7 +777,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}え～！　なになに！？\nそうなの！？　おしえておしえて！？{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}Ooh~! What, what?! Really?! Tell\nus, tell us!{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}Ooh~! What, what?!\nReally?! Tell us, tell us!{end}",
   "status": "done",
   "notes": ""
  },
@@ -810,7 +810,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE3}{call:@2B99}あら～、ひみつだからステキ\nなんじゃない～。{end}",
-  "en": "{call:@2B8C}{call:@2AE3}{call:@2B99}Oh my~, it's lovely because it's\na secret~.{end}",
+  "en": "{call:@2B8C}{call:@2AE3}{call:@2B99}Oh my~, it's lovely\nbecause it's a secret~.{end}",
   "status": "done",
   "notes": ""
  },
@@ -821,7 +821,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}ひみつだから、ステキ……？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Lovely because it's a secret...?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Secrets make it lovely...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -832,7 +832,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}…おや、ようやくわたしの\nうらないをしんじるきになったかい？{end}",
-  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}...Oh? Finally ready to believe my\nfortunes, dearie?{end}",
+  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}...Oh? Finally ready to\nbelieve my fortunes, dearie?{end}",
   "status": "done",
   "notes": ""
  },
@@ -854,7 +854,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}あら……。\nで、なにをうらなってほしいんだい？{end}",
-  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}My, my... Well then, what is it you'd\nhave me divine, hm?{end}",
+  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}My, my... Well then, what is it\nyou'd have me divine, hm?{end}",
   "status": "done",
   "notes": ""
  },
@@ -865,7 +865,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}このラブレターなんだけど…。\n",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}It's about this love letter...\n",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}It's about this\nlove letter...\n",
   "status": "done",
   "notes": ""
  },
@@ -887,7 +887,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}……でも、あたしね。\nしりたいってはんめん、このままわからない\nほうがいいのかなっておもっているの。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}...But you know, part of me wants\nto know, and part of me thinks it\nmight be better not to find out.{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}...But part of me wants to\nknow, and part of me thinks it's\nbetter not to.{end}",
   "status": "done",
   "notes": ""
  },
@@ -909,7 +909,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}だって、ひみつのほうが、\nドキドキしたままでいられるんだもん。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Because if it stays a secret, my heart\ncan keep on pounding.{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Because if it stays a secret, my\nheart can keep on pounding.{end}",
   "status": "done",
   "notes": ""
  },
@@ -931,7 +931,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}……そうね。ほんとうのこと、\nわからないほうがよさそうね。\n",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}...You're right. Maybe it's better\nnot to know the truth.\n",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}...You're right. Maybe it's\nbetter not to know the truth.\n",
   "status": "done",
   "notes": ""
  },
@@ -953,7 +953,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}だったら、わたしがうらなうまでも\nないね。{end}",
-  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}Then I'd wager you've no need of\nmy fortune-telling at all.{end}",
+  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}Then I'd wager you've no\nneed of my fortune-telling at all.{end}",
   "status": "done",
   "notes": ""
  },

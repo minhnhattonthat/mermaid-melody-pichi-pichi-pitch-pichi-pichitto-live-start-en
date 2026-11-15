@@ -402,7 +402,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B99}どうしたんだ？\n…きょうのおまえ、なんかへんだぞ。{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}What's up with you? ...You're acting\nkinda weird today.{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}What's up with you? ...You're\nacting kinda weird today.{end}",
   "status": "done",
   "notes": ""
  },
@@ -424,7 +424,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}なによ{call:@2AE7}…あたしにキス、\nなんどもしたくせに……。\n",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}What's with you, {call:@2AE7}... after\nyou kissed me over and over...\n",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}What's with you, {call:@2AE7}...\nafter you kissed me over\nand over...\n",
   "status": "done",
   "notes": ""
  },
@@ -435,7 +435,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B99}イヤ、キスしたって……やべぇ、\nオレ、もっとねつがでそう…。{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}Wait, kissed you...? Uh-oh, I think my\nfever's getting worse...{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}Wait, kissed you...? Uh-oh, I\nthink my fever's getting worse...{end}",
   "status": "done",
   "notes": ""
  },

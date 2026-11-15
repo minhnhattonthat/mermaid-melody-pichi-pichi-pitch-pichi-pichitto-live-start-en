@@ -121,16 +121,26 @@ def unit_budgets(entries, bub, song=None):
 
 
 def pages(text, lang, units, widths, sp=12):
-    """-> list of pages, each a list of lines (px, last glyph advance), name tags left out. `units`: id -> entry.
+    """-> list of pages, each a list of lines (px, last glyph advance), name tags on their own line left out (a tag
+    closed without a newline, 2B99 in song dialogue, counts on the line it starts). `units`: id -> entry.
     sp: the box's starting spacing (8 for boxes opened in 8 px mode)."""
-    pg, st = [[[0, 0, 0]]], {"sp": sp, "tag": False}  # line = [px, last advance, pending space px]
+    pg, st = [[[0, 0, 0]]], {"sp": sp, "tag": False, "tagpx": 0, "tagadv": 0, "tagnl": False}
+    # line = [px, last advance, pending space px]
 
     def run(t, depth):
         for m in TOKEN.finditer(t):
             name, args = m[1], m[2] or ""
             line = pg[-1][-1]
             if st["tag"] and not (name == "FA" and args == "0C0088") and name != "call":
+                if m[0] == "\n":
+                    st["tagnl"] = True
+                elif not name and not m[3] and m[0] not in " 　":
+                    st["tagadv"] = widths.get(m[0], 12) if lang != "jp" else st["sp"]
+                    st["tagpx"] += st["tagadv"]
                 continue
+            if name == "FA" and args == "0C0088" and st["tag"] and not st["tagnl"] and st["tagpx"]:
+                line[0] += line[2] + st["tagpx"]
+                line[1], line[2] = st["tagadv"], 0
             if m[0] == "\n" or (name == "FA" and args.startswith("11")):  # FA 11 n: credits column move
                 pg[-1].append([0, 0, 0])
             elif name == "call":
@@ -143,6 +153,7 @@ def pages(text, lang, units, widths, sp=12):
                 pg.append([[0, 0, 0]])
             elif name == "FA" and args in ("0C0008", "0C0088"):
                 st["tag"] = args == "0C0008"
+                st["tagpx"], st["tagnl"] = 0, False
             elif name == "FD":
                 st["sp"] = 8 if int(args, 16) & 1 else 16 if int(args, 16) & 0x80 else 12
             elif name in ("F6", "FB"):

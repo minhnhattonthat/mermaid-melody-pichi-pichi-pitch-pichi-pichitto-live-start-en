@@ -144,8 +144,8 @@ def rewrap_batch():
     rows = []
     for e in index().values():
         if e.get("en") and e.get("status") != "keep-jp" and width_problems(e, e["en"]):
-            rows.append((e, re.sub(r"(?<![\n\]]) *\n(?!\{end\}|\{FA:FF|\{FD|\n|$)", " ", e["en"])))
-            # ^ blank-line runs, "[Name]" header lines and {FD} reading lines stay
+            rows.append((e, re.sub(r"(?<![\n\]]) *\n(?!\{end\}|\{FA:FF|\{FD|\{call:@2B8C\}|\n|$)", " ", e["en"])))
+            # ^ blank-line runs, "[Name]" header lines, {FD} reading lines and speaker changes (2B8C) stay
     (TL / "rewrap.tsv").write_text("".join(f"{e['id']}\t\t\t\t\n" for e, _ in rows), encoding="utf-8", newline="\n")
     out = [e["id"] + "\t" + n.replace("\n", "\\n") + "\n" for e, n in rows]
     (TL / "rewrap.out.tsv").write_text("".join(out), encoding="utf-8", newline="\n")

@@ -919,7 +919,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}あら？\nいがいとあっけなかったわね。\n{call:@2B8C}{call:@2A5B}{call:@2B99}でもまあ、とりあえず……、{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}Huh? That was surprisingly easy.\n{call:@2B8C}{call:@2A5B}{call:@2B99}Well, anyway, for now...{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}Huh? That was\nsurprisingly easy.\n{call:@2B8C}{call:@2A5B}{call:@2B99}Well, anyway, for now...{end}",
   "status": "done",
   "notes": ""
  },
