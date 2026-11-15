@@ -497,7 +497,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}{call:@2A82}よ！{end}",
-  "en": "{FA:FF0101}{FA:FF0110}I'm {call:@2A82}!{end}",
+  "en": "{FA:FF0101}{FA:FF0110}{call:@2A82} here~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -541,7 +541,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}でも、まちがって{call:@2AE7}くんに、\nこくはくしたりしないようにと、\nタキさんがわたした、すいしょう\nだまのせいで、{call:@2A5B}が\nたいへんなことに、なっちゃった\nみたいなの！{end}",
-  "en": "{FA:FF0101}{FA:FF0110}But Taki-san gave her a crystal ball so\nshe wouldn't confess to {call:@2AE7}-kun by\nmistake, and it looks like it got {call:@2A5B}\ninto big trouble!{end}",
+  "en": "{FA:FF0101}{FA:FF0110}That crystal ball Taki-san gave {call:@2A5B}\nso she wouldn't confess to {call:@2AE7}-kun\nby mistake? Looks like it's gotten her\ninto big trouble!{end}",
   "status": "done",
   "notes": ""
  },
@@ -574,7 +574,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0100}{FA:FF0111}またみてね……{FA:06}{FA:FF0311}って、なんでやねん！{end}",
-  "en": "{FA:FF0100}{FA:FF0111}See you next time...{FA:06}{FA:FF0311}...Wait, why am I saying this?!{end}",
+  "en": "{FA:FF0100}{FA:FF0111}See you next time~...{FA:06}{FA:FF0311}...Oh, come ON! As if I'd say that!{end}",
   "status": "done",
   "notes": ""
  },

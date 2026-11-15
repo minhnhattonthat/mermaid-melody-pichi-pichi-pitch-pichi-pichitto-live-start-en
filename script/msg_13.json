@@ -919,7 +919,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}おまえんちのペンギン、およげるじゃ\nねえか！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}あう………。{F6:05460F}{FA:0B3C}{FA:0B04}{F6:05460F}{FA:0B3C}{FA:0B04}{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}………ペンギンがおよげなくなったら\nこのよのおわりですよ～。{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}Your penguin can swim just fine!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}Uh...{F6:05460F}{FA:0B3C}{FA:0B04}{F6:05460F}{FA:0B3C}{FA:0B04}{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}...If penguins couldn't swim, it'd be the end\nof the world~.{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}Your penguin can swim just fine!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}Uh...{F6:05460F}{FA:0B3C}{FA:0B04}{F6:05460F}{FA:0B3C}{FA:0B04}{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}...Honestly! A penguin that can't swim?\nWhy, that'd be the end of the world~!{end}",
   "status": "done",
   "notes": ""
  },

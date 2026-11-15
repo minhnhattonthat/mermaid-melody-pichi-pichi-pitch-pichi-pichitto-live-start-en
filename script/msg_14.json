@@ -732,7 +732,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あら？　あそこにいるのは\nなんですの？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh? What's that over there?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh my? And what might that be over\nthere?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

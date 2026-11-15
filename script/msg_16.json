@@ -6,7 +6,7 @@
   ],
   "used": true,
   "jp": "……ライブコンサートどころか、\nダーク・ラゔァーズまでよんで、\nなにしてるのあいつら……！？{wait}……………………よしっ！{end}",
-  "en": "...Forget the live concert, they've even\ninvited the Dark Lovers! What are those\ngirls doing...?!{wait}...... All right!{end}",
+  "en": "...Forget the live concert, they've gone\nand called in the Dark Lovers too! What\nare those idiots playing at...?!{wait}...... All right!{end}",
   "status": "done",
   "notes": ""
  },
@@ -127,7 +127,7 @@
   ],
   "used": true,
   "jp": "ただおいかけても、いみがなかった\nですわ～！{end}",
-  "en": "Just chasing her was completely\npointless~!{end}",
+  "en": "Simply chasing after her was utterly\npointless, I daresay~!{end}",
   "status": "done",
   "notes": ""
  },

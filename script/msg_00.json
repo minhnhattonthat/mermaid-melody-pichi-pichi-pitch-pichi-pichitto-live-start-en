@@ -78,18 +78,18 @@
   "ids": [],
   "used": true,
   "jp": "　歌　　　　　　　　歌選択　　　　　　SＥ\n　内田　　　　　　　ライブ　　　　　　ＢGM\n　モード選択　　　　川原　　　　　　　しゃべり\n　曲作り　　　　　　ミニゲーム　　　　Option\n　MOVIＥ　　　　アニメ　　　　　　通信\n　Song　　　　　　　　　　　　　　\n　メッセージ　　　　ちびキャラ　　　　SRＡM消去\n　止め絵チェック　　ＢMP　　　　　　ＥXIT{end}",
-  "en": " Song     SongSel  SE\n Uchida   Live     BGM\n ModeSel  Kawahara Talk\n Compose  Minigame Option\n MOVIE    Anime    Link\n Song              \n Message  Chibi    Wipe SRAM\n Stills   BMP      EXIT{end}",
-  "status": "done",
-  "notes": ""
+  "en": "",
+  "status": "keep-jp",
+  "notes": "leftover debug menu, drawn with the original Japanese font: English would draw as junk kana (phase 7). Was: Song/SongSel/SE/Uchida/Live/BGM/ModeSel/Kawahara/Talk/Compose/Minigame/Option/MOVIE/Anime/Link/Song/Message/Chibi/Wipe SRAM/Stills/BMP/EXIT"
  },
  {
   "id": "0110",
   "ids": [],
   "used": true,
   "jp": "　スタッフ　　　　　覚えて　　　　　　\n　名前入力　　　　　つづけて　　　　　\n　アニメでピッチ　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　{F6:01}\n　　　　　　　　　　　　　　　　　　　{end}",
-  "en": " Staff    Remember \n Name     Continue \n Anime Pitch       \n                   \n                   \n                   \n                   {F6:01}\n                   {end}",
-  "status": "done",
-  "notes": ""
+  "en": "",
+  "status": "keep-jp",
+  "notes": "debug-font grid like 0040 (debug-only screen): kept Japanese so it draws. Was: Staff/Remember/Name/Continue/Anime Pitch"
  },
  {
   "id": "01B7",
@@ -219,7 +219,7 @@
   ],
   "used": true,
   "jp": "{FB:B037000383}点\n{FB:B437000383}点{end}",
-  "en": "{FB:B037000383} pts\n{FB:B437000383} pts{end}",
+  "en": "{FB:B037000383} points\n{FB:B437000383} points{end}",
   "status": "done",
   "notes": ""
  },
@@ -745,7 +745,7 @@
   ],
   "used": true,
   "jp": "協力\n　　株式会社講談社なかよし編集部\n　　株式会社ウィーゔ　　　　　　　　{FA:1104}音楽協力\n　　株式会社ポニーキャニオン　　　　{FA:1104}音声収録協力\n　　株式会社ザック・プロモーション{end}",
-  "en": "Special Thanks\n  Kodansha Ltd., Nakayoshi Editorial Dept.\n  We've Inc.{FA:1104}Music Cooperation\n  Pony Canyon Inc.{FA:1104}Voice Recording Cooperation\n  Zack Promotion Inc.{end}",
+  "en": "Special Thanks\n  Kodansha Ltd., Nakayoshi Editorial\nDepartment\n  We've Inc.{FA:1104}Music Support\n  Pony Canyon Inc.{FA:1104}Voice Recording Support\n  Zack Promotion Inc.{end}",
   "status": "done",
   "notes": ""
  },
@@ -915,7 +915,7 @@
   ],
   "used": true,
   "jp": "【シスター・シェシェ】\n{call:@0DB2}のあねで、\nしっぽがマイクになっているの。\nふたりでうたううたはマーメイドをくるしめるちからをもっているんだ。\nいつもいもうとのミミとふたりでこうどうしていて{call:@0DCA}をしたにみているの。ふつうのうたはつうようしないおそろしいてきなんだよ。{end}",
-  "en": "[Sister Sheshe]\nThe older sister of the {call:@0DB2}. Her tail is a microphone. The songs the two of them sing have the power to torment mermaids.\nShe always acts together with her little sister Mimi, and looks down on the {call:@0DCA}. She's a terrifying enemy, and ordinary songs don't work\non her.{end}",
+  "en": "[Sister Sheshe]\nThe older of the {call:@0DB2}. Her tail is a microphone. The songs the two of them sing have the power to torment mermaids. She\nalways acts together with her little sister Mimi, and looks down on the {call:@0DCA}. She's a terrifying enemy, and ordinary songs don't work on\nher.{end}",
   "status": "done",
   "notes": ""
  },
@@ -926,7 +926,7 @@
   ],
   "used": true,
   "jp": "【シスター・ミミ】\n{call:@0DB2}のいもうと\nで、いつもあねのシェシェといっしょにこうどうしているよ。\nふたりでうたう「くろのコンチェルト」\nは、とてもきょうりょくで、なんども\nるちあたちをおいつめているんだ。\n「ほんとだよねえ」と「そうだよねえ」\nがくちぐせ。{end}",
-  "en": "[Sister Mimi]\nThe younger sister of the {call:@0DB2}.\nShe always acts together with her big sister Sheshe. \"Kuro no\nConcerto,\" the song the two of them sing, is super powerful,\nand it's cornered Lucia and the others again and again. Her\ncatchphrases are \"Sooo true~\" and \"Totally~.\"{end}",
+  "en": "[Sister Mimi]\nThe younger of the {call:@0DB2}. She\nalways acts together with her big sister Sheshe. \"Kuro no\nConcerto,\" the song the two of them sing, is super powerful,\nand it's cornered Lucia and the others again and again. Her\ncatchphrases are \"Sooo true~\" and \"Totally~.\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -970,7 +970,7 @@
   ],
   "used": true,
   "jp": "【沙羅】　{FD:01}さら\n{FD:00}インドよう・オレンジしんじゅのマーメ\nイドプリンセス。８ねんまえにみつきせ\nんせいとこいにおちたマーメイドなの。\nいちじはガイトのなかまになってせかい\nをほろぼそうとしていたんだけど、やっ\nぱりなかまになってくれたんだ。\nみなみたいへいようのプリンセス・ココ\nとなかよしなんだって。{end}",
-  "en": "[Sara]{FD:01}\n{FD:00}The Mermaid Princess of the Indian\nOcean, with the orange pearl. Eight\nyears ago, she fell in love with\nMitsuki-sensei. For a while she sided\nwith Gaito to destroy the world, but in\nthe end she became their friend. She's\nclose with Coco, Princess of the South\nPacific.{end}",
+  "en": "[Sara]{FD:01}\n{FD:00}The Mermaid Princess of the Indian\nOcean, with the orange pearl. Eight\nyears ago, she fell in love with\nMitsuki-sensei. For a while she sided\nwith Gaito to destroy the world, but in\nthe end she joined Lucia and the others.\nShe's close with Coco, Princess of the\nSouth Pacific.{end}",
   "status": "done",
   "notes": ""
  },

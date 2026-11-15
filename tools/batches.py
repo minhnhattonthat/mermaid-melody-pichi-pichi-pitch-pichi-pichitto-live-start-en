@@ -26,7 +26,10 @@ TOKEN = re.compile(r"\{[^}\n]*\}|\[[0-9A-F]{2}\]")
 FREE = {"{FA:06}", "{wait}"}  # page breaks: the English may add or drop them to fit the box
 FURIGANA = re.compile(r"\{FD:01\}（[^）{}]*）\{FD:00\}")
 VARIABLE = r"\{F[6B]:[0-9A-F]*\}"  # a name or number the game draws: "1st" comes out as "1th"
-HONORIFICS = {}  # honorifics kept (D1) but さん/さま/ちゃん hide inside common kana words: the reviewer checks them
+# honorifics kept (D1); checked only after a called name, since さん/ちゃん hide inside kana words. さま is left to the
+# reviewer (on a title it becomes "Princess"/"Lady"), as are calls that draw a title, not a name.
+HONORIFICS = {"さん": "-san", "ちゃん": "-chan", "くん": "-kun"}
+TITLE_CALLS = {"2B27", "2B32"}  # Mermaid Princess, Mermaid
 
 
 def docs():
@@ -37,8 +40,9 @@ def docs():
 
 
 def needs_english(entry):
-    """Used units with something to draw besides codes, spaces and digits."""
-    return entry.get("used", True) and not entry.get("en") and bool(
+    """Used units with something to draw besides codes, spaces and digits; status keep-jp = drawn by a font the
+    English build leaves Japanese (the leftover debug menu), so the jp text is what draws right."""
+    return entry.get("used", True) and not entry.get("en") and entry.get("status") != "keep-jp" and bool(
         re.sub(r"[\s　0-9０-９]", "", TOKEN.sub("", entry.get("jp", ""))))
 
 
@@ -208,9 +212,11 @@ def problems(entry, en, terms):
         if any(has_term(jp_plain, j) for j in jps) and not any(e.lower() in flat for e in ens):
             out.append(f"glossary: {jps[0]} -> {ens[0]}")
         out += [f"glossary Avoid: {a}" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
-    for jp_form, en_form in HONORIFICS.items():
-        if jp_form in jp_plain and en_form.lower() not in en.lower():
-            out.append(f"honorific {jp_form} needs {en_form}")
+    jp_flat = jp.replace("\n", "")
+    for m in re.finditer(r"(\{call:@([0-9A-F]+)\})(さん|ちゃん|くん)", jp_flat):
+        suffix = HONORIFICS[m[3]]
+        if m[2] not in TITLE_CALLS and m[1] + suffix not in en and f"{call_en(m[1])}{suffix}" not in flat:
+            out.append(f"honorific {m[1]}{m[3]} needs {m[1]}{suffix}")
     return out + width_problems(entry, en)
 
 
@@ -284,13 +290,13 @@ def merge(new, overwrite):
     if not overwrite:
         for _, _, entries in docs():
             for e in entries:
-                if e["id"] in new and e.get("en") and e["en"] != new[e["id"]]:
+                if e["id"] in new and e.get("en") and e["en"] != new[e["id"]] and e.get("status") != "keep-jp":
                     sys.exit(f"{e['id']} would lose {e['en']!r}: pass --overwrite if that is meant")
     changed = 0
     for path, doc, entries in docs():
         touched = False
         for e in entries:
-            if e["id"] in new and e.get("en") != new[e["id"]]:
+            if e["id"] in new and e.get("en") != new[e["id"]] and e.get("status") != "keep-jp":
                 e["en"], e["status"] = new[e["id"]], "done"
                 touched = True
                 changed += 1

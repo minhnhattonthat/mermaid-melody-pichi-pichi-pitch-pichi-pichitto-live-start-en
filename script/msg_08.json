@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "みずいろしんじゅのマーメイド\nプリンセス、つかまえましたわ！{end}",
-  "en": "I've caught the aqua pearl Mermaid\nPrincess!{end}",
+  "en": "Oh my, I do believe I've caught the aqua\npearl Mermaid Princess!{end}",
   "status": "done",
   "notes": ""
  },
@@ -182,7 +182,7 @@
   ],
   "used": true,
   "jp": "{call:@2B27}を\nつかまえちゃったら、\nこれはもう、いらないですわね。{end}",
-  "en": "Now that I've caught a {call:@2B27},\nI've no more need for this.{end}",
+  "en": "Now that I've caught a {call:@2B27},\nI shan't be needing this anymore, shall I?{end}",
   "status": "done",
   "notes": ""
  },
@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "……{call:@2B27}は、\nきれいなものがすき。{FA:06}さあさあ、かいじょうにやって\nきている、{call:@2B27}\nさんたち。{FA:06}あたしのしかけをごらんアレ～。{end}",
-  "en": "...A {call:@2B27} loves pretty\nthings.{FA:06}So come on, every {call:@2B27}\nout there in the audience.{FA:06}Feast your eyes on my little trap~.{end}",
+  "en": "...A {call:@2B27} loves pretty\nthings.{FA:06}So come along now, all you dear little\nMermaid Princesses out there in the\naudience~.{FA:06}Feast your eyes on my little trap~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -567,7 +567,7 @@
   ],
   "used": true,
   "jp": "ちょうどいいですわ！\nセイレーンのつぼよ、{call:@2B32}の\nうたのちからを、すいとっちゃって！{end}",
-  "en": "Perfect timing! O Siren's Jar, suck up\nthis {call:@2B32}'s singing power!{end}",
+  "en": "How perfectly timely! O Siren's Jar,\nsuck up this {call:@2B32}'s singing power!{end}",
   "status": "done",
   "notes": ""
  },
@@ -840,7 +840,7 @@
   ],
   "used": true,
   "jp": "さ、{call:@2B0F}。あのうたをふうじる\nさくせんは、どんなですの？{end}",
-  "en": "Now, {call:@2B0F}. What's your plan for\nsealing away that song?{end}",
+  "en": "Now then, {call:@2B0F}. And what, pray tell, is\nyour plan for sealing away that song?{end}",
   "status": "done",
   "notes": ""
  },
@@ -895,7 +895,7 @@
   ],
   "used": true,
   "jp": "まさか、なにもかんがえてなかった\nなんてこと、ありませんわよね～！{end}",
-  "en": "Don't tell me you didn't think of\nanything at all~!{end}",
+  "en": "Surely you don't mean you didn't think\nof anything at all, my dear~?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -939,7 +939,7 @@
   ],
   "used": true,
   "jp": "おバカさんとは、\nつきあいきれませんわ！{end}",
-  "en": "I simply can't put up with such a ninny!{end}",
+  "en": "I simply cannot abide such a ninny, I do\ndeclare!{end}",
   "status": "done",
   "notes": ""
  },

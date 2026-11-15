@@ -8,7 +8,20 @@
 | Rina | わたし, plain/short だ・だろ, calm | short, cool, matter-of-fact: "Probably Karen.", no gushing |
 | Kaito | オレ, ～だろ, ～ぜ | relaxed boy: "Yeah", "C'mon", teasing Lucia gently |
 | Hippo | ～です, ～さま, worrying | fussy and formal: "Lucia-sama!", "Honestly!", "Oh dear, oh dear" |
-| Villains (Dark Lovers, Black Beauty Sisters) | ～わ, ～ですわ, ～のよ, ウフフ, ホント | theatrical, smug: "Ufufu...", "How pathetic!", "my dears", "Really, you fools!" |
+| Villains in general (Black Beauty Sisters, other Dark Lovers) | ～わ, ～のよ, ウフフ, ホント, かしら | theatrical, smug: "Ufufu...", "How pathetic!", "my dears", "Really, you fools!"; かしら -> "I wonder", "hm?" |
+| Yuri (Dark Lovers, pianist) | わたし/ユーリ, ～ですの, ～ですわ, ～ませんわ, あ～ら | ojou: "Oh my", "I do believe", "Why, ...", "shan't", "my dear", "I daresay", "How very unfair!"; never plain "No fair!" |
+| Eriru (Dark Lovers) | refers to herself as エリル, うれぴ～, ピンポ～ン, あったまいい～ | bubbly, childish, third person kept ("Eriru is a teeny bit tired"), "Yippee~", "Ding-dong~", "Aren't I just brilliant~!" |
+| Izuru (Dark Lovers) | あ～ら, ～わよ, ～かしら, cold | cool, cutting, imperious: "Oh my~", "How tiresome", "my dears"; less gushy than Yuri |
+| Gaito (villain lord) | オレ/わたし, ～だ, ～のだ, フッ | cold, terse, menacing: "Hmph.", "Foolish.", no contractions in threats |
+| Karen | わたし, あいつら, ～だよ, blunt | rough loner: "those idiots", "Tch", clipped and blunt |
+| Taki (fortune-teller, old woman) | ～かい？, ～だい, ～だろうさ, ～ね, おや, あら | folksy old woman: "dearie", "I'd wager", "Oh?", "have you, now?", "eh?" |
+| Auri (abalone fairy) | うぃ～っす, ～っす, ～やした | slangy apprentice: "Hey~!", "yo" tag, "callin'", "Got it, yo!" (glossary decision) |
+| Nikora (Pearl Piari) | ～ね, ～かしら, polite and warm | warm older-sister tone: "I hope...", "Oh my", soft "I wonder" |
+| Mitsuki (teacher) | ぼく, polite ～です/ですね | gentle, soft-spoken, polite; never slangy |
+| Coco (yellow pearl) | あたし, ～よ！, upbeat | cheerful, energetic, big-sister friendly |
+| Noelle (indigo pearl) | わたし, ～です, quiet | gentle, quiet, polite |
+| Sara (orange pearl) | わたし, ～わ, solemn | mature, solemn, measured; few exclamations |
+| Hanon preview / Rina tsukkomi | よ lilt, なんでやねん | Hanon "Hanon Hosho here~!"; Rina's Kansai self-retort as a punchline: "Oh, come ON! As if I'd say that!" |
 | Meru (child) | ～の！, ～～！ drawn out | childish, pouty: "That's a lie!", "Princess, you big dummy~!" |
 
 ## Example pairs

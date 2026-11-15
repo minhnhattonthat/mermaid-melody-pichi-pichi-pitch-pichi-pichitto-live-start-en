@@ -1029,7 +1029,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}そんなの、きまってますわ。\nしたへいって、あのおんなのこを\nつかまえてくるんですわ……。{FA:06}って、だれ？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Isn't it obvious? Down there, to go catch\nthat girl...{FA:06}Wait, who are you?!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Why, isn't it obvious? Down there, to go\ncatch that girl...{FA:06}Wait, who are you?!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1040,7 +1040,7 @@
   ],
   "used": true,
   "jp": "やっとあらわれましたわね、\nマーメイドプリンセス！\nきょうこそ{call:@2B13}のピアノで……。{end}",
-  "en": "So you've shown up at last,\nMermaid Princesses! Today, with\n{call:@2B13}'s piano...{end}",
+  "en": "Well, well, so you've finally shown up,\nMermaid Princesses! Today, with\n{call:@2B13}'s piano...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1062,7 +1062,7 @@
   ],
   "used": true,
   "jp": "ずるいですわ！　{call:@2B13}がピアノから\nはなれたスキに、うたうなんて～！！{end}",
-  "en": "No fair! Singing the moment {call:@2B13}\nstepped away from the piano~!!{end}",
+  "en": "How very unfair! Singing the moment\n{call:@2B13} stepped away from the piano~!!{end}",
   "status": "done",
   "notes": ""
  },

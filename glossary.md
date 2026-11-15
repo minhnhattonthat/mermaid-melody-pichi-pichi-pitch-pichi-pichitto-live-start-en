@@ -10,7 +10,7 @@ or that uses an Avoid spelling.
 - Credits: English. Staff names Western order, Hepburn (大内哲也 -> Tetsuya Ouchi).
 - Register / flavour: light, bubbly shoujo-anime English for a young audience; contractions; no swearing. Each girl keeps her voice (see Style rules).
 - Sound effects / interjections: English equivalents (キャー -> "Eek!", ウフフ -> "Ufufu..." for villains' laughs, アハハ -> "Ahaha!").
-- Song lyrics (msgs 256-305, 512-1023, karaoke strip): romaji (Hepburn, no macrons, words spaced as sung, particles は/へ/を as wa/e/o), so the strip matches the sung audio and its colour sweep. Song titles: their official romanised titles.
+- Song lyrics (msgs 256-305, 512-1023, karaoke strip): romaji (Hepburn, no macrons, words spaced as sung, particles は/へ/を as wa/e/o), so the strip matches the sung audio and its colour sweep. Exception to "no macrons" for names: lyrics write long vowels doubled as sung (taiyou, yuuki, arigatou, deshou); the Avoid forms below (Housho, Touin) apply to names only, never "fix" lyrics. Song titles: their official romanised titles; the credits song titles follow the lyrics (Kuro no Kyousoukyoku).
 - Abbreviations: full names and terms everywhere, prefer engine changes over shortening.
 
 ## Style rules
@@ -78,6 +78,8 @@ or that uses an Avoid spelling.
 | ダーク・ラゔァーズ | Dark Lovers | | Izuru, Eriru, Yuri | |
 | ブラック・ビューティー・シスターズ | Black Beauty Sisters | | Sheshe and Mimi | |
 | ピチピチボイス | Pichi Pichi Voice | | transformation call | |
+| ぴちぴち / ピチピチ | Pichi Pichi | | on its own (show's catchword): capitalised like the title | pichi-pichi |
+| きゃあ / キャー | Eek / Eee | | Eek for a scream, Eee~ for a squeal of delight | Kyaa / Kyaaa |
 | ラブシャワーピッチ | Love Shower Pitch | | finishing call | |
 | マーメイドビーズ | Mermaid Beads | | | |
 | ライブスタート | Live Start | | | |
@@ -99,7 +101,7 @@ or that uses an Avoid spelling.
 ## Decisions from earlier batches
 - `{call:@2B27}` draws "Mermaid Princess": no `s` glued on (the check fails it). Plural: write "Mermaid Princesses" out in place of the call, or singular when the JP is singular.
 - ガイトさま -> "Gaito-sama" (call or plain text as the JP has it), never "Lord Gaito".
-- ラブ②シャワーピッチ -> "Love Love Shower Pitch" (② = circled 2 in the font, read as the repeat mark; no heart glyph). Plain ラブシャワーピッチ = "Love Shower Pitch".
+- ラブ②シャワーピッチ -> "Love Love Shower Pitch" (② = circled 2 in the font, read as the repeat mark; the Japanese font has no heart, the English font does). Plain ラブシャワーピッチ = "Love Shower Pitch".
 - キャー: "Eek!" for a scream, "Eee~!" for a squeal of delight.
 - Lyrics: katakana loanwords that are English words stay English with a capital (Melody, Stage, Kiss); Japanese-ised loans sung as Japanese stay romaji (doa, yotto, orugooru, garasu).
 - Song title 黒の協奏曲~concerto~ = "Kuro no Kyousoukyoku ~concerto~" in credits; Mimi's profile reads it くろのコンチェルト -> "Kuro no Concerto".

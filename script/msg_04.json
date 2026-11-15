@@ -1196,7 +1196,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}よ～し、わたしもまけられない！{FA:06}わたしも、いとしの{call:@2B54}ちゃんに、あいじょうたっぷりの\nおべんとうをつくって、たべて\nもらうの！{FA:06}{FA:FF0303}そうして、あ～んなことや、こ～ん\nなことも………きゃあ～！！{end}",
-  "en": "{FA:FF0101}Okaaay, I can't lose either!{FA:06}I'm gonna make a lunch packed with love for my darling {call:@2B54}-chan\ntoo, and have him eat it!{FA:06}{FA:FF0303}And then we'll do all sooorts of things... Kyaaa~!!{end}",
+  "en": "{FA:FF0101}Okaaay, I can't lose either!{FA:06}I'm gonna make a lunch packed with love for my darling {call:@2B54}-chan\ntoo, and have him eat it!{FA:06}{FA:FF0303}And then we'll do all sooorts of things... Eee~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1229,7 +1229,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2A99}だ。{FA:06}まちでいきなり、石橋{FD:01}（いしばし）\n{FD:00}というおとこに「モデルをやってく\nれないか」と、こえをかけられた。{FA:06}わたしはそのきはなかったのに、\n{call:@2A5B}がごういんに、ひきうけて\nしまって……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}I'm {call:@2A99}.{FA:06}Out of nowhere, a man in town named\nIshibashi{FD:01}{FD:00} asked me, \"Would you model\nfor me?\"{FA:06}I had no interest, but {call:@2A5B} pushed me\ninto accepting...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}I'm {call:@2A99}.{FA:06}Out of nowhere, a man in town named\nIshibashi{FD:01}{FD:00} asked me, \"Would you model\nfor me?\"{FA:06}I had no interest, but {call:@2A5B} went ahead\nand accepted for me...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },

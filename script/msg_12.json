@@ -50,7 +50,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}うたがうたえなければ、\nすこしもこわくありませんわ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}If you can't sing your songs, you're not\nthe least bit scary!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}If you can't sing your songs, why, you're\nnot the least bit frightening!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "…きょうのことは、{call:@2B23}さまには\nほうこくできませんわぁ！！{end}",
-  "en": "...I can't possibly report today to\n{call:@2B23}-sama!!{end}",
+  "en": "...I can't possibly report today's\nevents to {call:@2B23}-sama~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -314,7 +314,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}そちらのステージは、\nもうおわったのかしら？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Is your little stage over already?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Is your little show over already, I\nwonder?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}…………{call:@2A5B}のやつ、\nほんとうのこくはくをしている……。{FA:06}このままじゃ、あわになってしまう\nかも……！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}で、でもこれは、おしばいだよねっ！？{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}............{call:@2A5B} is making a real confession... {FA:06}At this rate, she might turn into foam...! {wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}............{call:@2A5B}, that idiot... She's confessing\nfor real...{FA:06}At this rate, she might turn into foam...! {wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
   "status": "done",
   "notes": ""
  },

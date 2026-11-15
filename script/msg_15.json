@@ -699,7 +699,7 @@
   ],
   "used": true,
   "jp": "おもいだしましたわ！{FA:06}あなたたち、\nマーメイドコンテストに、\nでてたでしょう？{end}",
-  "en": "I remember now!{FA:06}You two were in the Mermaid Contest,\nweren't you?{end}",
+  "en": "Why, now I remember!{FA:06}You two were in the Mermaid Contest,\nwere you not?{end}",
   "status": "done",
   "notes": ""
  },
@@ -743,7 +743,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}それはざんねんですわね。\nせっかくたのしみに、\nしてましたのに。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}What a shame. And I was so looking\nforward to it.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}What a shame, truly. And I was so very\nmuch looking forward to it.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

@@ -38,6 +38,10 @@ def test_problems():
     assert batches.problems(e, f"Probably {karen}.{{end}}", []) == []
     p = U["F486"]
     assert any("draws" in x for x in batches.problems(p, p["jp"].replace("が\nなぜここに！？", "s?!"), []))
+    # {call}ちゃん needs -chan after the call (honorifics kept, D1)
+    h = U["7A09"]
+    assert not any("honorific" in x for x in batches.problems(h, h["en"], []))
+    assert any("honorific" in x for x in batches.problems(h, h["en"].replace("-chan", ""), []))
 
 
 def test_shipped_english_passes():
