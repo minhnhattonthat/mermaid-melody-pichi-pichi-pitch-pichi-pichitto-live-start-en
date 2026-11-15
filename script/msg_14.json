@@ -105,7 +105,7 @@
   ],
   "used": true,
   "jp": "……さてと、くろしんじゅ\nさがしはふたりにまかせて、\nあたしはくすりのちょうごうを、\nはじめるとしますか！{end}",
-  "en": "...Now then, I'll leave the black pearl hunt\nto those two, and get started on mixing my\npotion!{end}",
+  "en": "...Now then, I'll leave the black pearl hunt\nto those two, and get started on mixing\nmy potion!{end}",
   "status": "done",
   "notes": ""
  },
@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あそこにたおれて\nいるのは………。{wait}きゃ～！　{call:@2AB0}さま～！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh my, who could that be lying over\nthere......?{wait}Eee~! {call:@2AB0}-sama~!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh my, who could that be lying\nover there......?{wait}Eee~! {call:@2AB0}-sama~!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -446,7 +446,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2B54}ちゃん、しっかり……。\nがんばって…………。{end}",
-  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2B54}-chan, stay strong... You can do\nit......{end}",
+  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2B54}-chan, stay strong... You can\ndo it......{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}……みて、みんなかんどうしている！\nすごいはくしゅだよ！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}よかった、{call:@2B4F}ちゃん……。{FA:06}これで、いんたいなんかしない\nよね……………。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...Look, everyone's so moved! Listen to\nthat applause!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}Thank goodness, {call:@2B4F}-chan...{FA:06}Now you won't retire or anything,\nright......?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...Look, everyone's so moved! Listen to\nthat applause!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}Thank goodness, {call:@2B4F}-chan...{FA:06}Now you won't retire or\nanything, right......?{end}",
   "status": "done",
   "notes": ""
  },
@@ -644,7 +644,7 @@
   ],
   "used": true,
   "jp": "あたしのいちばん、すきなところ\nなの。{wait}……ないしょだけどね、うみには\nたいせつなたいせつな、なかまが\nいるの。{FA:06}だから、いつかはあたし……、\nうみにかえるんだ。{end}",
-  "en": "It's my favorite place in the whole world.{wait}...It's a secret, but I have precious,\nprecious friends in the sea.{FA:06}So someday, I'm going to... go back to the\nsea.{end}",
+  "en": "It's my favorite place in the whole world.{wait}...It's a secret, but I have precious,\nprecious friends in the sea.{FA:06}So someday, I'm going to... go back to\nthe sea.{end}",
   "status": "done",
   "notes": ""
  },
@@ -699,7 +699,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B88}{call:@2B92}……しまった！　ミルクをのんだら、\nついウトウトしちゃって………。{FA:06}{call:@2A5B}さまは？{end}",
-  "en": "{call:@2B8C}{call:@2B88}{call:@2B92}...Oh no! I dozed off after drinking the\nmilk......{FA:06}Where's {call:@2A5B}-sama?{end}",
+  "en": "{call:@2B8C}{call:@2B88}{call:@2B92}...Oh no! I dozed off after drinking\nthe milk......{FA:06}Where's {call:@2A5B}-sama?{end}",
   "status": "done",
   "notes": ""
  },
@@ -721,7 +721,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B88}{call:@2B92}せっかくあいにきたのに、\n{call:@2A5B}さまったら！{end}",
-  "en": "{call:@2B8C}{call:@2B88}{call:@2B92}I came all this way to see you,\n{call:@2A5B}-sama!{end}",
+  "en": "{call:@2B8C}{call:@2B88}{call:@2B92}I came all this way to see\nyou, {call:@2A5B}-sama!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1051,7 +1051,7 @@
   ],
   "used": true,
   "jp": "ほら、\nけさ、はなしていた！{end}",
-  "en": "You know, the ones we talked about this\nmorning!{end}",
+  "en": "You know, the ones we talked about\nthis morning!{end}",
   "status": "done",
   "notes": ""
  },

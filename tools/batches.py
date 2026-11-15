@@ -103,7 +103,46 @@ def wrap(entry, en):
             out = out.rstrip(" ") + "\n" + word
         else:
             out = cand
-    return out
+    return unwidow(entry, out)
+
+
+def unwidow(entry, en):
+    """A page whose last line is one word takes the previous line's last word too, when that line doesn't end a
+    sentence and the result fits the box (visual QA flags one-word last lines)."""
+    b = box_limit(entry)
+    if not b or b[0].rstrip("?") not in ("bubble", "narration", "guess", "song dialogue"):
+        return en
+    c = _ctx()
+    parts = re.split(r"(\{FA:06\}|\{wait\})", en)
+    for i in range(0, len(parts), 2):
+        lines = parts[i].split("\n")
+        if re.search(r"\{(FC|FB|FA:05|FA:11)", parts[i]):  # menus, number fields, column layouts
+            continue
+        tail = re.sub(r"\{[^}]*\}", "", lines[-1]).strip()
+        if len(lines) < 2 or not tail or " " in tail or len(tail) > 14:
+            continue
+        prev = lines[-2]
+        if " " not in prev.strip() or re.search(r"[.!?~…♪」)]\s*$|\}$", prev):
+            continue
+        head, word = prev.rstrip(" ").rsplit(" ", 1)
+        cand = lines[:-2] + [head, word + " " + lines[-1]]
+        meas = re.sub(r"\{end\}$", "", "\n".join(cand))
+        if c["boxes"].need_px(c["boxes"].pages(meas, "en", c["units"], c["widths"])) <= b[1]:
+            parts[i] = "\n".join(cand)
+    return "".join(parts)
+
+
+def unwidow_batch():
+    """work/tl/unwidow.tsv + .out.tsv: every shipped unit unwidow() changes; then `merge unwidow --overwrite`."""
+    rows = []
+    for _, _, entries in docs():
+        for e in entries:
+            if e.get("en") and e.get("status") != "keep-jp" and (new := unwidow(e, e["en"])) != e["en"]:
+                rows.append((e, new))
+    (TL / "unwidow.tsv").write_text("".join(f"{e['id']}\t\t\t\t\n" for e, _ in rows), encoding="utf-8", newline="\n")
+    out = [e["id"] + "\t" + n.replace("\n", "\\n") + "\n" for e, n in rows]
+    (TL / "unwidow.out.tsv").write_text("".join(out), encoding="utf-8", newline="\n")
+    print(f"{len(rows)} units in {TL / 'unwidow.out.tsv'}")
 
 
 def width_problems(entry, en):
@@ -311,6 +350,8 @@ def main(argv):
     cmd, args = argv[0], argv[1:]
     if cmd == "split":
         return split(int(args[args.index("--size") + 1]) if "--size" in args else 3500)
+    if cmd == "unwidow":
+        return unwidow_batch()
     overwrite = "--overwrite" in args
     names = [a for a in args if a != "--overwrite"]
     entries, terms = index(), glossary()

@@ -3,7 +3,8 @@
     from vwf import apply; apply(rom)      # patches code, glyph cells, width table, attribute bits
 
 drawchar (0x080056CC) advances a fixed [obj+0x2C] px (12) and its blitter (0x08004E68) draws a glyph only at
-x & ~3, overwriting the whole 12 px window. The English path (mode 0, spacing 12, glyph with a width) instead:
+x & ~3, overwriting the whole 12 px window. The English path (glyph with a width; mode 0 with spacing 12, or mode 1 =
+flags bit 0, the 8 px kana font of in-song dialogue and credits, except message ids < 7: debug menu 4) instead:
   - composes the cell in RAM: the previous glyph's pixels still inside the new window (same text object, same row,
     x moving right) OR the glyph shifted by x & 3, so neighbours are not erased;
   - moves a glyph to the next 4 px boundary when the colour changes, so no earlier pixel is redrawn in the new colour;
@@ -46,9 +47,16 @@ detour:
     cmp r2, #0
     beq orig
     ldr r3, [r0, #0x10]
-    movs r2, #0x13
+    movs r2, #0x12
     tst r3, r2
     bne orig
+    lsls r3, r3, #31
+    beq mode0
+    ldrh r3, [r0, #0x18]
+    cmp r3, #7
+    blt orig
+    b english
+mode0:
     mov r2, r0
     adds r2, #0x2c
     ldrb r2, [r2]
@@ -267,6 +275,16 @@ free_col:
     bne fc_done
     movs r1, #0
     strb r1, [r0]
+    push {r2, r3}
+    subs r2, r0, r4
+    mov r3, r4
+    subs r3, #10
+    ldrh r1, [r3]
+    cmp r2, r1
+    bge fc_cur
+    strh r2, [r3]
+fc_cur:
+    pop {r2, r3}
     ldrb r1, [r0, #1]
     cmp r1, r5
     bne fc_done

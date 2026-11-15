@@ -17,7 +17,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2A5B}、いそいで！{FA:06}{call:@2A96}ひとりで、すいようをあいてに、\nがんばっているよ！{end}",
-  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2A5B}, hurry! {FA:06}{call:@2A96} is fighting a water demon all by\nherself!{end}",
+  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2A5B}, hurry! {FA:06}{call:@2A96} is fighting a water demon all\nby herself!{end}",
   "status": "done",
   "notes": ""
  },
@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "るちあおねえちゃん、\n{call:@2AE7}にいちゃんのことが、\nすきなんでしょ……？{end}",
-  "en": "Big Sis Lucia, you like Big Bro {call:@2AE7}, don't\nyou...?{end}",
+  "en": "Big Sis Lucia, you like Big Bro {call:@2AE7},\ndon't you...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -138,7 +138,7 @@
   ],
   "used": true,
   "jp": "やっぱりそうだったんだね…。{wait}ぼく、にんぎょさんのこと\nいっぱいしらべたから、\nしってるんだ。{wait}にんげんをすきになっても、\nじぶんからこくはくできないん\nだよね……。{FA:06}しょうたいがバレちゃったら、\nあわになっちゃうんだよね…。\n　{wait}これ、おねえちゃんに\nあげる！\n…………ひみつだよ！{end}",
-  "en": "I knew it... {wait}I read up on mermaids a whole lot, so I\nknow. {wait}Even if a mermaid falls in love with a\nhuman, she can't be the first to confess\nher love, right... {FA:06}And if her secret comes out, she turns\ninto sea foam, right... {wait}This is for you, Sis!\n..........It's a secret!{end}",
+  "en": "I knew it... {wait}I read up on mermaids a whole lot, so\nI know. {wait}Even if a mermaid falls in love with a\nhuman, she can't be the first to confess\nher love, right... {FA:06}And if her secret comes out, she turns\ninto sea foam, right... {wait}This is for you, Sis!\n..........It's a secret!{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}このあたりで、しんじゅの\nきょうめいおんをきいたわ…。{FA:06}でてきなさい！\n{call:@2B27}！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}I heard the resonance of a pearl around\nhere... {FA:06}Come out, {call:@2B27}!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}I heard the resonance of a pearl\naround here... {FA:06}Come out, {call:@2B27}!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -314,7 +314,7 @@
   ],
   "used": true,
   "jp": "ううん、なんでもない…。{FA:06}{call:@2B54}ちゃんの\nきょくに、かんどう\nしちゃって……。{end}",
-  "en": "Oh, it's nothing... {FA:06}I was just so moved by {call:@2B54}-chan's\nsong...{end}",
+  "en": "Oh, it's nothing... {FA:06}I was just so moved by\n{call:@2B54}-chan's song...{end}",
   "status": "done",
   "notes": ""
  },
@@ -325,7 +325,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B4F}{call:@2B92}ぼくのこころのおくからきえない\nあのかなしいめ…………。{FA:06}あのときほかに、ほうほうはなかった\nけれど、いまだったら……。{FA:06}でも……きみはもう、ぼくのまえには\nあらわれてはくれない…………。{end}",
-  "en": "{call:@2B8C}{call:@2B4F}{call:@2B92}Those sad eyes that never fade from the\ndepths of my heart.......... {FA:06}Back then, there was no other way, but\nnow... {FA:06}But... you will never appear before me\nagain..........{end}",
+  "en": "{call:@2B8C}{call:@2B4F}{call:@2B92}Those sad eyes that never fade from the\ndepths of my heart.......... {FA:06}Back then, there was no other way,\nbut now... {FA:06}But... you will never appear before me\nagain..........{end}",
   "status": "done",
   "notes": ""
  },
@@ -446,7 +446,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（どうしちゃったんだろう、あたし。\n　なんか、へん…………。\n　このきもちをおさえられない…。）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(What's happening to me? I feel kind of\nstrange... I can't hold back these\nfeelings...){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(What's happening to me? I feel kind of\nstrange... I can't hold back\nthese feelings...){end}",
   "status": "done",
   "notes": ""
  },
@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}きのう、{call:@2AE7}のいえでシチューつくって\nいたことまではおぼえているんだけど、\nそのさきから、きおくが……。{FA:06}あ～ん、なにもおもいだせない～！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I remember making stew at {call:@2AE7}'s house\nyesterday, but after that, my memory's\njust... {FA:06}Waaah, I can't remember a thing~!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I remember making stew at {call:@2AE7}'s house\nyesterday, but after that, my\nmemory's just... {FA:06}Waaah, I can't remember a thing~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B0A}{call:@2B92}{call:@2B0F}！　やっぱりあんたとは、\nきがあわないわね！{end}",
-  "en": "{call:@2B8C}{call:@2B0A}{call:@2B92}{call:@2B0F}! I knew it, I just can't get along with\nyou!{end}",
+  "en": "{call:@2B8C}{call:@2B0A}{call:@2B92}{call:@2B0F}! I knew it, I just can't get along\nwith you!{end}",
   "status": "done",
   "notes": ""
  },
@@ -754,7 +754,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}おい、{call:@2AB4}……。\nほんとうに、わたしなんかとしゃしん\nとっちゃって、いいのか？{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}……となりにこんなに、かわいい\nおんなのこがいるのに、\nほかのおんなのこをたすけに\nいっちゃうなんて、{FA:06}{call:@2AE7}さまなんか、{call:@2A5B}さまに\nさしあげますわ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}ムリしちゃって………。{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}…………わたしも、るちあさま\nみたいなステキなこいに、はやく\nめぐりあいたいな…………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Hey, {call:@2AB4}... Are you really okay taking a\npicture with someone like me? {wait}{call:@2B8C}{call:@2AB4}{call:@2B92}...Running off to save some other girl\nwhen there's such a cute girl right next to\nhim... {FA:06}{call:@2AE7}-sama? You can have him,\n{call:@2A5B}-sama! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}Putting on a brave face.......... {wait}{call:@2B8C}{call:@2AB4}{call:@2B92}............I hope I find a wonderful love like\nLucia-sama's soon, too.............{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Hey, {call:@2AB4}... Are you really okay taking a\npicture with someone like me? {wait}{call:@2B8C}{call:@2AB4}{call:@2B92}...Running off to save some other girl\nwhen there's such a cute girl right next\nto him... {FA:06}{call:@2AE7}-sama? You can have\nhim, {call:@2A5B}-sama! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}Putting on a brave face.......... {wait}{call:@2B8C}{call:@2AB4}{call:@2B92}............I hope I find a wonderful love like\nLucia-sama's soon, too.............{end}",
   "status": "done",
   "notes": ""
  },
@@ -798,7 +798,7 @@
   ],
   "used": true,
   "jp": "{call:@2AB0}さん………。\nユーリのこと、\nかわいいって。{wait}……っ！{FA:06}きましたわね、\n{call:@2B27}！{end}",
-  "en": "{call:@2AB0}-san......... He called Yuri cute. {wait}......! {FA:06}Well, well, so you've come, Mermaid\nPrincesses!{end}",
+  "en": "{call:@2AB0}-san......... He called Yuri cute. {wait}......! {FA:06}Well, well, so you've come,\nMermaid Princesses!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1040,7 +1040,7 @@
   ],
   "used": true,
   "jp": "あ～ら、ほかの\nおじょうさんたちは\nいないのかしら？{end}",
-  "en": "Oh my~, no other young ladies with you, I\nwonder?{end}",
+  "en": "Oh my~, no other young ladies with you,\nI wonder?{end}",
   "status": "done",
   "notes": ""
  },

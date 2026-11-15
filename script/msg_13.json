@@ -28,7 +28,7 @@
   ],
   "used": true,
   "jp": "（ワナだとしらず、\n　ひっかかってくれ\n　ちゃって…。）{end}",
-  "en": "(Falling right into it, without knowing it's a\ntrap...){end}",
+  "en": "(Falling right into it, without knowing it's\na trap...){end}",
   "status": "done",
   "notes": ""
  },
@@ -204,7 +204,7 @@
   ],
   "used": true,
   "jp": "ふ～ん、イルカのおやこの\nかんさつに、ねぇ……。{FA:06}じゃあ、オレもつきあわせて\nもらおうかな。{end}",
-  "en": "Hmm~, observing a dolphin mom and baby,\nhuh... {FA:06}Then maybe I'll tag along.{end}",
+  "en": "Hmm~, observing a dolphin mom and\nbaby, huh... {FA:06}Then maybe I'll tag along.{end}",
   "status": "done",
   "notes": ""
  },
@@ -270,7 +270,7 @@
   ],
   "used": true,
   "jp": "へっ！？\nガイトじょうまでの、\nみちあんない？{end}",
-  "en": "Huh?! Showing you the way to Gaito's\ncastle?{end}",
+  "en": "Huh?! Showing you the way to\nGaito's castle?{end}",
   "status": "done",
   "notes": ""
  },
@@ -281,7 +281,7 @@
   ],
   "used": true,
   "jp": "……いつまでだきしめ\nてんのよ！{end}",
-  "en": "...How long are you gonna keep hugging\nme?!{end}",
+  "en": "...How long are you gonna keep\nhugging me?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（やっぱり、あのあたたかいひかりは\n　{call:@2AE7}だったんだ……………。{FA:06}　それにしても、このひたいのしるしの\n　ようなものは、なに……？）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(So that warm light really was\n{call:@2AE7}............. {FA:06}But what is this mark on his forehead...?){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(So that warm light really\nwas {call:@2AE7}............. {FA:06}But what is this mark on his forehead...?){end}",
   "status": "done",
   "notes": ""
  },
@@ -490,7 +490,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あっ…………………。\nガイトじょうがきえていく………。{wait}{call:@2B8C}{call:@2A70}{call:@2B92}せっかくみつけたのに………。{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}……にどと、こんかいみたいなことは\nしないで！{FA:06}こんどなにかやるときは、わたしに\nいいなさい！{FA:06}あんたたちのやることは、\nあぶなっかしくてみてらんないのよ！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Ah...... Gaito's castle is fading away...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}And after we finally found it...{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}...Never do anything like this again!{FA:06}Next time you try something,\ntell me first!{FA:06}You girls are so reckless, I can't stand to\nwatch!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Ah...... Gaito's castle is fading away...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}And after we finally found it...{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}...Never do anything like this again!{FA:06}Next time you try something,\ntell me first!{FA:06}You girls are so reckless, I can't stand\nto watch!{end}",
   "status": "done",
   "notes": ""
  },
@@ -699,7 +699,7 @@
   ],
   "used": true,
   "jp": "うみにおちたらどうするつもり\nなんだ、およげないくせに……。{FA:06}あぶないから、キリがはれるまで\nここにいようぜ。{end}",
-  "en": "What were you gonna do if you fell in the\nsea? You can't even swim...{FA:06}It's dangerous. Let's stay here till the fog\nclears.{end}",
+  "en": "What were you gonna do if you fell in the\nsea? You can't even swim...{FA:06}It's dangerous. Let's stay here till the\nfog clears.{end}",
   "status": "done",
   "notes": ""
  },
@@ -710,7 +710,7 @@
   ],
   "used": true,
   "jp": "で、でも……。{wait}（どうしよう、{call:@2A70}と{call:@2A96}を\n　たすけにいかないと…。）{end}",
-  "en": "B-but...{wait}(What do I do? I have to go help {call:@2A70} and\n{call:@2A96}...){end}",
+  "en": "B-but...{wait}(What do I do? I have to go help {call:@2A70}\nand {call:@2A96}...){end}",
   "status": "done",
   "notes": ""
  },
@@ -831,7 +831,7 @@
   ],
   "used": true,
   "jp": "…ブラック・ビューティー・シスターズよりの\nあいず！　それっ！{end}",
-  "en": "...A signal from the Black Beauty Sisters! Here\ngoes!{end}",
+  "en": "...A signal from the Black Beauty Sisters!\nHere goes!{end}",
   "status": "done",
   "notes": ""
  },
@@ -886,7 +886,7 @@
   ],
   "used": true,
   "jp": "まったくせわのやける、こたちね…。{end}",
-  "en": "Honestly, you girls are such a\nhandful...{end}",
+  "en": "Honestly, you girls are such\na handful...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1084,7 +1084,7 @@
   ],
   "used": true,
   "jp": "ごめん。\nふたりがすごくたのしみに\nしてたから、どうしても\nいいだせなくってさ。{FA:06}でも、かえってしんぱい\nかけちゃったみたいだな。{FA:06}{call:@2AE7}のやつにおこられちゃった\nよ。{call:@2A5B}にしんぱい\nかけるなって。{wait}…あいつ、それをいうために、\nわざわざかんらんしゃまで\nおいかけてきたんだ。{end}",
-  "en": "Sorry. You two were looking forward to it\nso much, I just couldn't bring myself to\nsay it.{FA:06}But I guess I made you worry instead.{FA:06}{call:@2AE7} chewed me out. Told me not to make\n{call:@2A5B} worry.{wait}...He chased me all the way up to the\nFerris wheel just to tell me that.{end}",
+  "en": "Sorry. You two were looking forward to it\nso much, I just couldn't bring myself to\nsay it.{FA:06}But I guess I made you worry instead.{FA:06}{call:@2AE7} chewed me out. Told me not to\nmake {call:@2A5B} worry.{wait}...He chased me all the way up to the\nFerris wheel just to tell me that.{end}",
   "status": "done",
   "notes": ""
  },

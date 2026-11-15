@@ -17,7 +17,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}オレ、{call:@2AF8}。{FA:06}クリスマスもちかい、ふゆのひに、\nとつぜんオレのまえにあらわれた、\nとしうえのおんなのひと。{FA:06}なんでも、オレがちいさかった\nころから、オレのことをしって\nいるらしい。{wait}オレのちいさかったころ……。{FA:06}そういえば、オレのアルバム……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}I'm {call:@2AF8}.{FA:06}One winter day, with Christmas around\nthe corner, an older woman suddenly\nshowed up in front of me.{FA:06}Apparently she's known me since I was\nlittle.{wait}When I was little...{FA:06}Come to think of it, my photo album...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}I'm {call:@2AF8}.{FA:06}One winter day, with Christmas around\nthe corner, an older woman suddenly\nshowed up in front of me.{FA:06}Apparently she's known me since I\nwas little.{wait}When I was little...{FA:06}Come to think of it, my photo album...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -72,7 +72,7 @@
   ],
   "used": true,
   "jp": "い、いや…………………、\nわたしがそんないじきたないこと、\nするわけないだろ！{wait}…………もしかして、{call:@2A5B}、\nおまえがたべちゃったんじゃ、\nないんだろ～な～？{end}",
-  "en": "N-no............ I'd never be that greedy!{wait}......{call:@2A5B}, you didn't go and eat it, did\nyou~?{end}",
+  "en": "N-no............ I'd never be that greedy!{wait}......{call:@2A5B}, you didn't go and eat it,\ndid you~?{end}",
   "status": "done",
   "notes": ""
  },
@@ -94,7 +94,7 @@
   ],
   "used": true,
   "jp": "{call:@2A5B}っていがいと、いじきたない\nからね～。{end}",
-  "en": "{call:@2A5B}'s greedier than she looks, you\nknow~.{end}",
+  "en": "{call:@2A5B}'s greedier than she looks,\nyou know~.{end}",
   "status": "done",
   "notes": ""
  },
@@ -138,7 +138,7 @@
   ],
   "used": true,
   "jp": "だれって、わたしじゃないんだから、\n{call:@2A5B}でしょ。{end}",
-  "en": "Well, it wasn't me, so it's gotta be\n{call:@2A5B}.{end}",
+  "en": "Well, it wasn't me, so it's gotta\nbe {call:@2A5B}.{end}",
   "status": "done",
   "notes": ""
  },
@@ -446,7 +446,7 @@
   ],
   "used": true,
   "jp": "そのふたりは、ほんものの\n{call:@2AAC}とノエルでは、\nありません……………。{wait}ふたりからは、とてもじゃあくな\nエネルギーをかんじます………。{end}",
-  "en": "Those two are not the real {call:@2AAC}\nand Noelle.........{wait}I sense a terribly evil energy from\nthem......{end}",
+  "en": "Those two are not the real {call:@2AAC}\nand Noelle.........{wait}I sense a terribly evil energy\nfrom them......{end}",
   "status": "done",
   "notes": ""
  },
@@ -545,7 +545,7 @@
   ],
   "used": true,
   "jp": "ピンクしんじゅ、\nみずいろしんじゅ、\nそして、グリーンしんじゅの\n{call:@2B27}たちよ。{wait}わたしのこのすがたは、\nまぼろしのようなもの。{FA:06}これいじょうここにとどまって\nいることはできません……。{wait}７つのうみの\n{call:@2B27}たちが、\nみんなでちからをあわせて、{FA:06}わたしを、ほんとうにめざめ\nさせてくれることを、いのって\nいます…………。{wait}わすれないでください……。\nわたしはいつもあなたたちと、\nともにいます。{end}",
-  "en": "Mermaid Princesses of the pink pearl, the\naqua pearl, and the green pearl.{wait}This form of mine is no more than\na phantom.{FA:06}I cannot remain here any longer......{wait}I pray that all the Mermaid Princesses of\nthe seven seas will join their strength\ntogether,{FA:06}and truly awaken me......{wait}Please do not forget... I am always with\nyou.{end}",
+  "en": "Mermaid Princesses of the pink pearl, the\naqua pearl, and the green pearl.{wait}This form of mine is no more than\na phantom.{FA:06}I cannot remain here any longer......{wait}I pray that all the Mermaid Princesses of\nthe seven seas will join their\nstrength together,{FA:06}and truly awaken me......{wait}Please do not forget... I am always\nwith you.{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "……あんたたち、なにしてんの！\nさっさとにげなさい…………！{end}",
-  "en": "...What are you doing?! Hurry up and\nrun......!{end}",
+  "en": "...What are you doing?! Hurry up\nand run......!{end}",
   "status": "done",
   "notes": ""
  },
@@ -897,7 +897,7 @@
   ],
   "used": true,
   "jp": "……このこえは、あのときの\nマーメイド！？{end}",
-  "en": "...That voice... the Mermaid from back\nthen?!{end}",
+  "en": "...That voice... the Mermaid from\nback then?!{end}",
   "status": "done",
   "notes": ""
  },

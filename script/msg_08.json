@@ -39,7 +39,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}そうはさせないわよ！{FA:06}たいかいのじゃまをするなんて、\nぜったいにゆるさない！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I won't let you!{FA:06}I'll never forgive anyone who ruins the\ncontest!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I won't let you!{FA:06}I'll never forgive anyone who ruins\nthe contest!{end}",
   "status": "done",
   "notes": ""
  },
@@ -94,7 +94,7 @@
   ],
   "used": true,
   "jp": "……………うめ～。{FA:06}みかけによらず、\nおまえってりょうり、\nうまいな。{end}",
-  "en": "..........Mmm, tasty.{FA:06}You don't look it, but you're a pretty good\ncook.{end}",
+  "en": "..........Mmm, tasty.{FA:06}You don't look it, but you're a pretty\ngood cook.{end}",
   "status": "done",
   "notes": ""
  },
@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "ひきょうなわなは、ゆるさない！\nこいするおとめのそこぢから、\nおもいしらせてあげるから！{end}",
-  "en": "I won't forgive dirty tricks! I'll show\nyou the hidden strength of a girl in\nlove!{end}",
+  "en": "I won't forgive dirty tricks! I'll show\nyou the hidden strength of a girl\nin love!{end}",
   "status": "done",
   "notes": ""
  },
@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "……{call:@2B27}は、\nきれいなものがすき。{FA:06}さあさあ、かいじょうにやって\nきている、{call:@2B27}\nさんたち。{FA:06}あたしのしかけをごらんアレ～。{end}",
-  "en": "...A {call:@2B27} loves pretty\nthings.{FA:06}So come along now, all you dear little\nMermaid Princesses out there in the\naudience~.{FA:06}Feast your eyes on my little trap~!{end}",
+  "en": "...A {call:@2B27} loves\npretty things.{FA:06}So come along now, all you dear little\nMermaid Princesses out there in\nthe audience~.{FA:06}Feast your eyes on my little trap~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -620,7 +620,7 @@
   ],
   "used": true,
   "jp": "このまま{call:@2AE7}と、\nあさまでいっしょ……。{end}",
-  "en": "Like this, with {call:@2AE7}, together until\nmorning......{end}",
+  "en": "Like this, with {call:@2AE7}, together\nuntil morning......{end}",
   "status": "done",
   "notes": ""
  },
@@ -653,7 +653,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}わかいおんな{call:@2B92}…………ねぇねぇ、あのひと。{FA:06}ひとりきりでこんなところにきて、\nなにやっているのかしら？{wait}{call:@2B8C}わかいおとこ{call:@2B92}きっと、かれしにフラれたんだよ。\nかわいそうに…………。{end}",
-  "en": "{call:@2B8C}Young Woman{call:@2B92}......Hey, hey, look at her.{FA:06}What's she doing here all by herself,\nI wonder?{wait}{call:@2B8C}Young Man{call:@2B92}Bet her boyfriend dumped her. Poor\nthing......{end}",
+  "en": "{call:@2B8C}Young Woman{call:@2B92}......Hey, hey, look at her.{FA:06}What's she doing here all by herself,\nI wonder?{wait}{call:@2B8C}Young Man{call:@2B92}Bet her boyfriend dumped her.\nPoor thing......{end}",
   "status": "done",
   "notes": ""
  },
@@ -686,7 +686,7 @@
   ],
   "used": true,
   "jp": "あはははっ…。えっ…？{wait}なんで、もえているの？\nあ、あたし、\nし～らな～い！{end}",
-  "en": "Ahahaha... Huh...?{wait}Why is it burning? I-I don't knooow\nanything!{end}",
+  "en": "Ahahaha... Huh...?{wait}Why is it burning? I-I don't\nknooow anything!{end}",
   "status": "done",
   "notes": ""
  },
@@ -730,7 +730,7 @@
   ],
   "used": true,
   "jp": "{call:@2AE7}が、あたしのために\nじゅんびしていた、\nうみのいえ……。{wait}しろにいくの、\nちょっとまってて！{end}",
-  "en": "The beach house {call:@2AE7} set up for me...{wait}Wait a little before we go to the\ncastle!{end}",
+  "en": "The beach house {call:@2AE7} set up for me...{wait}Wait a little before we go to\nthe castle!{end}",
   "status": "done",
   "notes": ""
  },
@@ -906,7 +906,7 @@
   ],
   "used": true,
   "jp": "ピンポ～ン。それがあったりして～。{end}",
-  "en": "Ding-dong~. Looks like that's exactly\nit~.{end}",
+  "en": "Ding-dong~. Looks like that's\nexactly it~.{end}",
   "status": "done",
   "notes": ""
  },
@@ -939,7 +939,7 @@
   ],
   "used": true,
   "jp": "おバカさんとは、\nつきあいきれませんわ！{end}",
-  "en": "I simply cannot abide such a ninny, I do\ndeclare!{end}",
+  "en": "I simply cannot abide such a ninny, I\ndo declare!{end}",
   "status": "done",
   "notes": ""
  },
@@ -972,7 +972,7 @@
   ],
   "used": true,
   "jp": "ああ。おおかじにならないで\nよかったな……。{end}",
-  "en": "Yeah. Good thing it didn't turn into a big\nfire...{end}",
+  "en": "Yeah. Good thing it didn't turn into a\nbig fire...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1093,7 +1093,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}………………{call:@2AE7}…………。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}……あのとき、{call:@2AE7}はどうして\n「るちあ！」って、\nさけんだんだろう……？{FA:06}もしかして、にんげんのときの\nあたしと、かんちがいして……？{FA:06}それとも、ほんとうに…………？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}............{call:@2AE7}........{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...Back then, why did {call:@2AE7} shout\n\"Lucia!\"...? {FA:06}Maybe he mistook me for the human me...? {FA:06}Or maybe he really...?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}............{call:@2AE7}........{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...Back then, why did {call:@2AE7}\nshout \"Lucia!\"...? {FA:06}Maybe he mistook me for the human me...? {FA:06}Or maybe he really...?{end}",
   "status": "done",
   "notes": ""
  }

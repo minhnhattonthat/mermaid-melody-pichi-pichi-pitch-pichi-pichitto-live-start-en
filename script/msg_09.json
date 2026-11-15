@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "わたしはうみのめがみ、\n{call:@2AC6}…。{wait}あなたが、\nきたたいへいようの\n{call:@2B27}、\nるちあね…………。{end}",
-  "en": "I am the goddess of the sea,\n{call:@2AC6}... {wait}So you are Lucia, the {call:@2B27}\nof the North Pacific...{end}",
+  "en": "I am the goddess of the\nsea, {call:@2AC6}... {wait}So you are Lucia, the {call:@2B27}\nof the North Pacific...{end}",
   "status": "done",
   "notes": ""
  },
@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "ふふっ。よくおききなさい、\n{call:@2B27}、\n{call:@2A5B}。{wait}ちからをうしなってしまった\nわたしを、かんぜんによびも\nどすには、{FA:06}７つのうみの、７にんの\n{call:@2B27}と、{FA:06}そのしんじゅのちからが、\nひつようなのです。{FA:06}うみを、へいわを、そして\nあなたのあいするひとを\nまもるために、{FA:06}はやくわたしをよびおこして\n……{call:@2B27}、\n{call:@2A5B}……。{end}",
-  "en": "Fufu. Listen well, {call:@2B27}\n{call:@2A5B}. {wait}I have lost my power. To fully call me\nback, {FA:06}I need the seven Mermaid Princesses of\nthe seven seas, {FA:06}and the power of their pearls. {FA:06}To protect the sea, and peace, and the\none you love, {FA:06}awaken me soon... {call:@2B27}\n{call:@2A5B}...{end}",
+  "en": "Fufu. Listen well, {call:@2B27}\n{call:@2A5B}. {wait}I have lost my power. To fully call\nme back, {FA:06}I need the seven Mermaid Princesses of\nthe seven seas, {FA:06}and the power of their pearls. {FA:06}To protect the sea, and peace, and the\none you love, {FA:06}awaken me soon... {call:@2B27}\n{call:@2A5B}...{end}",
   "status": "done",
   "notes": ""
  },
@@ -171,7 +171,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}……かならず{call:@2AC6}さまを\nよびおこします！{FA:06}うまれたうみを、{FA:06}みんなのへいわを、{FA:06}そしてあたしのあいするひとを、\nまもるために………このピンクの\nしんじゅにかけて、ちかいます！{wait}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...I will awaken {call:@2AC6}-sama, I\npromise! {FA:06}To protect the sea I was born in, {FA:06}everyone's peace, {FA:06}and the one I love... I swear it on this pink\npearl! {wait}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...I will awaken {call:@2AC6}-sama,\nI promise! {FA:06}To protect the sea I was born in, {FA:06}everyone's peace, {FA:06}and the one I love... I swear it on this\npink pearl! {wait}",
   "status": "done",
   "notes": ""
  },
@@ -314,7 +314,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}えっ………！？　ペンダントがなんで\nこんなところに……！？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Huh...?! Why is my pendant in a place like\nthis...?!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Huh...?! Why is my pendant in a place\nlike this...?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -391,7 +391,7 @@
   ],
   "used": true,
   "jp": "…………きょうは、\nおれのおやじとおふくろの、\nめいにちだったんだ。{wait}あのときは、ひさしぶりに\nしごとぬきのたびで、\nオレもおおはしゃぎだった。{FA:06}でもあのときのじこで、\nオレのおやじとおふくろ\nも……。{end}",
-  "en": "...Today is the anniversary of my dad and\nmom's death. {wait}Back then, we were on a trip with no work\nfor the first time in ages, and I was so\nexcited. {FA:06}But in that accident, my dad and mom...{end}",
+  "en": "...Today is the anniversary of my dad and\nmom's death. {wait}Back then, we were on a trip with no work\nfor the first time in ages, and I was\nso excited. {FA:06}But in that accident, my dad and mom...{end}",
   "status": "done",
   "notes": ""
  },
@@ -402,7 +402,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（あたしの、{call:@2AE7}とあったきねんびに…\n　……………ごめん、{call:@2AE7}…………。{FA:06}　あたし、じぶんのおもいにうかれて\n　ばかりで、そんなたいせつなことも、\n　しらないで…………。）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(On the day I celebrate meeting {call:@2AE7}... I'm\nso sorry, {call:@2AE7}...{FA:06}I was so carried away by my own feelings,\nI didn't even know something that\nimportant...){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(On the day I celebrate meeting {call:@2AE7}... I'm\nso sorry, {call:@2AE7}...{FA:06}I was so carried away by my own feelings,\nI didn't even know something\nthat important...){end}",
   "status": "done",
   "notes": ""
  },
@@ -490,7 +490,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（あっ、ペンダントが……。{FA:06}　どうしよう……、{call:@2A70}か{call:@2A96}になにか\n　あったんだ……。{FA:06}　……いま、ここをはなれたくない。{FA:06}　いつまでも{call:@2AE7}のそばで、こうして\n　いたい……………………………。{FA:06}　でも……でも……いかなくちゃ！）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(Ah, my pendant... {FA:06}Oh no... Something's happened to {call:@2A70} or\n{call:@2A96}... {FA:06}...I don't want to leave here now. {FA:06}I want to stay by {call:@2AE7}'s side like this\nforever... {FA:06}But... but... I have to go!){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(Ah, my pendant... {FA:06}Oh no... Something's happened to {call:@2A70}\nor {call:@2A96}... {FA:06}...I don't want to leave here now. {FA:06}I want to stay by {call:@2AE7}'s side like\nthis forever... {FA:06}But... but... I have to go!){end}",
   "status": "done",
   "notes": ""
  },
@@ -611,7 +611,7 @@
   ],
   "used": true,
   "jp": "なぜ、わたしが\nねらわれたことが、\nわかったんだ？{end}",
-  "en": "How did you know I was the one being\ntargeted?{end}",
+  "en": "How did you know I was the one\nbeing targeted?{end}",
   "status": "done",
   "notes": ""
  },
@@ -688,7 +688,7 @@
   ],
   "used": true,
   "jp": "……これは、あたしが{call:@2A96}に\nあげたゆびわ！？{wait}……なんですって！\n{call:@2B0A}が、{call:@2A96}を\nあずかっているって！？{FA:06}すぐたすけにいかなきゃ！{end}",
-  "en": "...This is the ring I gave {call:@2A96}?! {wait}...What did you say?! {call:@2B0A} is holding\n{call:@2A96}?! {FA:06}I have to go save her right now!{end}",
+  "en": "...This is the ring I gave {call:@2A96}?! {wait}...What did you say?! {call:@2B0A} is\nholding {call:@2A96}?! {FA:06}I have to go save her right now!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "…………………………。{wait}…………いいもんだな、\nともだちって……。{end}",
-  "en": "..................{wait}........Friends are a nice thing to have,\nhuh...{end}",
+  "en": "..................{wait}........Friends are a nice thing to\nhave, huh...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あれ～、おかしいですわ。\nうまくコントロールできない……。{FA:06}ちょうりつしてなかったから\nかしら？　やっぱり、ちゅうこは\nダメですわね。{wait}ふう、もういいです。{FA:06}ちょくせつ{call:@2B13}がいって\nあげますわ。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh my~, how peculiar. I can't control it\nproperly...{FA:06}Could it be because I hadn't tuned it, I\nwonder? Secondhand things simply won't\ndo.{wait}Well, never mind.{FA:06}{call:@2B13} shall go there herself.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh my~, how peculiar. I can't control\nit properly...{FA:06}Could it be because I hadn't tuned it, I\nwonder? Secondhand things simply\nwon't do.{wait}Well, never mind.{FA:06}{call:@2B13} shall go there herself.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

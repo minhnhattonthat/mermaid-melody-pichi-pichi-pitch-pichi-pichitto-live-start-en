@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "あたらしいのがでてくるなんて、\nきいてなかったわよ～！！{end}",
-  "en": "Nobody told us a new one would show\nup~!!{end}",
+  "en": "Nobody told us a new one would\nshow up~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -204,7 +204,7 @@
   ],
   "used": true,
   "jp": "さあ、プリンセスさまたち。\nいっしょにまいりましょう。{end}",
-  "en": "Now, dear princesses. Do come along with\nus.{end}",
+  "en": "Now, dear princesses. Do come along\nwith us.{end}",
   "status": "done",
   "notes": ""
  },
@@ -281,7 +281,7 @@
   ],
   "used": true,
   "jp": "このふたりに、あなたたちの\nうたごえはとどかない！{FA:06}あきらめてにげなさい！{end}",
-  "en": "Your singing voices won't reach these\ntwo! {FA:06}Give up and run!{end}",
+  "en": "Your singing voices won't reach\nthese two! {FA:06}Give up and run!{end}",
   "status": "done",
   "notes": ""
  },
@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}………にげない！{FA:06}わたしはあのひ、もうにどと\nにげはしないとちかったんだ！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}.........I won't run! {FA:06}That day, I swore I would never run away\nagain!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}.........I won't run! {FA:06}That day, I swore I would never run\naway again!{end}",
   "status": "done",
   "notes": ""
  },
@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "むだよ…………。{FA:06}あなたたちのちからじゃ、\nかないっこない……。{end}",
-  "en": "It's useless.......... {FA:06}With your power, you don't stand a\nchance...{end}",
+  "en": "It's useless.......... {FA:06}With your power, you don't stand\na chance...{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "３しょくのしんじゅは、\nこれでいただきだよね！{end}",
-  "en": "All three colors of pearl are ours now,\nright!{end}",
+  "en": "All three colors of pearl are ours\nnow, right!{end}",
   "status": "done",
   "notes": ""
  },
@@ -413,7 +413,7 @@
   ],
   "used": true,
   "jp": "にげて！{FA:06}そのしんじゅが、かがやいてる\nあいだは、ヤツらはうごけない\nわ！{FA:06}いまのうち……に………。{end}",
-  "en": "Run! {FA:06}While that pearl is shining, they can't\nmove! {FA:06}Now, while... you... can...{end}",
+  "en": "Run! {FA:06}While that pearl is shining, they\ncan't move! {FA:06}Now, while... you... can...{end}",
   "status": "done",
   "notes": ""
  },
@@ -435,7 +435,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}……っ！{FA:06}{call:@2A5B}、{call:@2A70}、ふたりともはなせ！{FA:06}{call:@2AAC}を…………{call:@2AAC}をたすけに\nいかなきゃ！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}なにいってんの！{FA:06}ヤツらがおってこれないのは、\nそのしんじゅが、かがやいている\nあいだだけよ！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}あたしたちまでつかまったら、だれが\n{call:@2AAC}とノエルをたすけるの！{FA:06}{call:@2AAC}のしんじゅのパワーを、\nムダにしちゃダメ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}………………………{call:@2AAC}！！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...! {FA:06}{call:@2A5B}, {call:@2A70}, let go of me, both of you! {FA:06}I have to go save {call:@2AAC}... {call:@2AAC}! {wait}{call:@2B8C}{call:@2A70}{call:@2B92}What are you saying?! {FA:06}The only time they can't follow us is while\nthat pearl is shining! {wait}{call:@2B8C}{call:@2A5B}{call:@2B92}If we get caught too, who's going to save\n{call:@2AAC} and Noelle? {FA:06}Don't let {call:@2AAC}'s pearl power go to\nwaste! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}........................{call:@2AAC}!!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...! {FA:06}{call:@2A5B}, {call:@2A70}, let go of me, both of you! {FA:06}I have to go save {call:@2AAC}... {call:@2AAC}! {wait}{call:@2B8C}{call:@2A70}{call:@2B92}What are you saying?! {FA:06}The only time they can't follow us is while\nthat pearl is shining! {wait}{call:@2B8C}{call:@2A5B}{call:@2B92}If we get caught too, who's going to save\n{call:@2AAC} and Noelle? {FA:06}Don't let {call:@2AAC}'s pearl power go\nto waste! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}........................{call:@2AAC}!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -479,7 +479,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}（こんなにひとのいるところで、\n　へんしんするわけにはいかないし、{FA:06}　いったいどうすれば……。）{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(I can't transform with this many people\naround... {FA:06}So what do I do...?){end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(I can't transform with this many\npeople around... {FA:06}So what do I do...?){end}",
   "status": "done",
   "notes": ""
  },
@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}（そうだ！）{wait}{call:@2B8C}{call:@2A96}{call:@2B92}「あらわれたな！　わるいまほうつかい\n　め！{FA:06}　そのつかまえた、にんぎょたちを\n　はなすんだ！」{wait}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(That's it!) {wait}{call:@2B8C}{call:@2A96}{call:@2B92}\"So you've appeared, you wicked\nsorcerer! {FA:06}Release the mermaids you've captured!\" {wait}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(That's it!) {wait}{call:@2B8C}{call:@2A96}{call:@2B92}\"So you've appeared, you\nwicked sorcerer! {FA:06}Release the mermaids you've captured!\" {wait}",
   "status": "done",
   "notes": ""
  },
@@ -567,7 +567,7 @@
   ],
   "used": true,
   "jp": "「……おしえてくれ！\n　さいごとは、いったい\n　どういういみだい？」{end}",
-  "en": "\"...Tell me! What do you mean by 'the\nend'?\"{end}",
+  "en": "\"...Tell me! What do you mean by\n'the end'?\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -578,7 +578,7 @@
   ],
   "used": true,
   "jp": "「あなたに……………、\n　わたしがにんぎょである\n　ことをこくはくすれば、{FA:06}　わたしはあわになって\n　しまうのです……。」{end}",
-  "en": "\"If I... confess to you that I am a\nmermaid... {FA:06}I will turn into sea foam...\"{end}",
+  "en": "\"If I... confess to you that I am\na mermaid... {FA:06}I will turn into sea foam...\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -776,7 +776,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}…………だれが、やいてるだって！\nあいつ、まったく………。{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}............Who's jealous?! Geez, that\ngirl.........{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}............Who's jealous?! Geez,\nthat girl.........{end}",
   "status": "done",
   "notes": ""
  },
@@ -820,7 +820,7 @@
   ],
   "used": true,
   "jp": "なんだって！\nオレをつかって、マーメイドを\nおびきだすだと！{wait}………うおおぉぉっ！{end}",
-  "en": "What did you say?! Use me to lure out the\nMermaids?! {wait}.........Raaaagh!{end}",
+  "en": "What did you say?! Use me to lure out\nthe Mermaids?! {wait}.........Raaaagh!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "……しっぽがじゃまで、\nうまくおよげない～！！{end}",
-  "en": "...This tail's in the way, I can't swim\nright~!!{end}",
+  "en": "...This tail's in the way, I can't\nswim right~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -908,7 +908,7 @@
   ],
   "used": true,
   "jp": "ただえさえ、おぼれているのに～！\nじぶんがたすかるのにひっしで、\nおうせんできない～！{end}",
-  "en": "We're already drowning as it is~! We're\ntoo busy saving ourselves to fight\nback~!{end}",
+  "en": "We're already drowning as it is~! We're\ntoo busy saving ourselves to\nfight back~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -974,7 +974,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}っ！{wait}{call:@2B8C}{call:@2B23}{call:@2B92}……さあ、どうする？\nおまえは、どちらをえらぶつもりだ？{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}くっ…………。{wait}{call:@2B8C}{call:@2B23}{call:@2B92}たいせつなものは、ひとつだからこそ\nいみがあるのだよ。{FA:06}おまえの、そのおろかなこころの\nまよいが、たいせつなものをうしなう\nことになる。{FA:06}みるがいい……………………。{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}Ngh! {wait}{call:@2B8C}{call:@2B23}{call:@2B92}...Now, what will you do? Which one will you\nchoose? {wait}{call:@2B8C}{call:@2AE7}{call:@2B92}Tch............ {wait}{call:@2B8C}{call:@2B23}{call:@2B92}A precious thing has meaning precisely\nbecause there is only one. {FA:06}The wavering of your foolish heart will\ncost you what is precious. {FA:06}Behold........................{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}Ngh! {wait}{call:@2B8C}{call:@2B23}{call:@2B92}...Now, what will you do? Which one will\nyou choose? {wait}{call:@2B8C}{call:@2AE7}{call:@2B92}Tch............ {wait}{call:@2B8C}{call:@2B23}{call:@2B92}A precious thing has meaning precisely\nbecause there is only one. {FA:06}The wavering of your foolish heart will\ncost you what is precious. {FA:06}Behold........................{end}",
   "status": "done",
   "notes": ""
  },
@@ -1029,7 +1029,7 @@
   ],
   "used": true,
   "jp": "どうしたの、{call:@2AE7}？\nなにかあったの？{end}",
-  "en": "What's wrong, {call:@2AE7}? Did something\nhappen?{end}",
+  "en": "What's wrong, {call:@2AE7}? Did\nsomething happen?{end}",
   "status": "done",
   "notes": ""
  },
@@ -1051,7 +1051,7 @@
   ],
   "used": true,
   "jp": "どうしたの？\nなにがあったのか、\nくわしくおしえて…。{end}",
-  "en": "What's wrong? Tell me exactly what\nhappened...{end}",
+  "en": "What's wrong? Tell me exactly\nwhat happened...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1095,7 +1095,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}……なんかよくわからないけど、なか\nなおりできて、めでたしめでたし。{wait}{call:@2B8C}{call:@2A96}{call:@2B92}（あのひかり……………。\n　そして、そこに{call:@2AE7}がいて……。{FA:06}　やはり{call:@2AE7}には、なにか\n　あるのか…………………？）{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}...I don't really get it, but they made up,\nso all's well that ends well. {wait}{call:@2B8C}{call:@2A96}{call:@2B92}(That light............ And {call:@2AE7} was right\nthere... {FA:06}So there really is something about\n{call:@2AE7}...................?){end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}...I don't really get it, but they made up,\nso all's well that ends well. {wait}{call:@2B8C}{call:@2A96}{call:@2B92}(That light............ And {call:@2AE7} was\nright there... {FA:06}So there really is something about\n{call:@2AE7}...................?){end}",
   "status": "done",
   "notes": ""
  }

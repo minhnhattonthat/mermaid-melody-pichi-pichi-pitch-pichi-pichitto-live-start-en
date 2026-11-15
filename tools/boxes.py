@@ -81,9 +81,10 @@ def unit_budgets(entries, bub):
     return out
 
 
-def pages(text, lang, units, widths):
-    """-> list of pages, each a list of lines (px, last glyph advance), name tags left out. `units`: id -> entry."""
-    pg, st = [[[0, 0, 0]]], {"sp": 12, "tag": False}  # line = [px, last advance, pending space px]
+def pages(text, lang, units, widths, sp=12):
+    """-> list of pages, each a list of lines (px, last glyph advance), name tags left out. `units`: id -> entry.
+    sp: the box's starting spacing (8 for boxes opened in 8 px mode)."""
+    pg, st = [[[0, 0, 0]]], {"sp": sp, "tag": False}  # line = [px, last advance, pending space px]
 
     def run(t, depth):
         for m in TOKEN.finditer(t):
@@ -114,9 +115,9 @@ def pages(text, lang, units, widths):
             elif name or m[3]:
                 pass
             elif m[0] in " 　":  # trailing spaces never count (credits pad lines with them)
-                line[2] += widths.get(m[0], 12) if st["sp"] == 12 and lang != "jp" else st["sp"]
-            else:
-                adv = widths.get(m[0], 12) if st["sp"] == 12 and lang != "jp" else st["sp"]
+                line[2] += widths.get(m[0], 12) if st["sp"] in (8, 12) and lang != "jp" else st["sp"]
+            else:  # the VWF draws English at spacing 12 and in 8 px mode (FD 01) alike
+                adv = widths.get(m[0], 12) if st["sp"] in (8, 12) and lang != "jp" else st["sp"]
                 line[0] += line[2] + adv
                 line[1], line[2] = adv, 0
         return False

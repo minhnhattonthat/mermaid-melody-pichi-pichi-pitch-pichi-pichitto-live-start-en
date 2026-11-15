@@ -37,6 +37,16 @@
   code 0x000-0x5FF).
 - Blitter font-address computation (0x08004F46) -> `ldr r1,[pc,#0x4C]; bx r1` through its own pool word 0x4F94
   (no other user): use the RAM cell when the override is set (and clear it), else font + 36*code.
+- Mode 1 (flags bit 0, spacing 8: in-song dialogue boxes opened from the gameplay script, credits/profile `{FD:01}`
+  runs, msgview) normally draws through a second blitter 0x08005204 with an 8x12 kana font at 0x09878BE8 (24 bytes a
+  glyph), so English codes showed as kana there. The detour sends mode 1 to the English path too, except message
+  ids < 7 (debug menu 4 keeps its kana, D13). **verified** EP 1 song (work/qa/gp8).
+- Lyric predraw 0x0801E868(dest, msg): opens slot 0 W 28 H 2, draws the whole line, DMA-copies map row 0 (0x80 bytes
+  from 0x03002DB0) and **only pool slots 0..103** (VRAM 0x06000800, 0xD00 bytes) to `dest`, then resets the pool
+  (0x080048B0). The allocator 0x08004A00(n, owner) searches n free slots from the cursor u16 0x03002A38 (pool
+  bounds u16 0x03002A3A..0x03002A3C) and moves the cursor past them, so freed slots were never reused within a line
+  and long English lines ran past slot 103 (missing letters, stale tiles). free_col now also moves the cursor back
+  to the lowest slot it frees. **verified** EP 5 song (work/qa/ly5b_strip.png).
 - RAM 0x02033700..0x0203373F: never written in 50 warp scenes x 900 frames (watch.lua); 0x03007600 is hit by a DMA.
 
 ## Boxes (width gate, measured with `tools/lua/boxlog.lua` on the marker build: `regen.py build/marker.gba --script tools/lua/boxlog.lua`, story EP runs in work/p5/boxep)

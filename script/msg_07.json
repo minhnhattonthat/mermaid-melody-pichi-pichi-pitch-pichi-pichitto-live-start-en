@@ -50,7 +50,7 @@
   ],
   "used": true,
   "jp": "……バカがふたりになって、\nホントあたまいた～い！{end}",
-  "en": "...Now there are two idiots. What a\nheadache~!{end}",
+  "en": "...Now there are two idiots. What\na headache~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -72,7 +72,7 @@
   ],
   "used": true,
   "jp": "{call:@2B32}が、いちどに２ひきも！\nあたしって、なんてラッキーなの！？{FA:06}{call:@2B23}さまのよろこぶかおが、\nうかぶわ～ん。{end}",
-  "en": "Two {call:@2B32}s in one catch! Am I\nlucky or what?!{FA:06}I can just picture {call:@2B23}-sama's happy\nface~n.{end}",
+  "en": "Two {call:@2B32}s in one catch! Am I\nlucky or what?!{FA:06}I can just picture {call:@2B23}-sama's\nhappy face~n.{end}",
   "status": "done",
   "notes": ""
  },
@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "うふふっ、こっちもせんとう\nたいせいを、とらせてもらうわよ～。{end}",
-  "en": "Ufufu, then I'll get ready for battle\ntoo~.{end}",
+  "en": "Ufufu, then I'll get ready for\nbattle too~.{end}",
   "status": "done",
   "notes": ""
  },
@@ -127,7 +127,7 @@
   ],
   "used": true,
   "jp": "これで{call:@2B0A}のようにはいかないっ！{end}",
-  "en": "This time it won't go like it did with\n{call:@2B0A}!{end}",
+  "en": "This time it won't go like it did\nwith {call:@2B0A}!{end}",
   "status": "done",
   "notes": ""
  },
@@ -215,7 +215,7 @@
   ],
   "used": true,
   "jp": "にげてもムダよ。\nピンクのしんじゅ\nちゃん……！{end}",
-  "en": "Running is useless, my little pink\npearl......!{end}",
+  "en": "Running is useless, my little\npink pearl......!{end}",
   "status": "done",
   "notes": ""
  },
@@ -556,7 +556,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}（こいつらにおそわれるなんて、\n　こいつは{call:@2B23}じゃないのか…？）{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(If they're attacking him, then he isn't\n{call:@2B23}...?){end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(If they're attacking him, then he\nisn't {call:@2B23}...?){end}",
   "status": "done",
   "notes": ""
  },
@@ -622,7 +622,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}……ピンクしんじゅのマーメイド\nプリンセスを、どうおもわれました？{FA:06}グリーンしんじゅの、\nマーメイドプリンセスさま？{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}...And what did you think of the pink pearl\nMermaid Princess?{FA:06}My dear Mermaid Princess of the green\npearl?{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}...And what did you think of the pink pearl\nMermaid Princess?{FA:06}My dear Mermaid Princess of the\ngreen pearl?{end}",
   "status": "done",
   "notes": ""
  },
@@ -633,7 +633,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}とんだノーテンキむすめだな……。{FA:06}グリーンしんじゅのマーメイド\nプリンセスに、みどりのゆびわか…。{FA:06}まったくあいつったら……。\nわらっちゃうよ…………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}What a happy-go-lucky girl...{FA:06}A green ring, for the Mermaid Princess of\nthe green pearl...{FA:06}Honestly, that girl... I can't help\nlaughing......{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}What a happy-go-lucky girl...{FA:06}A green ring, for the Mermaid Princess of\nthe green pearl...{FA:06}Honestly, that girl... I can't\nhelp laughing......{end}",
   "status": "done",
   "notes": ""
  },
@@ -864,7 +864,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}くだらないですって！{FA:06}も～あったまにきちゃったもんね！{FA:06}こいするきもちは、いじわるなんかに\nまけないわ！{FA:06}ぴちぴちボイスでおうえんしちゃう！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Silly, you say?!{FA:06}Now I'm really mad!{FA:06}Feelings of love won't lose to some\nmeanie!{FA:06}I'll cheer them on with my\nPichi Pichi Voice!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Silly, you say?!{FA:06}Now I'm really mad!{FA:06}Feelings of love won't lose to\nsome meanie!{FA:06}I'll cheer them on with my\nPichi Pichi Voice!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "なに…このひかりは。\n………あつい、あついわ！{end}",
-  "en": "What... is this light? ......It's hot, so\nhot!{end}",
+  "en": "What... is this light? ......It's hot,\nso hot!{end}",
   "status": "done",
   "notes": ""
  },
@@ -963,7 +963,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}……るちあ、こっちだ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}まちなさい、エリル！\nおとなしく、そのほうせきを\nかえしなさい！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...Lucia, over here!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Hold it, Eriru! Be good and give back that\njewel!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...Lucia, over here!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Hold it, Eriru! Be good and give back\nthat jewel!{end}",
   "status": "done",
   "notes": ""
  },
@@ -996,7 +996,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}わるいがこんやのわたしは、ちょっと\nこわいよ。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}あたしだって、こんやはむしゃくしゃ\nしてるんだから！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Sorry, but tonight I'm a little scary.{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}And I'm in a seriously bad mood tonight,\ntoo!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Sorry, but tonight I'm a little scary.{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}And I'm in a seriously bad mood\ntonight, too!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "そうはうまくいかないんだよ！\nなぜってここは、あたしのステージ\nだからね！{end}",
-  "en": "It won't go that easy! 'Cause this is my\nstage!{end}",
+  "en": "It won't go that easy! 'Cause this is\nmy stage!{end}",
   "status": "done",
   "notes": ""
  },

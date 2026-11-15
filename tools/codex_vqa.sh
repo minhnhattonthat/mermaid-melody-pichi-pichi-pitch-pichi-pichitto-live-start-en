@@ -11,12 +11,13 @@ for c in "$dir"/chunk_*.txt; do
   n=$(basename "$c" .txt)
   [ -s "work/qa/verdicts/$n.tsv" ] && continue
   args=""; list=""
-  for p in $(tr -d '\r' < "$c"); do
-    id=${p#*work/qa/tour/sheets/}; id=${id%.png}
+  tab=$(printf '\t')
+  while IFS="$tab" read -r id p; do
+    p=$(printf '%s' "$p" | tr -d '\r')
     args="$args -i $p"
     list="$list
 $id	$p	(original: work/qa/tour_jp/sheets/$id.png)"
-  done
+  done < "$c"
   ( timeout 1800 codex exec --sandbox read-only --skip-git-repo-check $args -o "work/qa/vqa_log/$n.out" \
 "$brief
 

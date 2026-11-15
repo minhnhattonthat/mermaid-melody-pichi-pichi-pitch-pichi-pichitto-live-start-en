@@ -127,7 +127,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}え～！　あしたっ！？{FA:06}しかもしろにもどったら、もう\nちじょうにはもどれないかもしれ\nないって………。{wait}{FA:FF0301}そんな…もうにどと、{call:@2AE7}にあえな\nくなっちゃうの……？{FA:06}{call:@2AE7}…………。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}Whaaat?! Tomorrow?!{FA:06}And it says once I go back to the\ncastle, I might never be able to come\nback to land......{wait}{FA:FF0301}No way... I'll never get to see\n{call:@2AE7} again...?{FA:06}{call:@2AE7}......\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}Whaaat?! Tomorrow?!{FA:06}And it says once I go back to the\ncastle, I might never be able to come\nback to land......{wait}{FA:FF0301}No way... I'll never get to\nsee {call:@2AE7} again...?{FA:06}{call:@2AE7}......\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -182,7 +182,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……………{call:@2AE7}、どこかにでかけた\nあとだったみたい。{FA:06}あとをおいかけてきたのはいいけど、\n{call:@2AE7}はどこにいるんだろう……？{wait}はなたばをもっていたから、\nたぶんおはかまいりだろうって、\nみちできいたひとは、\nいっていたけど……。{FA:06}とりあえず、きょうかいのほうへ\nいってみようかな……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}......Looks like {call:@2AE7} had already gone\nout somewhere.{FA:06}I came after him, but where could\n{call:@2AE7} be...?{wait}Someone I asked on the street said he\nwas carrying flowers, so he's probably\nvisiting a grave...{FA:06}For now, maybe I'll try heading toward\nthe church...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}......Looks like {call:@2AE7} had already gone\nout somewhere.{FA:06}I came after him, but where\ncould {call:@2AE7} be...?{wait}Someone I asked on the street said he\nwas carrying flowers, so he's probably\nvisiting a grave...{FA:06}For now, maybe I'll try heading toward\nthe church...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -248,7 +248,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\nうみのいえで、{call:@2AEA}といっ\nしょに、アルバイトをすることに\nなったの。{FA:06}もちろん、{call:@2A74}と{call:@2A96}も\nいっしょ！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB} I'm working a\npart-time job at the beach house with\n{call:@2AEA}.{FA:06}{call:@2A74} and {call:@2A96} are with us too, of\ncourse!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB} I'm working a\npart-time job at the beach house\nwith {call:@2AEA}.{FA:06}{call:@2A74} and {call:@2A96} are with us too, of\ncourse!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -259,7 +259,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}でも、なんか{call:@2A96}のようすがおかし\nいのよね～。{FA:06}きょうは、はなびたいかいなのに、\nうみのいえにもこなかったし、\nけいたいでんわにかけても、\nるすばんでんわだったし……。\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}But {call:@2A96}'s been acting kinda weird\nlately~.{FA:06}Today's the fireworks festival, but\nshe never came to the beach house,\nand when I called her cell, it went to\nvoicemail...\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}But {call:@2A96}'s been acting kinda\nweird lately~.{FA:06}Today's the fireworks festival, but\nshe never came to the beach house,\nand when I called her cell, it went to\nvoicemail...\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}そうだ、{call:@2AEA}に\nあやまらないと…………。{FA:06}せっかくきもだめしにさそって\nくれたのに、つまらないいじを\nはっちゃって…………。{FA:06}{call:@2AE7}たち、もうきているのかな？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}Oh, right, I have to apologize to\n{call:@2AEA}......{FA:06}He went to the trouble of inviting me to\nthe test of courage, and I got all\nstubborn about it......{FA:06}I wonder if {call:@2AE7} and the others are\nhere already?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}Oh, right, I have to apologize\nto {call:@2AEA}......{FA:06}He went to the trouble of inviting me to\nthe test of courage, and I got all\nstubborn about it......{FA:06}I wonder if {call:@2AE7} and the others are\nhere already?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}みんなで、てわけをしてさがして\nいたら、メッセージボードに\n{call:@2A5B}のメモがあった……。{wait}「バスケ」・「カラオケ」のつぎは\n………「わたしをみつけて…」？{FA:06}なんか、リョウとかいうやつと\nいっしょにいるらしい……。{wait}まったく、おんなってやつは\nわからねえな…………。{FA:06}そういや、ほかのヤツらはどこを\nさがしているんだ？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}We split up to search, and found a note\nfrom {call:@2A5B} on the message board...{wait}After \"Basketball\" and \"Karaoke\"\ncomes......\"Find me...\"?{FA:06}Looks like she's with some guy named\nRyo...{wait}Man, I'll never understand girls......{FA:06}Speaking of which, where are the\nothers searching?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}We split up to search, and found a note\nfrom {call:@2A5B} on the message board...{wait}After \"Basketball\" and \"Karaoke\"\ncomes......\"Find me...\"?{FA:06}Looks like she's with some guy\nnamed Ryo...{wait}Man, I'll never understand girls......{FA:06}Speaking of which, where are the\nothers searching?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -413,7 +413,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………{call:@2A96}？{wait}・{FA:0B28}{FA:0B04}\n・{FA:0B28}{FA:0B04}\n・{FA:0B28}{FA:0B04}{FA:12}あれっ？　あのこのいちげい……、\n「ラブ②シャワーピッチ！」って、\nなんでアレをしっているの？{wait}{FA:FF0303}……もしかして、すいよう！？{FA:06}{FA:FF0300}でもなんで、すいようがコンテスト\nなんて、でているの？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}.........{call:@2A96}?{wait}.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}{FA:12}Huh? That girl's talent... \"Love Love\nShower Pitch!\"? How does she know\nthat?{wait}{FA:FF0303}...Could she be a water demon?!{FA:06}{FA:FF0300}But why would a water demon enter a\ncontest?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}.........{call:@2A96}?{wait}.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}{FA:12}Huh? That girl's talent... \"Love Love\nShower Pitch!\"? How does she\nknow that?{wait}{FA:FF0303}...Could she be a water demon?!{FA:06}{FA:FF0300}But why would a water demon enter a\ncontest?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -457,7 +457,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}もりでであった、むらさきいろの\nかみのしょうじょ。{FA:06}…………にている。{FA:06}すがたかたちがそっくりというわけ\nじゃない。{FA:06}でも、そう……どことなくふんいきが\nあのときの{call:@2B32}に……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}The girl with purple hair I met in the\nforest.{FA:06}......She's like her.{FA:06}Not that they look exactly the same.{FA:06}But yes... something about her feels\nlike that {call:@2B32} from back then...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}The girl with purple hair I met in\nthe forest.{FA:06}......She's like her.{FA:06}Not that they look exactly the same.{FA:06}But yes... something about her feels\nlike that {call:@2B32} from back then...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -585,7 +585,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}…………………リナ？{wait}……とりあえず、はやくるちあの\nところにいかなきゃ！{end}",
-  "en": "{FA:FF0101}{FA:FF0110}..........Rina?{wait}...Anyway, I've gotta hurry and get to\nLucia!{end}",
+  "en": "{FA:FF0101}{FA:FF0110}..........Rina?{wait}...Anyway, I've gotta hurry and get\nto Lucia!{end}",
   "status": "done",
   "notes": ""
  },
@@ -792,7 +792,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}……このはんのうは、パープル\nしんじゅのマーメイド？{FA:06}もしかして、{call:@2AAC}がすいように\nつかまったの！？\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}...This reading... a purple pearl\nmermaid?{FA:06}Could {call:@2AAC} have been caught by the\nwater demons?!\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}...This reading... a purple\npearl mermaid?{FA:06}Could {call:@2AAC} have been caught by the\nwater demons?!\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1045,7 +1045,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}うぃ～っす！\nアワビのようせい、アウリっす！{FA:06}うらないしになりたくて、タキさん\nをたずねてまいりやした！{FA:06}………だ～いじょうぶっすよ、\nこんどは、いえをばくはつさせたり\nしないっすから！\n{FA:FF0100}{wait}{FA:FF0101}……こんどのかだいは、とうめいに\nなるくすりのざいりょうの\nくろしんじゅを、すなはまから\nみつければいいんすね。\nうぃっす！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}Hey~! Auri the abalone fairy, at your\nservice!{FA:06}I wanna be a fortune-teller, so I've\ncome callin' on Taki-san, yo!{FA:06}......No worries, yo! This time I won't\nblow up the house!\n{FA:FF0100}{wait}{FA:FF0101}...So this time my task is to find a black\npearl on the beach, for an invisibility\npotion. Got it, yo!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}Hey~! Auri the abalone fairy, at\nyour service!{FA:06}I wanna be a fortune-teller, so I've\ncome callin' on Taki-san, yo!{FA:06}......No worries, yo! This time I won't\nblow up the house!\n{FA:FF0100}{wait}{FA:FF0101}...So this time my task is to find a black\npearl on the beach, for an invisibility\npotion. Got it, yo!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1056,7 +1056,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………………………………って、\nこんなひろいすなはまのなかから、\nひとつぶのくろしんじゅをさがすの\nかよ！{wait}あっ、ヒッポ！\nおまえ、サボんのか！？{FA:06}………………………ったく、\nつかえねぇペンギンだなぁ！{FA:06}ほかに、つかえそうなやつは、\nいないかなぁ……？{end}",
-  "en": "{FA:FF0101}..................Wait, I gotta find one tiny\nblack pearl on this huge beach?!{wait}Hey, Hippo! You slackin' off?!{FA:06}.........Geez, what a useless penguin!{FA:06}Isn't there anybody else who'd be\nuseful...?{end}",
+  "en": "{FA:FF0101}..................Wait, I gotta find one tiny\nblack pearl on this huge beach?!{wait}Hey, Hippo! You slackin' off?!{FA:06}.........Geez, what a useless penguin!{FA:06}Isn't there anybody else who'd\nbe useful...?{end}",
   "status": "done",
   "notes": ""
  },

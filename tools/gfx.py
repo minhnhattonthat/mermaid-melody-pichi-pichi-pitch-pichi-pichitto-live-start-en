@@ -169,6 +169,14 @@ def edited_blocks(rom, forks=False):
     return out
 
 
+# en12's m and w have 1 px gaps between stems that the bold column fills (a solid block): wider cores for bold typeset.
+_B = "......."
+BOLD_WIDE = {
+    "m": [_B, _B, _B, "######.", "#..#..#", "#..#..#", "#..#..#", "#..#..#", _B, _B],
+    "w": [_B, _B, _B, "#.....#", "#.....#", "#..#..#", "#..#..#", ".#...#.", _B, _B],
+}
+
+
 def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lead=12, shadow=None, gap=1):
     """Draw lines centred in box = (x0, y0, x1, y1) with the dialogue font (fonts/en12.txt): core pixels plus a bold
     column, ink `fill` (`top` for the first `top_rows` core rows), and a 1 px `outline` ring (8-neighbour); a list
@@ -179,6 +187,8 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
     pad = max(len(rings) - 1, 0)  # rings past the first need room inside the box
     import enfont
     font = {c: rows for c, rows in enfont.load()}
+    if bold:
+        font.update(BOLD_WIDE)
     x0, y0, x1, y1 = box
     desc = any("#" in font[c][8] + font[c][9] for c in lines[-1])
     total = lead * (len(lines) - 1) + (9 if desc else 7)  # cap top (core row 1) to the last inked row

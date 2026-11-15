@@ -915,7 +915,7 @@
   ],
   "used": true,
   "jp": "【シスター・シェシェ】\n{call:@0DB2}のあねで、\nしっぽがマイクになっているの。\nふたりでうたううたはマーメイドをくるしめるちからをもっているんだ。\nいつもいもうとのミミとふたりでこうどうしていて{call:@0DCA}をしたにみているの。ふつうのうたはつうようしないおそろしいてきなんだよ。{end}",
-  "en": "[Sister Sheshe]\nThe older of the {call:@0DB2}. Her tail is a microphone. The songs the two of them sing have the power to torment mermaids. She\nalways acts together with her little sister Mimi, and looks down on the {call:@0DCA}. She's a terrifying enemy, and ordinary songs don't work on\nher.{end}",
+  "en": "[Sister Sheshe]\nThe older of the {call:@0DB2}. Her tail is a microphone. The songs the two of them sing have the power to torment mermaids. She\nalways acts together with her little sister Mimi, and looks down on the {call:@0DCA}. She's a terrifying enemy, and ordinary songs don't work\non her.{end}",
   "status": "done",
   "notes": ""
  },
@@ -1116,7 +1116,7 @@
   ],
   "used": true,
   "jp": "すばらしーです。。。。\nじかい、マーメード　メロディー、\nぴちぴちピッチ！\n「いえない　ココロ」・・・\nアンコールは、いかが？{end}",
-  "en": "Wonderful.... Next time on Mermaid\nMelody Pichi Pichi Pitch! \"The\nUnspoken Heart\"... How about an\nencore?{end}",
+  "en": "Wonderful.... Next time on Mermaid\nMelody Pichi Pichi Pitch! \"The\nUnspoken Heart\"... How about\nan encore?{end}",
   "status": "done",
   "notes": ""
  },
