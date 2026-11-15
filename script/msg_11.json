@@ -17,7 +17,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2A5B}、いそいで！{FA:06}{call:@2A96}ひとりで、すいようをあいてに、\nがんばっているよ！{end}",
-  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2A5B}, hurry! {FA:06}{call:@2A96} is fighting a water demon all\nby herself!{end}",
+  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}{call:@2A5B}, hurry!{FA:06}{call:@2A96} is fighting a water demon all\nby herself!{end}",
   "status": "done",
   "notes": ""
  },
@@ -28,7 +28,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B72}{call:@2B92}……………る…ちあ…？{FA:06}……るちあが…にんぎょさん……、\nだった……ん…だ……。{FA:06}…みつけ…た…ぼくの…にんぎょさん\n…………………。{end}",
-  "en": "{call:@2B8C}{call:@2B72}{call:@2B92}.........Lu...cia...? {FA:06}...So Lucia... was... the mermaid... {FA:06}...I found... my... mermaid.........{end}",
+  "en": "{call:@2B8C}{call:@2B72}{call:@2B92}...Lu...cia...?{FA:06}...So Lucia... was... the mermaid...{FA:06}...I found... my... mermaid...{end}",
   "status": "done",
   "notes": ""
  },
@@ -50,7 +50,7 @@
   ],
   "used": true,
   "jp": "………？{end}",
-  "en": "......?{end}",
+  "en": "...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "う～ん。あのモノマネが\nひょっとしてあいつらのあいだで、\nはやっているとか……………？{end}",
-  "en": "Hmm. Could that impression be all\nthe rage among them,\nmaybe.............?{end}",
+  "en": "Hmm. Could that impression be all\nthe rage among\nthem, maybe...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -127,7 +127,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}えっ！　あのっ……………。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Huh?! Um, well..........{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Huh?! Um, well...{end}",
   "status": "done",
   "notes": ""
  },
@@ -138,7 +138,7 @@
   ],
   "used": true,
   "jp": "やっぱりそうだったんだね…。{wait}ぼく、にんぎょさんのこと\nいっぱいしらべたから、\nしってるんだ。{wait}にんげんをすきになっても、\nじぶんからこくはくできないん\nだよね……。{FA:06}しょうたいがバレちゃったら、\nあわになっちゃうんだよね…。\n　{wait}これ、おねえちゃんに\nあげる！\n…………ひみつだよ！{end}",
-  "en": "I knew it... {wait}I read up on mermaids a whole lot, so\nI know. {wait}Even if a mermaid falls in love with a\nhuman, she can't be the first to confess\nher love, right... {FA:06}And if her secret comes out, she turns\ninto sea foam, right... {wait}This is for you, Sis!\n..........It's a secret!{end}",
+  "en": "I knew it...{wait}I read up on mermaids a whole lot, so\nI know.{wait}Even if a mermaid falls in love with a\nhuman, she can't be the first to confess\nher love, right...{FA:06}And if her secret comes out, she turns\ninto sea foam, right...{wait}This is for you, Sis!\n...It's a secret!{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}このあたりで、しんじゅの\nきょうめいおんをきいたわ…。{FA:06}でてきなさい！\n{call:@2B27}！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}I heard the resonance of a pearl\naround here... {FA:06}Come out, {call:@2B27}!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}I heard the resonance of a pearl\naround here...{FA:06}Come out, {call:@2B27}!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -171,7 +171,7 @@
   ],
   "used": true,
   "jp": "…………！\nあぶない！{end}",
-  "en": "......! Look out!{end}",
+  "en": "...! Look out!{end}",
   "status": "done",
   "notes": ""
  },
@@ -182,7 +182,7 @@
   ],
   "used": true,
   "jp": "………っ！{end}",
-  "en": "......Ngh!{end}",
+  "en": "...Ngh!{end}",
   "status": "done",
   "notes": ""
  },
@@ -193,7 +193,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}なぞのしょうじょ{call:@2B92}………………………………。{end}",
-  "en": "{call:@2B8C}Mysterious Girl{call:@2B92}..........................{end}",
+  "en": "{call:@2B8C}Mysterious Girl{call:@2B92}...{end}",
   "status": "done",
   "notes": ""
  },
@@ -204,7 +204,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あらわれたわね、マーメイド\nプリンセスたち！{FA:06}わたしのあいを、おみまいして\nさしあげてよ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}So you've appeared,\nMermaid Princesses! {FA:06}Allow me to treat you to a taste of\nmy love!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}So you've appeared,\nMermaid Princesses!{FA:06}Allow me to treat you to a taste of\nmy love!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -215,7 +215,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}………こナマイキな\nガキたちだこと……。{FA:06}このわたしが\nあいしてあげるって、\nいっているのに。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}.........What cheeky little brats... {FA:06}And here I am, telling you I'll love you.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}...What cheeky little brats...{FA:06}And here I am, telling you I'll love you.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}なにがなんでも、あいして\nさしあげてよ………ハッ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}I'll love you, whatever it takes......... Hah!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}I'll love you, whatever it takes... Hah!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -248,7 +248,7 @@
   ],
   "used": true,
   "jp": "……………あれはっ！{FA:06}うおおぉっ！{end}",
-  "en": "...........That's...! {FA:06}Raaagh!{end}",
+  "en": "...That's...!{FA:06}Raaagh!{end}",
   "status": "done",
   "notes": ""
  },
@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "とうとうあらわれた、\nわたしのぶんしんが……。{FA:06}１つからわかれた、\nひかりのぶぶん……。\nわたしのはんしん……。{end}",
-  "en": "At last it has appeared... my other self... {FA:06}The part of light that split from the one...\nMy other half...{end}",
+  "en": "At last it has appeared... my other self...{FA:06}The light half, split from a single whole...\nMy other half...{end}",
   "status": "done",
   "notes": ""
  },
@@ -314,7 +314,7 @@
   ],
   "used": true,
   "jp": "ううん、なんでもない…。{FA:06}{call:@2B54}ちゃんの\nきょくに、かんどう\nしちゃって……。{end}",
-  "en": "Oh, it's nothing... {FA:06}I was just so moved by\n{call:@2B54}-chan's song...{end}",
+  "en": "Oh, it's nothing...{FA:06}I was just so moved by\n{call:@2B54}-chan's song...{end}",
   "status": "done",
   "notes": ""
  },
@@ -325,7 +325,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B4F}{call:@2B92}ぼくのこころのおくからきえない\nあのかなしいめ…………。{FA:06}あのときほかに、ほうほうはなかった\nけれど、いまだったら……。{FA:06}でも……きみはもう、ぼくのまえには\nあらわれてはくれない…………。{end}",
-  "en": "{call:@2B8C}{call:@2B4F}{call:@2B92}Those sad eyes that never fade from the\ndepths of my heart.......... {FA:06}Back then, there was no other way,\nbut now... {FA:06}But... you will never appear before me\nagain..........{end}",
+  "en": "{call:@2B8C}{call:@2B4F}{call:@2B92}Those sad eyes that never fade from the\ndepths of my heart...{FA:06}Back then, there was no other way,\nbut now...{FA:06}But... you will never appear before\nme again...{end}",
   "status": "done",
   "notes": ""
  },
@@ -336,7 +336,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}………さいきんは、\nマーメイドプリンセスとしての、\nじかくがでてきたから、\nだいじょうぶだとはおもうけど……。{wait}{call:@2B8C}{call:@2A96}{call:@2B92}うん？　あれは、{call:@2B0F}？{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}.........Lately she's started to act like a\ntrue Mermaid Princess, so I think she'll\nbe fine... {wait}{call:@2B8C}{call:@2A96}{call:@2B92}Hm? Isn't that {call:@2B0F}?{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...Lately she's started to act like a true\nMermaid Princess, so I think she'll be\nfine, but...{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Hm? Isn't that {call:@2B0F}?{end}",
   "status": "done",
   "notes": ""
  },
@@ -347,7 +347,7 @@
   ],
   "used": true,
   "jp": "このだいおんきょうスピーカーで、\nマーメイドプリンセスのうたを、\nかきけせばいいのよ。{FA:06}あ～たしって、あったまいい～！{wait}でも、はいせんのセッティングって\nむずかしい……。{FA:06}あ～！　イライラする～！！{end}",
-  "en": "With this super-loud speaker, I'll drown\nout the Mermaid Princesses' song! {FA:06}Aren't I just the smartest~! {wait}But setting up the wiring is so hard... {FA:06}Aaargh! This is driving me crazy~!!{end}",
+  "en": "With this super-loud speaker, I'll drown\nout the Mermaid Princesses' song!{FA:06}Aren't I just the smartest~!{wait}But setting up the wiring is so hard...{FA:06}Aaargh! This is driving me crazy~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}いったい、なにしているのかしら？{wait}{call:@2B8C}{call:@2A96}{call:@2B92}とうぜん、わたしたちをつかまえる、\nワナなんだろうな。{wait}{call:@2B8C}{call:@2A70}{call:@2B92}じゃあ、いきがけのだちんで。{wait}{call:@2B8C}{call:@2A96}{call:@2B92}たいじしていくか。{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}What on earth is she doing? {wait}{call:@2B8C}{call:@2A96}{call:@2B92}A trap to catch us, obviously. {wait}{call:@2B8C}{call:@2A70}{call:@2B92}Then, since we're passing by anyway... {wait}{call:@2B8C}{call:@2A96}{call:@2B92}...we might as well take her down.{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}What on earth is she doing?{wait}{call:@2B8C}{call:@2A96}{call:@2B92}A trap to catch us, obviously.{wait}{call:@2B8C}{call:@2A70}{call:@2B92}Then, since we're passing by anyway...{wait}{call:@2B8C}{call:@2A96}{call:@2B92}...we might as well take her down.{end}",
   "status": "done",
   "notes": ""
  },
@@ -369,7 +369,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}わたしたちをつかまえるワナは……。{wait}{call:@2B8C}{call:@2A96}{call:@2B92}かんせいしたのかい、エリル？{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}So, your trap to catch us... {wait}{call:@2B8C}{call:@2A96}{call:@2B92}...is it finished yet, Eriru?{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}So, your trap to catch us...{wait}{call:@2B8C}{call:@2A96}{call:@2B92}...is it finished yet, Eriru?{end}",
   "status": "done",
   "notes": ""
  },
@@ -468,7 +468,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あのね、あたし、ほんとうはね…。\n{call:@2AE7}のさがしている………。\n{call:@2AE7}のだいすきな……………！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}You know, the truth is, I'm... the\none {call:@2AE7} is looking for... The one\n{call:@2AE7} loves.............!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}You know, the truth is, I'm... the\none {call:@2AE7} is looking for... The\none {call:@2AE7} loves...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -479,7 +479,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B99}{call:@2A5B}……………………。\n…………っ！{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}{call:@2A5B}..................\n.........!{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}{call:@2A5B}...\n...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -490,7 +490,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}………………。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}...............{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}...{end}",
   "status": "done",
   "notes": ""
  },
@@ -501,7 +501,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B99}…………{call:@2A5B}？{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}............{call:@2A5B}?{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B99}...{call:@2A5B}?{end}",
   "status": "done",
   "notes": ""
  },
@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}きのう、{call:@2AE7}のいえでシチューつくって\nいたことまではおぼえているんだけど、\nそのさきから、きおくが……。{FA:06}あ～ん、なにもおもいだせない～！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I remember making stew at {call:@2AE7}'s house\nyesterday, but after that, my\nmemory's just... {FA:06}Waaah, I can't remember a thing~!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I remember making stew at {call:@2AE7}'s house\nyesterday, but after that, my\nmemory's just...{FA:06}Waaah, I can't remember a thing~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -523,7 +523,7 @@
   ],
   "used": true,
   "jp": "{call:@2A5B}、おまえがっこうについた\nとたんに、カゼでぶったおれち\nまったんだって？{wait}……もしかして、\nオレのカゼがうつったのか？{end}",
-  "en": "{call:@2A5B}, I heard you collapsed with a cold\nthe second you got to school? {wait}...Did you maybe catch my cold?{end}",
+  "en": "{call:@2A5B}, I heard you collapsed with a cold\nthe second you got to school?{wait}...Did you maybe catch my cold?{end}",
   "status": "done",
   "notes": ""
  },
@@ -556,7 +556,7 @@
   ],
   "used": true,
   "jp": "…キ、キスーーーー！？{FA:06}しかも、あたしが{call:@2AE7}を\nおしたおして～！？{end}",
-  "en": "...A K-KISS?! {FA:06}And I pushed {call:@2AE7} down~?!{end}",
+  "en": "...A K-KISS?!{FA:06}And I pushed {call:@2AE7} down~?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -578,7 +578,7 @@
   ],
   "used": true,
   "jp": "あたしから…！？{FA:06}あたしが…？{FA:06}あたし……………。{wait}あ～ん！！！\nあたしったら、なんてこと\nしてんのよ～！！{FA:06}しかも、まったくおぼえて\nいないなんて！{FA:06}イヤ～～～！！{end}",
-  "en": "I did it...?! {FA:06}Me...? {FA:06}I............... {wait}Waaah!!! What was I thinking~!! {FA:06}And I don't even remember any of it! {FA:06}Noooo~~~!!{end}",
+  "en": "I did it...?!{FA:06}Me...?{FA:06}I...{wait}Waaah!!! What was I thinking~!!{FA:06}And I don't even remember any of it!{FA:06}Noooo~~~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -611,7 +611,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B0F}{call:@2B92}なにお～！　{call:@2B23}さまのスイートは、\nこのあたしよ！{end}",
-  "en": "{call:@2B8C}{call:@2B0F}{call:@2B92}Whaaat~! I'm {call:@2B23}-sama's sweetheart!{end}",
+  "en": "{call:@2B8C}{call:@2B0F}{call:@2B92}What did you say~?! I'm\n{call:@2B23}-sama's sweetheart!{end}",
   "status": "done",
   "notes": ""
  },
@@ -622,7 +622,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}これは…なんとかしなくちゃ！{FA:06}…………きゃあ！！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I have to do something about this! {FA:06}............Eek!!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}I have to do something about this!{FA:06}...Eek!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -666,7 +666,7 @@
   ],
   "used": true,
   "jp": "{call:@2AE7}………うん。{end}",
-  "en": "{call:@2AE7}...... Yeah.{end}",
+  "en": "{call:@2AE7}... Yeah.{end}",
   "status": "done",
   "notes": ""
  },
@@ -688,7 +688,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AB4}{call:@2B92}……{call:@2AE7}さま、あんなに{call:@2A5B}さまを\nしんぱいして、たすけにいった……。{FA:06}そうか……。{call:@2AE7}さまは、{call:@2A5B}さまの\nことがすきなんだ…………。{end}",
-  "en": "{call:@2B8C}{call:@2AB4}{call:@2B92}...{call:@2AE7}-sama was so worried about\n{call:@2A5B}-sama that he went to save her... {FA:06}I see... {call:@2AE7}-sama loves\n{call:@2A5B}-sama............{end}",
+  "en": "{call:@2B8C}{call:@2AB4}{call:@2B92}...{call:@2AE7}-sama was so worried about\n{call:@2A5B}-sama that he went to save her...{FA:06}I see... {call:@2AE7}-sama\nloves {call:@2A5B}-sama...{end}",
   "status": "done",
   "notes": ""
  },
@@ -710,7 +710,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}ふらちなあくぎょうざんまい、\nぜったいにゆるさない！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}Your outrageous wicked deeds, I'll\nnever forgive!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}I'll never forgive your shameless string\nof wicked deeds!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -754,7 +754,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}おい、{call:@2AB4}……。\nほんとうに、わたしなんかとしゃしん\nとっちゃって、いいのか？{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}……となりにこんなに、かわいい\nおんなのこがいるのに、\nほかのおんなのこをたすけに\nいっちゃうなんて、{FA:06}{call:@2AE7}さまなんか、{call:@2A5B}さまに\nさしあげますわ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}ムリしちゃって………。{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}…………わたしも、るちあさま\nみたいなステキなこいに、はやく\nめぐりあいたいな…………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Hey, {call:@2AB4}... Are you really okay taking a\npicture with someone like me? {wait}{call:@2B8C}{call:@2AB4}{call:@2B92}...Running off to save some other girl\nwhen there's such a cute girl right next\nto him... {FA:06}{call:@2AE7}-sama? You can have\nhim, {call:@2A5B}-sama! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}Putting on a brave face.......... {wait}{call:@2B8C}{call:@2AB4}{call:@2B92}............I hope I find a wonderful love like\nLucia-sama's soon, too.............{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Hey, {call:@2AB4}... Are you really okay taking a\npicture with someone like me?{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}...Running off to save some other girl\nwhen there's such a cute girl right next\nto him...{FA:06}Hmph! {call:@2A5B}-sama can have {call:@2AE7}-sama!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Putting on a brave face...{wait}{call:@2B8C}{call:@2AB4}{call:@2B92}...I hope I find a wonderful love like\nLucia-sama's soon, too...{end}",
   "status": "done",
   "notes": ""
  },
@@ -776,7 +776,7 @@
   ],
   "used": true,
   "jp": "{call:@2AB0}さん！\nこないで！{end}",
-  "en": "{call:@2AB0}-san! Don't come!{end}",
+  "en": "{call:@2AB0}-san! Don't come any closer!{end}",
   "status": "done",
   "notes": ""
  },
@@ -787,7 +787,7 @@
   ],
   "used": true,
   "jp": "{call:@2B13}さん！　そんなことを\nしては、いけません！{FA:06}あなたみたいな、\nかわいいおんなのこが、\nこんなひどいことをしては、\nいけないんです！{end}",
-  "en": "{call:@2B13}-san! You mustn't do such a thing! {FA:06}A cute girl like you mustn't do something\nso terrible!{end}",
+  "en": "{call:@2B13}-san! You mustn't do such a thing!{FA:06}A cute girl like you mustn't do something\nso terrible!{end}",
   "status": "done",
   "notes": ""
  },
@@ -798,7 +798,7 @@
   ],
   "used": true,
   "jp": "{call:@2AB0}さん………。\nユーリのこと、\nかわいいって。{wait}……っ！{FA:06}きましたわね、\n{call:@2B27}！{end}",
-  "en": "{call:@2AB0}-san......... He called Yuri cute. {wait}......! {FA:06}Well, well, so you've come,\nMermaid Princesses!{end}",
+  "en": "{call:@2AB0}-san... He called Yuri cute.{wait}...!{FA:06}Well, well, so you've come,\nMermaid Princesses!{end}",
   "status": "done",
   "notes": ""
  },
@@ -809,7 +809,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}・{call:@2A74}・{call:@2A96}{call:@2B92}きゃあ！{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}…………だいじょうぶですか！\n{call:@2A5B}さん、{call:@2A70}さん、{call:@2A96}さ～ん！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}, {call:@2A74}, {call:@2A96}{call:@2B92}Eek! {wait}{call:@2B8C}{call:@2AB0}{call:@2B92}............Are you all right?! {call:@2A5B}-san,\n{call:@2A70}-san, {call:@2A96}-saaan!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}, {call:@2A74}, {call:@2A96}{call:@2B92}Eek!{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}...Are you all right?! {call:@2A5B}-san,\n{call:@2A70}-san, {call:@2A96}-saaan!{end}",
   "status": "done",
   "notes": ""
  },
@@ -820,7 +820,7 @@
   ],
   "used": true,
   "jp": "{call:@2AB0}さん………。{FA:06}やっぱりあなたは、\n{call:@2B27}のなかま\nだったのですわね……。{end}",
-  "en": "{call:@2AB0}-san......... {FA:06}So you really were a friend of the\nMermaid Princesses after all...{end}",
+  "en": "{call:@2AB0}-san...{FA:06}So you really were a friend of the\nMermaid Princesses after all...{end}",
   "status": "done",
   "notes": ""
  },
@@ -853,7 +853,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AB0}！{wait}{call:@2B8C}{call:@2B13}{call:@2B92}{call:@2AB0}さん！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}………よくも{call:@2AB0}を！\nぜったいに、ゆるさないから！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AB0}! {wait}{call:@2B8C}{call:@2B13}{call:@2B92}{call:@2AB0}-san! {wait}{call:@2B8C}{call:@2A5B}{call:@2B92}.........How dare you hurt {call:@2AB0}! I'll never\nforgive you!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AB0}!{wait}{call:@2B8C}{call:@2B13}{call:@2B92}{call:@2AB0}-san!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...How dare you hurt {call:@2AB0}! I'll never\nforgive you!{end}",
   "status": "done",
   "notes": ""
  },
@@ -864,7 +864,7 @@
   ],
   "used": true,
   "jp": "{call:@2AB0}さん………。{end}",
-  "en": "{call:@2AB0}-san.........{end}",
+  "en": "{call:@2AB0}-san...{end}",
   "status": "done",
   "notes": ""
  },
@@ -886,7 +886,7 @@
   ],
   "used": true,
   "jp": "…………！{end}",
-  "en": "............!{end}",
+  "en": "...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -897,7 +897,7 @@
   ],
   "used": true,
   "jp": "{call:@2B13}さん………。{end}",
-  "en": "{call:@2B13}-san.........{end}",
+  "en": "{call:@2B13}-san...{end}",
   "status": "done",
   "notes": ""
  },
@@ -908,7 +908,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B13}{call:@2B92}あんなひどいことを、してしまって…。\nもう、あのかたにあう、\nしかくなんて……。{wait}",
-  "en": "{call:@2B8C}{call:@2B13}{call:@2B92}After doing something so terrible... I have\nno right to see him ever again... {wait}",
+  "en": "{call:@2B8C}{call:@2B13}{call:@2B92}After doing something so terrible... I have\nno right to see him ever again...{wait}",
   "status": "done",
   "notes": ""
  },
@@ -919,7 +919,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AB0}{call:@2B92}……なくのは、およしなさい。\n{call:@2B13}さん。{end}",
-  "en": "{call:@2B8C}{call:@2AB0}{call:@2B92}...Please don't cry, {call:@2B13}-san.{end}",
+  "en": "{call:@2B8C}{call:@2AB0}{call:@2B92}...Now, no crying, {call:@2B13}-san.{end}",
   "status": "done",
   "notes": ""
  },
@@ -930,7 +930,7 @@
   ],
   "used": true,
   "jp": "とびらのむこうに\nいるのは……、{wait}{call:@2AB0}さん……！{end}",
-  "en": "The one behind the door is... {wait}{call:@2AB0}-san...!{end}",
+  "en": "The one behind the door is...{wait}{call:@2AB0}-san...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -941,7 +941,7 @@
   ],
   "used": true,
   "jp": "……あのうみのいえで、\nアルバイトをしていたのは、\nこのサンダルを、{call:@2B13}さんに\nはかせてあげたかったから\nなんです。{wait}はだしのままじゃ、\n{call:@2B13}さんのきれいなあしが、\nきずだらけになってしまいます\nからね…………。{end}",
-  "en": "...The reason I worked part-time at that\nbeach house was that I wanted to give\n{call:@2B13}-san these sandals to wear. {wait}If you went barefoot, {call:@2B13}-san's lovely\nfeet would get all scratched up, you\nsee............{end}",
+  "en": "...The reason I worked part-time at that\nbeach house was that I wanted you to\nwear these sandals, {call:@2B13}-san.{wait}If you went barefoot, {call:@2B13}-san, your\nlovely feet would get all scratched up,\nyou see...{end}",
   "status": "done",
   "notes": ""
  },
@@ -952,7 +952,7 @@
   ],
   "used": true,
   "jp": "……まあ、{call:@2B13}のあしに、\nぴったりですわ。{FA:06}………でも、{call:@2B13}には\nこれをいただく、しかくが\nありませんの…………。{wait}……せめて、もういちどだけ\nヒッポさまのおすがたを、\nみることができれば……。{end}",
-  "en": "...My, they fit {call:@2B13}'s feet perfectly. {FA:06}.........But {call:@2B13} has no right to accept\nthem............ {wait}...If only I could see Hippo-sama's face\njust one more time...{end}",
+  "en": "...My, they fit {call:@2B13}'s feet perfectly.{FA:06}...But {call:@2B13} has no right to\naccept them...{wait}...If only I could see Hippo-sama's face\njust one more time...{end}",
   "status": "done",
   "notes": ""
  },
@@ -974,7 +974,7 @@
   ],
   "used": true,
   "jp": "…………！\n{call:@2AB0}さん、なぜですの！？{end}",
-  "en": "............! {call:@2AB0}-san, why?!{end}",
+  "en": "...! {call:@2AB0}-san, why?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -985,7 +985,7 @@
   ],
   "used": true,
   "jp": "わたしたちは、いまはまだ\nむすばれないうんめい。{FA:06}でも、いつかかならず、\nめぐりあえるときがきます。{FA:06}そのときをしんじて……。{end}",
-  "en": "For now, we are fated not to be together. {FA:06}But someday, the time will surely come\nwhen we meet again. {FA:06}Believe in that day...{end}",
+  "en": "For now, we are fated not to be together.{FA:06}But someday, the time will surely come\nwhen we meet again.{FA:06}Believe in that day...{end}",
   "status": "done",
   "notes": ""
  },
@@ -996,7 +996,7 @@
   ],
   "used": true,
   "jp": "…………ええ。\nいまは、しばしのおわかれ\nですのね……。{FA:06}そのときまでこのサンダルは、\n{call:@2AB0}さんだとおもって、\n{call:@2B13}のたいせつな、\nたからものにしておきます。{wait}……さよならはいいません。\n……また……おあいできるひ\nまで…………。{FA:06}おげんきで……{call:@2AB0}さん！{end}",
-  "en": "............Yes. For now, it's only a short\nfarewell, isn't it... {FA:06}Until then, I'll think of these sandals as\n{call:@2AB0}-san, and keep them as {call:@2B13}'s most\nprecious treasure. {wait}...I won't say goodbye. ...Until the day... we\nmeet again............ {FA:06}Take care... {call:@2AB0}-san!{end}",
+  "en": "...Yes. For now, it's only a short\nfarewell, isn't it...{FA:06}Until then, I'll think of these sandals as\n{call:@2AB0}-san, and keep them as {call:@2B13}'s most\nprecious treasure.{wait}...I won't say goodbye. ...Until the day... we\nmeet again...{FA:06}Take care... {call:@2AB0}-san!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AB0}{call:@2B92}…………………{call:@2B13}さん！{end}",
-  "en": "{call:@2B8C}{call:@2AB0}{call:@2B92}...................{call:@2B13}-san!{end}",
+  "en": "{call:@2B8C}{call:@2AB0}{call:@2B92}...{call:@2B13}-san!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1084,7 +1084,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A74}{call:@2B92}………まったく、どこにでも\nでてくるわね～。{wait}",
-  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}.........Geez, they pop up everywhere~. {wait}",
+  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}...Geez, they pop up everywhere~.{wait}",
   "status": "done",
   "notes": ""
  },
@@ -1096,7 +1096,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}もう、たびさきにまであらわれるなんて\n…………いくわよ！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Seriously, showing up even on our\ntrip............ Let's go!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Seriously, showing up even on our\ntrip... Let's go!{end}",
   "status": "done",
   "notes": ""
  }

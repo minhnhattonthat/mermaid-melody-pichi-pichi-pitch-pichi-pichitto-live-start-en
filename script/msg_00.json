@@ -679,7 +679,7 @@
   ],
   "used": true,
   "jp": "{FA:1101}　　　　　　　【サウンド】\n{FA:1103}　　　　　【音楽】　桐岡　麻季\n{FA:1101}　　　　【効果音】　ＡRY\n　　　　　　　　　　熊坂希代子\n　　　　　　　　　　渡邉　勉\n{FA:1101}　　　⇔【{FD:01}プログラム{FD:00}】　GUN{end}",
-  "en": "{FA:1101}                            [Sound]\n{FA:1103}   [Music]                   Maki Kirioka\n{FA:1101}   [Sound Effects]     ARY\n                                   Kiyoko Kumasaka\n                                   Tsutomu Watanabe\n{FA:1101}   [{FD:01}Program{FD:00}]          GUN{end}",
+  "en": "{FA:1101}                            [Sound]\n{FA:1103}   [Music]                   Maki Kirioka\n{FA:1101}   [Sound Effects]     ARY\n                                   Kiyoko Kumasaka\n                                   Tsutomu Watanabe\n{FA:1101}   [{FD:01}Programming{FD:00}]      GUN{end}",
   "status": "done",
   "notes": ""
  },
@@ -871,7 +871,7 @@
   ],
   "used": true,
   "jp": "【イズール】\nガイトのてした、{call:@0DCA}のひとり。すいりゅうをつかってこうげきしてくるんだ。\nガイトのことがだいすきで、てがらを\nたてようとるちあたちをねらっているけ\nど、なかなかいいさくせんがたてられな\nくてしっぱいばかりしているよ。{end}",
-  "en": "[Izuru]\nOne of Gaito's minions, the\n{call:@0DCA}. She attacks with water\ncurrents. She adores Gaito and keeps\ngoing after Lucia and the others to earn\nhis praise, but she can never come up with\na good plan, so she keeps on failing.{end}",
+  "en": "[Izuru]\nA member of the {call:@0DCA}, Gaito's\nminions. She attacks with water currents.\nShe adores Gaito and keeps going after\nLucia and the others to earn his praise,\nbut she can never come up with a good\nplan, so she keeps on failing.{end}",
   "status": "done",
   "notes": ""
  },
@@ -893,7 +893,7 @@
   ],
   "used": true,
   "jp": "【ユーリ】\nガイトのてした、{call:@0DCA}のひとり。ちょうのうりょくや、いやなねいろのピアノでこうげきしてくるよ。\nノエルをつかまえたのもユーリなの。\nびしょうねんのすがたのヒッポとこいに\nおちちゃって、いつかいっしょになれる\nひをゆめみているんだ。{end}",
-  "en": "[Yuri]\nOne of Gaito's minions, the\n{call:@0DCA}. She attacks with psychic\npowers and nasty-sounding piano music.\nYuri is also the one who captured Noelle.\nShe fell in love with Hippo in his\nhandsome-boy form, and dreams of the\nday they can be together.{end}",
+  "en": "[Yuri]\nA member of the {call:@0DCA}, Gaito's\nminions. She attacks with psychic powers\nand nasty-sounding piano music. Yuri is\nalso the one who captured Noelle. She fell\nfor Hippo when he took the form of a\nhandsome boy, and dreams of the day they\ncan be together.{end}",
   "status": "done",
   "notes": ""
  },
@@ -1116,7 +1116,7 @@
   ],
   "used": true,
   "jp": "すばらしーです。。。。\nじかい、マーメード　メロディー、\nぴちぴちピッチ！\n「いえない　ココロ」・・・\nアンコールは、いかが？{end}",
-  "en": "Wonderful.... Next time on Mermaid\nMelody Pichi Pichi Pitch! \"The\nUnspoken Heart\"... How about\nan encore?{end}",
+  "en": "Wonderful... Next time on Mermaid\nMelody Pichi Pichi Pitch! \"The\nUnspoken Heart\"... How about\nan encore?{end}",
   "status": "done",
   "notes": ""
  },

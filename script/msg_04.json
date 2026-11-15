@@ -892,7 +892,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……あれ、めずらしい。\nうちのホテルにおきゃくさんがきて\nいる……。{FA:06}{FA:FF0303}もしかして、あのだいスターの\n「ジェニファー・ヒューストン」\nじゃない！？{wait}{FA:FF0300}えっ……？　なんかジェニファーも\nいまのあたしとおなじみたい……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}...Huh, that's rare. There's a guest\nstaying at our hotel... {FA:06}{FA:FF0303}Wait, isn't that the big star,\n\"Jennifer Houston\"?! {wait}{FA:FF0300}Huh...? Somehow Jennifer seems just\nlike me right now...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}...Huh, that's rare. There's a guest\nstaying at our hotel...{FA:06}{FA:FF0303}Wait, isn't that the big star,\n\"Jennifer Houston\"?!{wait}{FA:FF0300}Huh...? Somehow Jennifer seems just\nlike me right now...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -914,7 +914,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}こいびとに、ほかのおんなのひとが\nいるかもしれないんだって。{FA:06}……このままじゃ、だめだよ！{FA:06}ちゃんとふたりで、はなしあわせな\nいと！{FA:06}だから、ジェニファーのこいびとも\nよんであるの！{wait}ほら、ジェニファーがこいびとのと\nころへよっていって……{FA:FF0303}{FA:FF0314}えっ！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}She says her boyfriend might be seeing\nanother woman. {FA:06}...We can't just leave things like this! {FA:06}The two of them need to talk it\nout properly! {FA:06}So I invited Jennifer's boyfriend\nhere too! {wait}Look, Jennifer's walking over to her\nboyfriend...{FA:FF0303}{FA:FF0314}Huh?!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}She says her boyfriend might be seeing\nanother woman.{FA:06}...We can't just leave things like this!{FA:06}The two of them need to talk it\nout properly!{FA:06}So I invited Jennifer's boyfriend\nhere too!{wait}Look, Jennifer's walking over to her\nboyfriend...{FA:FF0303}{FA:FF0314}Huh?!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -989,7 +989,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………あれ？　ここ、どこ？\n{FA:FF0100}{wait}{FA:FF0101}……あっ、ピアノコンサートに、\n{call:@2AE7}をさそったんだっけ。{FA:06}ピアノのきょくがきもちよくて、\nついねちゃった。エヘ。{wait}{FA:FF0301}……あっ、{call:@2AE7}、かえっちゃうの？{FA:06}どうしよう、ほんとうのこと、\nききたいのに………。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}......Huh? Where am I?\n{FA:FF0100}{wait}{FA:FF0101}...Oh right, I invited {call:@2AE7} to the\npiano concert. {FA:06}The piano music felt so nice, I dozed\nright off. Ehehe. {wait}{FA:FF0301}...Oh, {call:@2AE7}, are you leaving? {FA:06}What do I do? I wanted to ask him how\nhe really feels...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}...Huh? Where am I?\n{FA:FF0100}{wait}{FA:FF0101}...Oh right, I invited {call:@2AE7} to the\npiano concert.{FA:06}The piano music felt so nice, I dozed\nright off. Ehehe.{wait}{FA:FF0301}...Oh, {call:@2AE7}, are you leaving?{FA:06}What do I do? I wanted to ask him how\nhe really feels...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1000,7 +1000,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0301}…………えっ、なに！？\nこのいやなねいろは！？{FA:06}コンサートかいじょうのほうから、\nぶきみなピアノのおとが、\nきこえてくる………。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{FA:FF0301}......Huh, what?! What's that\nawful sound?! {FA:06}Creepy piano music is coming from the\nconcert hall...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{FA:FF0301}...Huh, what?! What's that\nawful sound?!{FA:06}Creepy piano music is coming from the\nconcert hall...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1033,7 +1033,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}きょうは、にんぎょのあいの\nでんせつのひ。{FA:06}でんせつのどうくつで、あたしと\n{call:@2AEA}のなまえをほった、\nろうそくに火をともして、\nとおいわたしたちの\nごせんぞさまにおねがいしたの。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Today is the day of the legend of\nmermaid love.{FA:06}In the legendary cave, I lit a candle\ncarved with my name and {call:@2AEA}'s, and\nmade a wish to our ancestors from\nlong, long ago.\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Today's the day from the mermaid\nlove legend.{FA:06}In the legendary cave, I lit a candle\ncarved with my name and {call:@2AEA}'s, and\nmade a wish to our ancestors from\nlong, long ago.\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1044,7 +1044,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2AE7}……………。{FA:06}{FA:FF0100}{call:@2AE7}のこころのなかにいるのは、\n{call:@2B32}のすがたをした、\nもうひとりのあたし。{FA:06}いいたいのに、いえない……。{end}",
-  "en": "{FA:FF0101}{call:@2AE7}......{FA:06}{FA:FF0100}The one in {call:@2AE7}'s heart is the other\nme, the one in {call:@2B32} form.{FA:06}I want to tell him, but I can't...{end}",
+  "en": "{FA:FF0101}{call:@2AE7}...{FA:06}{FA:FF0100}The one in {call:@2AE7}'s heart is the other\nme, the one in {call:@2B32} form.{FA:06}I want to tell him, but I can't...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1066,7 +1066,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}あぶないぞ、{call:@2A5B}！　\nどこへいくきだ！{FA:06}………ろうそくなら、オレが\nみてきてやるよ！\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}Hey, that's dangerous, {call:@2A5B}! Where do\nyou think you're going?!{FA:06}......I'll go check on the candle for you!\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}Hey, that's dangerous, {call:@2A5B}! Where do\nyou think you're going?!{FA:06}...I'll go check on the candle for you!\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1108,7 +1108,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}じつは、{call:@2AEA}さんには、\nとしうえのこいびとが、\nいたんですね～。{FA:06}しかも{call:@2A5B}さんは、{call:@2AE7}さんと\n「にんぎょのひとみ」をみにいった\nそのばで、ふたりのなかをみせつけ\nられてしまったのです。{wait}まぁ、このほうが{call:@2A5B}さんのため\nには、よかったんじゃないですかね\n…って、あら？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}You see, it turns out {call:@2AEA}-san had an\nolder girlfriend~.{FA:06}What's more, right where {call:@2A5B}-san\nwent with {call:@2AE7}-san to see the\n\"Mermaid's Eye,\"{FA:06}she had to watch him and his girlfriend\nbeing all lovey-dovey.{wait}Well, perhaps this is for the best for\n{call:@2A5B}-san, don't you think... Hm?\nOh my?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}You see, it turns out {call:@2AEA}-san had an\nolder girlfriend~.{FA:06}What's more, when {call:@2A5B}-san went with\n{call:@2AE7}-san to see the \"Mermaid's Eye,\"{FA:06}she had their romance flaunted right in\nfront of her.{wait}Well, perhaps this is for the best for\n{call:@2A5B}-san, don't you think... Hm?\nOh my?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1262,7 +1262,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}メイクのとちゅう、石橋は\nてをとめてしまった。{FA:06}なんでも、むかしのかのじょに、\nわたしがにているらしい。{wait}ほかのだれでもない、わたしは\nわたしだ。{FA:06}むかしのことばかりかんがえて、\nいまをみうしなっているやつに、\nようはない。{wait}………いや、むかしのことばかり\nかんがえているのは、じつは、\nじぶんなのかもしれないな……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}In the middle of the makeup,\nIshibashi stopped. {FA:06}Apparently I look like his\nold girlfriend. {wait}I'm not anyone else. I'm me. {FA:06}I have no use for someone who only\nthinks about the past and loses sight\nof the present. {wait}......No. Maybe the one who only thinks\nabout the past is actually me...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}In the middle of the makeup,\nIshibashi stopped.{FA:06}Apparently I look like his\nold girlfriend.{wait}I'm not anyone else. I'm me.{FA:06}I have no use for someone who only\nthinks about the past and loses sight\nof the present.{wait}...No. Maybe the one who only thinks\nabout the past is actually me...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },

@@ -61,7 +61,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B0A}{call:@2B92}…………なかなか、しぶといね。{wait}{call:@2B8C}{call:@2B17}{call:@2B92}でも、あともうひとおしですわ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}（もうそろそろ、いいだろう。\n　つかまってやるか………。）{end}",
-  "en": "{call:@2B8C}{call:@2B0A}{call:@2B92}............You're pretty stubborn. {wait}{call:@2B8C}{call:@2B17}{call:@2B92}But I daresay one more push will do it! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}(That should be about enough. Time to let\nthem catch me.........){end}",
+  "en": "{call:@2B8C}{call:@2B0A}{call:@2B92}...You're pretty stubborn.{wait}{call:@2B8C}{call:@2B17}{call:@2B92}But I daresay one more push will do it!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}(That should be about enough. Time to let\nthem catch me...){end}",
   "status": "done",
   "notes": ""
  },
@@ -72,7 +72,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}（かれん！　よけいなことを…。）{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(Karen! Don't meddle...){end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(Karen! You didn't have to\nstep in...){end}",
   "status": "done",
   "notes": ""
  },
@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "あちゃ～、\nせっかくのけいかくが、\nめちゃくちゃじゃん。{FA:06}どうすんのよ～！{end}",
-  "en": "Oh, great~. Our big plan is totally ruined. {FA:06}What are we gonna do~!{end}",
+  "en": "Oh, great~. Our big plan is totally ruined.{FA:06}What are we gonna do~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -105,7 +105,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}つかまえちまうよ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}We'll catch you!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}We're gonna catch you!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}えっ？　…………………きゃあ～！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A70}！{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Huh? .................. Eeek~! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A70}!{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Huh? ... Eeek~!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A70}!{end}",
   "status": "done",
   "notes": ""
  },
@@ -138,7 +138,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}（おとりのやくがかわってしまったが、\n　これでけいかくどおりだな……。）{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}なにをやってるの、リナ！\n{call:@2A70}がやつらにつかまっちゃった\nじゃない！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}いいんだ、あれで。\nさくせんどおりなんだ。{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}さくせん？\nいったい、どういうこと？{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(The decoy changed, but this is still going\naccording to plan...) {wait}{call:@2B8C}{call:@2AAC}{call:@2B92}What are you doing, Rina?! They've\ncaught {call:@2A70}! {wait}{call:@2B8C}{call:@2A96}{call:@2B92}It's fine. That's all part of the plan. {wait}{call:@2B8C}{call:@2AAC}{call:@2B92}The plan? What on earth do you mean?{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(The decoy changed, but this is still going\naccording to plan...){wait}{call:@2B8C}{call:@2AAC}{call:@2B92}What are you doing, Rina?! They've\ncaught {call:@2A70}!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}It's fine. That's all part of the plan.{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}The plan? What on earth do you mean?{end}",
   "status": "done",
   "notes": ""
  },
@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "……よていとちょっと\nちがっちゃったけど、{FA:06}とりあえず、\n{call:@2A70}をおいかけるわよ、\n{call:@2AB0}！{end}",
-  "en": "...It's a little different from what we\nplanned, but... {FA:06}for now, let's go after {call:@2A70}, {call:@2AB0}!{end}",
+  "en": "...It's a little different from what we\nplanned, but...{FA:06}for now, let's go after {call:@2A70}, {call:@2AB0}!{end}",
   "status": "done",
   "notes": ""
  },
@@ -193,7 +193,7 @@
   ],
   "used": true,
   "jp": "どこって……あの～、その～、{FA:06}「じゆうけんきゅうで、\n　イルカのおやこのかんさつ」\nに！{end}",
-  "en": "Where? Um~, well~... {FA:06}My summer project: \"Observing a Dolphin\nMom and Her Baby\"!{end}",
+  "en": "Where? Um~, well~...{FA:06}My summer project: \"Observing a Dolphin\nMom and Her Baby\"!{end}",
   "status": "done",
   "notes": ""
  },
@@ -204,7 +204,7 @@
   ],
   "used": true,
   "jp": "ふ～ん、イルカのおやこの\nかんさつに、ねぇ……。{FA:06}じゃあ、オレもつきあわせて\nもらおうかな。{end}",
-  "en": "Hmm~, observing a dolphin mom and\nbaby, huh... {FA:06}Then maybe I'll tag along.{end}",
+  "en": "Hmm~, observing a dolphin mom and\nbaby, huh...{FA:06}Then maybe I'll tag along.{end}",
   "status": "done",
   "notes": ""
  },
@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}（はぁ……。{FA:06}　わざとつかまってあげたのに。\n　まったくわかってないんだから、\n　このおバカ４にんぐみは。{FA:06}　………あっ！）{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}(Sigh... {FA:06}I let them catch me on purpose. They just\ndon't get it, this bumbling quartet. {FA:06}.........Ah!){end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}(Sigh...{FA:06}I let them catch me on purpose. They just\ndon't get it, this bumbling quartet.{FA:06}...Ah!){end}",
   "status": "done",
   "notes": ""
  },
@@ -237,7 +237,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}あれが、{call:@2B23}じょう……………？{FA:06}えっ、しろがうごいてる！？{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Is that {call:@2B23}'s castle...............? {FA:06}Huh, the castle is moving?!{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Is that {call:@2B23}'s castle...?{FA:06}Huh, the castle is moving?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -259,7 +259,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}わたしも、つれていってもらおうかな。{FA:06}……４にんとも、{call:@2B23}じょうまでの\nみちあんない、ごくろうさん。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Maybe I'll have you take me along too. {FA:06}...Thanks, all four of you, for showing us\nthe way to {call:@2B23}'s castle.{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Maybe I'll have you take me along too.{FA:06}...Thanks, all four of you, for showing us\nthe way to {call:@2B23}'s castle.{end}",
   "status": "done",
   "notes": ""
  },
@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}あれ、{call:@2A5B}は？{wait}{call:@2B8C}{call:@2A96}{call:@2B92}じじょうがあって、\nこられないかもしれない。{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Huh, where's {call:@2A5B}? {wait}{call:@2B8C}{call:@2A96}{call:@2B92}Something came up. She might not make it.{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Huh, where's {call:@2A5B}?{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Something came up. She might not make it.{end}",
   "status": "done",
   "notes": ""
  },
@@ -325,7 +325,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あ～っ！{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}……{call:@2A5B}、あぶない！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Aaah! {wait}{call:@2B8C}{call:@2AE7}{call:@2B92}...{call:@2A5B}, look out!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Aaah!{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}...{call:@2A5B}, look out!{end}",
   "status": "done",
   "notes": ""
  },
@@ -336,7 +336,7 @@
   ],
   "used": true,
   "jp": "うおおおぉぉぉ……！{FA:06}うっ……。{end}",
-  "en": "Raaaaagh......! {FA:06}Ugh......{end}",
+  "en": "Raaaaagh...!{FA:06}Ugh...{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（やっぱり、あのあたたかいひかりは\n　{call:@2AE7}だったんだ……………。{FA:06}　それにしても、このひたいのしるしの\n　ようなものは、なに……？）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(So that warm light really\nwas {call:@2AE7}............. {FA:06}But what is this mark on his forehead...?){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(So that warm light really\nwas {call:@2AE7}...{FA:06}But what is this mark on his forehead...?){end}",
   "status": "done",
   "notes": ""
  },
@@ -468,7 +468,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AAC}{call:@2B92}…………やっとみつけた、\n{call:@2B23}じょう…………！{FA:06}ぜったいにねえさんを、たすけだして\nみせる………………。{end}",
-  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}...At last, I've found it... {call:@2B23}'s castle...!{FA:06}I'll rescue my sister, no matter what......{end}",
+  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}...At last, I've found it... {call:@2B23}'s castle...!{FA:06}I'll rescue my sister, no matter what...{end}",
   "status": "done",
   "notes": ""
  },
@@ -479,7 +479,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AAC}{call:@2B92}あっ……こ、これは……………。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}………ダメ、{call:@2AAC}！　しっかりして！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}このくろいきりのなかにいたら……。{wait}{call:@2B8C}{call:@2A70}{call:@2B92}ヤツらのとりこになっちゃうわよ！{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}あ、あんたたち………………………。{end}",
-  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}Ah... Wh-what is this...?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...No, {call:@2AAC}! Hang in there!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}If you stay inside this black mist...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}...they'll make you their prisoner!{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}Y-you girls......{end}",
+  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}Ah... Wh-what is this...?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...No, {call:@2AAC}! Hang in there!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}If you stay inside this black mist...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}...they'll make you their prisoner!{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}Y-you girls...{end}",
   "status": "done",
   "notes": ""
  },
@@ -490,7 +490,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あっ…………………。\nガイトじょうがきえていく………。{wait}{call:@2B8C}{call:@2A70}{call:@2B92}せっかくみつけたのに………。{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}……にどと、こんかいみたいなことは\nしないで！{FA:06}こんどなにかやるときは、わたしに\nいいなさい！{FA:06}あんたたちのやることは、\nあぶなっかしくてみてらんないのよ！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Ah...... Gaito's castle is fading away...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}And after we finally found it...{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}...Never do anything like this again!{FA:06}Next time you try something,\ntell me first!{FA:06}You girls are so reckless, I can't stand\nto watch!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Ah... Gaito's castle is fading away...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}And after we finally found it...{wait}{call:@2B8C}{call:@2AAC}{call:@2B92}...Never do anything like this again!{FA:06}Next time you try something,\ntell me first!{FA:06}You girls are so reckless, I can't stand\nto watch!{end}",
   "status": "done",
   "notes": ""
  },
@@ -567,7 +567,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AB0}{call:@2B92}……まあ、たまにはしらんぷりしてて、\nあげましょうかね～。{end}",
-  "en": "{call:@2B8C}{call:@2AB0}{call:@2B92}...Well, I suppose just this once I can\npretend I didn't see anything~.{end}",
+  "en": "{call:@2B8C}{call:@2AB0}{call:@2B92}...Well, once in a while I suppose I can\npretend I didn't see anything~.{end}",
   "status": "done",
   "notes": ""
  },
@@ -589,7 +589,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AE7}！{FA:06}…………………………ゆめ……？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AE7}!{FA:06}...... A dream...?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AE7}!{FA:06}... A dream...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}よわったな～。{FA:06}あんなゆめをみちゃったから、\nきょうはいちにちじゅう、うみから\nはなれてすごそうとおもったのに……。\n　{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}ちずはなくしちゃうし、きりがでてきて\nほうこうがわかんなくなっちゃうし。{FA:06}これじゃまるで、あのゆめとおなじ……\n……………。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Oh, what do I do~?{FA:06}After that dream, I wanted to spend the\nwhole day far away from the sea...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}But I lost the map, and then the fog rolled\nin and now I can't tell which way is which.{FA:06}This is just like that dream......{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Oh, what do I do~?{FA:06}After that dream, I wanted to spend the\nwhole day far away from the sea...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}But I lost the map, and then the fog rolled\nin and now I can't tell which way is which.{FA:06}This is just like that dream...{end}",
   "status": "done",
   "notes": ""
  },
@@ -765,7 +765,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}…………ゴメンね、{call:@2AE7}。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...I'm sorry, {call:@2AE7}.{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...Sorry, {call:@2AE7}...{end}",
   "status": "done",
   "notes": ""
  },
@@ -897,7 +897,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}{call:@2A5B}、おまえどこにいってたんだよ！\nオレがぜったいにうごくなって、\nいったのに。{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}…………………………ん？{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}どうしたの、{call:@2AE7}？{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}{call:@2A5B}, where'd you go?! I told you not to\nmove, no matter what.{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}...... Hm?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}What's wrong, {call:@2AE7}?{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}{call:@2A5B}, where'd you go?! I told you not to\nmove, no matter what.{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}... Hm?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}What's wrong, {call:@2AE7}?{end}",
   "status": "done",
   "notes": ""
  },

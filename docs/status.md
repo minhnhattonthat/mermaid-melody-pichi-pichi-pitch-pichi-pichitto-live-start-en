@@ -20,14 +20,23 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
     runs, `[Name]` headers, {FD} lines and speaker changes.
   - `inkbox.py`: card game Yes/No (15/15, 18/18) and Retry (10/10) centred; Quit/Continue buttons match the
     original's placement (stars on the right edge).
+- **Session 21 (2026-11-16):** tour3 verdict issues fixed: `FA FF 04` (scene callback 4) takes 9 param bytes
+  (`msgparse.py`; EP 28 streaks / EP 11 swallowed end); live-data error bubble in English (`tools/gfx_live.py`,
+  chain 1747BC1 found with `kcomplog.lua`); solo cards get a plate over the old lettering (`gfx_solo.py`), Nonstop
+  centred; "Nothing here!" centred (`gfx_songs.py` NUDGE). Polish pass done (`docs/polish.md` 0 unticked, 12 waived):
+  dot runs -> "..." and no space before {FA:06}/{wait} in all English, ~85 reviewer Minors applied
+  (`work/tl/polish_subs.tsv`, merged with `batches.py merge polish`).
+- **Interrupted (session 21):** the system killed the polish-pass commit (pre-commit check unfinished) and tour5
+  (61 runs) for low memory. Polish changes are staged, not committed; `README.md`, `docs/release-readme.txt` and
+  `tools/release.py` are new and unchecked. Resume: `git commit` (hook runs check.py), then tour5 from scratch.
 - **Next (phase 8):**
-  1. Tour4 of the session-20 build: `work/qa/tour4` (`python -X utf8 tools/tour.py --out work/qa/tour4`). Then
-     `qa_gate.py init work/qa/manifest.tsv work/qa/tour4/sheets --build build/mermaid_en.gba --glob "sheet*.png"`
-     (sheets unchanged since tour3 keep their verdicts), `qa_gate.py todo ... --out-dir work/qa/chunks`, `sh
-     tools/codex_vqa.sh work/qa/chunks 5`, fix, re-tour, until `qa_gate.py check` exits 0. Note: codex_vqa.sh greps
-     `work/qa/vqa_log/<chunk>.out`; delete old .out files first so a failed codex run can't reuse stale verdicts.
-  2. Check in game: credits pages (0859 0962 0A62 0B06 0C0F, `{FD:01}` runs) and glyph 0x167 `Ⓒ`; profiles 128-141
-     (where are they shown? msgview only so far).
+  1. Tour5 of the session-21 build (`python -X utf8 tools/tour.py --out work/qa/tour5`), then `qa_gate.py init
+     work/qa/manifest.tsv work/qa/tour5/sheets --build build/mermaid_en.gba --glob "sheet*.png"`, `qa_gate.py todo
+     ... --out-dir work/qa/chunks`, delete old `work/qa/vqa_log/*.out`, `sh tools/codex_vqa.sh work/qa/chunks 5`, fix,
+     re-tour, until `qa_gate.py check` exits 0. Text coverage: `tools/cover.py work/qa/tour5/runs work/qa/cover
+     --waive docs/text_unshown.tsv`.
+  2. Then phase 9 (release): `tools/release.py` (not written yet; gates per the skill's pipeline.md §Release),
+     README filled from the template, zip verified. Never publish.
 - **Later:**
   - F6 name width in the lint is a 60 px guess: measure with the Latin keyboard (max name length?).
   - Katakana-page ー may be code 0xC2 (glyph 0x16F, not in jp.tbl), not 0x67: type it on page 2, check it prints "-".

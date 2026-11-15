@@ -6,7 +6,7 @@
   ],
   "used": true,
   "jp": "……ライブコンサートどころか、\nダーク・ラゔァーズまでよんで、\nなにしてるのあいつら……！？{wait}……………………よしっ！{end}",
-  "en": "...Forget the live concert, they've gone\nand called in the Dark Lovers too! What\nare those idiots playing at...?!{wait}...... All right!{end}",
+  "en": "...Forget the live concert, they've gone\nand called in the Dark Lovers too! What\nare those idiots playing at...?!{wait}... All right!{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "みんな、\nおうえんよろしくな！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
-  "en": "Everyone, cheer us on!\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "en": "Everyone, we're counting on\nyour cheers!\n{FA:0B78}{FA:0B04}{FA:18}{end}",
   "status": "done",
   "notes": ""
  },

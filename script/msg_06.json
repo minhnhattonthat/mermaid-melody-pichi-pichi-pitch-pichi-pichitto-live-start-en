@@ -6,7 +6,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}このかいがんは、むかしとかわら\nないねえ………。{FA:06}なつかしい、しおのかおり……。{FA:06}あれを、かえしにきましたよ……。\n{FA:FF0100}{wait}{FA:FF0101}あら、ない………。{FA:06}どこかにおとしたのかしら、\nマーメイドビーズ……。{FA:06}……そういえば、\nさいごにうでわをみたときに、\nけさあったおんなのこたちと、\nおなじがっこうのじょがくせいが\nたくさんいたわね。{FA:06}もしかしたら、だれかひろって\nくれているかも……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}This beach hasn't changed since the\nold days.......{FA:06}That nostalgic scent of the sea...{FA:06}I've come to give it back......\n{FA:FF0100}{wait}{FA:FF0101}Oh my, it's gone.......{FA:06}I wonder if I dropped them\nsomewhere... my Mermaid Beads...{FA:06}...Come to think of it, the last time I\nsaw the bracelet, there were lots of\nschoolgirls from the same school as\nthe girls I met this morning.{FA:06}Perhaps one of them picked it up...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}This beach hasn't changed since the\nold days...{FA:06}That nostalgic scent of the sea...{FA:06}I've come to give it back...\n{FA:FF0100}{wait}{FA:FF0101}Oh my, it's gone...{FA:06}I wonder if I dropped them\nsomewhere... my Mermaid Beads...{FA:06}...Come to think of it, the last time I\nsaw the bracelet, there were lots of\nschoolgirls from the same school as\nthe girls I met this morning.{FA:06}Perhaps one of them picked it up...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -28,7 +28,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}{call:@2AE7}…………。{FA:06}なんか、あのおんなのひとが\nあらわれてから、ちょっとようすが\nおかしいの……。{FA:06}こころ、ここにあらずっていうか…。{wait}{call:@2AE7}のちいさかったころ……。{FA:06}あたしがしっている、\nいちばんちいさい{call:@2AE7}は、\n７ねんまえの、あのひの{call:@2AE7}……。{wait}でも……、{call:@2AE7}をおもうきもちは、\nだれにもまけたくない………。\nあの、おんなのひとにも………。{end}",
-  "en": "{FA:FF0111}{call:@2AE7}......{FA:06}Ever since that woman showed up, he's\nbeen acting kind of strange...{FA:06}Like his mind is somewhere else...{wait}When {call:@2AE7} was little...{FA:06}The youngest {call:@2AE7} I know is the {call:@2AE7}\nfrom that day, seven years ago...{wait}But... I don't want to lose to anyone in\nhow much I love {call:@2AE7}... Not even to\nthat woman.......{end}",
+  "en": "{FA:FF0111}{call:@2AE7}...{FA:06}Ever since that woman showed up, he's\nbeen acting kind of strange...{FA:06}Like his mind is somewhere else...{wait}When {call:@2AE7} was little...{FA:06}The youngest {call:@2AE7} I know is the {call:@2AE7}\nfrom that day, seven years ago...{wait}But... I don't want anyone to love {call:@2AE7}\nmore than I do... Not even to\nthat woman...{end}",
   "status": "done",
   "notes": ""
  },
@@ -39,7 +39,7 @@
   ],
   "used": true,
   "jp": "…………………………ない。{FA:06}わたしのメロンプリンがない……。{end}",
-  "en": "..................It's gone.{FA:06}My melon pudding is gone...{end}",
+  "en": "...It's gone.{FA:06}My melon pudding is gone...{end}",
   "status": "done",
   "notes": ""
  },
@@ -72,7 +72,7 @@
   ],
   "used": true,
   "jp": "い、いや…………………、\nわたしがそんないじきたないこと、\nするわけないだろ！{wait}…………もしかして、{call:@2A5B}、\nおまえがたべちゃったんじゃ、\nないんだろ～な～？{end}",
-  "en": "N-no............ I'd never be that greedy!{wait}......{call:@2A5B}, you didn't go and eat it,\ndid you~?{end}",
+  "en": "N-no... I'd never be that greedy!{wait}...{call:@2A5B}, you didn't go and eat it,\ndid you~?{end}",
   "status": "done",
   "notes": ""
  },
@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "あたしじゃないもん！\n…………………もう、いい！{end}",
-  "en": "It wasn't me, I swear! .........Hmph, fine,\nforget it!{end}",
+  "en": "It wasn't me, I swear! ...Hmph, fine,\nforget it!{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……とまあ、こんなかんじで、\n３にんはケンカのまっさいちゅう\nでして……。{FA:06}こんなことで、パールピアリの\nライブコンサートはできるんで\nしょうか…………。{wait}あっ、おきゃくさんがきたみたい\nですよ。{FA:06}{call:@2A5B}さん、{call:@2A70}さん、おでむかえ\nおねがいしますぅ～…………………\n…………………………………………\nって、えぇぇぇっ！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}...And so, the three of them are smack\nin the middle of a quarrel...{FA:06}At this rate, can the Pearl Piari\nlive concert even go on......?{wait}Oh, it seems guests have arrived.{FA:06}{call:@2A5B}-san, {call:@2A70}-san, please go\ngreet them~.....................\nWh-whaaaat?!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}...And so, the three of them are smack\nin the middle of a quarrel...{FA:06}At this rate, can the Pearl Piari\nlive concert even go on...?{wait}Oh, it seems guests have arrived.{FA:06}{call:@2A5B}-san, {call:@2A70}-san, please go\ngreet them~...\nWh-whaaaat?!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -380,7 +380,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}ガ……イ…ト…………さ…ま……。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Gai...to......sa...ma......{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}Gai...to...sa...ma...{end}",
   "status": "done",
   "notes": ""
  },
@@ -446,7 +446,7 @@
   ],
   "used": true,
   "jp": "そのふたりは、ほんものの\n{call:@2AAC}とノエルでは、\nありません……………。{wait}ふたりからは、とてもじゃあくな\nエネルギーをかんじます………。{end}",
-  "en": "Those two are not the real {call:@2AAC}\nand Noelle.........{wait}I sense a terribly evil energy\nfrom them......{end}",
+  "en": "Those two are not the real {call:@2AAC}\nand Noelle...{wait}I sense a terribly evil energy\nfrom them...{end}",
   "status": "done",
   "notes": ""
  },
@@ -457,7 +457,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2AC6}さま、それでは\nふたりはいまどこに！？{FA:06}わたしは、{call:@2AAC}とノエルを、かならず\nたすけださなければ、ならないんです！\n　{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2A96}、どうしてそこまで……………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2AC6}-sama, then\nwhere are they now?!{FA:06}I have to rescue {call:@2AAC} and Noelle, no\nmatter what!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2A96}, why go that far.........{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2AC6}-sama, then\nwhere are they now?!{FA:06}I have to rescue {call:@2AAC} and Noelle, no\nmatter what!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2A96}, why go that far...{end}",
   "status": "done",
   "notes": ""
  },
@@ -468,7 +468,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}………いままではなさなかったけど、\n{call:@2AAC}が、わたしたちをしんよう\nしないのは、わたしがノエルをみすてて\nにげだしたと、おもっているからなんだ\n……………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}......I never told you before, but {call:@2AAC}\ndoesn't trust us because she thinks I\nabandoned Noelle and ran away.........{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...I never told you before, but {call:@2AAC}\ndoesn't trust us because she thinks I\nabandoned Noelle and ran away...{end}",
   "status": "done",
   "notes": ""
  },
@@ -479,7 +479,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2B23}がわたしのくにをおそったとき、\nわたしのみがわりになって、にがして\nくれたんだ………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}When {call:@2B23} attacked my kingdom, Noelle\ntook my place and let me escape......{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}When {call:@2B23} attacked my kingdom, Noelle\ntook my place and let me escape...{end}",
   "status": "done",
   "notes": ""
  },
@@ -501,7 +501,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A5B}、{call:@2A70}、ふたりにノエルのことを\nだまっていて、わるかった……。{FA:06}ふたりにはいつか、ほんとうのことを\nいわなければとおもっていた……。{FA:06}でも…でも……。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}……{call:@2A96}、ほんとうのきもちをことばに\nできないことって、あるよね……。{FA:06}でもね、だまっていたって、つうじあえ\nる。それがともだちなんだよ！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}そうだよ、{call:@2A96}！\nそれがともだちだよ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}………{call:@2A5B}、{call:@2A70}……………。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A5B}, {call:@2A70}, I'm sorry I kept quiet\nabout Noelle...{FA:06}I always meant to tell you two the\ntruth someday...{FA:06}But... but...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...{call:@2A96}, sometimes you just can't put your\ntrue feelings into words, right...?{FA:06}But you know, even without words, we\nunderstand each other. That's what\nfriends are!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}That's right, {call:@2A96}! That's what\nfriends are!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}......{call:@2A5B}, {call:@2A70}.........{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}{call:@2A5B}, {call:@2A70}, I'm sorry I kept quiet\nabout Noelle...{FA:06}I always meant to tell you two the\ntruth someday...{FA:06}But... but...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...{call:@2A96}, sometimes you just can't put your\ntrue feelings into words, right...?{FA:06}But you know, even without words, we\nunderstand each other. That's what\nfriends are!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}That's right, {call:@2A96}! That's what\nfriends are!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}...{call:@2A5B}, {call:@2A70}...{end}",
   "status": "done",
   "notes": ""
  },
@@ -534,7 +534,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}………おまえたちだけは、ぜったいに\nゆるさない！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}......You two, I will never forgive!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...I'll never forgive you two!{end}",
   "status": "done",
   "notes": ""
  },
@@ -545,7 +545,7 @@
   ],
   "used": true,
   "jp": "ピンクしんじゅ、\nみずいろしんじゅ、\nそして、グリーンしんじゅの\n{call:@2B27}たちよ。{wait}わたしのこのすがたは、\nまぼろしのようなもの。{FA:06}これいじょうここにとどまって\nいることはできません……。{wait}７つのうみの\n{call:@2B27}たちが、\nみんなでちからをあわせて、{FA:06}わたしを、ほんとうにめざめ\nさせてくれることを、いのって\nいます…………。{wait}わすれないでください……。\nわたしはいつもあなたたちと、\nともにいます。{end}",
-  "en": "Mermaid Princesses of the pink\npearl, the aqua pearl, and the\ngreen pearl.{wait}This form of mine is no more than\na phantom.{FA:06}I cannot remain here\nany longer......{wait}I pray that all the Mermaid\nPrincesses of the seven seas will\njoin their strength together,{FA:06}and truly awaken me......{wait}Please do not forget... I am always\nwith you.{end}",
+  "en": "Mermaid Princesses of the pink\npearl, the aqua pearl, and the\ngreen pearl.{wait}This form of mine is no more than\na phantom.{FA:06}I cannot remain here\nany longer...{wait}I pray that all the Mermaid\nPrincesses of the seven seas will\njoin their strength together,{FA:06}and truly awaken me...{wait}Please do not forget... I am always\nwith you.{end}",
   "status": "done",
   "notes": ""
  },
@@ -578,7 +578,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ほんとうだよね！\n…………こんなふうに！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh, so true! ......Like this!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh, so true! ...Like this!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "……あんたたち、なにしてんの！\nさっさとにげなさい…………！{end}",
-  "en": "...What are you doing?! Hurry up\nand run......!{end}",
+  "en": "...What are you doing?! Hurry up\nand run...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -622,7 +622,7 @@
   ],
   "used": true,
   "jp": "ムリよ…………。\nあんたたちのちからで……、\nこいつらは…たおせないわ……！{end}",
-  "en": "It's no use...... With your power...... you\ncan't... beat them......!{end}",
+  "en": "It's no use... With your power... you\ncan't... beat them...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -710,7 +710,7 @@
   ],
   "used": true,
   "jp": "だいじょうぶ、{call:@2AAC}？\nこれを……。{end}",
-  "en": "Are you okay, {call:@2AAC}? Here......{end}",
+  "en": "Are you okay, {call:@2AAC}? Here...{end}",
   "status": "done",
   "notes": ""
  },
@@ -743,7 +743,7 @@
   ],
   "used": true,
   "jp": "じぶんでも、なぜあんなことを\nしたのか、わからない……。{FA:06}あんたたちを、たすけずにいられ\nなかった……。{wait}きっとねえさんも、おなじだった\nだろうな、って。{FA:06}すこしだけ、ねえさんのきもちが\nわかったようなきがした……。{wait}……{call:@2A96}、あんたがねえさんを\nうらぎったっていうのは、わたしの\nごかいだったのかもしれないな。{end}",
-  "en": "I don't even know why I did that myself...{FA:06}I just couldn't leave you hanging...{wait}I bet Sis would have done the same.{FA:06}For a moment, I felt like I understood how\nSis felt...{wait}...{call:@2A96}, maybe I was wrong about you\nbetraying Sis.{end}",
+  "en": "I don't even know why I did that myself...{FA:06}I just couldn't leave you to your fate...{wait}I bet Sis would have done the same.{FA:06}I felt like I understood how Sis felt, just\na little...{wait}...{call:@2A96}, maybe I was wrong about you\nbetraying Sis.{end}",
   "status": "done",
   "notes": ""
  },
@@ -787,7 +787,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}いっちゃった…………。{wait}{call:@2B8C}{call:@2A70}{call:@2B92}まったく、すなおじゃないんだから…。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}でもよかったね、{call:@2A96}。{FA:06}{call:@2AAC}のごかいがとけて！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}ああ…………………。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}She's gone.........{wait}{call:@2B8C}{call:@2A70}{call:@2B92}Honestly, she just won't be straight\nwith anyone...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}But that's great, {call:@2A96}.{FA:06}{call:@2AAC} knows the truth now!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Yeah.........{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}She's gone...{wait}{call:@2B8C}{call:@2A70}{call:@2B92}Honestly, she just won't be straight\nwith anyone...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}But that's great, {call:@2A96}.{FA:06}{call:@2AAC} knows the truth now!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Yeah...{end}",
   "status": "done",
   "notes": ""
  },
@@ -798,7 +798,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}どこ……、{call:@2AE7}………………？{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}……………………………あれは！？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Where are you......, {call:@2AE7}.........?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}..................What's that?!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Where are you..., {call:@2AE7}...?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...What's that?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -842,7 +842,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}しんじゅ…………？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}My pearl......?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}The pearl...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -853,7 +853,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あれは、あたしのしんじゅ……！{FA:06}{call:@2AE7}が、あのこだったんだ……。{FA:06}あたしのしんじゅを、たいせつにずっと\nもっててくれたんだ……！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}That's my pearl......!{FA:06}So {call:@2AE7} was that boy......{FA:06}He kept my pearl safe all this time......!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}That's my pearl...!{FA:06}So {call:@2AE7} was that boy...{FA:06}He kept my pearl safe all this time...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -908,7 +908,7 @@
   ],
   "used": true,
   "jp": "あのこからもらった、\nしんじゅが……！{end}",
-  "en": "The pearl that girl gave me......!{end}",
+  "en": "The pearl that girl gave me...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -941,7 +941,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}これが…………あたし！？{FA:06}このかっこう…………、\nか～わいいっ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Is this...... me?!{FA:06}This outfit...... it's so cuuute!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Is this... me?!{FA:06}This outfit... it's so cuuute!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AE7}………………。{FA:06}おねがい、めをさまして……！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AE7}.........{FA:06}Please, wake up......!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}{call:@2AE7}...{FA:06}Please, wake up...!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1051,7 +1051,7 @@
   ],
   "used": true,
   "jp": "やっと…やっと\nあえた………。{end}",
-  "en": "At last... at last we meet.........{end}",
+  "en": "At last... at last we meet...{end}",
   "status": "done",
   "notes": ""
  },
