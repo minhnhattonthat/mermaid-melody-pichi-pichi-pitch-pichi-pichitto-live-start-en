@@ -1,0 +1,3 @@
+# difficulty bubbles + header pieces: OBJ pal 12 (pieces) / 8,10 (bubbles, affine), 2D map from OBJ tile 272
+# offset	size	layout	png	English	Japanese
+17264E2	800x4	tiles16	gfx/out/diff/17264E2.png	Easy Normal Hard Usual Mood Random; Button Start Back OK (tools/gfx_diff.py)	かんたん ふつう むずかしい いつもの きぶん きまぐれ; ボタン スタート もどる けってい

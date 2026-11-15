@@ -29,7 +29,12 @@ def rgb(c):
 
 def load_pal(group):
     raw = (GFX / f"{group}.pal").read_bytes()
-    return [rgb(raw[i] | raw[i + 1] << 8) for i in range(0, 32, 2)]
+    pal = [rgb(raw[i] | raw[i + 1] << 8) for i in range(0, 32, 2)]
+    # a shared colour makes load_png keep the original index there, so text erased to a same-coloured index survives
+    # and shows under another palette: a block drawn under several palettes needs a .pal with 16 distinct colours
+    # (menu.pal repeats 7-9, harmless: those captions only ever use OBJ pal 15)
+    assert len(set(pal)) == 16 or group == "menu", f"gfx/{group}.pal repeats a colour"
+    return pal
 
 
 def parse_layout(layout):
