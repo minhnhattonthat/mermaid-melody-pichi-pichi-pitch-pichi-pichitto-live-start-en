@@ -49,6 +49,19 @@ or that uses an Avoid spelling.
 | ジェニファー | Jennifer | | | |
 | マーメイドプリンセス | Mermaid Princess | | | |
 | ？？？ | ??? | | unknown speaker | |
+| 雪絵 | Yukie | | Kaito's aunt | |
+| 真木 | Maki | | Maki-san | |
+| リョウ | Ryo | | | |
+| 崎谷 | Sakiya | | | |
+| 彩香 | Ayaka | | | |
+| 石橋 | Ishibashi | | | |
+| 染五郎 | Somegoro | | signs the poem | |
+| ジェニファー・ヒューストン | Jennifer Houston | | | |
+| サンゴのせい | Coral Spirit | | | |
+| なぞのしょうじょ | Mysterious Girl | | name tag | |
+| こいぬ | Puppy | | name tag | |
+| かんきゃく | Audience | | name tag | |
+| アナウンサー | Announcer | | name tag | |
 
 ## Places
 | JP | EN | max | notes | Avoid |
@@ -71,6 +84,24 @@ or that uses an Avoid spelling.
 | ライブコンサート | live concert | | | |
 | アンコール | encore | | | |
 | ペンダント | pendant | | holds the pearl | |
+| ラゔァーズ・アイス・ダンス | Lovers Ice Dance | | | Lovers' Ice Dance |
+| ダーク・ラゔァーズ・ブリリアント・コンビネーション | Dark Lovers Brilliant Combination | | | |
+| ありあけのつきのオルゴール | Dawn Moon Music Box | | | |
+| ゆめみせき | Dreamstone | | | |
+| にんぎょのひとみ | Mermaid's Eye | | jewel | |
+| セイレーンのつぼ | Siren's Jar | | | |
+| ねがいのゆびわ | Ring of Wishes | | | |
+| ヒポカンポス | Hippocampus | | | |
+| ダークなべ / やみなべ | Dark Hot Pot | | pun on Dark Lovers | |
+| マーメイドコンテスト | Mermaid Contest | | | |
+| きもだめし | test of courage | | | |
 
 ## Decisions from earlier batches
-- <batch> <JP> -> <EN> (reason)
+- `{call:@2B27}` draws "Mermaid Princess": no `s` glued on (the check fails it). Plural: write "Mermaid Princesses" out in place of the call, or singular when the JP is singular.
+- ガイトさま -> "Gaito-sama" (call or plain text as the JP has it), never "Lord Gaito".
+- ラブ②シャワーピッチ -> "Love Love Shower Pitch" (② = circled 2 in the font, read as the repeat mark; no heart glyph). Plain ラブシャワーピッチ = "Love Shower Pitch".
+- キャー: "Eek!" for a scream, "Eee~!" for a squeal of delight.
+- Lyrics: katakana loanwords that are English words stay English with a capital (Melody, Stage, Kiss); Japanese-ised loans sung as Japanese stay romaji (doa, yotto, orugooru, garasu).
+- Song title 黒の協奏曲~concerto~ = "Kuro no Kyousoukyoku ~concerto~" in credits; Mimi's profile reads it くろのコンチェルト -> "Kuro no Concerto".
+- Children's おねえちゃん/おにいちゃん + name: "Big Sis Lucia" / "Big Bro Kaito"; alone: "Sis".
+- Auri's っす tic: "yo", at most one per line.

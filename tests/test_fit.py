@@ -64,8 +64,9 @@ def test_lint_flags_overflow_and_extra_lines(rom, entries):
 @needs_rom
 def test_grow_widens_only_bubbles_that_need_it(rom, entries):
     out = bytearray(rom)
-    assert boxes.grow(out, entries) == 0 and out == rom  # no English text: nothing moves
-    assert boxes.grow(out, with_en(entries, "6689", LONG)) == 1
+    bare = [dict(e, en="") for e in entries]  # the shipped script has English: test on none, then one long line
+    assert boxes.grow(out, bare) == 0 and out == rom  # no English text: nothing moves
+    assert boxes.grow(out, with_en(bare, "6689", LONG)) == 1
     off = boxes.bubbles(rom)[1531][0]
     assert struct.unpack_from("<HH", out, off + 2) == (2 << 8 | 11, 27 << 8 | 4)  # W 27, col 4 -> 2
     assert sum(a != b for a, b in zip(out, rom)) <= 2

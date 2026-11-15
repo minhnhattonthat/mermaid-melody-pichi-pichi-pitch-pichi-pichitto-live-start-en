@@ -18,14 +18,26 @@ def test_wrap_fits_and_keeps_words():
     assert batches.width_problems(e, en)  # unwrapped it overflows
 
 
+def test_wrap_before_page_code():
+    e = U[BUBBLE]
+    en = "Probably {call:@2AAC}, but who knows, she always runs off on her own!{FA:06}Next.{end}"
+    out = batches.wrap(e, en)
+    assert out.index("\n") < out.index("{FA:06}") and not batches.width_problems(e, out)
+
+
 def test_problems():
     e = U[BUBBLE]
     assert batches.problems(e, "Probably {call:@2AAC}.{end}", []) == []
-    assert any("control codes" in p for p in batches.problems(e, "Probably Karen.{end}", []))
+    assert any("control codes" in p for p in batches.problems(e, "Probably Rina.{end}", []))
     assert any("unencodable" in p for p in batches.problems(e, "Probably {call:@2AAC}　.{end}", []))
     # furigana runs are dropped in English; page breaks are free
     assert batches.problems(U["2AF8"], "{call:@2AEA} Domoto{end}", []) == []
     assert batches.problems(e, "Probably...{FA:06}{call:@2AAC}.{end}", []) == []
+    # a called name written out is fine; a plural "s" glued to a name ending in s is not
+    karen = batches.TOKEN.sub("", batches._ctx()["units"]["2AAC"].get("en"))
+    assert batches.problems(e, f"Probably {karen}.{{end}}", []) == []
+    p = U["F486"]
+    assert any("draws" in x for x in batches.problems(p, p["jp"].replace("が\nなぜここに！？", "s?!"), []))
 
 
 def test_shipped_english_passes():

@@ -6,8 +6,8 @@
   ],
   "used": true,
   "jp": "……ライブコンサートどころか、\nダーク・ラゔァーズまでよんで、\nなにしてるのあいつら……！？{wait}……………………よしっ！{end}",
-  "en": "",
-  "status": "",
+  "en": "...Forget the live concert, they've even\ninvited the Dark Lovers! What are those\ngirls doing...?!{wait}...... All right!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -17,8 +17,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}……あれは、マーメイド\nプリンセス！{FA:06}みんな、おうわよ！\n{FA:FF0200}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0201}...That's a Mermaid Princess!{FA:06}Everyone, after her!\n{FA:FF0200}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -28,8 +28,8 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2B0A}・{call:@2B0F}・{call:@2B13}{call:@2B92}おう！{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2B8C}{call:@2B0A}, {call:@2B0F}, {call:@2B13}{call:@2B92}Right!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -39,8 +39,8 @@
   ],
   "used": true,
   "jp": "……だれを\nおっていったの？{end}",
-  "en": "",
-  "status": "",
+  "en": "...Who did they go after?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -50,8 +50,8 @@
   ],
   "used": true,
   "jp": "おそらく、\n{call:@2AAC}だろう。{end}",
-  "en": "",
-  "status": "",
+  "en": "Probably {call:@2AAC}.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -61,8 +61,8 @@
   ],
   "used": true,
   "jp": "ここから、おびきだして\nくれるために？{end}",
-  "en": "",
-  "status": "",
+  "en": "To lure them away from here for us?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -72,8 +72,8 @@
   ],
   "used": true,
   "jp": "{call:@2AAC}ひとりで、\nだいじょうぶかな～？{end}",
-  "en": "",
-  "status": "",
+  "en": "Will {call:@2AAC} be okay on her own~?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -83,8 +83,8 @@
   ],
   "used": true,
   "jp": "ダーク・ラゔァーズに\nつかまるような、\n{call:@2AAC}じゃないだろ。{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2AAC} isn't the type to get caught by the\nDark Lovers.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -94,8 +94,8 @@
   ],
   "used": true,
   "jp": "だよね～。{end}",
-  "en": "",
-  "status": "",
+  "en": "Guess not~.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -105,8 +105,8 @@
   ],
   "used": true,
   "jp": "そっか！{end}",
-  "en": "",
-  "status": "",
+  "en": "I see!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -116,8 +116,8 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AAC}{call:@2B92}……のこのこついてきて、ホント\nおまぬけカルテットね！{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}...Tagging right along after me. You really\nare a bumbling quartet!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -127,8 +127,8 @@
   ],
   "used": true,
   "jp": "ただおいかけても、いみがなかった\nですわ～！{end}",
-  "en": "",
-  "status": "",
+  "en": "Just chasing her was completely\npointless~!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -138,8 +138,8 @@
   ],
   "used": true,
   "jp": "みんな、あたしたちの\nライブコンサートにきてくれて\nほんとうにありがとう！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
-  "en": "",
-  "status": "",
+  "en": "Everyone, thank you so much for coming\nto our live concert!\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -149,8 +149,8 @@
   ],
   "used": true,
   "jp": "わたしたち、\nいっしょうけんめい\nうたいます！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
-  "en": "",
-  "status": "",
+  "en": "We'll sing our hearts out for you!\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -160,8 +160,8 @@
   ],
   "used": true,
   "jp": "みんな、\nおうえんよろしくな！\n{FA:0B78}{FA:0B04}{FA:18}{end}",
-  "en": "",
-  "status": "",
+  "en": "Everyone, cheer us on!\n{FA:0B78}{FA:0B04}{FA:18}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -171,8 +171,8 @@
   ],
   "used": true,
   "jp": "※オートモードです。\nライブコンサートをたのしんでね！{end}",
-  "en": "",
-  "status": "",
+  "en": "*Auto mode. Enjoy the live concert!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -182,8 +182,8 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}・{call:@2A70}・{call:@2A96}{call:@2B92}みんな！　どうも、ありがとう！！{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2B8C}{call:@2A5B}, {call:@2A70}, {call:@2A96}{call:@2B92}Everyone! Thank you so much!!{end}",
+  "status": "done",
   "notes": ""
  }
 ]

@@ -6,8 +6,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}タキさんのうらないだからね～。\n{FA:FF0302}{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}It's from Taki-san's fortune-telling,\nafter all~.\n{FA:FF0302}{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -17,8 +17,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}もう！　いいもん！\n{call:@2AB0}を、つれていくから！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Hmph! Fine! I'll just take {call:@2AB0} with me!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -28,8 +28,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}なんかくらくて、うすきみわるい\nね～、{call:@2AB0}？{wait}{FA:FF0301}…………{call:@2AB0}？{FA:06}えっ……{call:@2AB0}、どこいったの～！\n…………………………{FA:FF0303}きゃっ！！\n{FA:FF0406}　、　た　ゅ　　　{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}It's kinda dark and creepy in here,\nhuh, {call:@2AB0}?{wait}{FA:FF0301}......{call:@2AB0}?{FA:06}Huh... {call:@2AB0}, where'd you go~?!\n..........{FA:FF0303}Eek!!\n{FA:FF0406}{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -39,8 +39,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}なにいまの、じしん？{FA:06}{FA:FF0301}あっ、いまのでいわがくずれて、\nみちがふさがってる…………。\nどうしよう、あたしひとりっきり\nだ………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}What was that, an earthquake?{FA:06}{FA:FF0301}Oh no, the rocks fell and blocked the\npath... What do I do? I'm all alone...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -50,8 +50,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}おーい！\n{call:@2A5B}、どこだー！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Heeey! {call:@2A5B}, where are you?!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -61,8 +61,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}あっ…{call:@2AEA}。\nあたしをたすけにきてくれたの？{FA:06}……ありがとう、{call:@2AE7}。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Ah... {call:@2AEA}. You came to rescue me?{FA:06}...Thank you, {call:@2AE7}.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -72,8 +72,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}…………{call:@2AE7}、どうしたの？{FA:06}きゅうにねむっちゃって……？{FA:06}なに、このきこえてくるうたは？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}......{call:@2AE7}, what's wrong?{FA:06}You suddenly fell asleep...?{FA:06}What's this song I'm hearing?\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -83,8 +83,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\nあした、７がつみっかは、あたしの\n１４さいの、たんじょうび！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB} Tomorrow, July 3rd,\nis my 14th birthday!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -94,8 +94,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}ねぇねぇ、{call:@2A5B}！\n{call:@2AEA}くんたちが、うみのいえ\nで、{call:@2A5B}のバースデイパーティを\nひらいてくれるって！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Hey, hey, {call:@2A5B}! {call:@2AEA}-kun and the guys\nare throwing a party at the beach\nhouse for {call:@2A5B}'s birthday!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -105,8 +105,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}えっ、{call:@2AE7}が、あたしのために！\n………えへへ。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Huh? {call:@2AE7} is doing that for me?!\n......Ehehe.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -116,8 +116,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}{call:@2A5B}さん！\nきたたいへいようのおしろから、\nてがみがとどきましたよ！{FA:06}えんきしていた、{call:@2A5B}さんのせい\nじんしきを、あしたおこなうそうで\nす！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}{call:@2A5B}-san! A letter has arrived from\nthe castle in the North Pacific!{FA:06}It says {call:@2A5B}-san's postponed\ncoming-of-age ceremony will be held\ntomorrow!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -127,8 +127,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}え～！　あしたっ！？{FA:06}しかもしろにもどったら、もう\nちじょうにはもどれないかもしれ\nないって………。{wait}{FA:FF0301}そんな…もうにどと、{call:@2AE7}にあえな\nくなっちゃうの……？{FA:06}{call:@2AE7}…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Whaaat?! Tomorrow?!{FA:06}And it says once I go back to the\ncastle, I might never be able to come\nback to land......{wait}{FA:FF0301}No way... I'll never get to see\n{call:@2AE7} again...?{FA:06}{call:@2AE7}......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -138,8 +138,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\n７がつみっかうまれ。{wait}のびのびになっていた、わたしの\nせいじんしきをおこなうために、\nひさしぶりに、きたたいへいようの\nおしろにもどってきたの。{wait}でも、きぶんがすぐれない……。\nあたし………………。{wait}モモちゃんのこえがする…………。\nどうしたの、モモちゃん………？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB} Born on July 3rd.{wait}I came back to the North Pacific castle\nfor the first time in ages, for my\ncoming-of-age ceremony, which kept\ngetting put off.{wait}But I don't feel well... I......{wait}I can hear Momo-chan's voice......\nWhat's wrong, Momo-chan......?\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -149,8 +149,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}だれか、いっしょにいるみたい。{FA:06}いっしょにいるのは………………、\nえっ、{call:@2AEA}！？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Looks like someone's with her.{FA:06}The one with her is......... Huh? {call:@2AEA}?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -160,8 +160,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}きょうは、７がつなのか。{FA:06}７ねんまえに{call:@2AEA}と、はじめ\nてであった、あたしのたいせつな、\nきねんび。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Today is July 7th.{FA:06}It's my special anniversary: the day I\nfirst met {call:@2AEA}, seven years ago.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -171,8 +171,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}ほら、{call:@2B32}うらないに\nでているよ。ラッキーアイテムは、\nビーズのネックレスだって！{FA:06}せっかくだから、ネックレスをつけ\nて、{call:@2AE7}くんを、七夕（たなばた）\nデートにさそってみたら？\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Look, it's in the {call:@2B32} Horoscope.\nYour lucky item is a beaded necklace!{FA:06}Why not wear a necklace and ask\n{call:@2AE7}-kun out on a Tanabata date?\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -182,8 +182,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……………{call:@2AE7}、どこかにでかけた\nあとだったみたい。{FA:06}あとをおいかけてきたのはいいけど、\n{call:@2AE7}はどこにいるんだろう……？{wait}はなたばをもっていたから、\nたぶんおはかまいりだろうって、\nみちできいたひとは、\nいっていたけど……。{FA:06}とりあえず、きょうかいのほうへ\nいってみようかな……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}......Looks like {call:@2AE7} had already gone\nout somewhere.{FA:06}I came after him, but where could\n{call:@2AE7} be...?{wait}Someone I asked on the street said he\nwas carrying flowers, so he's probably\nvisiting a grave...{FA:06}For now, maybe I'll try heading toward\nthe church...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -193,8 +193,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}えっ、なに！？\nネックレスがいきなりはじけとぶ\nなんて……。{FA:06}{FA:FF0301}まさか、{call:@2AE7}になにか…！？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Huh, what?! My necklace just burst\napart out of nowhere...{FA:06}{FA:FF0301}Don't tell me something happened to\n{call:@2AE7}...?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -204,8 +204,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}ピンクしんじゅのペンダントが、\nなくなってる……！？\n{FA:FF0301}どこかにおとしたの……！？{FA:06}こんなときに、なにもできないなん\nて…………………{call:@2AE7}！！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}My pink pearl pendant... it's gone...?!\n{FA:FF0301}Did I drop it somewhere...?!{FA:06}At a time like this, and I can't do a\nthing.........{call:@2AE7}!!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -215,8 +215,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}…………じゃ、あとはよろしくね、\n{call:@2A96}！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}......Okay, I'll leave the rest to you,\n{call:@2A96}!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -226,8 +226,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}ふう…………………。\nあっ、{call:@2A99}だ。{FA:06}{call:@2A74}のやつ、{call:@2A5B}と\n{call:@2AEA}をふたりきりにしたい\nからって、テストのべんきょうかい\nを、ふたりともいけなくなった\nことに、しちゃおうって…………。{FA:06}……まぁ、わたしはいいけどね。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Phew......... Ah, I'm {call:@2A99}.{FA:06}{call:@2A74} wants to leave {call:@2A5B} and {call:@2AEA}\nalone together, so she's telling them\nneither of us can make it to the test\nstudy session......{FA:06}...Well, I don't mind.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -237,8 +237,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}そらがくらくなってきた……。\nあらしになりそうだな……。{FA:06}そういえばさっきのこいぬも、\nひとりぼっちだったな……。\nなんか、むなさわぎがする……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}The sky's getting dark...\nLooks like a storm.{FA:06}Come to think of it, that puppy earlier\nwas all alone too... I have a bad feeling\nabout this...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -248,8 +248,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\nうみのいえで、{call:@2AEA}といっ\nしょに、アルバイトをすることに\nなったの。{FA:06}もちろん、{call:@2A74}と{call:@2A96}も\nいっしょ！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB} I'm working a\npart-time job at the beach house with\n{call:@2AEA}.{FA:06}{call:@2A74} and {call:@2A96} are with us too, of\ncourse!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -259,8 +259,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}でも、なんか{call:@2A96}のようすがおかし\nいのよね～。{FA:06}きょうは、はなびたいかいなのに、\nうみのいえにもこなかったし、\nけいたいでんわにかけても、\nるすばんでんわだったし……。\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}But {call:@2A96}'s been acting kinda weird\nlately~.{FA:06}Today's the fireworks festival, but\nshe never came to the beach house,\nand when I called her cell, it went to\nvoicemail...\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -270,8 +270,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……めをとじると、あいつのかおが\nうかんでくる……………。{FA:06}くそっ、こんなきもちになるのは、\nきっと、ねつのせいだ。{FA:06}でも…{call:@2AE7}って、おもったよりいい\nやつなのかもな……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...When I close my eyes, that guy's face\ncomes to mind......{FA:06}Ugh, feeling like this... it has to\nbe the fever.{FA:06}But... maybe {call:@2AE7} is a better guy than\nI thought...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -281,8 +281,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\nただいま、なつまっさかり！{wait}まちはずれのがけのうえにたつ、\nふるいおやしき。\nそこには、しろいおんなのゆうれい\nがでるっていう、うわさがあるの。{FA:06}{FA:FF0301}でもほんとうは、\nむすばれることがゆるされない、\nかなしいこいの、ものがたりが、\nそこにはあったの…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}\nIt's the height of summer!{wait}There's an old mansion on a cliff at the\nedge of town. Rumor says the ghost of\na woman in white appears there.{FA:06}{FA:FF0301}But the truth is, there was a sad love\nstory there, of a love that was never\nallowed to be......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -292,8 +292,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}そうだ、{call:@2AEA}に\nあやまらないと…………。{FA:06}せっかくきもだめしにさそって\nくれたのに、つまらないいじを\nはっちゃって…………。{FA:06}{call:@2AE7}たち、もうきているのかな？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Oh, right, I have to apologize to\n{call:@2AEA}......{FA:06}He went to the trouble of inviting me to\nthe test of courage, and I got all\nstubborn about it......{FA:06}I wonder if {call:@2AE7} and the others are\nhere already?\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -303,8 +303,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……えっ、いまのひめいはなに！？{FA:06}もしかして、ホンモノのゆうれい\nとか！？\n{FA:FF0100}{call:@2BA5}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...Huh, what was that scream?!{FA:06}Could it be... a real ghost?!\n{FA:FF0100}{call:@2BA5}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -314,8 +314,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}わたし、{call:@2AB9}。\nみなみたいせいようのくにの、\nみずいろ{call:@2B32}。{FA:06}プリンセス{call:@2A74}さまを、\nたずねてきたの。{wait}ピンクしんじゅとグリーンしんじゅ\nの{call:@2B27}さまもいて\nここはとてもしあわせそう。{FA:06}{FA:FF0301}でもこうしているあいだも、\nわたしのママは…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}I'm {call:@2AB9}. An aqua {call:@2B32} from the\nSouth Atlantic kingdom.{FA:06}I came to find Princess {call:@2A74}-sama.{wait}The pink pearl {call:@2B27} and\nthe green pearl one are here too, and\neveryone looks so happy here.{FA:06}{FA:FF0301}But even while I'm here, my mom is......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -325,8 +325,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……なあに！？\n{call:@2A5B}さまは{call:@2B27}\nのくせに、にんげんのおとこに\nむちゅうなの！？{FA:06}なんて、はしたない……。{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...Whaaat?! {call:@2A5B}-sama is a\n{call:@2B27}, yet she's crazy\nabout a human boy?!{FA:06}How shameless...{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -336,8 +336,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……………………えっ、\nもしかして{call:@2A70}さまも！？\nそんな……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}............Huh? Don't tell me {call:@2A70}-sama\nis too?! No way...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -347,8 +347,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}オレ、{call:@2AF8}。{FA:06}{call:@2A5B}たちとライブをみにいった\nかえりに、{call:@2A5B}がオレたちと\nはぐれちまった。{FA:06}あいつ、アレでけっこう、\nほうこうオンチなんだよな。{FA:06}まったく、しょうがないやつ\nだな………………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}I'm {call:@2AF8}.{FA:06}On the way home from a live show with\n{call:@2A5B} and the gang, {call:@2A5B} got\nseparated from us.{FA:06}She's actually got a pretty lousy sense\nof direction, y'know.{FA:06}Man, she's hopeless.........\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -358,8 +358,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}みんなで、てわけをしてさがして\nいたら、メッセージボードに\n{call:@2A5B}のメモがあった……。{wait}「バスケ」・「カラオケ」のつぎは\n………「わたしをみつけて…」？{FA:06}なんか、リョウとかいうやつと\nいっしょにいるらしい……。{wait}まったく、おんなってやつは\nわからねえな…………。{FA:06}そういや、ほかのヤツらはどこを\nさがしているんだ？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}We split up to search, and found a note\nfrom {call:@2A5B} on the message board...{wait}After \"Basketball\" and \"Karaoke\"\ncomes......\"Find me...\"?{FA:06}Looks like she's with some guy named\nRyo...{wait}Man, I'll never understand girls......{FA:06}Speaking of which, where are the\nothers searching?\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -369,8 +369,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}せっかくのなつやすみなのに、\nやることがなくなっちゃって、\nちょっとたいくつぎみ。{FA:06}{call:@2AEA}にもあえないし…。{wait}{call:@2A74}と{call:@2A96}といっしょに、\nかいがんでうみをながめていたら、\nなにかすなはまに、ながれついた\nみたい。{FA:06}いったいなんだろう？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}It's summer vacation, but I've run out\nof things to do, so I'm kinda bored.{FA:06}And I can't see {call:@2AEA} either...{wait}I was gazing at the sea from the beach\nwith {call:@2A74} and {call:@2A96}, when something\nwashed up on the sand.{FA:06}What could it be?\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -380,8 +380,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}ビーチでおこなわれる、{call:@2B32}\nコンテストに、みんなでさんかする\nことになったの！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}We all decided to enter the {call:@2B32}\nContest on the beach!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -391,8 +391,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}コンテストは「みずぎしんさ」と\n「いちげい」らしいけど………、\nうわぁ、しゅつじょうしゃが\nたくさんいるな～。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}The contest has a \"swimsuit round\" and\na \"talent round\"......but wow, there are\nso many contestants~!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -402,8 +402,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}……ゆうしょうしょうひんの、\nさいしんがたかべかけテレビは、\nわたしがもらう！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}...The grand prize, a brand-new\nwall-mounted TV, will be mine!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -413,8 +413,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………{call:@2A96}？{wait}・{FA:0B28}{FA:0B04}\n・{FA:0B28}{FA:0B04}\n・{FA:0B28}{FA:0B04}{FA:12}あれっ？　あのこのいちげい……、\n「ラブ②シャワーピッチ！」って、\nなんでアレをしっているの？{wait}{FA:FF0303}……もしかして、すいよう！？{FA:06}{FA:FF0300}でもなんで、すいようがコンテスト\nなんて、でているの？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}.........{call:@2A96}?{wait}.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}\n.{FA:0B28}{FA:0B04}{FA:12}Huh? That girl's talent... \"Love Love\nShower Pitch!\"? How does she know\nthat?{wait}{FA:FF0303}...Could she be a water demon?!{FA:06}{FA:FF0300}But why would a water demon enter a\ncontest?\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -424,8 +424,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}もしかして、さいしんがたかべかけ\nテレビをねらって…………！？\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Could she be after the brand-new\nwall-mounted TV......?!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -435,8 +435,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……ねらってない、ねらってない。{wait}きをとりなおして、\nついにコンテストも、\nけっかはっぴょう！{FA:06}{FA:FF0303}そのとき、ちいさなおとこのこが、\nホースをもって、らんにゅうして\nきたの！{FA:06}えっ、あれは{call:@2AEA}の\nいとこの、マコトくん！？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...No, she's not. She's really not.{wait}Pulling myself together... at last, the\ncontest results are in!{FA:06}{FA:FF0303}Just then, a little boy came barging in\nwith a hose!{FA:06}Huh? Isn't that {call:@2AEA}'s cousin,\nMakoto-kun?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -457,8 +457,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}もりでであった、むらさきいろの\nかみのしょうじょ。{FA:06}…………にている。{FA:06}すがたかたちがそっくりというわけ\nじゃない。{FA:06}でも、そう……どことなくふんいきが\nあのときの{call:@2B32}に……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}The girl with purple hair I met in the\nforest.{FA:06}......She's like her.{FA:06}Not that they look exactly the same.{FA:06}But yes... something about her feels\nlike that {call:@2B32} from back then...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -468,8 +468,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}ちがう………………。\nちかくでみたら、やはりどこか\nちがう……。{FA:06}かのじょじゃない…………。\nでも…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}No.......... Up close, she's different\nafter all...{FA:06}It isn't her...... But......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -497,8 +497,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}{call:@2A82}よ！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{FA:FF0110}I'm {call:@2A82}!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -508,8 +508,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0100}{FA:FF0111}……{call:@2A99}だ。{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0100}{FA:FF0111}...{call:@2A99}.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -519,8 +519,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}{call:@2A5B}は、カゼでねこんでしまった\n{call:@2AEA}くんの、\nおみまいにいってま～す！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{FA:FF0110}{call:@2A5B} went to visit {call:@2AEA}-kun, who's\nstuck in bed with a cold~!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -530,8 +530,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0100}{FA:FF0111}まったく、{call:@2B17}のこうげきを\nうけて、カゼていどですむなんて、\nにんげんにしては、じょうぶだな。{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0100}{FA:FF0111}Honestly, he took a hit from {call:@2B17} and\nonly caught a cold. Tough, for a human.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -541,8 +541,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}でも、まちがって{call:@2AE7}くんに、\nこくはくしたりしないようにと、\nタキさんがわたした、すいしょう\nだまのせいで、{call:@2A5B}が\nたいへんなことに、なっちゃった\nみたいなの！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{FA:FF0110}But Taki-san gave her a crystal ball so\nshe wouldn't confess to {call:@2AE7}-kun by\nmistake, and it looks like it got {call:@2A5B}\ninto big trouble!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -552,8 +552,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0100}{FA:FF0111}なんでも、すいしょうだまがわれて\nしまったせいで、るちあがぼうそう\nをはじめたらしいな。{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0100}{FA:FF0111}Apparently the crystal ball broke, and\nnow Lucia's gone out of control.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -563,8 +563,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}はたして、るちあはどうなってしま\nうのか！？{FA:06}らいしゅうをおたのしみに！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{FA:FF0110}What will become of Lucia?!{FA:06}Find out next week!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -574,8 +574,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0100}{FA:FF0111}またみてね……{FA:06}{FA:FF0311}って、なんでやねん！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0100}{FA:FF0111}See you next time...{FA:06}{FA:FF0311}...Wait, why am I saying this?!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -585,8 +585,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0110}…………………リナ？{wait}……とりあえず、はやくるちあの\nところにいかなきゃ！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{FA:FF0110}..........Rina?{wait}...Anyway, I've gotta hurry and get to\nLucia!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -596,8 +596,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}みなみたいせいようのくにの\nマーメイド、{call:@2AB9}ちゃんが\nふたたびあたしたちのところへ、\nやってきたの。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}{call:@2AB9}-chan, the mermaid from the\nSouth Atlantic kingdom, has come to\nsee us again.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -607,8 +607,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}…………えっ！\n{call:@2AEA}と、けっこん！？{FA:06}しかも、{call:@2AE7}もOKしてる！？{FA:06}え～～っ！！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}......Huh?! Marry {call:@2AEA}?!{FA:06}And {call:@2AE7}'s okay with it?!{FA:06}Whaaaaat?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -618,8 +618,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}わあっ！！！\n{call:@2A5B}さん、だいじょうぶですか！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Waaah!!! {call:@2A5B}-san, are you all right?!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -629,8 +629,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}……しかたがありません。\nかわりに、わたしが。コホン。{wait}けっこんしきじょうの、はなよめ\nたいけんイベントにやってきた、\n{call:@2AB4}ちゃんと{call:@2AE7}さん。{FA:06}そして、そのようすをのぞいている、\n{call:@2A5B}さん。{wait}そんななか、しんさくウェディング\nドレスショーの、はなよめやくの\nピンチヒッターとして、なぜか\n{call:@2A5B}さんがでることに！{FA:06}はなよめいしょうをきて、しらない\nおとこのひとと、うでをくんでいる\nところをみた、{call:@2AE7}さんのきもちや\nいかに？{FA:06}そして、そんなばしょにいあわせて\nいるのはもちろん……？\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}...It can't be helped. I shall take\nover. Ahem.{wait}{call:@2AB4}-chan and {call:@2AE7}-san came to the\nwedding hall's bride experience event.{FA:06}And {call:@2A5B}-san was peeking in on them.{wait}Then, for some reason, {call:@2A5B}-san ends\nup filling in as the bride in a new\nwedding dress show!{FA:06}How will {call:@2AE7}-san feel, seeing her in a\nbridal gown, arm in arm with a man he\ndoesn't know?{FA:06}And who should happen to be there, of\ncourse, but...?\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -640,8 +640,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}かいがんのちいさなこやで、\nひとりでないているときに、\nとてもやさしくしてくださった、\nおとこのかた。{FA:06}……{call:@2AB0}さん。こんなにやさしく\nしていただいたの、\n{call:@2B13}はうまれてはじめてです…。{FA:06}もういちど、あいたい……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}When I was crying all alone in a little\nhut on the beach, a gentleman was so\nvery kind to me.{FA:06}...{call:@2AB0}-san. Never in all her life has\n{call:@2B13} been treated so kindly...{FA:06}I want to see him once more...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -651,8 +651,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}あの、うみのうえにいるのは……。\nえっ……{call:@2AB0}さんが\nおおぜいのおんなのひとに、\nかこまれている…………。{FA:06}そんな………ひどい………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}That, out on the sea... Huh... {call:@2AB0}-san\nis surrounded by so many women......{FA:06}No...... How cruel......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -662,8 +662,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}そういえば、{call:@2AB0}さんがおとして\nいったきかいが、しろの{call:@2B32}\nに、はんのうしていましたわ……。{FA:06}もしかして、{call:@2AB0}さんは\n{call:@2B27}のなかま\nなんですの？{wait}そうだとしたら、わたしは……！{FA:06}{call:@2AB0}さん………………………。\n{FA:FF0101}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Now that I think of it, the device\n{call:@2AB0}-san dropped was reacting to the\nwhite {call:@2B32}...{FA:06}Could it be that {call:@2AB0}-san is an ally of\nthe Mermaid Princesses?{wait}If that is so, then I...!{FA:06}{call:@2AB0}-san..........\n{FA:FF0101}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -673,8 +673,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……なに、このさわぎは！？{FA:06}{FA:FF0302}あっ、あそこにいるのは……また、\nすいようのしわざね！{FA:06}ユーリ、まちなさい！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...What's all this commotion?!{FA:06}{FA:FF0302}Ah, over there... it's the water demons\nup to their tricks again!{FA:06}Yuri, stop right there!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -684,8 +684,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}えっ……………。\nユーリさんが、すいよう………。{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Huh.........\nYuri-san is a water demon.......{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -695,8 +695,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}サーフィンのぜんこくたいかいに\nしゅつじょうする{call:@2AEA}を\nおうえんするために、みなみの\nしままで、きちゃったの！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}We came all the way to the southern\nislands to cheer on {call:@2AEA} at the\nnational surfing contest!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -706,8 +706,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}でもいつのまにか、\nにしにほんチャンピオンの\n崎谷{FD:01}（サキヤ）{FD:00}くんと、{call:@2AE7}くんとの\nあいだで、ゆうしょうしたら、\n{call:@2A5B}のキスがもらえることに！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}But somehow, Sakiya-kun, the West\nJapan champion, and {call:@2AE7}-kun ended\nup deciding that whoever wins gets a\nkiss from {call:@2A5B}!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -717,8 +717,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………って、なんでそんなこと、\nかってにきまっているのよ～！{FA:06}{FA:FF0301}しかも、{call:@2AE7}はあしにケガを\nしているみたいだし……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}......Hey, who said you could decide that\nwithout me~?!{FA:06}{FA:FF0301}And it looks like {call:@2AE7} hurt his leg,\ntoo...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -728,8 +728,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{FA:FF0111}…………あれ、{call:@2A96}がいない？{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{FA:FF0111}......Huh? Where's {call:@2A96}?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -739,8 +739,8 @@
   ],
   "used": true,
   "jp": "しんじゅのペンダントがひかってい\nるってことは、\nもしかして{call:@2A96}のピンチ！？\n{FA:FF0100}{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "My pearl pendant is glowing... Does\nthat mean {call:@2A96} is in trouble?!\n{FA:FF0100}{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -750,8 +750,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}４にんのすいようたちの\nコンビネーションこうげきのまえに\nあたしたちはだいピンチ！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Up against a combo attack from four\nwater demons, we were in big trouble!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -761,8 +761,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}そんなわたしたちをたすけてくれた\nのは、なんきょくかいのマーメイド\nプリンセス、{call:@2AAC}。{FA:06}でも、わたしたちのなかまには、\nならないっていうの。{FA:06}{FA:FF0312}しかも{call:@2A96}のことを、\nうらぎりものっていうし……。{FA:06}リナがそんなこと、するわけない\nじゃない！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}The one who saved us was {call:@2AAC}, the\nMermaid Princess of the Antarctic.{FA:06}But she says she won't join us.{FA:06}{FA:FF0312}And she even called {call:@2A96} a traitor...{FA:06}Like Rina would ever do something like\nthat!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -781,8 +781,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}そとはいつのまにか、くらいそらに\nつよいかぜ。\nまるで、いまのあたしたちのこころ\nのなかみたい…………。{FA:06}{call:@2A96}、いつかきっとじじょうを\nはなしてくれるって、\nしんじてる…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Before we knew it, the sky outside\nturned dark and the wind grew strong.\nJust like our hearts right now......{FA:06}I believe {call:@2A96} will tell us what's going\non someday......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -792,8 +792,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}……このはんのうは、パープル\nしんじゅのマーメイド？{FA:06}もしかして、{call:@2AAC}がすいように\nつかまったの！？\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}...This reading... a purple pearl\nmermaid?{FA:06}Could {call:@2AAC} have been caught by the\nwater demons?!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -803,8 +803,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}まって、{call:@2A96}！\n{call:@2AAC}をたすけにいくなら、\nあたしたちもいっしょよ！{wait}{call:@2AAC}、かならずたすけるからね…\n………………………………………。{wait}{FA:FF0303}{FA:FF0314}えっ！？\nあなたたち、なにもの！？\n{call:@2BA5}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Wait, {call:@2A96}! If you're going to save\n{call:@2AAC}, we're coming too!{wait}{call:@2AAC}, we'll save you for sure...\n..................{wait}{FA:FF0303}{FA:FF0314}Huh?! Who are you people?!\n{call:@2BA5}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -814,8 +814,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}わたしがいながら、ノエルだけでは\nなく、{call:@2AAC}まで…………。{FA:06}すまない…ふたりとも、かならず\nわたしがたすけだすから……。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}I was right there, and still they took\nnot only Noelle, but {call:@2AAC} too......{FA:06}I'm sorry... I'll rescue you both, I\nswear...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -825,8 +825,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2B32}カードでしめされた、\nさんごしょうのかいていには、\nパンタラッサのしろが……。{FA:06}ふっ、わたしたちがやってきたことは\nむこうにはバレているみたいだな。{FA:06}なら、このドレスはしょうたいじょう\nの、かわりというわけか…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}On the seabed of the coral reef the\n{call:@2B32} Card pointed to stands the\ncastle of Panthalassa...{FA:06}Hmph, looks like they know we're\ncoming.{FA:06}Then I suppose this dress is their idea\nof an invitation......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -836,8 +836,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}…………ここは……ダンスホール？{wait}あそこで、おどっているのは……！{FA:06}ノエル、{call:@2AAC}、しっかりしろ！{FA:06}{call:@2B23}！　ふたりになにをした！{wait}{FA:FF0401}　た　い　ゅ　　　……あたまが……ぼんやり……す…\nる…………。{FA:06}ふたり…を、もと……に……………\nもど…せ……………ガイ…………ト\n………………………………………。\n\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}......Where is this... a dance hall?{wait}The ones dancing over there are...!{FA:06}Noelle, {call:@2AAC}, snap out of it!{FA:06}{call:@2B23}! What did you do to them?!{wait}{FA:FF0401}  u  g  h    ......My head... is going... foggy......{FA:06}Turn... them... back...... Gai......to\n..................\n\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -847,8 +847,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}わたし{call:@2A82}。{FA:06}がくえんさいで、うちのクラスは\n「にんぎょひめ」のげきを、\nやることになったの。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}I'm {call:@2A82}.{FA:06}For the school festival, our class is\nputting on a play of \"The Little\nMermaid.\"\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -858,8 +858,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}へへ～！\nあたしが、しゅやくなんだよ！\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Hehe~! I'm the lead!\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -869,8 +869,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}なんでしゅやくが、{call:@2A5B}なのよ！\nわたしのほうが、ぜったいハマリやく\nなのに…………。{FA:06}しかも、おうじさまやくが、\nケガをしちゃったせいで、かわりに\n{call:@2AEA}くんが、おうじさまやく\nをやることになったもんだから…。\n　{wait}るちあったら、うかれすぎ！\nほら、もうほんばんだよ！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Why does {call:@2A5B} get the lead?! I'd be\nway more perfect for the part......{FA:06}And since the boy playing the prince\ngot hurt, {call:@2AEA}-kun is filling in\nas the prince...{wait}Lucia's way too giddy! Come on, the\nshow's starting!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -880,8 +880,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}…もう、なにやってるのよ、るちあ！{FA:06}セリフはまちがえるし、ステージの\nうえで、おもいっきりズッコケるし！{FA:06}{call:@2A96}がフォローしてくれているから\nなんとかなってるけど……。{wait}{FA:FF0304}えっ、なに？　すいよう！？\nなんで、こんなときに！？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...Geez, what are you doing, Lucia?!{FA:06}You flub your lines, and you fall flat on\nyour face on stage!{FA:06}{call:@2A96}'s covering for you, so we're\ngetting by, but...{wait}{FA:FF0304}Huh, what? Water demons?! Why now,\nof all times?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -891,8 +891,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}こんしゅうはしゅうばんなので、\nほうかごはきょうしつで、\n{call:@2AEA}と、ふたりきり！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}We're on class duty this week, so after\nschool it's just me and {call:@2AEA} in the\nclassroom!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -902,8 +902,8 @@
   ],
   "used": true,
   "jp": "………………………………………。{end}",
-  "en": "",
-  "status": "",
+  "en": "...............{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -913,8 +913,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}なんか、きょうの{call:@2AE7}、\nおこってる…………。{FA:06}きのう、あめのなかをいっしょに\nかえったとき、キスしようとして\nきたのをこばんだせい…？{wait}でも、きのうの{call:@2AE7}、なんだか\nおかしかったし、それに…………、\nちょっとこわかった………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2AE7} seems angry today......{FA:06}Is it because yesterday, walking home\ntogether in the rain, I turned him down\nwhen he tried to kiss me...?{wait}But {call:@2AE7} was acting kind of strange\nyesterday, and also...... he was a little\nscary......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -924,8 +924,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}ねえ{call:@2AE7}、何かいってよ…………。{FA:06}だまってたら、わからないよ！\nなにおこってるのか、はっきり\nいってよ！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Hey, {call:@2AE7}, say something......{FA:06}If you don't talk, I won't understand!\nJust tell me what you're mad about!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -935,8 +935,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}{call:@2B23}じょうをみつけだすために、\nたまにはこっちから、さくせんを\nたててみたの！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}To find {call:@2B23}'s castle, for once we\ncame up with a plan of our own!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -946,8 +946,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}わたしがおとりになって、わざと\nすいようたちにつかまって……。\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}I'll be the bait and let the water\ndemons catch me on purpose...\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -957,8 +957,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2A74}とあたしが、{call:@2B23}\nじょうへつれていかれる{call:@2A96}を、\nこっそりおいかけるの。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2A74} and I will secretly follow {call:@2A96} as\nshe's taken to {call:@2B23}'s castle.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -968,8 +968,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}で、{call:@2B23}じょうにはいる\nちょくぜんに、わたしをたすけ\nだせばOKと、いうわけだな。\n{FA:FF0110}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0111}Then, right before we enter {call:@2B23}'s\ncastle, you rescue me, and we're set.\nThat's the idea.\n{FA:FF0110}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -979,8 +979,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}ダーク・ラゔァーズの４にんぐみなら\nこのさくせんでらくしょうよ！{wait}じゃあ、あたしはしんじゅレーダー\nをつかって、ヨットでうみのうえから\nついせきするから、{call:@2A96}、\nよろしくね！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Against the four Dark Lovers, this\nplan is a sure win!{wait}Okay, I'll use the pearl radar and\nfollow from a yacht on the sea, so good\nluck, {call:@2A96}!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -990,8 +990,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}かいがんでひろった、みたゆめが\nほんとうにおこる、「ゆめみせき」{FA:06}このいしをまくらもとにおいて、\n{call:@2AEA}とラブラブなゆめを\nみたらきっと…………。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}I picked up a \"Dreamstone\" on the\nbeach. It makes dreams come true!{FA:06}If I put this stone by my pillow and\nhave a lovey-dovey dream about\n{call:@2AEA}, then for sure......\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1001,8 +1001,8 @@
   ],
   "used": true,
   "jp": "{call:@2B9F}・\n・\n・{wait}ここは……もりのなか？{FA:06}………ふかい…きり……うみのそば\n…………{call:@2AE7}っ！！\n{call:@2BA5}{end}",
-  "en": "",
-  "status": "",
+  "en": "{call:@2B9F}.\n.\n.{wait}Where... is this, a forest?{FA:06}......Thick... fog...... by the\nsea......{call:@2AE7}!!\n{call:@2BA5}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1012,8 +1012,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}あたらしくできたテーマパーク\n「シーパーク」に、みんなであそび\nにきたの！{wait}でも、なんか{call:@2A96}のようすが\nへんなの。\nまわりばっかりきにしているし…。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}We all came to have fun at the\nbrand-new theme park, \"Sea Park\"!{wait}But {call:@2A96}'s acting kind of weird. She\nkeeps looking all around...\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1023,8 +1023,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}リナ、ひとりでどこいくの！？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Rina, where are you going all by\nyourself?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1034,8 +1034,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……あっ！　{call:@2AEA}まで！？\nいったい、どういうことなの！？\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...Ah! {call:@2AEA} too?! What on earth is going\non?!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1045,8 +1045,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}うぃ～っす！\nアワビのようせい、アウリっす！{FA:06}うらないしになりたくて、タキさん\nをたずねてまいりやした！{FA:06}………だ～いじょうぶっすよ、\nこんどは、いえをばくはつさせたり\nしないっすから！\n{FA:FF0100}{wait}{FA:FF0101}……こんどのかだいは、とうめいに\nなるくすりのざいりょうの\nくろしんじゅを、すなはまから\nみつければいいんすね。\nうぃっす！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}Hey~! Auri the abalone fairy, at your\nservice!{FA:06}I wanna be a fortune-teller, so I've\ncome callin' on Taki-san, yo!{FA:06}......No worries, yo! This time I won't\nblow up the house!\n{FA:FF0100}{wait}{FA:FF0101}...So this time my task is to find a black\npearl on the beach, for an invisibility\npotion. Got it, yo!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1056,8 +1056,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}………………………………って、\nこんなひろいすなはまのなかから、\nひとつぶのくろしんじゅをさがすの\nかよ！{wait}あっ、ヒッポ！\nおまえ、サボんのか！？{FA:06}………………………ったく、\nつかえねぇペンギンだなぁ！{FA:06}ほかに、つかえそうなやつは、\nいないかなぁ……？{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}..................Wait, I gotta find one tiny\nblack pearl on this huge beach?!{wait}Hey, Hippo! You slackin' off?!{FA:06}.........Geez, what a useless penguin!{FA:06}Isn't there anybody else who'd be\nuseful...?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1067,8 +1067,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}ひとのこころのなかには、\nひとそれぞれのおんがくが\nながれている。{FA:06}でもわたしには、それがみつかって\nいるのだろうか…………。{wait}もし、きょうのえんそうかいで、\nきょくをきいてくれたひとを\nかんどうさせることができなかった\nときは、おんがくかになるのを、\nあきらめようとおもう……。{wait}{call:@2B7B}……インドようの\n{call:@2B27}。{FA:06}もしどこかできみが、きいていて\nくれるなら、ぼくはこのきょくを、\nきみにささげます…………。{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}In every person's heart flows a music\nall their own.{FA:06}But have I truly found mine......?{wait}If at today's recital I can't move the\npeople who hear my piece, I think I'll\ngive up on becoming a musician...{wait}{call:@2B7B}... the {call:@2B27}\nof the Indian Ocean.{FA:06}If you are listening somewhere, I\ndedicate this piece to you......{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1078,8 +1078,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}きょうは、にこらおねえちゃんも、\nタキさんもでかけているから、\nあたしがパールピアリのしごとを、\nしなくちゃいけないの。\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Today my big sis Nikora and Taki-san\nare both out, so I have to do the work\nat the Pearl Piari.\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1089,8 +1089,8 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……ふぅ、あとはせんたくものを\nほせば、おわりかな？{FA:06}あれ、なにかきこえる……？{wait}{FA:FF0303}……えぇ～っ！{FA:06}なんでこんなところに、あかちゃん\nがいるの！？{wait}{FA:FF0300}とりあえず、あたしたちでめんどうを\nみなくちゃ…………って、{FA:06}{call:@2A74}も{call:@2A96}も……{call:@2AB0}まで\nどこにいくのよ～！{wait}{FA:FF0302}…………いいもん！\nあたしひとりでなんとかするから！{FA:06}{FA:FF0300}パパとママがみつかるまで、おねえ\nちゃんといっしょに、あそんでいよ\nうね！\n{FA:FF0100}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:FF0101}...Phew, once I hang out the laundry,\nI'm done, right?{FA:06}Huh? Do I hear something...?{wait}{FA:FF0303}...Whaaat?!{FA:06}Why is there a baby here?!{wait}{FA:FF0300}For now, we'll have to look after it......\nHey,{FA:06}{call:@2A74}, {call:@2A96}... even {call:@2AB0}, where are\nyou going~?!{wait}{FA:FF0302}......Fine! I'll handle it all by myself!{FA:06}{FA:FF0300}Until we find your mommy and daddy,\nlet's play together with your big sis!\n{FA:FF0100}{end}",
+  "status": "done",
   "notes": ""
  }
 ]

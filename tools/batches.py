@@ -90,10 +90,12 @@ def wrap(entry, en):
         return en
     c = _ctx()
     out = ""
-    for word in re.split(r"(?<= )(?=[^ ])", en):
+    # a chunk also ends after a page code, so "first!{FA:06}Next" measures the line before the code
+    for word in re.split(r"(?<= )(?=[^ ])|(?<=\{FA:06\})|(?<=\{wait\})", en):
         cand = out + word
-        last = c["boxes"].pages(cand, "en", c["units"], c["widths"])[-1][-1]
-        if last[0] - last[1] > b[1] and out and not out.endswith("\n"):
+        meas = re.sub(r"(\{FA:06\}|\{wait\})$", "", cand)
+        last = c["boxes"].pages(meas, "en", c["units"], c["widths"])[-1][-1]
+        if last[0] - last[1] > b[1] and out and not re.search(r"(\n|\{FA:06\}|\{wait\})$", out):
             out = out.rstrip(" ") + "\n" + word
         else:
             out = cand
@@ -183,15 +185,27 @@ def problems(entry, en, terms):
         out.append(f"unencodable characters {bad}")
     if re.search(r"\\u[0-9a-fA-F]{4}", en) or "\t" in en:
         out.append("escape sequence or tab in the English")
+    flat = re.sub(r"\s+", " ", en).lower()  # a term the wrap split over two lines is still the term
+    units = _ctx()["units"]
+
+    def call_en(t):
+        u = units.get(t[7:-1]) if t.startswith("{call:@") else None
+        return TOKEN.sub("", u.get("en") or "").lower() if u else ""
+
     want = Counter(t for t in TOKEN.findall(jp) if t not in FREE)
     have = Counter(t for t in TOKEN.findall(en) if t not in FREE)
+    # a called name may be written out ("Mermaid Princesses" for a plural): the call only inserts that text
+    want -= Counter({t: n for t, n in (want - have).items() if call_en(t) and call_en(t) in flat})
     if want != have:
         out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
+    for m in re.finditer(r"\{call:@[0-9A-F]+\}s\b", en):
+        if call_en(m[0][:-1]).endswith("s"):
+            out.append(f"{m[0]} draws '{call_en(m[0][:-1])}s': write the plural out or reword")
     if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):
         out.append('ordinal suffix after a variable (write "No. [var]")')
     jp_plain = TOKEN.sub("", jp)
     for jps, ens, avoid in terms:
-        if any(has_term(jp_plain, j) for j in jps) and not any(e.lower() in en.lower() for e in ens):
+        if any(has_term(jp_plain, j) for j in jps) and not any(e.lower() in flat for e in ens):
             out.append(f"glossary: {jps[0]} -> {ens[0]}")
         out += [f"glossary Avoid: {a}" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
     for jp_form, en_form in HONORIFICS.items():

@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate (not started; phase 5 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba sha1 e9d8c53a (no English yet, smoke ok); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 7. Insert, fit, check (phase 6 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba sha1 da50bcd3 (full English script, smoke ok, story EP5 shows English bubbles); marker build `build.py --marker --out build/marker.gba`.
 - **Done:**
   - Step 0 (2026-11-15): template, rom.sha1, MesenCE 2.2.1 + GBA BIOS in tools/mesen, guard hook proven, pre-commit (tools/check.py) rejects a failing test, original ROM smoke-boots, scripted input and Lua probe ok.
   - Phase 1 (2026-11-15): no prior English patch; no SJIS. Graphics: kcomp decoder (`tools/kcomp.py`), resource tables (`tools/restables.py`), static sweep of every block (`tools/sweep.py`, 104 sheets) reviewed read-only by codex (`tools/codex_review.sh`) -> 170 text blocks in `docs/re/graphics_sweep.tsv`; tour list in `docs/re/graphics.md`. Script: message table 0x1860CE0 (2474 x 24-bit offsets from 0x18629DE), 1 byte per char = glyph index, FF end, 47.7k bytes; 12x12 2bpp frequency-ordered font at 0x18745E0 (`tools/font12.py`, `tools/fontstr.py`); name-entry buffer and charset (`docs/re/text.md`). Free space: 0x1FDF760-0x1FFFFFF trap-filled with FF, see compression.md.
@@ -10,12 +10,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Phase 3 (2026-11-15): `build.py` -> `tools/msgtable.py` unpacks/repacks the message table; `tests/test_identity.py`.
   - Phase 4 (2026-11-15): control codes (`docs/re/text.md`, `tools/msgparse.py`); `tbl/jp.tbl`; `tools/msgcodec.py` -> `script/msg_00..16.json` (1617 units), roundtrip + relocation tests.
   - Phase 5 (2026-11-15): English font `fonts/en12.txt` + VWF patch `tools/vwf.py`; text packs into two regions; `build.py --marker` / `--qa ID=text`; box probes `tools/lua/boxlog.lua`, `tilelog.lua`. Width gate: `tools/boxes.py` (bubble geometry from the event scripts, range budgets, fit lint, bubble auto-grow in the English build), `tests/test_fit.py` (Japanese calibration 0 errors; English script must have 0 errors: this gates every commit). `python -X utf8 tools/boxes.py [--warn]` prints the report. All facts: `docs/re/vwf.md` §Boxes, §Width gate.
-- **Next (phase 6):**
-  1. Read `$SKILL/references/translation.md`; write the style guide / translator brief, glossary (names per D1/D2: official English names where they exist), batches under `work/tl/`. Give every row its budget from `boxes.budget()` (kind, px limit, lines) so translators wrap to it; the batch check = `tools/boxes.py` lint on the batch.
-  2. Speaker names and character names are call-target units with no message id (`2A5B` るちあ, `2AE7` 海斗, `2B32` マーメイド, ...): translate them once, as glossary names; `2B8C`/`2B92` are the name-tag brackets `【`/`】` (keep the `{FA:0C0008}`/`{FA:0C0088}` codes).
-  3. `{FD:01}..{FD:00}` = furigana/half-width runs (e.g. 堂本{FD:01}（どうもと）{FD:00}): the VWF only works at spacing 12, so English text should drop the furigana and these codes.
-  4. Lyrics (256-305, 512-1023): default romaji (see Waiting on the user); lint limit 180 px, 1 line.
-  5. Units with a guess budget (unobserved ids) warn only: confirm their boxes in the phase-8 tour.
+  - Phase 6 (2026-11-15): 16 batches (1519 units, `work/tl/bNNN.tsv` -> `.out.tsv`) by 4 translator agents, every batch reviewed (`tools/pairs.py` -> `work/qa/review/`, reviewer agents), all Critical/Important fixed, merged into `script/`; every used unit has English. Glossary + rulings D10-D12 added; Minors deferred in `docs/polish.md`. `batches.py`: wrap now measures the line before a page code, glossary match ignores line breaks, `{call}s` plural lint, a call may be written out as its text.
+- **Next (phase 7):**
+  1. Build green: `tools/check.py` exits 0 (fit lint 0 errors, 76 guess-box warnings); still to do: `romdiff.py` against the allowed ranges with the build's write log, control codes matched (batches check covers it).
+  2. Debug menu (scene `debug_menu`, msgs 0040/0110, msgview box) draws English codes through a non-VWF font: junk kana. Dev-only, but the warp tool's msgview uses it; decide in phase 7/8 (keep JP for debug-only units, or route through the VWF).
+  3. Check in game (phase 8): A44E/FC29/459A "Love Love Shower Pitch" with FD codes; 9D2D poem furigana codes kept with empty readings; credits pages (0859 0962 0A62 0B06 0C0F) got `{FA:06}` between songs: does the credits screen page?; 0B06 arranger glyph Ⓒ guess written "(C)"; profiles' "[Name]" header line.
+  4. Units with a guess budget (76 warnings) warn only: confirm their boxes in the phase-8 tour.
 - **Later:**
   - English name entry needs Latin letters in the name charset (0x187EA84 has 0-9 A-F only) and a redrawn keyboard; F6 name width in the lint is a 60 px guess until then.
   - Debug tool gaps (add when needed): GOD mode for gameplay (life gauge address unknown), scenes 17/30/31 blank when warped, 止め絵チェック item, results after a real song (only empty results warp).
@@ -23,4 +23,4 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Glyph 0x167 (circled, song credits) read as `Ⓒ`, a guess: zoom it in game when the credits are QA'd.
 - **Open bugs:** none.
 - **Known limits:** msgview's debug box garbles rows when a message runs past 7 lines with no page break (real pages are <= 4 lines; story boxes clean). Japanese fallback text in an English build draws as junk (its glyph slots hold English letters): every used unit needs English.
-- **Waiting on the user:** (non-blocking) song lyrics (msgs 256-305, 512-1023, karaoke strip): default plan = romaji so they match the sung audio and the colour sweep; English meaning is the alternative. (non-blocking) GUI keyboard input in tools/mesen not checked by hand; emu.py wrote default key mappings.
+- **Waiting on the user:** (non-blocking) song lyrics shipped as romaji (D10); English meaning is the alternative. (non-blocking) "Love Love Shower Pitch" for ラブ②シャワーピッチ (D11). (non-blocking) staff name readings unverified: 佐藤和朗 Kazuaki Sato, 堀田健志 Takeshi Hotta, ポリン Porin. (non-blocking) GUI keyboard input in tools/mesen not checked by hand; emu.py wrote default key mappings.

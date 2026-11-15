@@ -78,8 +78,8 @@
   "ids": [],
   "used": true,
   "jp": "　歌　　　　　　　　歌選択　　　　　　SＥ\n　内田　　　　　　　ライブ　　　　　　ＢGM\n　モード選択　　　　川原　　　　　　　しゃべり\n　曲作り　　　　　　ミニゲーム　　　　Option\n　MOVIＥ　　　　アニメ　　　　　　通信\n　Song　　　　　　　　　　　　　　\n　メッセージ　　　　ちびキャラ　　　　SRＡM消去\n　止め絵チェック　　ＢMP　　　　　　ＥXIT{end}",
-  "en": "",
-  "status": "",
+  "en": " Song     SongSel  SE\n Uchida   Live     BGM\n ModeSel  Kawahara Talk\n Compose  Minigame Option\n MOVIE    Anime    Link\n Song              \n Message  Chibi    Wipe SRAM\n Stills   BMP      EXIT{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -87,8 +87,8 @@
   "ids": [],
   "used": true,
   "jp": "　スタッフ　　　　　覚えて　　　　　　\n　名前入力　　　　　つづけて　　　　　\n　アニメでピッチ　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　{F6:01}\n　　　　　　　　　　　　　　　　　　　{end}",
-  "en": "",
-  "status": "",
+  "en": " Staff    Remember \n Name     Continue \n Anime Pitch       \n                   \n                   \n                   \n                   {F6:01}\n                   {end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -110,8 +110,8 @@
   ],
   "used": true,
   "jp": "セーブデータの一部が壊れています{end}",
-  "en": "",
-  "status": "",
+  "en": "Part of the save data is corrupted.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -121,8 +121,8 @@
   ],
   "used": true,
   "jp": "セーブデータが壊れています　TT{end}",
-  "en": "",
-  "status": "",
+  "en": "The save data is corrupted. T_T{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -133,8 +133,8 @@
   ],
   "used": true,
   "jp": "{FA:1A}ねーちゃん\nねーちゃん\nねーちゃん\nねーちゃん\nねーちゃん{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1A}Sis\nSis\nSis\nSis\nSis{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -144,8 +144,8 @@
   ],
   "used": true,
   "jp": "{FA:1A}にーちゃん{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1A}Bro{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -155,8 +155,8 @@
   ],
   "used": true,
   "jp": "{F6:01}ちゃん{end}",
-  "en": "",
-  "status": "",
+  "en": "{F6:01}-chan{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -166,8 +166,8 @@
   ],
   "used": true,
   "jp": "{F6:01}くん{end}",
-  "en": "",
-  "status": "",
+  "en": "{F6:01}-kun{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -177,8 +177,8 @@
   ],
   "used": true,
   "jp": "{FA:0C0008}【{FA:0F40}{F6:02}{goto:@022D}",
-  "en": "",
-  "status": "",
+  "en": "{FA:0C0008}{FA:0F40}{F6:02}{goto:@022D}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -188,8 +188,8 @@
   ],
   "used": true,
   "jp": "{FA:0C0008}【{FA:0F40}{F6:00}",
-  "en": "",
-  "status": "",
+  "en": "{FA:0C0008}{FA:0F40}{F6:00}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -197,8 +197,8 @@
   "ids": [],
   "used": true,
   "jp": "{FA:1040}】\n{FA:0C0088}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1040}\n{FA:0C0088}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -219,8 +219,8 @@
   ],
   "used": true,
   "jp": "{FB:B037000383}点\n{FB:B437000383}点{end}",
-  "en": "",
-  "status": "",
+  "en": "{FB:B037000383} pts\n{FB:B437000383} pts{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -230,8 +230,8 @@
   ],
   "used": true,
   "jp": "変化系{end}",
-  "en": "",
-  "status": "",
+  "en": "Transmutation{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -241,8 +241,8 @@
   ],
   "used": true,
   "jp": "操作系{end}",
-  "en": "",
-  "status": "",
+  "en": "Manipulation{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -252,8 +252,8 @@
   ],
   "used": true,
   "jp": "具現化系{end}",
-  "en": "",
-  "status": "",
+  "en": "Conjuration{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -263,8 +263,8 @@
   ],
   "used": true,
   "jp": "特質系{end}",
-  "en": "",
-  "status": "",
+  "en": "Specialization{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -275,8 +275,8 @@
   ],
   "used": true,
   "jp": "{FA:058C40}{FC:82}セーブする\n{FC:82}あそぶ！\n{FC:82}うたをきく\n{FC:82}もどる{FA:05FF}{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:058C40}{FC:82}Save\n{FC:82}Play!\n{FC:82}Listen to songs\n{FC:82}Back{FA:05FF}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -311,8 +311,8 @@
   ],
   "used": true,
   "jp": "　名前を決めてください{end}",
-  "en": "",
-  "status": "",
+  "en": "Please choose a name.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -322,8 +322,8 @@
   ],
   "used": true,
   "jp": "名前に空白は使えません！{end}",
-  "en": "",
-  "status": "",
+  "en": "You can't use spaces in a name!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -333,8 +333,8 @@
   ],
   "used": true,
   "jp": "{FC:4C}名前{FA:1104}{FC:4C}性別{FA:1104}{FC:44}誕生日　　{FB:B0370003C2}月{FB:B4370003C2}日{FA:1104}{FC:4C}終了{end}",
-  "en": "",
-  "status": "",
+  "en": "{FC:4C}Name{FA:1104}{FC:4C}Gender{FA:1104}{FC:44}Birthday  {FB:B0370003C2}/{FB:B4370003C2}{FA:1104}{FC:4C}Done{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -344,8 +344,8 @@
   ],
   "used": true,
   "jp": "　　　　すこし、まっててね{end}",
-  "en": "",
-  "status": "",
+  "en": "Just wait a moment, okay?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -355,8 +355,8 @@
   ],
   "used": true,
   "jp": "　つうしんせつぞくをしらべています{end}",
-  "en": "",
-  "status": "",
+  "en": "Checking the link connection...{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -366,8 +366,8 @@
   ],
   "used": true,
   "jp": "つうしんせつぞくができませんでした{end}",
-  "en": "",
-  "status": "",
+  "en": "Couldn't make a link connection.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -377,8 +377,8 @@
   ],
   "used": true,
   "jp": "ほかのひとがキャラをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Someone else is choosing a character.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -388,8 +388,8 @@
   ],
   "used": true,
   "jp": "【るちあ】がうたをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Lucia is choosing a song.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -399,8 +399,8 @@
   ],
   "used": true,
   "jp": "【はのん】がうたをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Hanon is choosing a song.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -410,8 +410,8 @@
   ],
   "used": true,
   "jp": "　【リナ】がうたをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Rina is choosing a song.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -421,8 +421,8 @@
   ],
   "used": true,
   "jp": "　　つうしんあいてがいません！{end}",
-  "en": "",
-  "status": "",
+  "en": "There's no link partner!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -432,8 +432,8 @@
   ],
   "used": true,
   "jp": "　つうしんあいてがかわっています！{end}",
-  "en": "",
-  "status": "",
+  "en": "The link partner has changed!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -443,8 +443,8 @@
   ],
   "used": true,
   "jp": "うたをえらんでください{end}",
-  "en": "",
-  "status": "",
+  "en": "Please choose a song.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -454,8 +454,8 @@
   ],
   "used": true,
   "jp": "レベルをえらんでください{end}",
-  "en": "",
-  "status": "",
+  "en": "Please choose a level.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -465,8 +465,8 @@
   ],
   "used": true,
   "jp": "【るちあ】がレベルをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Lucia is choosing a level.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -476,8 +476,8 @@
   ],
   "used": true,
   "jp": "【はのん】がレベルをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Hanon is choosing a level.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -487,8 +487,8 @@
   ],
   "used": true,
   "jp": "　【リナ】がレベルをえらんでいます{end}",
-  "en": "",
-  "status": "",
+  "en": "Rina is choosing a level.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -500,8 +500,8 @@
   ],
   "used": true,
   "jp": "　つうしんでいじょうが\n　はっけんされました{end}",
-  "en": "",
-  "status": "",
+  "en": "A link error was detected.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -511,8 +511,8 @@
   ],
   "used": true,
   "jp": "　つうしんに\n　しっぱいしました！{end}",
-  "en": "",
-  "status": "",
+  "en": "The link failed!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -522,8 +522,8 @@
   ],
   "used": true,
   "jp": "{FA:1101}　ちょっとまっててね！{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1101}Wait just a sec!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -545,8 +545,8 @@
   ],
   "used": true,
   "jp": "私は親機　IＤ　{FB:B037000301}{end}",
-  "en": "",
-  "status": "",
+  "en": "I'm the host. ID {FB:B037000301}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -556,8 +556,8 @@
   ],
   "used": true,
   "jp": "私は子機　IＤ　{FB:B037000301}{end}",
-  "en": "",
-  "status": "",
+  "en": "I'm a guest. ID {FB:B037000301}{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -580,8 +580,8 @@
   ],
   "used": true,
   "jp": "１２３４５６７８９０１２３４５６７８\n２あああああああああああああああああ\n３いいいいいいいいいいいいいいいいい\n４ううううううううううううううううう\n５えええええええええええええええええ\n６おおおおおおおおおおおおおおおおお\n７かかかかかかかかかかかかかかかかか\n{FD:03}　あいうえお　たちつてと　まみむめも　わをん、。\n\n　かきくけこ　なにぬねの　や　ゆ　よ　ゃゅょっ－　゛゜\n\n　さしすせそ　はひふへほ　らりるれろ　ぁぃぅぇぉ　←→{end}",
-  "en": "",
-  "status": "",
+  "en": "123456789012345678\n2AAAAAAAAAAAAAAAAA\n3BBBBBBBBBBBBBBBBB\n4CCCCCCCCCCCCCCCCC\n5DDDDDDDDDDDDDDDDD\n6EEEEEEEEEEEEEEEEE\n7FFFFFFFFFFFFFFFFF\n{FD:03} ABCDEFGHIJKLMNOPQRSTUVWX\n\n abcdefghijklmnopqrstuvwx\n\n YZyz 0123456789.,!?'\"-~♪♥{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -591,8 +591,8 @@
   ],
   "used": true,
   "jp": "　　　　　　　～原作～\n\n{FC:44}{FA:C9}マーメイドメロディー⇔ぴちぴちピッチ\n{FA:89}{FA:1101}　原案　　　講談社・ウィーゔ\n　まんが　　花森ぴんく\n　シナリオ　横手美智子\n{FA:1101}　　　　　⇔（講談社　なかよし連載）{end}",
-  "en": "",
-  "status": "",
+  "en": "                     ~Original Work~\n\n{FC:44}{FA:C9}Mermaid Melody Pichi Pichi Pitch\n{FA:89}{FA:1101}   Original Concept    Kodansha, We've\n   Manga                     Pink Hanamori\n   Scenario                 Michiko Yokote\n{FA:1101}    (Serialized in Kodansha's Nakayoshi){end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -602,8 +602,8 @@
   ],
   "used": true,
   "jp": "　　　　　　～キャスト～\n{FA:1101}　　七海るちあ　　　　中田　あすみ\n　　宝生波音　　　　　寺門　仁美\n　　洞院リナ　　　　　浅野　まゆみ\n　　かれん　　　　　　小暮　英麻\n{FA:1101}　　ヒッポ　　　　　　伊東　みやこ\n　　堂本海斗　　　　　岸尾　大輔{end}",
-  "en": "",
-  "status": "",
+  "en": "                             ~Cast~\n{FA:1101}   Lucia Nanami       Asumi Nakata\n   Hanon Hosho       Hitomi Terakado\n   Rina Toin             Mayumi Asano\n   Karen                   Ema Kogure\n{FA:1101}   Hippo                    Miyako Ito\n   Kaito Domoto       Daisuke Kishio{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -613,8 +613,8 @@
   ],
   "used": true,
   "jp": "{FA:1102}　　イズール　　　　　石塚　さより\n　　エリル　　　　　　松岡　由貴\n　　ユーリ　　　　　　本多　知恵子\n　　マリア　　　　　　小林　沙苗\n{FA:1101}　　シェシェ　　　　　土屋　実紀\n　　ミミ　　　　　　　下屋　則子{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1102}   Izuru                   Sayori Ishizuka\n   Eriru                    Yuki Matsuoka\n   Yuri                      Chieko Honda\n   Maria                   Sanae Kobayashi\n{FA:1101}   Sheshe                 Miki Tsuchiya\n   Mimi                      Noriko Shimoya{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -624,8 +624,8 @@
   ],
   "used": true,
   "jp": "{FA:1101}　　　　　　～スタッフ～\n{FA:1103}　　【エグゼクティブプロデューサー】\n\n　　　　　　　吉岡　基行\n{FA:1101}　　　　　　　下村　聡{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1101}                            ~Staff~\n{FA:1103}                [Executive Producer]\n\n                   Motoyuki Yoshioka\n{FA:1101}                   Satoshi Shimomura{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -635,8 +635,8 @@
   ],
   "used": true,
   "jp": "{FA:1105}　　　　　【プロデューサー】\n\n　　　　　　　下道　隆{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1105}                          [Producer]\n\n                   Takashi Shimomichi{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -646,8 +646,8 @@
   ],
   "used": true,
   "jp": "{FA:1105}　　【ディレクター&プランナー】\n\n　　　　　　　渡邉　勉{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1105}                 [Director & Planner]\n\n                   Tsutomu Watanabe{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -657,8 +657,8 @@
   ],
   "used": true,
   "jp": "{FA:1101}　　　　　【プログラマー】\n\n　　　　　　　渡邉　勉\n{FA:1101}　　　　　　　内田　英人\n{FA:1101}　　　　　　　板倉　誠\n{FA:1101}　　　　　　　川原　満{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1101}                      [Programmers]\n\n                   Tsutomu Watanabe\n{FA:1101}                       Hideto Uchida\n{FA:1101}                      Makoto Itakura\n{FA:1101}                   Mitsuru Kawahara{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -668,8 +668,8 @@
   ],
   "used": true,
   "jp": "{FA:1101}　　　　　　【デザイナー】\n\n　　　　　　　田中　康彦\n{FA:1101}　　　　　　　鷲見　利恵子\n{FA:1101}　　　　　　　田中　世津\n{FA:1101}　　　　　　　宮本　京子{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1101}                         [Designers]\n\n                     Yasuhiko Tanaka\n{FA:1101}                          Rieko Sumi\n{FA:1101}                       Setsu Tanaka\n{FA:1101}                     Kyoko Miyamoto{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -679,8 +679,8 @@
   ],
   "used": true,
   "jp": "{FA:1101}　　　　　　　【サウンド】\n{FA:1103}　　　　　【音楽】　桐岡　麻季\n{FA:1101}　　　　【効果音】　ＡRY\n　　　　　　　　　　熊坂希代子\n　　　　　　　　　　渡邉　勉\n{FA:1101}　　　⇔【{FD:01}プログラム{FD:00}】　GUN{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:1101}                            [Sound]\n{FA:1103}   [Music]                   Maki Kirioka\n{FA:1101}   [Sound Effects]     ARY\n                                   Kiyoko Kumasaka\n                                   Tsutomu Watanabe\n{FA:1101}   [{FD:01}Program{FD:00}]          GUN{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -690,8 +690,8 @@
   ],
   "used": true,
   "jp": "{FA:C9}太陽の楽園⇔{FD:01}～Promised　Land～\n{FA:89}　　　　作詞：三井ゆきこ　作曲：大内哲也　編曲：大内哲也\n　　　　　　　　　　　　　　　　　　　　　歌：神戸みゆき\n{FD:00}{FA:C9}大事な宝箱\n{FA:89}{FD:01}　　　　　　作詞：ポリン　作曲：小林信吾　編曲：小林信吾\n　　　　　　　　　　　　　　　　　　　　　歌：中田あすみ\n{FD:00}{FA:C9}Legend⇔of⇔Mermaid\n{FA:89}{FD:01}　　　　作詞：三井ゆきこ　作曲：林　浩司　編曲：林　浩司\n　　　　　　　　　　歌　中田あすみ、寺門仁美、浅野まゆみ{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:C9}Taiyou no Rakuen {FD:01}~Promised Land~\n{FA:89} Lyrics: Yukiko Mitsui\n Music: Tetsuya Ouchi\n Arrangement: Tetsuya Ouchi\n Vocals: Miyuki Kanbe\n{FA:06}{FD:00}{FA:C9}Daiji na Takarabako\n{FA:89}{FD:01} Lyrics: Porin\n Music: Shingo Kobayashi\n Arrangement:\n         Shingo Kobayashi\n Vocals: Asumi Nakata\n{FA:06}{FD:00}{FA:C9}Legend of Mermaid\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Koji Hayashi\n Arrangement: Koji Hayashi\n Vocals: Asumi Nakata,\n         Hitomi Terakado,\n         Mayumi Asano{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -701,8 +701,8 @@
   ],
   "used": true,
   "jp": "{FA:C9}Super⇔Love⇔Songs！\n{FA:89}{FD:01}　　　　　作詞：三井ゆきこ　作曲：勝誠二　編曲：神津裕之\n　　　　　　　　　　歌　中田あすみ、寺門仁美、浅野まゆみ\n{FD:00}{FA:C9}恋はなんだろう\n{FA:89}{FD:01}　作詞：ゆうき　かな　作曲：永井　ルイ　編曲：永井　ルイ\n　　　　　　　　　　　　　　　　　　　　　歌　中田あすみ\n{FD:00}{FA:C9}Splash⇔Ｄream\n{FA:89}{FD:01}　　　　　　作詞：福田哲也　作曲：勝誠二　編曲：西嶋正己\n　　　　　　　　　　　　　　　　　　　　　歌　中田あすみ{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:C9}Super Love Songs!\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Seiji Katsu\n Arrangement: Hiroyuki Kozu\n Vocals: Asumi Nakata,\n         Hitomi Terakado,\n         Mayumi Asano\n{FA:06}{FD:00}{FA:C9}Koi wa Nan Darou\n{FA:89}{FD:01} Lyrics: Kana Yuki\n Music: Rui Nagai\n Arrangement: Rui Nagai\n Vocals: Asumi Nakata\n{FA:06}{FD:00}{FA:C9}Splash Dream\n{FA:89}{FD:01} Lyrics: Tetsuya Fukuda\n Music: Seiji Katsu\n Arrangement:\n         Masami Nishijima\n Vocals: Asumi Nakata{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -712,8 +712,8 @@
   ],
   "used": true,
   "jp": "{FA:C9}Ｅver⇔Ｂlue\n{FA:89}{FD:01}　　　　作詞：三井ゆきこ　作曲：堀田健志　編曲：佐藤和朗\n　　　　　　　　　　　　　　　　　　　　　　歌　寺門仁美\n{FD:00}{FA:C9}Star⇔Jewel\n{FA:89}{FD:01}　　　　作詞：三井ゆきこ　作曲：大内哲也　編曲：大内哲也\n　　　　　　　　　　　　　　　　　　　　　歌　浅野まゆみ{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:C9}Ever Blue\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Takeshi Hotta\n Arrangement: Kazuaki Sato\n Vocals: Hitomi Terakado\n{FA:06}{FD:00}{FA:C9}Star Jewel\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Tetsuya Ouchi\n Arrangement: Tetsuya Ouchi\n Vocals: Mayumi Asano{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -723,8 +723,8 @@
   ],
   "used": true,
   "jp": "{FA:C9}Rainbow　Notes♪\n{FA:89}{FD:01}　　　　　作詞：三井ゆきこ　作曲：勝誠二　編曲：蓮沼健介\n　　　　　　　　　　　　　　　　　　　　　歌：神戸みゆき\n{FD:00}{FA:C9}世界で一番早く朝が来る場所\n{FA:89}{FD:01}　　　　　作詞：三井ゆきこ　作曲：佐藤直紀　編曲：吉川慶\n　　　　　　　　　　歌　中田あすみ、寺門仁美、浅野まゆみ\n{FD:00}{FA:C9}夢のその先へ\n{FA:89}{FD:01}　　　　　　作詞：三井ゆきこ　作曲：石田裕之　編曲：{FD:00}Ⓒ\n{FD:01}　　　　　　　　　　歌　中田あすみ、寺門仁美、浅野まゆみ{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:C9}Rainbow Notes♪\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Seiji Katsu\n Arrangement:\n         Kensuke Hasunuma\n Vocals: Miyuki Kanbe\n{FA:06}{FD:00}{FA:C9}Sekai de Ichiban Hayaku\nAsa ga Kuru Basho\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Naoki Sato\n Arrangement: Kei Yoshikawa\n Vocals: Asumi Nakata,\n         Hitomi Terakado,\n         Mayumi Asano\n{FA:06}{FD:00}{FA:C9}Yume no Sono Saki e\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Hiroyuki Ishida\n Arrangement: {FD:00}(C)\n{FD:01} Vocals: Asumi Nakata,\n         Hitomi Terakado,\n         Mayumi Asano{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -734,8 +734,8 @@
   ],
   "used": true,
   "jp": "{FA:C9}KIZUNＡ\n{FA:89}{FD:01}　　　　　　　作詞：福田哲也　作曲：勝誠二　編曲：勝誠二\n　　　　　　　　　　歌　中田あすみ、寺門仁美、浅野まゆみ\n{FD:00}{FA:C9}黒の協奏曲⇔～concerto～\n{FA:89}{FD:01}　　　　作詞：三井ゆきこ　作曲：延近輝之　編曲：延近輝之\n　　　　　　　　　　　　　　　　　歌　土屋実紀、下屋則子\n{FD:00}{FA:C9}オーロラの風に乗って\n{FA:89}{FD:01}　　　　作詞：三井ゆきこ　作曲：大内哲也　編曲：大内哲也\n　　　　　　　　　　　　　　　　　　　　　　歌　小暮英麻{end}",
-  "en": "",
-  "status": "",
+  "en": "{FA:C9}KIZUNA\n{FA:89}{FD:01} Lyrics: Tetsuya Fukuda\n Music: Seiji Katsu\n Arrangement: Seiji Katsu\n Vocals: Asumi Nakata,\n         Hitomi Terakado,\n         Mayumi Asano\n{FA:06}{FD:00}{FA:C9}Kuro no Kyousoukyoku {FD:01}~concerto~\n{FA:89} Lyrics: Yukiko Mitsui\n Music: Teruyuki Nobuchika\n Arrangement:\n         Teruyuki Nobuchika\n Vocals: Miki Tsuchiya,\n         Noriko Shimoya\n{FA:06}{FD:00}{FA:C9}Aurora no Kaze ni Notte\n{FA:89}{FD:01} Lyrics: Yukiko Mitsui\n Music: Tetsuya Ouchi\n Arrangement: Tetsuya Ouchi\n Vocals: Ema Kogure{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -745,8 +745,8 @@
   ],
   "used": true,
   "jp": "協力\n　　株式会社講談社なかよし編集部\n　　株式会社ウィーゔ　　　　　　　　{FA:1104}音楽協力\n　　株式会社ポニーキャニオン　　　　{FA:1104}音声収録協力\n　　株式会社ザック・プロモーション{end}",
-  "en": "",
-  "status": "",
+  "en": "Special Thanks\n  Kodansha Ltd., Nakayoshi Editorial Dept.\n  We've Inc.{FA:1104}Music Cooperation\n  Pony Canyon Inc.{FA:1104}Voice Recording Cooperation\n  Zack Promotion Inc.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -756,8 +756,8 @@
   ],
   "used": true,
   "jp": "\n{FA:1103}　　　　　　　～制作～\n\n{FD:01}　（株）コナミコンピュータエンタテインメントジャパン{end}",
-  "en": "",
-  "status": "",
+  "en": "\n{FA:1103}                        ~Production~\n\n{FD:01}      Konami Computer\n Entertainment Japan, Inc.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -827,8 +827,8 @@
   ],
   "used": true,
   "jp": "【ヒッポ】\nるちあのおめつけやくとして、にんげん\nかいについてきたペンギン。ほんとうの\nすがたがびしょうねん！なんだけど、じ\nつはふういんのもんをまもるしゅごしゃ\n「ヒポカンポス」でもあるの。\nるちあが{call:@0DDA}にこくはくしてしま\nわないか、いつもしんぱいしてるんだ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Hippo]\nA penguin who came to the human world to\nkeep an eye on Lucia. His true form is a\nhandsome boy! But he's actually also\n\"Hippocampus,\" the guardian of the\nsealed gate. He's always worried that\nLucia might confess her love to {call:@0DDA}.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -838,8 +838,8 @@
   ],
   "used": true,
   "jp": "【宝生　波音】　{FD:01}ほうしょう　はのん\n{FD:00}みなみたいせいよう・みずいろしんじゅ\nのマーメイドプリンセス。\nかっこいいおとこのコにめがなくって、\nたまにこいのぼうそうきかんしゃになっ\nちゃうこともあったりして。\nちょっとちゃっかりしてるところもある\nけど、いつでもともだちやなかまのこと\nをおもってるやさしいおんなのコだよ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Hanon Hosho]{FD:01}\n{FD:00}The Mermaid Princess of the South\nAtlantic, with the aqua pearl. She can't\nresist cool boys, and sometimes turns\ninto a runaway love train! She can be a\nlittle sly, but she's a kind girl who always\nthinks of her friends.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -849,8 +849,8 @@
   ],
   "used": true,
   "jp": "【洞院　リナ】　{FD:01}とういん　りな\n{FD:00}きたたいせいよう・グリーンしんじゅの\nマーメイドプリンセス。\nクールでかっこよくて、しっかりものな\nんだけど、ときどきひとりでなやむのが\nわるいくせ。でもじつは、おわらいばん\nぐみがすきといういがいなところも。\nこいやおしゃれよりも、さいしんがたの\nかべかけテレビがほしいんだって。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Rina Toin]{FD:01}\n{FD:00}The Mermaid Princess of the North\nAtlantic, with the green pearl. She's\ncool, stylish and dependable, but her bad\nhabit is worrying about things all alone.\nSurprisingly, she loves comedy shows!\nMore than love or fashion, she wants\nthe latest wall-mounted TV.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -860,8 +860,8 @@
   ],
   "used": true,
   "jp": "【かれん】\nなんきょくかい・パープルしんじゅのマ\nーメイドプリンセス。\nほっきょくかいのプリンセス・ノエルと\nはふたごのしまいで、ノエルがつかまっ\nたのはリナのせいだとおもっていたの。\nいまはごかいもとけて、とってもたより\nになるなかまになったよ。るちあたち\nより、ちょっぴりおねえさんなんだ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Karen]\nThe Mermaid Princess of the Antarctic\nOcean, with the purple pearl. She's the\ntwin sister of Noelle, Princess of the\nArctic Ocean, and thought it was Rina's\nfault that Noelle got captured. Now that\nthe misunderstanding is cleared up,\nshe's a really dependable friend. She's a\nlittle older than Lucia and the others.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -871,8 +871,8 @@
   ],
   "used": true,
   "jp": "【イズール】\nガイトのてした、{call:@0DCA}のひとり。すいりゅうをつかってこうげきしてくるんだ。\nガイトのことがだいすきで、てがらを\nたてようとるちあたちをねらっているけ\nど、なかなかいいさくせんがたてられな\nくてしっぱいばかりしているよ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Izuru]\nOne of Gaito's minions, the {call:@0DCA}. She attacks with water currents. She adores\nGaito and keeps going after Lucia and the others to earn his praise, but she can never come up\nwith a good plan, so she keeps on failing.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -882,8 +882,8 @@
   ],
   "used": true,
   "jp": "【エリル】\nガイトのてした、{call:@0DCA}のひとり。くるくるまわるとかおが\nこわくなる、ふしぎなキャラクター。\nのうてんきでなにもかんがえてないよう\nにみえるけど、るちあたちのうたをふう\nじる、いいさくせんをかんがえてくるこ\nともある、ゆだんのできないてきなの。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Eriru]\nOne of Gaito's minions, the {call:@0DCA}. A mysterious\ncharacter whose face turns scary when she spins round and round. She\nlooks carefree, like she isn't thinking about anything, but sometimes\nshe comes up with clever plans to seal away Lucia and the others'\nsongs. She's an enemy you can't let your guard down around.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -893,8 +893,8 @@
   ],
   "used": true,
   "jp": "【ユーリ】\nガイトのてした、{call:@0DCA}のひとり。ちょうのうりょくや、いやなねいろのピアノでこうげきしてくるよ。\nノエルをつかまえたのもユーリなの。\nびしょうねんのすがたのヒッポとこいに\nおちちゃって、いつかいっしょになれる\nひをゆめみているんだ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Yuri]\nOne of Gaito's minions, the {call:@0DCA}. She attacks with psychic powers and nasty-sounding piano music.\nYuri is also the one who captured Noelle. She fell in love with Hippo in his handsome-boy form, and dreams of the day\nthey can be together.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -904,8 +904,8 @@
   ],
   "used": true,
   "jp": "【マリア】\nガイトのてした、{call:@0DCA}のひとり。うみをこおらせたり、こおりをなげつけてこうげきしてくるよ。\nガイトにみとめられたくて、{call:@0DB2}にとりいろうとしたこともあるんだ。\nふしぎなちからをもつ{call:@0DDA}をねらったことも。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Maria]\nOne of Gaito's minions, the {call:@0DCA}. She attacks by freezing the sea and hurling ice. Wanting Gaito to\nrecognize her, she once tried to win over the {call:@0DB2}. She's even gone after {call:@0DDA} and\nhis mysterious power.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -915,8 +915,8 @@
   ],
   "used": true,
   "jp": "【シスター・シェシェ】\n{call:@0DB2}のあねで、\nしっぽがマイクになっているの。\nふたりでうたううたはマーメイドをくるしめるちからをもっているんだ。\nいつもいもうとのミミとふたりでこうどうしていて{call:@0DCA}をしたにみているの。ふつうのうたはつうようしないおそろしいてきなんだよ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Sister Sheshe]\nThe older sister of the {call:@0DB2}. Her tail is a microphone. The songs the two of them sing have the power to torment mermaids.\nShe always acts together with her little sister Mimi, and looks down on the {call:@0DCA}. She's a terrifying enemy, and ordinary songs don't work\non her.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -926,8 +926,8 @@
   ],
   "used": true,
   "jp": "【シスター・ミミ】\n{call:@0DB2}のいもうと\nで、いつもあねのシェシェといっしょにこうどうしているよ。\nふたりでうたう「くろのコンチェルト」\nは、とてもきょうりょくで、なんども\nるちあたちをおいつめているんだ。\n「ほんとだよねえ」と「そうだよねえ」\nがくちぐせ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Sister Mimi]\nThe younger sister of the {call:@0DB2}.\nShe always acts together with her big sister Sheshe. \"Kuro no\nConcerto,\" the song the two of them sing, is super powerful,\nand it's cornered Lucia and the others again and again. Her\ncatchphrases are \"Sooo true~\" and \"Totally~.\"{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -937,8 +937,8 @@
   ],
   "used": true,
   "jp": "【ガイト】\nてきのおおボスで、パンタラッサという\nしゅぞく。アクア・レジーナさまにふう\nいんされていたんだけど、沙羅{FD:01}（さら）{FD:00}が\nといてしまったの。\nうみのせかいをしはいしようと、すいよ\nうをつかってマーメイドプリンセスのし\nんじゅをあつめているんだよ。じつは、\n{call:@0DDA}とふかいかんけいが……。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Gaito]\nThe enemy's big boss, of the\nPanthalassa clan. He was sealed away by\nAqua Regina-sama, but Sara broke the\nseal. To rule the world of the sea, he\nuses water demons to gather the\nMermaid Princesses' pearls. Actually, he\nhas a deep connection to {call:@0DDA}...{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -948,8 +948,8 @@
   ],
   "used": true,
   "jp": "【七海　るちあ】　{FD:01}ななみ　るちあ\n{FD:00}きたたいへいよう・ピンクしんじゅの\nマーメイドプリンセス。\n７ねんまえにたすけたおとこのコにあげ\nたしんじゅをさがしに、にんげんかいへ\nやってきたんだ。その、はつこいのおとこのコ・{call:@0DDA}とであったの。\nちょっぴりドジだけど、こいにたたかい\nにがんばってるんだよ！{end}",
-  "en": "",
-  "status": "",
+  "en": "[Lucia Nanami]{FD:01}\n{FD:00}The Mermaid Princess of the North Pacific, with the pink pearl. She came to\nthe human world to look for the pearl she gave a boy she saved seven years\nago. There she met that boy, her first love: {call:@0DDA}. She's a little clumsy, but\nshe's doing her best in love and in battle!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -959,8 +959,8 @@
   ],
   "used": true,
   "jp": "【堂本　海斗】　{FD:01}どうもと　かいと\n{FD:00}るちあが７ねんまえにたすけたおとこの\nコ。そのときあげたしんじゅを、ずっと\nたいせつにもっていてくれていたの。\nサーフィンがじょうずで、おんなのコに\nもモテモテなんだけど、マーメイドの\nるちあをずっとおもっていてくれている\nんだ。すいようをたおす、ふしぎなちか\nらももっているんだよ。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Kaito Domoto]{FD:01}\n{FD:00}The boy Lucia saved seven years ago.\nHe's treasured the pearl she gave him\nback then ever since. He's great at\nsurfing and super popular with girls, but\nhis heart has always belonged to Lucia\nthe mermaid. He also has a mysterious\npower that defeats water demons.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -970,8 +970,8 @@
   ],
   "used": true,
   "jp": "【沙羅】　{FD:01}さら\n{FD:00}インドよう・オレンジしんじゅのマーメ\nイドプリンセス。８ねんまえにみつきせ\nんせいとこいにおちたマーメイドなの。\nいちじはガイトのなかまになってせかい\nをほろぼそうとしていたんだけど、やっ\nぱりなかまになってくれたんだ。\nみなみたいへいようのプリンセス・ココ\nとなかよしなんだって。{end}",
-  "en": "",
-  "status": "",
+  "en": "[Sara]{FD:01}\n{FD:00}The Mermaid Princess of the Indian\nOcean, with the orange pearl. Eight\nyears ago, she fell in love with\nMitsuki-sensei. For a while she sided\nwith Gaito to destroy the world, but in\nthe end she became their friend. She's\nclose with Coco, Princess of the South\nPacific.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -981,8 +981,8 @@
   ],
   "used": true,
   "jp": "キャラの説明１５\nキャラの説明１５\nキャラの説明１５\nキャラの説明１５{end}",
-  "en": "",
-  "status": "",
+  "en": "Character info 15\nCharacter info 15\nCharacter info 15\nCharacter info 15{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -992,8 +992,8 @@
   ],
   "used": true,
   "jp": "キャラの説明１６\nキャラの説明１６\nキャラの説明１６\nキャラの説明１６{end}",
-  "en": "",
-  "status": "",
+  "en": "Character info 16\nCharacter info 16\nCharacter info 16\nCharacter info 16{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1083,8 +1083,8 @@
   ],
   "used": true,
   "jp": "みなさん、こんにちは、\nわたしが、おんせいほんやくの\nヒッポです。\nよろしくおねがいします。{end}",
-  "en": "",
-  "status": "",
+  "en": "Hello, everyone! I'm Hippo, your voice\ntranslator. Nice to meet you!{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1094,8 +1094,8 @@
   ],
   "used": true,
   "jp": "マーメイドメロディー　ぴちぴちピッチ\nおんせいほんやくのテスト\nがっこう　　やっほー\nおはようございます。{end}",
-  "en": "",
-  "status": "",
+  "en": "Mermaid Melody Pichi Pichi Pitch\nVoice translation test\nSchool  Yahoo!\nGood morning.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1105,8 +1105,8 @@
   ],
   "used": true,
   "jp": "９９９９９９９９９９９９。\n６０００８００１００３。{end}",
-  "en": "",
-  "status": "",
+  "en": "9999999999999.\n60008001003.{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1116,8 +1116,8 @@
   ],
   "used": true,
   "jp": "すばらしーです。。。。\nじかい、マーメード　メロディー、\nぴちぴちピッチ！\n「いえない　ココロ」・・・\nアンコールは、いかが？{end}",
-  "en": "",
-  "status": "",
+  "en": "Wonderful.... Next time on Mermaid\nMelody Pichi Pichi Pitch! \"The\nUnspoken Heart\"... How about an\nencore?{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1127,8 +1127,8 @@
   ],
   "used": true,
   "jp": "メロディー{end}",
-  "en": "",
-  "status": "",
+  "en": "Melody{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1215,8 +1215,8 @@
   ],
   "used": true,
   "jp": "あいうえお。かきくけこ。さしすせそ。\nたちつてと。なにぬねの。はひふへほ。\nまみむめも。やゆよ。らりるれろ。\nわをん。がぎぐげご。ざじずぜぞ。\nだぢづでど。ばびぶべぼ。ぱぴぷぺぽ{end}",
-  "en": "",
-  "status": "",
+  "en": "ABCDE. FGHIJ. KLMNO. PQRST.\nUVWXYZ. abcde. fghij. klmno.\npqrst. uvwxyz. 01234. 56789.\n.,!? '\"-~ :;() &*+= %#<>_\n[]/ … ♪ ♥ ★ é{end}",
+  "status": "done",
   "notes": ""
  },
  {
@@ -1226,8 +1226,8 @@
   ],
   "used": true,
   "jp": "きゃきゅきょ　　　ぎゃぎゅぎょ　　。\nしゃしゅしょ　　　じゃじゅじょ　　。\nちゃちゅちょ　　　ぢゃぢゅぢょ　　。\nにゃにゅにょ　　　ひゃひゅひょ　　。\nびゃびゅびょ　　　ぴゃぴゅぴょ　　。\nみゃみゅみょ　　。りゃりゅりょ　　。\nふぁふぃふぇふぉ　てぃでぃてゅでゅ。\nちぇしぇじぇとぅどぅ{end}",
-  "en": "",
-  "status": "",
+  "en": "kya kyu kyo   gya gyu gyo  .\nsha shu sho   ja ju jo  .\ncha chu cho   dya dyu dyo  .\nnya nyu nyo   hya hyu hyo  .\nbya byu byo   pya pyu pyo  .\nmya myu myo  .rya ryu ryo  .\nfa fi fe fo ti di tyu dyu.\nche she je tu du{end}",
+  "status": "done",
   "notes": ""
  }
 ]

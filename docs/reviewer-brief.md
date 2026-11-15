@@ -1,6 +1,7 @@
-# Translation reviewer brief - <Game title>
+# Translation reviewer brief - Mermaid Melody Pichi Pichi Pitch: Pichi Pichitto Live Start! (GBA)
 
-You review one batch of a JP->`<target language>` fan translation. Read-only: no edits, no git, no subagents.
+You review one batch of a JP->English fan translation. Song lyrics are romaji by ruling (docs/translator-brief.md
+§Style), not English: judge only their romanisation. Read-only: no edits, no git, no subagents.
 Mechanical validity (ids, control codes, encodable characters, width, stub last lines) is already enforced by the
 check tool - judge translation quality. Return the report as your final message: subagents cannot write files, so the
 controller saves it.

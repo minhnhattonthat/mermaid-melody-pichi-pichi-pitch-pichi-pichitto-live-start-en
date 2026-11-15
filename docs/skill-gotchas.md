@@ -20,4 +20,8 @@ One line each: the skill reference file it belongs in, then the fact.
 - scripts/lua (keystone): assembling a prefix to get label offsets includes the auto-appended literal pool, so offsets come out wrong; put a fixed branch table at the top of the blob instead.
 - docs/re/compression.md wording: the free space at 0x1FDF760.. is zero-filled in the dump (FF only in the trap-test build).
 - references/emulator-qa.md (Visual QA): a text box that looks translucent or cut at its edges in one shot can be a scene fade-out in progress; look at the frames before it before chasing layers/windows (cost a probe and two test builds here).
+- assets/batches.py (wrap): split chunks after page codes too ({FA:06}/{wait}) and measure the line before the code; otherwise "word{FA:06}Next" never wraps and every translator hand-inserts `\n` (fixed here in tools/batches.py, worth porting).
+- assets/batches.py (glossary check): compare terms against the English with whitespace folded, or a wrap break inside "Mermaid Beads" fails the term.
+- references/translation.md (Validation): a name inserted by a call can't take a glued plural ("{call:Mermaid Princess}s" draws "Princesss"): lint `{call}s` when the called text ends in s, and let the check accept a call written out as its own text. 19 lines in 5 batches hit this.
+- Claude Code context-mode plugin: whole-file Read refused above ~4 KB, for subagents too; tell translator/reviewer agents to read with offset/limit in the dispatch.
 - references/pipeline.md (Width gate): calibrate the fit lint on the original script first (Japanese must give 0 errors); it exposed wrong ranges (lyrics vs link messages), no-wrap credits, scrolling bubbles and false event-stream hits past its end.
