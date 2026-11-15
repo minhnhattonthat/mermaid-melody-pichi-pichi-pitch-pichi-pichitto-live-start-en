@@ -1,8 +1,7 @@
 # minigame title panels (room game object -> title page; BG1 pal 10, map per page; tools/gfx_minigame.py)
-# PARKED: the panel map dedups checker tiles, so text drawn on one cell shows on every cell sharing its tile
-# (seen in work/qa/p8room/mt_z.png). The map is not kcomp-loaded (tools/lua/kcomplog.lua shows tiles only) and not
-# raw in ROM: find its source (watch writes to VRAM 0x0600E800), give the text cells their own tiles, then un-comment.
+# The panel map (a run-stream record, see tools/gfx_minigame.py) dedups checker tiles, so the generator re-tiles the
+# text rect and writes the new map records to gfx/minipanel.maps (build stage maps).
 # offset	size	layout	png	English	Japanese
-#1C00CFF	800x2	tiles16	gfx/out/minipanel/1C00CFF.png	You can win Pitch Coins! / Uses 100 coins!	ぴっちコインがもらえるよ★ / コイン100まいつかうよ!
-#1C00403	800x2	tiles16	gfx/out/minipanel/1C00403.png	You can win posters and cards! / Uses 100 coins!	ポスターとカードがもらえるよ★ / コイン100まいつかうよ!
-#1C01554	800x2	tiles16	gfx/out/minipanel/1C01554.png	You can win mascots! / Uses 100 coins!	マスコットがもらえるよ★ / コイン100まいつかうよ!
+1C00CFF	800x2	tiles16	gfx/out/minipanel/1C00CFF.png	You can win Pitch Coins! / Uses 100 coins!	ぴっちコインがもらえるよ★ / コイン100まいつかうよ!
+1C00403	800x2	tiles16	gfx/out/minipanel/1C00403.png	You can win posters and cards! / Uses 100 coins!	ポスターとカードがもらえるよ★ / コイン100まいつかうよ!
+1C01554	800x2	tiles16	gfx/out/minipanel/1C01554.png	You can win mascots! / Uses 100 coins!	マスコットがもらえるよ★ / コイン100まいつかうよ!

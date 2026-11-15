@@ -80,23 +80,29 @@ def rect_map():
     return cells
 
 
-def apply(rom):
-    """Every title's map -> RECT, in place (build stage "maps")."""
+def other_maps():
+    """gfx/*.maps (written by generators such as gfx_minigame.py): [(record offset, new stream)]."""
+    lines = [ln for f in sorted(gfx.GFX.glob("*.maps")) for ln in f.read_text(encoding="utf-8").splitlines()]
+    return [(int(a, 16), bytes.fromhex(b)) for a, b in (ln.split("\t") for ln in lines if ln and ln[0] != "#")]
+
+
+def records(rom):
+    """-> [(record offset, new stream)]: every title's map -> RECT, plus gfx/*.maps."""
     new = encode_map(rect_map())
-    for n in range(1, 41):
-        p = record(rom, n)
+    return [(record(rom, n), new) for n in range(1, 41)] + other_maps()
+
+
+def apply(rom):
+    """Rewrite every map record in place (build stage "maps"); the old tail is never read (1024 cells)."""
+    for p, new in records(rom):
         end = decode_map(rom, p)[1]
         if len(new) > end - p:
-            raise SystemExit(f"title {n}: new map {len(new)} bytes > old {end - p}")
+            raise SystemExit(f"map {p:X}: new {len(new)} bytes > old {end - p}")
         rom[p:p + len(new)] = new
 
 
 def zones(rom):
-    out = []
-    for n in range(1, 41):
-        p = record(rom, n)
-        out.append((p, p + len(encode_map(rect_map()))))
-    return out
+    return [(p, p + len(new)) for p, new in records(rom)]
 
 
 def tile(img, k):

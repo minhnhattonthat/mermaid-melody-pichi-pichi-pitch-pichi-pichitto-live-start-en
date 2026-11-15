@@ -138,7 +138,9 @@ prompts, ending and credits, story scenes if any.
 - Group `bonus` (done, unseen): 1D095BE おまけムービー! -> Bonus Movie! (`tools/gfx_cards.py`).
 - 1C0657A (open): second prompt panel, text つづけてあそぶ? (Keep playing?), frame tiles shared with 1C07510 but its own BG
   map, which is not in ROM as raw u16s and not a kcomp block starting with it (`findmap.py`, a raw search of the
-  card_game map row): reach the screen (end of a minigame) and dump it, then reuse `gfx_cards.prompt`.
+  card_game map row): reach the screen (end of a minigame) and dump it, then reuse `gfx_cards.prompt`. Its map is
+  probably a run-stream record like the minigame panels (execlog at 0x03000BF0 while it loads; retile as
+  `gfx_minigame.retile`).
 - Read (session 6): 179BC34 = the episode-select cursor OBJ (32x32, OAM 0 tile 4, pal 2; grid
   numbers are separate 16x16 OBJs without 話): each cell is two digits plus a small 話 plate at x 14-31 y 18-30 that
   overlaps the right digit's foot (x 16-20 y 18-21) -> plan "EP" on the plate (en12 plain caps, 11x7 fits x 21-31);
@@ -188,11 +190,20 @@ prompts, ending and credits, story scenes if any.
   banner) has another map than the mascot one (composing it with the mascot map gives garbage): open until the poster
   picker is reached (A on the wall did nothing with this save: probably needs an owned poster). 1CFDD65 (card
   collection banner) likewise unreached.
-- **Minigame panels (parked):** 1C00CFF (pages 1-2) / 1C00403 (page 3) / 1C01554 (page 4), BG1 pal 10, map per page.
-  `tools/gfx_minigame.py` draws them (checker rebuilt by majority vote, coin kept), but the map dedups plain checker
-  tiles, so the text leaked onto every cell sharing a tile. `Layer.write` used to skip unchanged cells before its
-  sharing check and missed this; it now checks every cell (cards, solo, clear still pass). The map is not loaded by
-  kcomp (only tiles, `work/qa/kc_mt/log.txt`) and not raw in ROM: find its writer (watch VRAM 0x0600E800 on page load).
-  Logos of the four games: 1BF198F (くらべてピッチ) and likely 1BF039E 1BF2D7E 1BF416C; not started.
+- Group `minipanel` (done, session 12, checked `work/qa/p8mini/sheet.png`, all 4 pages): 1C00CFF (pages 1-2) /
+  1C00403 (page 3) / 1C01554 (page 4), BG1 pal 10. Their BG1 maps are run-stream records (eptitle format, no header
+  offset: r12 of `tools/lua/execlog.lua --var PC_LO=0x03000BF0` on page load is the stream start): 1D250BA (pages
+  1-2), 1D2502C (p3), 1D25156 (p4). Each record sits after `00 c4`, reached by a 32-bit pointer to that `00 c4`
+  (1D250B4 -> 1D250B8 etc.); a table at 1D1E6D0 points at the `00 <ptr>` entries. `tools/gfx_minigame.py` gives every
+  cell of the text rect its own tile (content dedup broke the increment runs: 189 > 149 bytes; unique = 124 bytes,
+  114 of 117 free slots) and writes `gfx/minipanel.maps`; build stage `maps` (`gfx_eptitle.apply`) now also applies
+  every `gfx/*.maps` row in place (zones too).
+- **Minigame logos (open):** BG2 (char 0x4000, map 0x600D000 64x32; pages 2/4 go to the right screen 0x600D800), map
+  records also run-stream with palette bits in the stream (pals 0-3): page 1 くらべてピッチ chain 1BF198F 800x4 map
+  1D243B9 (280 bytes); p2 そろえてピッチ 1BF2D7E 800x4 map 1D244D8 (316); p3 あわせてピッチ 1BF039E 800x6 map 1D24266
+  (332); p4 キャッチでピッチ 1BF416C 800x4 map 1D2461B (327). Lettering is interleaved with card/character art and
+  stars, and the 256 tile slots are nearly full (max tile 229-258), so a redraw needs a design (top word + "Pitch"
+  lettering over the art, retile by content) and maybe a longer chain (check the loader's chunk count first). Some
+  logo cells use tiles loaded from another chain (composite `work/qa/p8mini/logos.png` showed blanks there).
 - Old note: menu item labels (selected label: OBJ pal 2, tiles 768/776, two 64x32 at y 58; bag icons with two-line labels:
   OBJ pal 3 tile 512 64x64), then the rows of `graphics_sweep.tsv` by screen.

@@ -2,7 +2,12 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 11, sha1 ad9c2669; smoke ok, write log clean, check 39 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba (2026-11-15 session 12, sha1 e0001e39; smoke ok, write log clean, check 39 passed); marker build `build.py --marker --out build/marker.gba`.
+- **Phase 8 progress (2026-11-15, session 12):** minigame title panels English (group `minipanel`, all 4 pages
+  checked `work/qa/p8mini/sheet.png`): their BG1 maps are run-stream records (1D250BA 1D2502C 1D25156), re-tiled by
+  `tools/gfx_minigame.py` -> `gfx/minipanel.maps`, applied by build stage `maps` (any `gfx/*.maps`). Minigame logos
+  1BF198F 1BF2D7E 1BF039E 1BF416C mapped (records, chains) but not drawn: need a design, notes in
+  `docs/re/graphics.md` §Minigame logos. Poster banner 1CE3D71 and prompt 1C0657A: same execlog trick once reached.
 - **Phase 8 progress (2026-11-15, session 11):** all 40 episode titles English (group `eptitle`, build stage `maps`:
   the per-episode BG1 map records at 0x1881720 decoded and rewritten to one 24x5 rect; `docs/re/graphics.md`
   §eptitle). `nomosaic.lua` fixed (shadow 0x030000B0). New `tools/lua/execlog.lua`. Digits-only sweep rows
