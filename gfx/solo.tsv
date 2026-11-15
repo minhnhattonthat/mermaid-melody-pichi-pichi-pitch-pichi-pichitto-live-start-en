@@ -1,0 +1,5 @@
+# Solo Pitch mode-carousel cards (scene 28, BG2 char base 0x4000; banner in BG pal 5); pal = BG pal 5 of solo_modes
+# offset	size	layout	png	English	Japanese
+1BF5582	800x6	tiles16	gfx/out/solo/1BF5582.png	Marathon Pitch (tools/gfx_solo.py)	とことんピッチ
+1BF7155	800x4	tiles16	gfx/out/solo/1BF7155.png	Nonstop Pitch	つづけてピッチ
+1BF8856	800x6	tiles16	gfx/out/solo/1BF8856.png	Anime Pitch	アニメでピッチ

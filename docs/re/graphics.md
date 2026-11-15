@@ -85,6 +85,17 @@ prompts, ending and credits, story scenes if any.
   (cell 2), 1x wide 2x tall; クリアもくひょう strip -> CLEAR GOAL; big クリア -> CL/EA/R! one pair per 32 px cell
   (`tools/gfx_gameover.py`). GAME OVER checked in scene 37 (`work/qa/p8go`); CLEAR GOAL / CLEAR! not seen yet.
   Palettes dumped from a scene may repeat colours: `tools/palfix.py` nudges repeats so `gfx.load_pal` accepts them.
+- **BG-mapped text:** `tools/gfx_bg.py show SCENE BG` renders a layer's whole map from a PPU dump with a cell grid
+  (find BGs on with DISPCNT: an off layer still has stale VRAM); `Layer.compose(rect)` -> indices of map cells,
+  `Layer.write(block_img, data, rect, img)` puts them back into the block's tiles (flips undone; raises on a tile
+  shared with cells outside the rect, e.g. blank tile 0). Cells use several palettes: draw in colour space and pick
+  each pixel's nearest index in its own cell's palette (`gfx_solo.edit`).
+- Group `solo` (done): mode-carousel cards (scene 28, BG2 cb 0x4000, 64x32 map; the current card can be in either
+  half) 1BF5582 とことん / 1BF7155 つづけて / 1BF8856 アニメで -> Marathon / Nonstop / Anime Pitch (D15),
+  `tools/gfx_solo.py`: erase the fill strokes +3 px in banner-palette cells, redraw 1x wide 2x tall. The lettering
+  is boxed in by art-palette cells and shared tiles, so each card has its own dx/dy and ring count. Checked in
+  `work/qa/p8solo` (cold-boot warps). Polish: small transparent holes at the cloud / star edges where the old
+  rings were.
 - Episode-title strips 18AF223.. (45 rows, 800x2 each): episode grid (scene 25) loads 18AF223 into BG1 char 257+
   (pal 12, map rows 7-12, cols 7-22, tiles in map order, one tile per cell); locked episodes are mosaicked
   (`tools/lua/nomosaic.lua` clears the register but the bottom strip stayed blocky: not solved). Layout of the
