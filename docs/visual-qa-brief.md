@@ -27,7 +27,8 @@ An `issue` is any of:
 - a name that differs from `glossary.md`.
 
 Standing non-bugs, `ok` (the controller adds the game's own below):
-- text still typing out, a box mid-fade or mid-scroll, a cursor caught mid-blink;
+- text still typing out, a box mid-fade or mid-scroll, a cursor caught mid-blink; a dialogue box whose lines show
+  doubled/ghosted with the top line clipped is the line-scroll animation (the original does the same, EP 8 f3306);
 - a map or scene still loading after a warp;
 - anything identical in the original's sheet.
 - Japanese kept by ruling (`docs/decisions.md`): the title logo マーメイドメロディー ぴちぴちピッチ / ライブスタート!

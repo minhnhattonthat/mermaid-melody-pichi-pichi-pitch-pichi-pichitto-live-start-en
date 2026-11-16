@@ -28,15 +28,19 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   (`work/tl/polish_subs.tsv`, merged with `batches.py merge polish`).
 - **Session 22 (2026-11-16):** polish pass, README, `tools/release.py`, `docs/release-readme.txt` committed (check 43
   passed; build sha1 44cb0bbd... in `work/qa/tour5.build`). Tour5 (`--jobs 4`) killed again by the harness for low
-  system memory (79 run dirs, 77 sheets, incomplete). Resume: free memory (close other apps/agents), then
-  `rm -rf work/qa/tour5` and re-run tour5, maybe `--jobs 2`, in the foreground or with
-  CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1.
+  system memory; a later run finished it and codex reviewed 387/395 sheets (4 issues).
+- **Session 23 (2026-11-16):** tour5 issues fixed: song-dialogue boxes capped at cols 4-24 like the Japanese
+  (`boxes.SONG_COLS`; at W 22 the text tiles reached the right gauge, EP 9 msg 1674), 52 song lines rewrapped, 12
+  shortened by hand; GAME OVER stacked GAME/OVER in sprite cell 2 (screen x 104-136, centred; `gfx_gameover.py`);
+  EP 27 lone "..." line joined. Re-tour into the same `work/qa/tour5` (so manifest paths stay valid), `--jobs 3`.
 - **Next (phase 8):**
-  1. Tour5 of the session-21 build (`python -X utf8 tools/tour.py --out work/qa/tour5`), then `qa_gate.py init
-     work/qa/manifest.tsv work/qa/tour5/sheets --build build/mermaid_en.gba --glob "sheet*.png"`, `qa_gate.py todo
-     ... --out-dir work/qa/chunks`, delete old `work/qa/vqa_log/*.out`, `sh tools/codex_vqa.sh work/qa/chunks 5`, fix,
-     re-tour, until `qa_gate.py check` exits 0. Text coverage: `tools/cover.py work/qa/tour5/runs work/qa/cover
-     --waive docs/text_unshown.tsv`.
+  1. After the re-tour: fold the old `work/qa/verdicts/chunk_*.tsv` into one `verdicts/round_N.tsv` (before init:
+     its mtime must predate the re-hash) and move the chunk files out (codex_vqa.sh skips a chunk whose verdict file
+     exists), empty `work/qa/chunks`, then `qa_gate.py init work/qa/manifest.tsv work/qa/tour5/sheets --build
+     build/mermaid_en.gba --glob "sheet*.png"` (unchanged sheets keep verdicts), `qa_gate.py todo work/qa/manifest.tsv
+     work/qa/verdicts --size 8 --out-dir work/qa/chunks`, `sh tools/codex_vqa.sh work/qa/chunks 4`, fix, until
+     `qa_gate.py check` exits 0. Text coverage:
+     `tools/cover.py work/qa/tour5/runs work/qa/cover --waive docs/text_unshown.tsv`.
   2. Then phase 9 (release): `tools/release.py` (not written yet; gates per the skill's pipeline.md §Release),
      README filled from the template, zip verified. Never publish.
 - **Later:**

@@ -8,6 +8,7 @@ Original ROM: --out work/qa/tour_jp --states work/qa/tour_jp/states (keeps work/
 Then: qa_gate.py init work/qa/manifest.tsv work/qa/tour/sheets --build ROM --glob "sheet*.png".
 """
 import argparse
+import re
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -59,7 +60,7 @@ def main():
         print(r.stdout.strip().splitlines()[-1] if r.stdout.strip() else r.stderr[-500:])
         bad += [l for l in r.stdout.splitlines() if l.startswith("FAIL")]
         for d in sorted(runs.iterdir()):
-            if d.is_dir() and d.name != "sheet" and not d.name.startswith("ep"):
+            if d.is_dir() and d.name != "sheet" and not re.fullmatch(r"ep\d\d", d.name):  # episode_select is a scene
                 sheet(d, Path(a.out) / "sheets" / d.name)
     lo, hi = (int(x) for x in a.eps.split("-"))
     with ThreadPoolExecutor(a.jobs) as ex:
