@@ -864,7 +864,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}くだらないですって！{FA:06}も～あったまにきちゃったもんね！{FA:06}こいするきもちは、いじわるなんかに\nまけないわ！{FA:06}ぴちぴちボイスでおうえんしちゃう！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Silly, you say?!{FA:06}Now I'm really mad!{FA:06}Feelings of love won't lose to\nsome meanie!{FA:06}I'll cheer them on with my\nPichi Pichi Voice!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}You call that silly?!{FA:06}Now I'm really mad!{FA:06}Love won't lose to\nsome meanie!{FA:06}I'll cheer them on with my\nPichi Pichi Voice!{end}",
   "status": "done",
   "notes": ""
  },

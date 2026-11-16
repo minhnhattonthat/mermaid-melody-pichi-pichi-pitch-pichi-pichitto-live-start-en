@@ -3,10 +3,23 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (sessions 1-19 of
 phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs/re/graphics.md` §Redraws).
 
-- **Phase:** 9. Release (phase 8 done 2026-11-17: `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` 396/396
-  ok, text coverage 1591/1591, `gfx_left.py` 0). Last build: `build.py` -> build/mermaid_en.gba (2026-11-17 session
-  25, sha1 881f8155adab99d4c337f33928932fd95f303be1 in `work/qa/tour5.build`; smoke ok, write log clean); marker
+- **Phase:** 9. Release done 2026-11-17: v1.0 zip built and verified by `tools/release.py` (not published). Gates:
+  visual QA 397/397 ok, story pass 40/40 ok, text coverage 1591/1591, `jp_left` 0, `gfx_left` 0, polish 0 unticked.
+  Last build: `build.py` -> build/mermaid_en.gba (session 26, sha1 1d0f02a984597e2c3f3c12c596010cfbfb6a11d4,
+  CRC32 7A0E5172; smoke ok, write log clean); marker
   build `build.py --marker --out build/marker.gba`.
+- **Session 26 (2026-11-17), phase 9:**
+  - Story pass: `tools/story.py` writes one chapter per episode (`work/qa/story/chapters/epNN.txt`, tour5 log order;
+    lines the tour never reaches, after the song, placed by message-id block, marked `(+)`) + `extras` (late
+    inserts 936-93D, 977+). `sh tools/codex_story.sh 4 CH..` (brief `docs/story-reviewer-brief.md`) ->
+    `work/qa/story/reports/`, `tools/story_verdicts.py [--minors]` -> `verdicts/`. Round 1: 39 ok, ep12 issue (8202
+    Eriru blamed the princesses: "That's what they get for mocking me!"); 21 Minors -> 18 fixed, 4 waived
+    (`docs/polish.md` §Story pass). Round 2 re-review of the 11 changed chapters: all ok; FE17 fixed, 11 waived.
+    `qa_gate.py check work/qa/story/manifest.tsv work/qa/story/verdicts`: 40/40.
+  - Eps 1 6 9 12 18 24 26 27 34 re-toured into tour5, 79 sheets codex-reviewed ok (`verdicts/round_5.tsv`); FE17
+    (not on any sheet) waived for the final build (`work/qa/manifest.tsv.waive`, msgview shot `work/qa/p9msg/2429`).
+  - `tools/release.py` now runs skill `jp_left.py` on the message region (`--orig`, `docs/jp_known.txt`: the 9
+    debug-menu runs, D13): 0 runs. README: base ROM CRC32/MD5.
 - **Session 25 (2026-11-17):** codex reviewed the session-24 re-tour (392 ok, 1 issue): EP 36 msg 582C left "Hey,"
   alone before the {FA:06} prompt; moved to the next page ("we'll" -> "we" so the cursor line fits 186 px). EP 36
   re-toured alone (`tour.py --eps 36 --no-scenes`, single ep now accepted) and reviewed ok. Verdicts folded into
@@ -45,12 +58,10 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   heavy=True)`: the unselected ones are scaled down) and the yellow bubble's shade 4 cleared ("Usual" specks).
   Verdicts of that round folded into `work/qa/verdicts/round_2.tsv` (old chunks in `verdicts_old/tour5_r2`); re-tour
   into `work/qa/tour5` again.
-- **Next (phase 9, skill pipeline.md §Release):**
-  1. Story pass: a story-pass verdict per chapter (episode) in `work/qa/story/manifest.tsv` (skill translation.md
-     §Review, reviewer via `codex exec`), fix Critical/Important, `qa_gate.py check work/qa/story/manifest.tsv ...`
-     exits 0. `tools/release.py` already gates every `work/qa/**/manifest.tsv` with a `verdicts` dir beside it.
-  2. Add `jp_left.py` on the release build to `tools/release.py` (not in it yet), then run it: patch re-applied,
-     zip = patch + README, base ROM hashes in both READMEs. Never publish / `gh release create`.
+- **Next:** nothing left in the pipeline. `tools/release.py --version 1.0` passed every gate (2026-11-17 session 26)
+  and wrote `release/v1.0/` (zip = BPS + README.txt; patched CRC32 7A0E5172, sha1 1d0f02a9...). Publishing
+  (`gh release create`, upload) is the owner's call only. A text change after this needs a re-tour of the touched
+  episodes (or `qa_gate.py waive` for an untoured line) and a re-run of the story pass on changed chapters.
   - Re-tour recipe if text changes: fold `verdicts/chunk_*.tsv` into `verdicts/round_N.tsv` and move the chunks out
     before `qa_gate.py init work/qa/manifest.tsv work/qa/tour5/sheets --build build/mermaid_en.gba --glob
     "sheet*.png"`, then `qa_gate.py todo ... --size 8 --out-dir work/qa/chunks`, `sh tools/codex_vqa.sh

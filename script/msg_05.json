@@ -629,7 +629,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}……しかたがありません。\nかわりに、わたしが。コホン。{wait}けっこんしきじょうの、はなよめ\nたいけんイベントにやってきた、\n{call:@2AB4}ちゃんと{call:@2AE7}さん。{FA:06}そして、そのようすをのぞいている、\n{call:@2A5B}さん。{wait}そんななか、しんさくウェディング\nドレスショーの、はなよめやくの\nピンチヒッターとして、なぜか\n{call:@2A5B}さんがでることに！{FA:06}はなよめいしょうをきて、しらない\nおとこのひとと、うでをくんでいる\nところをみた、{call:@2AE7}さんのきもちや\nいかに？{FA:06}そして、そんなばしょにいあわせて\nいるのはもちろん……？\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}...It can't be helped. I shall take over.\nAhem.{wait}{call:@2AB4}-chan and {call:@2AE7}-san came to the\nwedding hall's bridal trial event.{FA:06}And {call:@2A5B}-san was\npeeking in on them.{wait}Then, for some reason, {call:@2A5B}-san ends\nup filling in as the bride in a show of\nnew wedding dresses!{FA:06}How will {call:@2AE7}-san feel, seeing her in a\nbridal gown, arm in arm with a man he\ndoesn't know?{FA:06}And who should happen to be there, of\ncourse, but...?\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}...It can't be helped. I shall take over.\nAhem.{wait}{call:@2AB4}-chan and {call:@2AE7}-san came to the\nwedding hall's\nbride-for-a-day event.{FA:06}And {call:@2A5B}-san was\npeeking in on them.{wait}Then, for some reason, {call:@2A5B}-san ends\nup filling in as the bride in a show of\nnew wedding dresses!{FA:06}How will {call:@2AE7}-san feel, seeing her in a\nbridal gown, arm in arm with a man he\ndoesn't know?{FA:06}And who should happen to be there, of\ncourse, but...?\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -803,7 +803,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}まって、{call:@2A96}！\n{call:@2AAC}をたすけにいくなら、\nあたしたちもいっしょよ！{wait}{call:@2AAC}、かならずたすけるからね…\n………………………………………。{wait}{FA:FF0303}{FA:FF0314}えっ！？\nあなたたち、なにもの！？\n{call:@2BA5}{end}",
-  "en": "{FA:FF0101}Wait, {call:@2A96}! If you're going to save\n{call:@2AAC}, we're coming too!{wait}{call:@2AAC}, we'll save you for sure......{wait}{FA:FF0303}{FA:FF0314}Huh?! Who are you people?!\n{call:@2BA5}{end}",
+  "en": "{FA:FF0101}Wait, {call:@2A96}! If you're going to save\n{call:@2AAC}, we're coming too!{wait}{call:@2AAC}, we'll save you for sure...{wait}{FA:FF0303}{FA:FF0314}Huh?! Who are you people?!\n{call:@2BA5}{end}",
   "status": "done",
   "notes": ""
  },

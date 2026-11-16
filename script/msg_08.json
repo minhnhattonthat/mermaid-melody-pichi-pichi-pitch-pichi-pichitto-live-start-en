@@ -237,7 +237,7 @@
   ],
   "used": true,
   "jp": "だいすきな{call:@2B4F}ちゃんの、\nやくにたちたかったのに……。{end}",
-  "en": "I just wanted to be useful to\nmy beloved {call:@2B4F}-chan...{end}",
+  "en": "I just wanted to help my\nbeloved {call:@2B4F}-chan...{end}",
   "status": "done",
   "notes": ""
  },
@@ -730,7 +730,7 @@
   ],
   "used": true,
   "jp": "{call:@2AE7}が、あたしのために\nじゅんびしていた、\nうみのいえ……。{wait}しろにいくの、\nちょっとまってて！{end}",
-  "en": "The beach house {call:@2AE7} set up for me...{wait}Hold off on the castle for a minute!{end}",
+  "en": "The beach house {call:@2AE7} set up for me...{wait}Wait a minute before\nwe go to the castle!{end}",
   "status": "done",
   "notes": ""
  },
@@ -785,7 +785,7 @@
   ],
   "used": true,
   "jp": "あたしをバカにするから\nいけないのよ！{end}",
-  "en": "It's your fault for making fun of me!{end}",
+  "en": "That's what they get for mocking me!{end}",
   "status": "done",
   "notes": ""
  },

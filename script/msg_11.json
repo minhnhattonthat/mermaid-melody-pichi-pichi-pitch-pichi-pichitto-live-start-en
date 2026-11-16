@@ -710,7 +710,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}ふらちなあくぎょうざんまい、\nぜったいにゆるさない！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}I'll never forgive your shameless string\nof wicked deeds!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}{call:@2B8C}{call:@2A96}{call:@2B92}I'll never forgive all your\nshameless wickedness!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

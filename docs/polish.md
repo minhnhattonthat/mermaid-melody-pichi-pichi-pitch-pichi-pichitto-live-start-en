@@ -147,3 +147,44 @@ E4B9 FA49 FB01 10332 1021B) were re-classed Important per the phase-6 review and
 - [x] FD26 - 「いっしょにライブをやるなんて」 means performing a concert together - “Doing a live” is an unnatural borrowing in English - Suggested EN: “Performing with you? No way, not in a million years!”
 - [x] B4B6 - 「こいつら、いつもとちがう」 means “They're different from usual.” - “These creeps aren't like usual” sounds awkward. - Suggested EN: “(...These creeps are acting differently. This is bad... at this rate...)”
 - [x] B89F - 「そちらのステージは、もうおわったのかしら？」 asks whether their performance is finished. - “Is your little stage over” carries the Japanese use of “stage” into unnatural English. - Suggested EN: “Is your little show over already, I wo
+
+## Story pass (2026-11-17, work/qa/story/reports/)
+
+- [x] 664F - Lucia anxiously searches for Kaito - “Where are you..., Kaito...?” has awkward punctuation that interrupts her worried call - Suggested EN: “Where are you... Kaito...? / 【Lucia】 ...What's that?!” (story ep - fixed
+- [x] 68D1 - Finally reunited after years apart - “At last we meet” sounds like a formal first encounter; more intimate wording would strengthen the callback to their childhood meeting - Suggested EN: “At last... at last I g - fixed
+- [x] 2D1E - Lucia gets flustered around Kaito and cannot sing properly - Repeating “Kaito” makes her otherwise bubbly narration sound stiff - Suggested EN: “I'm Lucia Nanami! There's a festival tonight! / But even though Ka - waived: the name call count must match the JP (lint); Kaito named twice as in the JP
+- [x] 6B2F - Recognition of Izuru's name prompts a question about Eriru's allegiance - “That person's side” sounds unnecessarily distant immediately after naming Izuru - Suggested EN: “Izuru...? Are you working with her too? - waived: the round-1 polish chose the neutral "that person" for あのひと on purpose
+- [x] 3252 - Today is the day associated with the mermaid love legend - “Today's the day from the mermaid love legend” makes the opening setup awkward to follow - Suggested EN: “Today's the day spoken of in the mermaid love  - fixed
+- [x] 7454 - Lucia angrily defends everyone's romantic feelings - “Silly, you say?!” sounds stiff for Lucia, and “Feelings of love” is unnatural phrasing - Suggested EN: “You call that silly?! / Now I'm really mad! / Lov - fixed
+- [x] 370E - Hanon discovers someone collapsed before the piano - “The one collapsed in front of the piano is...” sounds stiff during her startled recognition - Suggested EN: “Hellooo, Mitsuki-sensei! I made you a boxed lunc - fixed
+- [x] 7AE6 - Hanon laments that she only wanted to help Taro - “Be useful to my beloved” makes her disappointment sound overly formal - Suggested EN: “I just wanted to help my darling Taro-chan...” (story ep09) - fixed
+- [x] 3B63 - Hanon tells Lucia about her birthday party - Addressing Lucia directly but saying “for Lucia's birthday” sounds unnatural in English - Suggested EN: “Hey, hey, Lucia! Kaito-kun and the guys are throwing you a bi - waived: the name call count must match the JP (lint), so Lucia stays named
+- [x] 3BC7 - A letter announces Lucia’s postponed ceremony - “Lucia-san's postponed” awkwardly refers to the listener in the third person - Suggested EN: “Lucia-san! A letter has arrived from the castle in the North Pacifi - waived: the name call count must match the JP (lint), so Lucia-san stays named
+- [x] 8186 - Lucia asks to delay leaving for the castle after seeing the burning party venue - “Hold off on the castle” sounds impersonal and obscures the action she wants delayed - Suggested EN: “The beach house where Kaito - fixed
+- [x] 96D8 - Meru accuses Hanon of forgetting her kingdom and abandoning the search - “You live in the fun human world” and “don't even feel like really looking” make her hurt accusation cumbersome - Suggested EN: “Hanon - fixed
+- [x] 49CF - Meru and Kaito attend an event where visitors experience being a bride - “Bridal trial event” sounds clinical and obscures the playful setup behind Lucia’s alarm - Suggested EN: “Meru-chan and Kaito-san came t - fixed
+- [x] AE84 - Rina condemns the villains’ shameless wrongdoing - “Shameless string of wicked deeds” makes her battle declaration cumbersome - Suggested EN: “I'll never forgive you for all this shameless wickedness!” (stor - fixed
+- [x] B559 - Their live stage has been breached - “Our live stage... was broken through?!” is awkwardly passive at a moment of shock - Suggested EN: “They broke through... our live stage?!” (story ep26) - fixed
+- [x] B645 - An angry cry of frustration after the reversal - “So frustrating~!!” sounds like a description rather than a spontaneous outburst - Suggested EN: “Ooh, this is infuriating~!!” (story ep26) - fixed
+- [x] BD1C - Rina realizes Lucia is confessing for real - “Lucia... that girl...” sounds awkward and disrupts Rina's normally direct delivery - Suggested EN: “...Lucia's confessing for real... / She might actually turn into  - fixed
+- [x] BE50 - Hippo calls out to Lucia and groans - “Uuun...” leaves the Japanese vocalization untranslated, making his comic reaction less clear - Suggested EN for Hippo's portion: “...?! / Lucia-saaan... Ugh...” (story ep - fixed
+- [x] D830 - The pearl promises success in work and love - “Get success” sounds unnatural in Auri's otherwise conversational pitch - “They say if you find it, you're sure to succeed in work AND in love!” (story ep34) - fixed
+- [x] DA33 - Yuri finds Hippo before finding the supposedly lucky pearl - “The black pearl of happiness that finds you love” is cumbersome and slows her delighted reaction - “How wonderful! I haven't even found that black pe - fixed
+- [x] BA06 - urgent "The only time they can't follow us is while..." cumbersome - fixed: "They can't follow us, but only while that pearl is shining!" (story extras)
+
+## Story pass round 2 (re-review of the 11 changed chapters, all ok; work/qa/story/reports/)
+
+Waived lines: stylistic alternatives in chapters already judged ok; each change costs another tour and review round.
+
+- [x] FE17 - やみなべ: "It's a pot you eat in the dark" reads as eating the cookware (story extras) - fixed: "It's hot pot you eat in the dark~."
+- [x] 7426 - "they're just loves that can never come true" a bit stiff (story ep06) - waived: stylistic, meaning and taunt intact
+- [x] 36A3 - "and have him eat it" mechanical (story ep09) - waived: stylistic
+- [x] 3B63 - "Lucia's birthday" said to Lucia (story ep12) - waived: name call count must match the JP (lint), as round 1
+- [x] 3BC7 - "Lucia-san's" said to Lucia (story ep12) - waived: as 3B63
+- [x] 832A - "Looks like that's exactly it" less bouncy (story ep12) - waived: stylistic, punchline intact
+- [x] 986A - "But then our promise..." stiff for a child (story ep18) - waived: stylistic
+- [x] AD28 - "I just can't get along with you!" cumbersome (story ep24) - waived: stylistic
+- [x] B645 - "Argh, so frustrating~!!" (story ep26) - waived: round-1 fix of くやしい～, natural enough
+- [x] B913 - "as good as flotsam in the sea" (story ep27) - waived: keeps うみのもくず imagery
+- [x] BD1C - "That Lucia..." (story ep29) - waived: round-1 fix of ルチアのやつ, natural enough
+- [x] DD77 - "precious assignment ingredients on the spot" stiff (story ep34) - waived: stylistic

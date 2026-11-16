@@ -72,7 +72,7 @@
   ],
   "used": true,
   "jp": "（ラッキ～！　このふたりにも、\n　しんじゅをさがしてもらうこと\n　にしよう！）{wait}じつは、このすなはまのどこかに、\nしあわせをよぶ、くろしんじゅが\nかくされているらしいんだ。{FA:06}それをみつけられれば、しごとも\nこいも、かならずてにはいるん\nだって！{end}",
-  "en": "(Lucky~! I'll get these two to look for the\npearl too!){wait}Y'see, somewhere on this beach, there's\nsupposed to be a hidden black pearl that\nbrings happiness.{FA:06}They say if you find it, you're sure to get\nsuccess in work AND in love!{end}",
+  "en": "(Lucky~! I'll get these two to look for the\npearl too!){wait}Y'see, somewhere on this beach, there's\nsupposed to be a hidden black pearl that\nbrings happiness.{FA:06}They say if you find it, you're sure to\nsucceed in work AND in love!{end}",
   "status": "done",
   "notes": ""
  },
@@ -182,7 +182,7 @@
   ],
   "used": true,
   "jp": "すごいです！\nまだ、こいがみつかる、\nしあわせをよぶ、くろしんじゅを\nみつけてもないのに、{call:@2AB0}さまを\nみつけてしまいました～！{wait}………やっぱりこれは、\nうんめいですのね～、きゃあ～！{end}",
-  "en": "How amazing! I haven't even found the\nblack pearl of happiness that finds you\nlove yet...{FA:06}...and I've already found {call:@2AB0}-sama~!{wait}...This must be destiny after all~! Eee~!{end}",
+  "en": "How amazing! I haven't even found the\nlucky black pearl that brings you\nlove yet...{FA:06}...and I've already found {call:@2AB0}-sama~!{wait}...This must be destiny after all~! Eee~!{end}",
   "status": "done",
   "notes": ""
  },

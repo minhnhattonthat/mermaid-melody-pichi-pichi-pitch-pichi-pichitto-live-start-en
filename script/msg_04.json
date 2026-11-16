@@ -1033,7 +1033,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}きょうは、にんぎょのあいの\nでんせつのひ。{FA:06}でんせつのどうくつで、あたしと\n{call:@2AEA}のなまえをほった、\nろうそくに火をともして、\nとおいわたしたちの\nごせんぞさまにおねがいしたの。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Today's the day from the mermaid\nlove legend.{FA:06}In the legendary cave, I lit a candle\ncarved with my name and {call:@2AEA}'s, and\nmade a wish to our ancestors from\nlong, long ago.\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Today's the day of the mermaid\nlove legend.{FA:06}In the legendary cave, I lit a candle\ncarved with my name and {call:@2AEA}'s, and\nmade a wish to our ancestors from\nlong, long ago.\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1207,7 +1207,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}こんにちは～{call:@2B3F}！\nわたし、おべんとうを、つくって\nきました～！{wait}{FA:FF0301}えっ……、ピアノのまえにたおれて\nいるのは……。{end}",
-  "en": "{FA:FF0101}Hellooo, {call:@2B3F}! I made you a\nboxed lunch~!{wait}{FA:FF0301}Huh...? The one collapsed in front of\nthe piano is...{end}",
+  "en": "{FA:FF0101}Hellooo, {call:@2B3F}! I made you a\nboxed lunch~!{wait}{FA:FF0301}Huh...? Someone's collapsed in front of\nthe piano... Is that...?{end}",
   "status": "done",
   "notes": ""
  },

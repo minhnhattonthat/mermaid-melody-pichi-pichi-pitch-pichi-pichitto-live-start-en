@@ -39,7 +39,7 @@
   ],
   "used": true,
   "jp": "ライブステージが…やぶられた！？{end}",
-  "en": "Our live stage... was\nbroken through?!{end}",
+  "en": "They broke through... our\nlive stage?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -127,7 +127,7 @@
   ],
   "used": true,
   "jp": "くやしい～！！{end}",
-  "en": "So frustrating~!!{end}",
+  "en": "Argh, so frustrating~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -435,7 +435,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}……っ！{FA:06}{call:@2A5B}、{call:@2A70}、ふたりともはなせ！{FA:06}{call:@2AAC}を…………{call:@2AAC}をたすけに\nいかなきゃ！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}なにいってんの！{FA:06}ヤツらがおってこれないのは、\nそのしんじゅが、かがやいている\nあいだだけよ！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}あたしたちまでつかまったら、だれが\n{call:@2AAC}とノエルをたすけるの！{FA:06}{call:@2AAC}のしんじゅのパワーを、\nムダにしちゃダメ！{wait}{call:@2B8C}{call:@2A96}{call:@2B92}………………………{call:@2AAC}！！{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...!{FA:06}{call:@2A5B}, {call:@2A70}, let go of me, both of you!{FA:06}I have to go save {call:@2AAC}... {call:@2AAC}!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}What are you saying?!{FA:06}The only time they can't follow us is while\nthat pearl is shining!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}If we get caught too, who's going to save\n{call:@2AAC} and Noelle?{FA:06}Don't let {call:@2AAC}'s pearl power go\nto waste!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}...{call:@2AAC}!!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...!{FA:06}{call:@2A5B}, {call:@2A70}, let go of me, both of you!{FA:06}I have to go save {call:@2AAC}... {call:@2AAC}!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}What are you saying?!{FA:06}They can't follow us, but only while that\npearl is shining!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}If we get caught too, who's going to save\n{call:@2AAC} and Noelle?{FA:06}Don't let {call:@2AAC}'s pearl power go\nto waste!{wait}{call:@2B8C}{call:@2A96}{call:@2B92}...{call:@2AAC}!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}…………{call:@2A5B}のやつ、\nほんとうのこくはくをしている……。{FA:06}このままじゃ、あわになってしまう\nかも……！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}で、でもこれは、おしばいだよねっ！？{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...{call:@2A5B}... that girl... She's confessing\nfor real...{FA:06}At this rate, she\nmight turn into foam...!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...That {call:@2A5B}... She's confessing\nfor real...{FA:06}At this rate, she\nmight turn into foam...!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -644,7 +644,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}…………！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}そんな…………！？{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}……………………！？{FA:06}{call:@2A5B}さ～ん……………ウ～ン。{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}…………………………るちあ……。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}No way...?!{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}...?!{FA:06}{call:@2A5B}-saaan... Uuun...{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}...Lucia...{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}No way...?!{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}...?!{FA:06}{call:@2A5B}-saaan... Ugh...{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}...Lucia...{end}",
   "status": "done",
   "notes": ""
  },

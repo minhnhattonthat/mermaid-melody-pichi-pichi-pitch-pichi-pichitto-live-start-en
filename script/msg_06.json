@@ -798,7 +798,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}どこ……、{call:@2AE7}………………？{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}……………………………あれは！？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Where are you..., {call:@2AE7}...?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...What's that?!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Where are you... {call:@2AE7}...?{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...What's that?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1051,7 +1051,7 @@
   ],
   "used": true,
   "jp": "やっと…やっと\nあえた………。{end}",
-  "en": "At last... at last we meet...{end}",
+  "en": "At last... at last I've found you...{end}",
   "status": "done",
   "notes": ""
  },
