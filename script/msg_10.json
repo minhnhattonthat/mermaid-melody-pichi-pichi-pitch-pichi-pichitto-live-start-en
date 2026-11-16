@@ -667,7 +667,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B99}…いずれにしても、だいじな\nてがみをひろってしまったせきにんが\nあるよ、わたしたちには。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B99}...Either way, we picked up\nan important letter, so it's our\nresponsibility now.{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B99}...Either way, we picked\nup an important letter, so it's\nour responsibility now.{end}",
   "status": "done",
   "notes": ""
  },
@@ -689,7 +689,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}そうね～。ラブレターって\nいうより、こいぶみってかんじじゃない？{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}True~. More an old-time\n\"love note\" than a \"love letter.\"{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}True~. More like an\nold-fashioned love note!{end}",
   "status": "done",
   "notes": ""
  },
@@ -711,7 +711,7 @@
   ],
   "used": true,
   "jp": "「うみからのこいぶみひろいました。\n　こころあたりのあるかたは\n　プチホテル・パールピアリまで」{end}",
-  "en": "\"Found: a love note from the sea.\nIf it's yours, please come to the\nPetit Hotel Pearl Piari.\"{end}",
+  "en": "\"Found: a love note from the\nsea. If it's yours, please come\nto the Petit Hotel Pearl Piari.\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -766,7 +766,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}だって、さっき真木さんが\nきたとき、あかくなってたから！{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Because you turned red\nwhen Maki-san came by earlier!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Because you blushed\nwhen Maki-san came by!{end}",
   "status": "done",
   "notes": ""
  },
@@ -788,7 +788,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE3}{call:@2B99}うふふふ……。ヒ・ミ・ツ！{end}",
-  "en": "{call:@2B8C}{call:@2AE3}{call:@2B99}Ufufufu... It's a se-cret!{end}",
+  "en": "{call:@2B8C}{call:@2AE3}{call:@2B99}Ufufu... Se-cret!{end}",
   "status": "done",
   "notes": ""
  },
@@ -821,7 +821,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}ひみつだから、ステキ……？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Secrets make it lovely...?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}Secrets are lovely...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -843,7 +843,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}なにもしないより、マシだからね……。\n",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}It's better than doing nothing...\n",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}It's better than\ndoing nothing...\n",
   "status": "done",
   "notes": ""
  },
@@ -887,7 +887,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B99}……でも、あたしね。\nしりたいってはんめん、このままわからない\nほうがいいのかなっておもっているの。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}...But part of me wants to\nknow, and part of me thinks it's\nbetter not to.{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B99}...But part of me wants\nto know, and part of me thinks\nit's better not to.{end}",
   "status": "done",
   "notes": ""
  },
@@ -920,7 +920,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B99}…よくかんがえたら、とくめいの\nてがみなんだよな。もしかしたら、そっと\nしておくべきなのかも……。{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B99}...Come to think of it, it's an\nanonymous letter. Maybe we\nshould just leave it be...{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B99}...Come to think of it, it's\nan anonymous letter. Maybe\nwe should just leave it be...{end}",
   "status": "done",
   "notes": ""
  },
@@ -931,7 +931,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B99}……そうね。ほんとうのこと、\nわからないほうがよさそうね。\n",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}...You're right. Maybe it's\nbetter not to know the truth.\n",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B99}...You're right. Maybe\nit's better not to know\nthe truth.\n",
   "status": "done",
   "notes": ""
  },
@@ -953,7 +953,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE0}{call:@2B99}だったら、わたしがうらなうまでも\nないね。{end}",
-  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}Then I'd wager you've no\nneed of my fortune-telling at all.{end}",
+  "en": "{call:@2B8C}{call:@2AE0}{call:@2B99}Then you don't need my\nfortune-telling at all.{end}",
   "status": "done",
   "notes": ""
  },
@@ -964,7 +964,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}そういえば、タキさんもいっしょに、\nりゅうせいぐんをみにいかない？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Oh, Taki-san, why don't you come\nsee the meteor shower with us?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Oh, Taki-san, why don't you\ncome see the meteor shower\nwith us?{end}",
   "status": "done",
   "notes": ""
  },
@@ -975,7 +975,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE0}{call:@2B92}いやあ、わたしはひとごみはにがてでね。\nわかいもんだけで、いっといで。{end}",
-  "en": "{call:@2B8C}{call:@2AE0}{call:@2B92}Oh no, I don't do well in crowds.\nYou young folks go on ahead.{end}",
+  "en": "{call:@2B8C}{call:@2AE0}{call:@2B92}Oh no, I don't do well in\ncrowds. You young folks go\non ahead.{end}",
   "status": "done",
   "notes": ""
  },

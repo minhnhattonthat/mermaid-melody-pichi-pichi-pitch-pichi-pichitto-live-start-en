@@ -666,7 +666,7 @@
   ],
   "used": true,
   "jp": "イヤー！　なんで、うたがきこえて\nくるのっ！？{end}",
-  "en": "Noooo! Why can we hear singing?!{end}",
+  "en": "Noooo! Why can we\nhear singing?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -963,7 +963,7 @@
   ],
   "used": true,
   "jp": "このうた……あたしがちいさいころに、\nよくうたっていた…？{end}",
-  "en": "This song... I used to sing it all\nthe time when I was little...?{end}",
+  "en": "This song... I used to sing it\nall the time when I was little...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -996,7 +996,7 @@
   ],
   "used": true,
   "jp": "そうなんだ…。これがマーメイド\nプリンセスのちから…。{end}",
-  "en": "I see... So this is the power of a\nMermaid Princess...{end}",
+  "en": "I see... So this is the power of\na Mermaid Princess...{end}",
   "status": "done",
   "notes": ""
  },

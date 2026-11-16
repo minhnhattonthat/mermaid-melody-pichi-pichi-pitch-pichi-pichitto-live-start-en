@@ -149,7 +149,7 @@
   ],
   "used": true,
   "jp": "さあ、うたいなさいよ。てんすうつけてあげるから。\nたぶん０てんでしょうけどね！{end}",
-  "en": "Go on, sing. I'll even give you a\nscore. Probably zero\npoints, though!{end}",
+  "en": "Go on, sing. I'll even give you\na score. Probably zero\npoints, though!{end}",
   "status": "done",
   "notes": ""
  },
@@ -281,7 +281,7 @@
   ],
   "used": true,
   "jp": "あ～ん、くやし～！　ふたりとも\nかわいくってムカついちゃう～。\n{call:@2B23}さま～！{end}",
-  "en": "Waaah, it's not fair~! You're both\nso cute it makes me mad~.\n{call:@2B23}-sama~!{end}",
+  "en": "Waaah, it's not fair~! You're\nboth so cute it makes me\nmad~. {call:@2B23}-sama~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -743,7 +743,7 @@
   ],
   "used": true,
   "jp": "さ～て！\nつづきましては、だいにんきの\nモモちゃんに、スペシャルプレゼント！\nモモちゃんのママイルカだよ！{end}",
-  "en": "Aaand now! Up next, a special\npresent for our super-popular\nMomo-chan! It's Momo-chan's\nmama dolphin!{end}",
+  "en": "Aaand now! A special present\nfor our popular Momo-chan!\nIt's her mama dolphin!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "なに…このひかりは。\n………あつい、あついわ！{end}",
-  "en": "What... is this light? ...It's hot,\nso hot!{end}",
+  "en": "What... is this light? ...It's\nhot, so hot!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1007,7 +1007,7 @@
   ],
   "used": true,
   "jp": "そうはうまくいかないんだよ！\nなぜってここは、あたしのステージ\nだからね！{end}",
-  "en": "It won't be that easy! 'Cause this\nis my stage!{end}",
+  "en": "It won't be that easy! 'Cause\nthis is my stage!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1029,7 +1029,7 @@
   ],
   "used": true,
   "jp": "あなたたちのうたなんて、ぜ～んぜん\nきこえな～い。さ、ガイトさまのもとへ\nつれてってあげる！{end}",
-  "en": "I can't hear your song at a~ll.\nNow, I'll take you to Gaito-sama!{end}",
+  "en": "I can't hear your song at a~ll.\nNow, I'll take you\nto Gaito-sama!{end}",
   "status": "done",
   "notes": ""
  },

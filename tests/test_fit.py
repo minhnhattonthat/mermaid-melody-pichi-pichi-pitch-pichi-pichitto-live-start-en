@@ -61,7 +61,7 @@ def test_song_boxes_parse_and_grow(rom, entries):
     bare = [dict(e, en="") for e in entries]
     unit = next(e["id"] for e in entries if 1544 in e["ids"])
     assert boxes.grow(out, with_en(bare, unit, "This song... I used to sing it all the time{end}")) == 1
-    assert struct.unpack_from("<HH", out, song[1544][0][0] + 8) == (4 << 8 | 11, 22 << 8 | 6)  # W 22 at col 4
+    assert struct.unpack_from("<HH", out, song[1544][0][0] + 8) == (4 << 8 | 11, 20 << 8 | 6)  # capped: W 20 at col 4
 
 
 @needs_rom

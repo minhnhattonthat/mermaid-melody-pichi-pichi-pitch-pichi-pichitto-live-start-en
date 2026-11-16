@@ -803,7 +803,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}まって、{call:@2A96}！\n{call:@2AAC}をたすけにいくなら、\nあたしたちもいっしょよ！{wait}{call:@2AAC}、かならずたすけるからね…\n………………………………………。{wait}{FA:FF0303}{FA:FF0314}えっ！？\nあなたたち、なにもの！？\n{call:@2BA5}{end}",
-  "en": "{FA:FF0101}Wait, {call:@2A96}! If you're going to save\n{call:@2AAC}, we're coming too!{wait}{call:@2AAC}, we'll save you for sure...\n...{wait}{FA:FF0303}{FA:FF0314}Huh?! Who are you people?!\n{call:@2BA5}{end}",
+  "en": "{FA:FF0101}Wait, {call:@2A96}! If you're going to save\n{call:@2AAC}, we're coming too!{wait}{call:@2AAC}, we'll save you for sure......{wait}{FA:FF0303}{FA:FF0314}Huh?! Who are you people?!\n{call:@2BA5}{end}",
   "status": "done",
   "notes": ""
  },

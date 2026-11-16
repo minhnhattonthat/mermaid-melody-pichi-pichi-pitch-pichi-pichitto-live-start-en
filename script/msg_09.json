@@ -215,7 +215,7 @@
   ],
   "used": true,
   "jp": "ふっ……まだまだだな。もっと\nレッスンをかさねておくがいい！{end}",
-  "en": "Hmph... You've still got a long way\nto go. Keep up your lessons!{end}",
+  "en": "Hmph... You've still got a long\nway to go. Keep up\nyour lessons!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1040,7 +1040,7 @@
   ],
   "used": true,
   "jp": "やっとあらわれましたわね、\nマーメイドプリンセス！\nきょうこそ{call:@2B13}のピアノで……。{end}",
-  "en": "Well, well, so you've finally shown\nup, Mermaid Princesses! Today,\nwith {call:@2B13}'s piano...{end}",
+  "en": "So you've finally shown up,\nMermaid Princesses! Today,\nwith {call:@2B13}'s piano...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1062,7 +1062,7 @@
   ],
   "used": true,
   "jp": "ずるいですわ！　{call:@2B13}がピアノから\nはなれたスキに、うたうなんて～！！{end}",
-  "en": "How very unfair! Singing the\nmoment {call:@2B13} stepped away from\nthe piano~!!{end}",
+  "en": "How very unfair! Singing the\nmoment {call:@2B13} stepped away\nfrom the piano~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -1073,7 +1073,7 @@
   ],
   "used": true,
   "jp": "「ゆうれいのしょうたい、みたり」\nっていうけど、まさかこんなこと\nだったとはね……………。{end}",
-  "en": "They say a ghost always turns\nout to be nothing, but who knew\nit'd be this...{end}",
+  "en": "They say a ghost always turns\nout to be nothing, but who\nknew it'd be this...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1084,7 +1084,7 @@
   ],
   "used": true,
   "jp": "まあ、このあとはるちあに\nまかせるよ。\n……{call:@2AE7}とうまくやれよ。{end}",
-  "en": "Well, I'll leave the rest to Lucia.\n...Good luck with {call:@2AE7}.{end}",
+  "en": "Well, I'll leave the rest to\nLucia. ...Good luck with {call:@2AE7}.{end}",
   "status": "done",
   "notes": ""
  },

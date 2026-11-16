@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "しまった、まだなかまがいたのか！{end}",
-  "en": "Drat, there was another one?!{end}",
+  "en": "Drat, there's another one?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -160,7 +160,7 @@
   ],
   "used": true,
   "jp": "…きょうのことは、{call:@2B23}さまには\nほうこくできませんわぁ！！{end}",
-  "en": "...I can't possibly report today's\nevents to {call:@2B23}-sama~!!{end}",
+  "en": "...I can't report today's\nevents to {call:@2B23}-sama~!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -347,7 +347,7 @@
   ],
   "used": true,
   "jp": "ウフフ…。マーメイドのちからなんて\nうみのもくずもどうぜん。{end}",
-  "en": "Ufufu... Mermaid power is as good\nas flotsam in the sea.{end}",
+  "en": "Ufufu... Mermaid power is as\ngood as flotsam in the sea.{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "３しょくのしんじゅは、\nこれでいただきだよね！{end}",
-  "en": "Now the pearls of all three colors\nare ours, right?{end}",
+  "en": "Now the pearls of all three\ncolors are ours, right?{end}",
   "status": "done",
   "notes": ""
  },
@@ -908,7 +908,7 @@
   ],
   "used": true,
   "jp": "ただえさえ、おぼれているのに～！\nじぶんがたすかるのにひっしで、\nおうせんできない～！{end}",
-  "en": "We're already drowning as it is~!\nWe're too busy saving ourselves\nto fight back~!{end}",
+  "en": "We're already drowning as it\nis~! We're too busy saving\nourselves to fight back~!{end}",
   "status": "done",
   "notes": ""
  },

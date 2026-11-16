@@ -226,7 +226,7 @@
   ],
   "used": true,
   "jp": "ひきょうなわなは、ゆるさない！\nこいするおとめのそこぢから、\nおもいしらせてあげるから！{end}",
-  "en": "I won't forgive dirty tricks! I'll\nshow you the hidden strength of a\ngirl in love!{end}",
+  "en": "I won't forgive dirty tricks!\nI'll show you the hidden\nstrength of a girl in love!{end}",
   "status": "done",
   "notes": ""
  },
@@ -237,7 +237,7 @@
   ],
   "used": true,
   "jp": "だいすきな{call:@2B4F}ちゃんの、\nやくにたちたかったのに……。{end}",
-  "en": "I just wanted to be useful to my\nbeloved {call:@2B4F}-chan...{end}",
+  "en": "I just wanted to be useful to\nmy beloved {call:@2B4F}-chan...{end}",
   "status": "done",
   "notes": ""
  },
@@ -589,7 +589,7 @@
   ],
   "used": true,
   "jp": "ちょっと、ふくらんでるじゃない！\nど～すんのよ、これ！{end}",
-  "en": "Hey, it's swelling up! What're we\ngonna do about this?!{end}",
+  "en": "Hey, it's swelling up! What're\nwe gonna do about this?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "しらないわよ！\nこんなのきいてないもん！{end}",
-  "en": "How should I know! Nobody told me\nabout this!{end}",
+  "en": "How should I know! Nobody told\nme about this!{end}",
   "status": "done",
   "notes": ""
  },
@@ -840,7 +840,7 @@
   ],
   "used": true,
   "jp": "さ、{call:@2B0F}。あのうたをふうじる\nさくせんは、どんなですの？{end}",
-  "en": "Now then, {call:@2B0F}. And what, pray\ntell, is your plan for sealing away\nthat song?{end}",
+  "en": "Now then, {call:@2B0F}. And what,\npray tell, is your plan for\nsealing away that song?{end}",
   "status": "done",
   "notes": ""
  },
@@ -862,7 +862,7 @@
   ],
   "used": true,
   "jp": "きょうこそ、あの{call:@2B27}\nたちに、おもいしらせてやるときだわ。{end}",
-  "en": "Today is the day we teach those\nMermaid Princesses a lesson.{end}",
+  "en": "Today is the day we teach\nthose Mermaid Princesses\na lesson.{end}",
   "status": "done",
   "notes": ""
  },
@@ -895,7 +895,7 @@
   ],
   "used": true,
   "jp": "まさか、なにもかんがえてなかった\nなんてこと、ありませんわよね～！{end}",
-  "en": "Surely you don't mean you didn't\nthink of anything at all,\nmy dear~?!{end}",
+  "en": "Surely you don't mean you\ndidn't think of anything at all,\nmy dear~?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -928,7 +928,7 @@
   ],
   "used": true,
   "jp": "{call:@2B0F}！　さくせんをかんがえて\nなかったなんて、ほんとうのバカね！{end}",
-  "en": "{call:@2B0F}! You didn't even think up a\nplan? You really are a fool!{end}",
+  "en": "{call:@2B0F}! You didn't even think up\na plan? You really are a fool!{end}",
   "status": "done",
   "notes": ""
  },

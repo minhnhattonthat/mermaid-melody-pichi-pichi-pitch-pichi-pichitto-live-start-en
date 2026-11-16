@@ -46,7 +46,8 @@ def bubbles(rom):
 
 
 SONG = (0x1F5C660, 0x1F74000)  # gameplay event stream holding op 6 (in-song dialogue boxes)
-SONG_COLS = (4, 26)  # a song box stays between the side gauges: col >= 4, col + W <= 26 (Japanese uses 4..24)
+SONG_COLS = (4, 24)  # a song box stays between the side gauges: col >= 4, col + W <= 24 (as the Japanese; its backdrop
+# runs a cell past W each side, so W 22 at col 4 reached the right gauge, EP 9 msg 1674)
 
 
 def song_boxes(rom):
