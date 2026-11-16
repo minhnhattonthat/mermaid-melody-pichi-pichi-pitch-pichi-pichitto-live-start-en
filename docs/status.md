@@ -3,9 +3,14 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git (sessions 1-19 of
 phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs/re/graphics.md` §Redraws).
 
-- **Phase:** 8. QA in the emulator (phase 7 done 2026-11-15). Last build: `build.py` -> build/mermaid_en.gba
-  (2026-11-16 session 20, sha1 in `work/qa/tour4.build`; smoke ok, write log clean, check 43 passed); marker build
-  `build.py --marker --out build/marker.gba`.
+- **Phase:** 9. Release (phase 8 done 2026-11-17: `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` 396/396
+  ok, text coverage 1591/1591, `gfx_left.py` 0). Last build: `build.py` -> build/mermaid_en.gba (2026-11-17 session
+  25, sha1 881f8155adab99d4c337f33928932fd95f303be1 in `work/qa/tour5.build`; smoke ok, write log clean); marker
+  build `build.py --marker --out build/marker.gba`.
+- **Session 25 (2026-11-17):** codex reviewed the session-24 re-tour (392 ok, 1 issue): EP 36 msg 582C left "Hey,"
+  alone before the {FA:06} prompt; moved to the next page ("we'll" -> "we" so the cursor line fits 186 px). EP 36
+  re-toured alone (`tour.py --eps 36 --no-scenes`, single ep now accepted) and reviewed ok. Verdicts folded into
+  `verdicts/round_3.tsv` + `round_4.tsv` (chunks in `verdicts_old/tour5_r3`, `_r4`).
 - **Session 20 (2026-11-16):**
   - Minigame logos redrawn (D18, `tools/gfx_logos.py`): Compare / Line Up / Match / Catch Pitch, checked in game
     (`work/qa/p8logos`, warp row `minititles`); `tools/gfx_left.py`: 0 rows left.
@@ -40,16 +45,16 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   heavy=True)`: the unselected ones are scaled down) and the yellow bubble's shade 4 cleared ("Usual" specks).
   Verdicts of that round folded into `work/qa/verdicts/round_2.tsv` (old chunks in `verdicts_old/tour5_r2`); re-tour
   into `work/qa/tour5` again.
-- **Next (phase 8):**
-  1. After the re-tour: fold the old `work/qa/verdicts/chunk_*.tsv` into one `verdicts/round_N.tsv` (before init:
-     its mtime must predate the re-hash) and move the chunk files out (codex_vqa.sh skips a chunk whose verdict file
-     exists), empty `work/qa/chunks`, then `qa_gate.py init work/qa/manifest.tsv work/qa/tour5/sheets --build
-     build/mermaid_en.gba --glob "sheet*.png"` (unchanged sheets keep verdicts), `qa_gate.py todo work/qa/manifest.tsv
-     work/qa/verdicts --size 8 --out-dir work/qa/chunks`, `sh tools/codex_vqa.sh work/qa/chunks 4`, fix, until
-     `qa_gate.py check` exits 0. Text coverage:
-     `tools/cover.py work/qa/tour5/runs work/qa/cover --waive docs/text_unshown.tsv`.
-  2. Then phase 9 (release): `tools/release.py` (not written yet; gates per the skill's pipeline.md §Release),
-     README filled from the template, zip verified. Never publish.
+- **Next (phase 9, skill pipeline.md §Release):**
+  1. Story pass: a story-pass verdict per chapter (episode) in `work/qa/story/manifest.tsv` (skill translation.md
+     §Review, reviewer via `codex exec`), fix Critical/Important, `qa_gate.py check work/qa/story/manifest.tsv ...`
+     exits 0. `tools/release.py` already gates every `work/qa/**/manifest.tsv` with a `verdicts` dir beside it.
+  2. Add `jp_left.py` on the release build to `tools/release.py` (not in it yet), then run it: patch re-applied,
+     zip = patch + README, base ROM hashes in both READMEs. Never publish / `gh release create`.
+  - Re-tour recipe if text changes: fold `verdicts/chunk_*.tsv` into `verdicts/round_N.tsv` and move the chunks out
+    before `qa_gate.py init work/qa/manifest.tsv work/qa/tour5/sheets --build build/mermaid_en.gba --glob
+    "sheet*.png"`, then `qa_gate.py todo ... --size 8 --out-dir work/qa/chunks`, `sh tools/codex_vqa.sh
+    work/qa/chunks 4`; refresh `work/qa/tour5.build` (`sha1sum build/mermaid_en.gba`).
 - **Later:**
   - F6 name width in the lint is a 60 px guess: measure with the Latin keyboard (max name length?).
   - Katakana-page ー may be code 0xC2 (glyph 0x16F, not in jp.tbl), not 0x67: type it on page 2, check it prints "-".
@@ -60,7 +65,7 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
     `tools/debug/` (51 warps), `build.py` (identity test), `tools/msgcodec.py` (1617 units), 16 translated and
     reviewed batches (`docs/review-log.md`), build green (control codes, fit lint, write log zones).
   - Phase 8 graphics (sessions 1-20): every graphics-sweep row redrawn (`gfx/*.tsv`) or waived (`docs/gfx_waived.tsv`).
-- **Open bugs:** none known in the session-20 build (tour3 issues fixed; tour4 unreviewed).
+- **Open bugs:** none known in the session-25 build (tour5 fully reviewed ok).
 - **Known limits:** Japanese fallback text in an English build draws as junk (its glyph slots hold English letters):
   every used unit needs English.
 - **Waiting on the user:** (non-blocking) story background 1B6AFB2 tiles the series logo ぴちぴちピッチ as a faded

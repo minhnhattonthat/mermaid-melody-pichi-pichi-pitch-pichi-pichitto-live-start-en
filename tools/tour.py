@@ -62,7 +62,8 @@ def main():
         for d in sorted(runs.iterdir()):
             if d.is_dir() and d.name != "sheet" and not re.fullmatch(r"ep\d\d", d.name):  # episode_select is a scene
                 sheet(d, Path(a.out) / "sheets" / d.name)
-    lo, hi = (int(x) for x in a.eps.split("-"))
+    lo, _, hi = a.eps.partition("-")  # "36" or "1-39"
+    lo, hi = int(lo), int(hi or lo)
     with ThreadPoolExecutor(a.jobs) as ex:
         res = list(ex.map(lambda e: episode(rom, e, a), range(lo, hi + 1)))
     bad += [n for n, ok in res if not ok]

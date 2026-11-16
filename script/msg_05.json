@@ -1089,7 +1089,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}……ふぅ、あとはせんたくものを\nほせば、おわりかな？{FA:06}あれ、なにかきこえる……？{wait}{FA:FF0303}……えぇ～っ！{FA:06}なんでこんなところに、あかちゃん\nがいるの！？{wait}{FA:FF0300}とりあえず、あたしたちでめんどうを\nみなくちゃ…………って、{FA:06}{call:@2A74}も{call:@2A96}も……{call:@2AB0}まで\nどこにいくのよ～！{wait}{FA:FF0302}…………いいもん！\nあたしひとりでなんとかするから！{FA:06}{FA:FF0300}パパとママがみつかるまで、おねえ\nちゃんといっしょに、あそんでいよ\nうね！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}...Phew, once I hang out the laundry,\nI'm done, right?{FA:06}Huh? Do I hear something...?{wait}{FA:FF0303}...Whaaat?!{FA:06}Why is there a baby here?!{wait}{FA:FF0300}For now, we'll have to look after it...\nHey,{FA:06}{call:@2A74}, {call:@2A96}... even {call:@2AB0}, where are\nyou going~?!{wait}{FA:FF0302}...Fine! I'll handle it all by myself!{FA:06}{FA:FF0300}Until we find your mommy and daddy,\ncome play with Big Sis!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}...Phew, once I hang out the laundry,\nI'm done, right?{FA:06}Huh? Do I hear something...?{wait}{FA:FF0303}...Whaaat?!{FA:06}Why is there a baby here?!{wait}{FA:FF0300}For now, we have to look after it...{FA:06}Hey! {call:@2A74}, {call:@2A96}... even\n{call:@2AB0}, where are you going~?!{wait}{FA:FF0302}...Fine! I'll handle it all by myself!{FA:06}{FA:FF0300}Until we find your mommy and daddy,\ncome play with Big Sis!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  }
