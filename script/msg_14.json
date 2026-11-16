@@ -61,7 +61,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}なにかさがしものですの？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Are you perhaps looking for something?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Are you perhaps\nlooking for something?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -193,7 +193,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2ADC}{call:@2B92}……なに～！{FA:06}そんなすごいしんじゅがあんのか！{FA:06}ほんとうなら、だれにもわたさない\nぞ～！{FA:06}そのくろしんじゅは、わたしがぜったい\nみつけだしてやる～！{end}",
-  "en": "{call:@2B8C}{call:@2ADC}{call:@2B92}...Whaaat~!{FA:06}There's a pearl THAT amazing?!{FA:06}If it's real, I won't give it to anybody~!{FA:06}I'll find that black pearl no matter what~!{end}",
+  "en": "{call:@2B8C}{call:@2ADC}{call:@2B92}...Whaaat~!{FA:06}There's a pearl THAT amazing?!{FA:06}If it's real, I won't give it to anybody~!{FA:06}I'll find that black\npearl no matter what~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -248,7 +248,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あら。\n{call:@2B13}と{call:@2B0F}のあとをつけて\nはっていたら、{FA:06}{call:@2B27}が\nあらわれたわ。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}My, my. We were tailing {call:@2B13} and {call:@2B0F},\nand look,{FA:06}the Mermaid Princesses have shown up.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}My, my. We were tailing {call:@2B13} and {call:@2B0F},\nand look,{FA:06}the Mermaid Princesses\nhave shown up.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -391,7 +391,7 @@
   ],
   "used": true,
   "jp": "けっこうまじめなこ、なんじゃ\nないかなぁ。{FA:06}わたしたちが、\nようすをみにいったときも、\nいっしょうけんめい、しんじゅ\nさがしていたし。{FA:06}わたし、みなおしちゃったわ！\n　{end}",
-  "en": "I think she's quite a hard worker.{FA:06}When we went to check on her, she was\nsearching for the pearl really hard.{FA:06}I've gained a whole new respect for her!{end}",
+  "en": "I think she's quite a hard worker.{FA:06}When we went to check on her, she was\nsearching for the pearl really hard.{FA:06}I've gained a whole\nnew respect for her!{end}",
   "status": "done",
   "notes": ""
  },
@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}そんなことはさせないわ！{FA:06}{call:@2B4F}ちゃんのコンサートの\nジャマをするなんて、ぜぇ～ったい\nゆるさないんだから！{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}I won't let you!{FA:06}Getting in the way of {call:@2B4F}-chan's\nconcert? I will never, ever forgive that!{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}I won't let you!{FA:06}Getting in the way of {call:@2B4F}-chan's\nconcert? I will never,\never forgive that!{end}",
   "status": "done",
   "notes": ""
  },
@@ -556,7 +556,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}もう、あのおおつなみは、\nだれにもとめられないよ！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Nobody can stop that giant tsunami now!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Nobody can stop that\ngiant tsunami now!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -644,7 +644,7 @@
   ],
   "used": true,
   "jp": "あたしのいちばん、すきなところ\nなの。{wait}……ないしょだけどね、うみには\nたいせつなたいせつな、なかまが\nいるの。{FA:06}だから、いつかはあたし……、\nうみにかえるんだ。{end}",
-  "en": "It's my favorite place in the whole world.{wait}...It's a secret, but I have precious,\nprecious friends in the sea.{FA:06}So someday, I'm going to... go back to\nthe sea.{end}",
+  "en": "It's my favorite place\nin the whole world.{wait}...It's a secret, but I have precious,\nprecious friends in the sea.{FA:06}So someday, I'm going to... go back to\nthe sea.{end}",
   "status": "done",
   "notes": ""
  },
@@ -655,7 +655,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AEA}{call:@2B92}……あれ、{call:@2A5B}？\nなにやってんだよこんなところで。{FA:06}そのあかちゃん、いったいどうしたん\nだよ？{end}",
-  "en": "{call:@2B8C}{call:@2AEA}{call:@2B92}...Huh, {call:@2A5B}? What're you doing out here?{FA:06}And what's with that baby?{end}",
+  "en": "{call:@2B8C}{call:@2AEA}{call:@2B92}...Huh, {call:@2A5B}? What're\nyou doing out here?{FA:06}And what's with that baby?{end}",
   "status": "done",
   "notes": ""
  },
@@ -710,7 +710,7 @@
   ],
   "used": true,
   "jp": "もう！　{call:@2A5B}さまったら、\nすっかりねてしまわれて～！{FA:06}それというのも、こいつの\nせいだ！{FA:06}せっかく{call:@2A5B}さまと、\nふたりっきりになれたのに！{wait}……いいもん、こうなったら\nかえっちゃうもん！{end}",
-  "en": "Hmph! {call:@2A5B}-sama's fallen fast asleep~!{FA:06}And it's all this guy's fault!{FA:06}I finally got to be alone with {call:@2A5B}-sama!{wait}...Fine! Then I'm going home, so there!{end}",
+  "en": "Hmph! {call:@2A5B}-sama's fallen fast asleep~!{FA:06}And it's all this guy's fault!{FA:06}I finally got to be\nalone with {call:@2A5B}-sama!{wait}...Fine! Then I'm going home, so there!{end}",
   "status": "done",
   "notes": ""
  },
@@ -875,7 +875,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}あかちゃんのぼうしが、かいめんに…。{FA:06}まさか、うみにおちちゃったんじゃ！？\n　{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}The baby's hat is floating on the water...{FA:06}Don't tell me the baby fell into the sea?!{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}The baby's hat is\nfloating on the water...{FA:06}Don't tell me the baby\nfell into the sea?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -919,7 +919,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あかちゃん？\nいったい、なんのことかしら？\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}A baby? Whatever are you talking about?\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}A baby? Whatever\nare you talking about?\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -985,7 +985,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}にこら{call:@2B92}{call:@2A5B}ったら、あんがいうまく\nやっていたようね。{wait}{call:@2B8C}タキ{call:@2B92}げんきそうな、{call:@2A5B}をみて、サンゴの\nせいも、ほっとしただろうさ。{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}えっ…！？　「サンゴのせい」ですか？{FA:06}きたたいへいようの、しろをまもって\nいる？{wait}{call:@2B8C}タキ{call:@2B92}まえまえから、{call:@2A5B}がどんなくらしを\nしているのか、ないしょでみせてくれと\nせがまれていてね。{wait}{call:@2B8C}にこら{call:@2B92}サンゴのせいも、ちょっとはあんしん\nしてくれたかしら………。{end}",
-  "en": "{call:@2B8C}Nikora{call:@2B92}{call:@2A5B}'s done surprisingly well, hasn't she?{wait}{call:@2B8C}Taki{call:@2B92}Seeing {call:@2A5B} so lively, the Coral Spirit\nmust be relieved, I'd wager.{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}Huh...?! The \"Coral Spirit\"?{FA:06}The guardian of the North Pacific castle?{wait}{call:@2B8C}Taki{call:@2B92}The Coral Spirit had been begging me for\nages for a secret peek at how {call:@2A5B} lives.{wait}{call:@2B8C}Nikora{call:@2B92}I hope the Coral Spirit feels a little more\nat ease now...{end}",
+  "en": "{call:@2B8C}Nikora{call:@2B92}{call:@2A5B}'s done surprisingly\nwell, hasn't she?{wait}{call:@2B8C}Taki{call:@2B92}Seeing {call:@2A5B} so lively, the Coral Spirit\nmust be relieved, I'd wager.{wait}{call:@2B8C}{call:@2AB0}{call:@2B92}Huh...?! The \"Coral Spirit\"?{FA:06}The guardian of the\nNorth Pacific castle?{wait}{call:@2B8C}Taki{call:@2B92}The Coral Spirit had been begging me for\nages for a secret peek\nat how {call:@2A5B} lives.{wait}{call:@2B8C}Nikora{call:@2B92}I hope the Coral Spirit feels a little more\nat ease now...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1073,7 +1073,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A74}{call:@2B92}そうよ、あの「あいのきせき」をおこす\nという、でんせつの\n「マーメイドビーズ」！{FA:06}……そのでんせつのうでわがなんと！\nがっこうに、あるっていうのよ～！{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}え～っ、うっそ～！！{FA:06}でもたしか、{call:@2A96}のはなしでは……？{wait}{call:@2B8C}{call:@2A96}{call:@2B92}ああ。{FA:06}そんなにとおい、かこのはなしでも\nない。{FA:06}{call:@2B32}からにんげんのてにわたった\nという、うわさがあったんだ。{end}",
-  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}That's right!\nThe legendary \"Mermaid Beads\"!{FA:06}They're said to bring a \"miracle of love\"!{FA:06}...And get this! They're supposed to be at\nour school~!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}Whaaat, no way~!!{FA:06}But didn't {call:@2A96} say...?{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Yeah.{FA:06}It's not a story from that long ago.{FA:06}There was a rumor that it passed from a\n{call:@2B32} into human hands.{end}",
+  "en": "{call:@2B8C}{call:@2A74}{call:@2B92}That's right!\nThe legendary \"Mermaid Beads\"!{FA:06}They're said to bring\na \"miracle of love\"!{FA:06}...And get this! They're supposed to be at\nour school~!{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}Whaaat, no way~!!{FA:06}But didn't {call:@2A96} say...?{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Yeah.{FA:06}It's not a story from that long ago.{FA:06}There was a rumor that it passed from a\n{call:@2B32} into human hands.{end}",
   "status": "done",
   "notes": ""
  },

@@ -859,7 +859,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}\nこんやは、おまつりがあるの！{FA:06}{FA:FF0301}でも、せっかく{call:@2AEA}が\nさそってくれたのに、{call:@2AE7}のまえ\nじゃ、あがっちゃって、パニくっ\nちゃって、まともにうたうことも\nできないなんて……。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}\nThere's a festival tonight!{FA:06}{FA:FF0301}But even though {call:@2AEA} invited me, I get\nso nervous and flustered in front of\n{call:@2AE7} that I can't even sing properly...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}\nThere's a festival tonight!{FA:06}{FA:FF0301}But even though {call:@2AEA} invited me, I get\nso nervous and flustered in front of\n{call:@2AE7} that I can't\neven sing properly...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -870,7 +870,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}えっ……いま、うみのなかから、\nなにかさけびごえみたいなのが…。{FA:06}{FA:FF0303}もしかして、{call:@2A74}が、\nおそわれているの！？{wait}{call:@2A70}も、みずいろしんじゅの\n{call:@2B27}だから……。{FA:06}{call:@2A70}、まってて！\nいま、いくからね！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}Huh... Just now, from the sea, I heard\nsomething like a scream...{FA:06}{FA:FF0303}Could it be... {call:@2A74} is being attacked?!{wait}{call:@2A70} is the {call:@2B27} of the\naqua pearl, after all...{FA:06}{call:@2A70}, hang on! I'm coming right now!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}Huh... Just now, from the sea, I heard\nsomething like a scream...{FA:06}{FA:FF0303}Could it be... {call:@2A74}\nis being attacked?!{wait}{call:@2A70} is the {call:@2B27} of the\naqua pearl, after all...{FA:06}{call:@2A70}, hang on! I'm\ncoming right now!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -914,7 +914,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}こいびとに、ほかのおんなのひとが\nいるかもしれないんだって。{FA:06}……このままじゃ、だめだよ！{FA:06}ちゃんとふたりで、はなしあわせな\nいと！{FA:06}だから、ジェニファーのこいびとも\nよんであるの！{wait}ほら、ジェニファーがこいびとのと\nころへよっていって……{FA:FF0303}{FA:FF0314}えっ！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}She says her boyfriend might be seeing\nanother woman.{FA:06}...We can't just leave things like this!{FA:06}The two of them need to talk it\nout properly!{FA:06}So I invited Jennifer's boyfriend\nhere too!{wait}Look, Jennifer's walking over to her\nboyfriend...{FA:FF0303}{FA:FF0314}Huh?!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}She says her boyfriend might be seeing\nanother woman.{FA:06}...We can't just leave\nthings like this!{FA:06}The two of them need to talk it\nout properly!{FA:06}So I invited Jennifer's boyfriend\nhere too!{wait}Look, Jennifer's walking over to her\nboyfriend...{FA:FF0303}{FA:FF0314}Huh?!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -978,7 +978,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}そっ！\n{call:@2B54}ちゃんに、もらったの！\n{call:@2B4F}ちゃんも、でるんだって！\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}Yup! I got them from {call:@2B54}-chan! And\n{call:@2B4F}-chan's playing in it too, he says!\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}Yup! I got them from {call:@2B54}-chan! And\n{call:@2B4F}-chan's playing\nin it too, he says!\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1011,7 +1011,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}まいごになったピンクイルカの\nモモちゃんがいる、すいぞくかんに\nきてみたら{FA:FF0303}びっくり！{FA:06}{FA:FF0300}おかあさんイルカからモモちゃんが\nはぐれたのは、すいようのしわざ\nだったの。{FA:06}はやくモモちゃんをたすけだして、\nおかあさんイルカにあわせて\nあげなくちゃ！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}{FA:06}I came to the aquarium where\nMomo-chan, the lost pink dolphin, is\nstaying, and{FA:FF0303} what a surprise!{FA:06}{FA:FF0300}Momo-chan got separated from her\nmother because of the water demons!{FA:06}I have to rescue Momo-chan fast and\nbring her back to her mom!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}I came to the aquarium where\nMomo-chan, the lost pink dolphin, is\nstaying, and{FA:FF0303} what a surprise!{FA:06}{FA:FF0300}Momo-chan got separated from her\nmother because of\nthe water demons!{FA:06}I have to rescue Momo-chan fast and\nbring her back to her mom!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1108,7 +1108,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}じつは、{call:@2AEA}さんには、\nとしうえのこいびとが、\nいたんですね～。{FA:06}しかも{call:@2A5B}さんは、{call:@2AE7}さんと\n「にんぎょのひとみ」をみにいった\nそのばで、ふたりのなかをみせつけ\nられてしまったのです。{wait}まぁ、このほうが{call:@2A5B}さんのため\nには、よかったんじゃないですかね\n…って、あら？\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}You see, it turns out {call:@2AEA}-san had an\nolder girlfriend~.{FA:06}What's more, when {call:@2A5B}-san went with\n{call:@2AE7}-san to see the \"Mermaid's Eye,\"{FA:06}she had their romance flaunted right in\nfront of her.{wait}Well, perhaps this is for the best for\n{call:@2A5B}-san, don't you think... Hm?\nOh my?\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}You see, it turns out {call:@2AEA}-san had an\nolder girlfriend~.{FA:06}What's more, when {call:@2A5B}-san went with\n{call:@2AE7}-san to see the\n\"Mermaid's Eye,\"{FA:06}she had their romance flaunted right in\nfront of her.{wait}Well, perhaps this is for the best for\n{call:@2A5B}-san, don't you think... Hm?\nOh my?\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1218,7 +1218,7 @@
   ],
   "used": true,
   "jp": "{call:@2B38}！　しっかりして！{FA:06}{FA:FF0301}えっ、{call:@2B38}がつくった\nきょくがないの！？{FA:06}……インドようでみた、マーメイド\nをおもって、つくったきょく…。{wait}{FA:FF0302}{call:@2B4F}ちゃんのきょくをぬすむなんて\nゆるせない！{FA:06}わたしひとりでも、はんにんをみつ\nけてみせるわ！\n{FA:FF0100}{end}",
-  "en": "{call:@2B38}! Hang in there!{FA:06}{FA:FF0301}What? The song {call:@2B38} wrote\nis gone?!{FA:06}...The song he wrote thinking of the\nmermaid he saw in the Indian Ocean...{wait}{FA:FF0302}Stealing {call:@2B4F}-chan's song? I won't\nforgive that!{FA:06}Even if I have to do it alone, I'll find\nthe culprit!\n{FA:FF0100}{end}",
+  "en": "{call:@2B38}! Hang in there!{FA:06}{FA:FF0301}What? The song {call:@2B38} wrote\nis gone?!{FA:06}...The song he wrote thinking of the\nmermaid he saw in\nthe Indian Ocean...{wait}{FA:FF0302}Stealing {call:@2B4F}-chan's song? I won't\nforgive that!{FA:06}Even if I have to do it alone, I'll find\nthe culprit!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },

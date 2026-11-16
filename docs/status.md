@@ -33,6 +33,13 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   (`boxes.SONG_COLS`; at W 22 the text tiles reached the right gauge, EP 9 msg 1674), 52 song lines rewrapped, 12
   shortened by hand; GAME OVER stacked GAME/OVER in sprite cell 2 (screen x 104-136, centred; `gfx_gameover.py`);
   EP 27 lone "..." line joined. Re-tour into the same `work/qa/tour5` (so manifest paths stay valid), `--jobs 3`.
+- **Session 24 (2026-11-16):** re-tour of session 23 reviewed by codex (385 ok, 4 issue + ep08 sheet_4 waived: the
+  line-scroll ghost frame is the original's, JP f3306; brief updated). Fixed: the wait cursor (2 cells in from the
+  right edge on a page's last line) covered "Lucia-sama!" (EP 36): `boxes.CURSOR` lint rule + grow room, `batches.py
+  uncursor` broke 77 such lines (docs/re/vwf.md §Boxes); difficulty bubbles drawn with 2 px strokes (`typeset(...,
+  heavy=True)`: the unselected ones are scaled down) and the yellow bubble's shade 4 cleared ("Usual" specks).
+  Verdicts of that round folded into `work/qa/verdicts/round_2.tsv` (old chunks in `verdicts_old/tour5_r2`); re-tour
+  into `work/qa/tour5` again.
 - **Next (phase 8):**
   1. After the re-tour: fold the old `work/qa/verdicts/chunk_*.tsv` into one `verdicts/round_N.tsv` (before init:
      its mtime must predate the re-hash) and move the chunk files out (codex_vqa.sh skips a chunk whose verdict file

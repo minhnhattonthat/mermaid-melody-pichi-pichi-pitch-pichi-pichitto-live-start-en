@@ -53,6 +53,9 @@
 Wrap rule: a glyph is drawn only if px + 12 <= W*8 (0x08007688 uses the fixed spacing, not the glyph width), so
 **the last glyph of a line must start at px <= W*8 - 12**; else the engine breaks the line there. Lines per page =
 H / step. textobj_open(slot, msg, col, row, W, H, flags) = 0x080046E4 (24 callers); setbox = 0x080046C8.
+**Wait cursor:** at a {wait}/{FA:06}/{end} the heart cursor sits 2 cells in from the box's right edge on the line the
+text stopped at (ink from (W-3)*8 + 3 past the text origin), so that line needs px <= W*8 - 22 (`boxes.CURSOR`;
+EP 36 msg 2305 "Lucia-sama!" ran under it, tour5). The Japanese keep clear of it. `batches.py uncursor` breaks it.
 
 | Variant | Messages | col | W cells | lines/page | last-glyph start limit | Shot / state |
 |---|---|---|---|---|---|---|

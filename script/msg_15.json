@@ -171,7 +171,7 @@
   ],
   "used": true,
   "jp": "そうね、でんせつのけつまつは、\nまちがいね。{FA:06}でも、あいのきせきのはなしは、\nほんとうよ。{wait}…………うでわのおかげで、\nかれのびょうきはなおったの。{FA:06}けれど、うでわのきせきに\nたよりすぎていたわたしは、\nこころをつたえるどりょくを、\nしなかったの。{FA:06}そして、かれはわたしのもとを\nさっていったわ……。{wait}きせきは、ねがえばかなうのでは\nない。{FA:06}どりょくして、かなえるものでは\nないのかしら？{end}",
-  "en": "Well, the ending of the legend is wrong.{FA:06}But the miracle of love part is true.{wait}...Thanks to the bracelet, he was cured.{FA:06}But I relied too much on the bracelet's\nmiracle, and never made the effort to tell\nhim how I felt.{FA:06}And so, he left me...{wait}Miracles don't come true just by wishing.{FA:06}Don't you think they're something you\nmake come true through effort?{end}",
+  "en": "Well, the ending of the legend is wrong.{FA:06}But the miracle of love part is true.{wait}...Thanks to the\nbracelet, he was cured.{FA:06}But I relied too much on the bracelet's\nmiracle, and never made the effort to tell\nhim how I felt.{FA:06}And so, he left me...{wait}Miracles don't come\ntrue just by wishing.{FA:06}Don't you think they're something you\nmake come true through effort?{end}",
   "status": "done",
   "notes": ""
  },
@@ -622,7 +622,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（{call:@2AE7}にどんなじじょうがあるのか、\n　あたしにはわからない。{FA:06}　でも、{call:@2AE7}が「そばにいてほしい」と\n　いってくれている……。{FA:06}　いまは、それだけでいい……。{FA:06}　クリスマスのよるに、\n　こんなキモチになれたのは、{FA:06}　きっと、しろいゆきがあたしに\n　はこんでくれた、プレゼント…。）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(I don't know what {call:@2AE7} is going through.{FA:06}But {call:@2AE7} told me, \"Stay by my side\"...{FA:06}For now, that's enough...{FA:06}Feeling like this on Christmas night...{FA:06}...must be a gift from the white snow...){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(I don't know what\n{call:@2AE7} is going through.{FA:06}But {call:@2AE7} told me, \"Stay by my side\"...{FA:06}For now, that's enough...{FA:06}Feeling like this on Christmas night...{FA:06}...must be a gift from the white snow...){end}",
   "status": "done",
   "notes": ""
  },
@@ -644,7 +644,7 @@
   ],
   "used": true,
   "jp": "なかなかよさそうな、\nホテルじゃない？{end}",
-  "en": "Seems like a rather nice hotel, doesn't it?{end}",
+  "en": "Seems like a rather\nnice hotel, doesn't it?{end}",
   "status": "done",
   "notes": ""
  },
@@ -666,7 +666,7 @@
   ],
   "used": true,
   "jp": "あら？{FA:06}あなたたち、\nまえにあたしたちと、\nあったことがある……？{end}",
-  "en": "Oh?{FA:06}Have you two met us somewhere before...?{end}",
+  "en": "Oh?{FA:06}Have you two met us\nsomewhere before...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -677,7 +677,7 @@
   ],
   "used": true,
   "jp": "そういえば、どこかで\nみたような……？{end}",
-  "en": "Come to think of it, you do look familiar...?{end}",
+  "en": "Come to think of it,\nyou do look familiar...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -765,7 +765,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}なんでも、コンサートを\nやる３にんがケンカして{FA:06}いっしょにうたいたく\nないからって。{wait}……こうなったら、\nなにがなんでもその３にんを\nなかなおりさせて、{FA:06}ライブコンサートをひらいて\nもらうわよ～！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Apparently the three girls doing the\nconcert had a fight,{FA:06}and they don't want to sing together.{wait}...Well then! No matter what it takes, I'm\ngonna make those three make up,{FA:06}and get them to hold that live concert~!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Apparently the three girls doing the\nconcert had a fight,{FA:06}and they don't want to sing together.{wait}...Well then! No matter what it takes, I'm\ngonna make those three make up,{FA:06}and get them to hold\nthat live concert~!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -842,7 +842,7 @@
   ],
   "used": true,
   "jp": "ジャ～ン！　こんやの\nスペシャル・ディナー！{FA:06}こうれいの、\nダークなべたいか～い！！{end}",
-  "en": "Ta-daaa! Tonight's special dinner!{FA:06}It's our traditional Dark Hot Pot Party!!{end}",
+  "en": "Ta-daaa! Tonight's special dinner!{FA:06}It's our traditional\nDark Hot Pot Party!!{end}",
   "status": "done",
   "notes": ""
  },
@@ -886,7 +886,7 @@
   ],
   "used": true,
   "jp": "やみなべのことよ～。{FA:06}くらいなかでいったんはしを\nつけたものは、ぜったいに\nたべなければならないルール！\n　{end}",
-  "en": "It's a pot you eat in the dark~.{FA:06}The rule is, once your chopsticks touch\nsomething, you absolutely HAVE to eat it!{end}",
+  "en": "It's a pot you eat in the dark~.{FA:06}The rule is, once your chopsticks touch\nsomething, you\nabsolutely HAVE to eat it!{end}",
   "status": "done",
   "notes": ""
  },

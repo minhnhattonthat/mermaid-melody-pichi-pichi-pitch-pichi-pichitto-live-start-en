@@ -1,6 +1,6 @@
 """gfx_diff.py: difficulty bubbles + button-hint pieces (gfx/diff.tsv, block 17264E2: 128x128 OBJ sheet, placed at
 OBJ tile row 8 col 16, 2D map) -> gfx/out/diff/17264E2.png.
-Six 64x32 bubbles (rows 0-95) with thick light kana (13-15, shading 3/7) on a flat fill: the text's bounding box is
+Six 64x32 bubbles (rows 0-95) with thick light kana (13-15, shading 3/4/7) on a flat fill: the text's bounding box is
 painted back to the bubble's fill, then the English goes on in 15 with a 15 ring (chunky like the original).
 Rows 112-127: four 32x16 header pieces (ボタン, スタート, もどる, けってい; outline 10, fill 15, AA 11-12).
     python -X utf8 tools/gfx_diff.py
@@ -15,6 +15,7 @@ import gfx  # noqa: E402
 BUBBLES = ["Easy", "Normal", "Hard", "Usual", "Mood", "Random"]  # かんたん ふつう むずかしい いつもの きぶん きまぐれ
 PIECES = ["Button", "Start", "Back", "OK"]  # ボタン スタート もどる けってい (32x16 each at y 112)
 TEXT = {13, 14, 15}
+SHADE = {3, 4, 7}  # kana edge shading (4 on the yellow いつもの bubble: left pale specks round "Usual")
 
 
 def bubble(img, cx, cy, word):
@@ -22,12 +23,13 @@ def bubble(img, cx, cy, word):
     x0, y0 = min(p[0] for p in pts) - 1, min(p[1] for p in pts) - 1
     x1, y1 = max(p[0] for p in pts) + 1, max(p[1] for p in pts) + 1
     fill = Counter(img[y][x] for y in range(y0, y1 + 1) for x in range(x0, x1 + 1)
-                   if img[y][x] not in TEXT | {3, 7}).most_common(1)[0][0]
+                   if img[y][x] not in TEXT | SHADE).most_common(1)[0][0]
     for y in range(y0, y1 + 1):
         for x in range(x0, x1 + 1):
-            if img[y][x] in TEXT | {3, 7}:
+            if img[y][x] in TEXT | SHADE:
                 img[y][x] = fill
-    gfx.typeset(img, [word], (cx + 5, cy + 6, cx + 59, cy + 25), fill=15, outline=[], gap=2)
+    gfx.typeset(img, [word], (cx + 5, cy + 6, cx + 59, cy + 25), fill=15, outline=[], gap=2, heavy=True)
+    # ^ heavy: the game shows the unselected bubbles scaled down, where 1 px rows dropped out (tour5 gameplay)
 
 
 SHEETS = {0x17264E2: BUBBLES, 0x1F5ABD8: ["Part", "Mix", "Sync"]}  # 1F5ABD8: パート ミックス シンクロ, same layout

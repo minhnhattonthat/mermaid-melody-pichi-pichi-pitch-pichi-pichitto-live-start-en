@@ -377,7 +377,7 @@
   ],
   "used": true,
   "jp": "ほかのひとがキャラをえらんでいます{end}",
-  "en": "Someone else is choosing a character.{end}",
+  "en": "Someone else is\nchoosing a character.{end}",
   "status": "done",
   "notes": ""
  },

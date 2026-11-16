@@ -17,7 +17,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}もう！　いいもん！\n{call:@2AB0}を、つれていくから！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}Hmph! Fine! I'll just take {call:@2AB0} with me!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}Hmph! Fine! I'll just\ntake {call:@2AB0} with me!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -171,7 +171,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}ほら、{call:@2B32}うらないに\nでているよ。ラッキーアイテムは、\nビーズのネックレスだって！{FA:06}せっかくだから、ネックレスをつけ\nて、{call:@2AE7}くんを、七夕（たなばた）\nデートにさそってみたら？\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}Look, it's in the {call:@2B32} Horoscope.\nYour lucky item is a beaded necklace!{FA:06}Why not wear a necklace and ask\n{call:@2AE7}-kun out on a Tanabata date?\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}Look, it's in the {call:@2B32} Horoscope.\nYour lucky item is\na beaded necklace!{FA:06}Why not wear a necklace and ask\n{call:@2AE7}-kun out on a Tanabata date?\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -530,7 +530,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0100}{FA:FF0111}まったく、{call:@2B17}のこうげきを\nうけて、カゼていどですむなんて、\nにんげんにしては、じょうぶだな。{end}",
-  "en": "{FA:FF0100}{FA:FF0111}Honestly, he took a hit from {call:@2B17} and\nonly caught a cold. Tough, for a human.{end}",
+  "en": "{FA:FF0100}{FA:FF0111}Honestly, he took a hit from {call:@2B17} and\nonly caught a cold.\nTough, for a human.{end}",
   "status": "done",
   "notes": ""
  },
@@ -618,7 +618,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}わあっ！！！\n{call:@2A5B}さん、だいじょうぶですか！\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}Waaah!!! {call:@2A5B}-san, are you all right?!\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}Waaah!!! {call:@2A5B}-san,\nare you all right?!\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -629,7 +629,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0111}……しかたがありません。\nかわりに、わたしが。コホン。{wait}けっこんしきじょうの、はなよめ\nたいけんイベントにやってきた、\n{call:@2AB4}ちゃんと{call:@2AE7}さん。{FA:06}そして、そのようすをのぞいている、\n{call:@2A5B}さん。{wait}そんななか、しんさくウェディング\nドレスショーの、はなよめやくの\nピンチヒッターとして、なぜか\n{call:@2A5B}さんがでることに！{FA:06}はなよめいしょうをきて、しらない\nおとこのひとと、うでをくんでいる\nところをみた、{call:@2AE7}さんのきもちや\nいかに？{FA:06}そして、そんなばしょにいあわせて\nいるのはもちろん……？\n{FA:FF0110}{end}",
-  "en": "{FA:FF0111}...It can't be helped. I shall take over.\nAhem.{wait}{call:@2AB4}-chan and {call:@2AE7}-san came to the\nwedding hall's bridal trial event.{FA:06}And {call:@2A5B}-san was peeking in on them.{wait}Then, for some reason, {call:@2A5B}-san ends\nup filling in as the bride in a show of\nnew wedding dresses!{FA:06}How will {call:@2AE7}-san feel, seeing her in a\nbridal gown, arm in arm with a man he\ndoesn't know?{FA:06}And who should happen to be there, of\ncourse, but...?\n{FA:FF0110}{end}",
+  "en": "{FA:FF0111}...It can't be helped. I shall take over.\nAhem.{wait}{call:@2AB4}-chan and {call:@2AE7}-san came to the\nwedding hall's bridal trial event.{FA:06}And {call:@2A5B}-san was\npeeking in on them.{wait}Then, for some reason, {call:@2A5B}-san ends\nup filling in as the bride in a show of\nnew wedding dresses!{FA:06}How will {call:@2AE7}-san feel, seeing her in a\nbridal gown, arm in arm with a man he\ndoesn't know?{FA:06}And who should happen to be there, of\ncourse, but...?\n{FA:FF0110}{end}",
   "status": "done",
   "notes": ""
  },
@@ -750,7 +750,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2BAB}{FA:06}４にんのすいようたちの\nコンビネーションこうげきのまえに\nあたしたちはだいピンチ！\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Up against a combo attack from four\nwater demons, we were in big trouble!\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}{call:@2BAB}{FA:06}Up against a combo attack from four\nwater demons, we\nwere in big trouble!\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },
@@ -825,7 +825,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0101}{call:@2B32}カードでしめされた、\nさんごしょうのかいていには、\nパンタラッサのしろが……。{FA:06}ふっ、わたしたちがやってきたことは\nむこうにはバレているみたいだな。{FA:06}なら、このドレスはしょうたいじょう\nの、かわりというわけか…………。\n{FA:FF0100}{end}",
-  "en": "{FA:FF0101}On the seabed of the coral reef the\n{call:@2B32} Card pointed to stands the\ncastle of Panthalassa...{FA:06}Heh, looks like they know we're here.{FA:06}Then I suppose this dress is their idea\nof an invitation...\n{FA:FF0100}{end}",
+  "en": "{FA:FF0101}On the seabed of the coral reef the\n{call:@2B32} Card pointed to stands the\ncastle of Panthalassa...{FA:06}Heh, looks like they\nknow we're here.{FA:06}Then I suppose this dress is their idea\nof an invitation...\n{FA:FF0100}{end}",
   "status": "done",
   "notes": ""
  },

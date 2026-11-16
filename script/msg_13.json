@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "あちゃ～、\nせっかくのけいかくが、\nめちゃくちゃじゃん。{FA:06}どうすんのよ～！{end}",
-  "en": "Oh, great~. Our big plan is totally ruined.{FA:06}What are we gonna do~!{end}",
+  "en": "Oh, great~. Our big\nplan is totally ruined.{FA:06}What are we gonna do~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A70}{call:@2B92}あれ、{call:@2A5B}は？{wait}{call:@2B8C}{call:@2A96}{call:@2B92}じじょうがあって、\nこられないかもしれない。{end}",
-  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Huh, where's {call:@2A5B}?{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Something came up. She might not make it.{end}",
+  "en": "{call:@2B8C}{call:@2A70}{call:@2B92}Huh, where's {call:@2A5B}?{wait}{call:@2B8C}{call:@2A96}{call:@2B92}Something came up.\nShe might not make it.{end}",
   "status": "done",
   "notes": ""
  },
@@ -358,7 +358,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}（やっぱり、あのあたたかいひかりは\n　{call:@2AE7}だったんだ……………。{FA:06}　それにしても、このひたいのしるしの\n　ようなものは、なに……？）{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(So that warm light really\nwas {call:@2AE7}...{FA:06}But what is this mark on his forehead...?){end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}(So that warm light really\nwas {call:@2AE7}...{FA:06}But what is this mark\non his forehead...?){end}",
   "status": "done",
   "notes": ""
  },
@@ -468,7 +468,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AAC}{call:@2B92}…………やっとみつけた、\n{call:@2B23}じょう…………！{FA:06}ぜったいにねえさんを、たすけだして\nみせる………………。{end}",
-  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}...At last, I've found it... {call:@2B23}'s castle...!{FA:06}I'll rescue my sister, no matter what...{end}",
+  "en": "{call:@2B8C}{call:@2AAC}{call:@2B92}...At last, I've found\nit... {call:@2B23}'s castle...!{FA:06}I'll rescue my sister, no matter what...{end}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}よわったな～。{FA:06}あんなゆめをみちゃったから、\nきょうはいちにちじゅう、うみから\nはなれてすごそうとおもったのに……。\n　{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}ちずはなくしちゃうし、きりがでてきて\nほうこうがわかんなくなっちゃうし。{FA:06}これじゃまるで、あのゆめとおなじ……\n……………。{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Oh, what do I do~?{FA:06}After that dream, I wanted to spend the\nwhole day far away from the sea...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}But I lost the map, and then the fog rolled\nin and now I can't tell which way is which.{FA:06}This is just like that dream...{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}Oh, what do I do~?{FA:06}After that dream, I wanted to spend the\nwhole day far away from the sea...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}But I lost the map, and then the fog rolled\nin and now I can't tell\nwhich way is which.{FA:06}This is just like that dream...{end}",
   "status": "done",
   "notes": ""
  },
@@ -622,7 +622,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}ふたりっきりで、\nのこのこあらわれるなんて、\nいいどきょうしてるわよね。{FA:06}みずいろと、みどりいろの、\n{call:@2B27}。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Strolling in here all by yourselves?\nYou've certainly got nerve.{FA:06}The aqua and green Mermaid Princesses.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Strolling in here all by yourselves?\nYou've certainly got nerve.{FA:06}The aqua and green\nMermaid Princesses.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -930,7 +930,7 @@
   ],
   "used": true,
   "jp": "あ～ん。\nゴンドラにふたりっきりで\n{call:@2A96}と{call:@2AE7}、なにはなして\nいるんだろう…………。{end}",
-  "en": "Aww. {call:@2A96} and {call:@2AE7}, all alone together in\na gondola... What are they talking about...?{end}",
+  "en": "Aww. {call:@2A96} and {call:@2AE7}, all alone together in\na gondola... What are\nthey talking about...?{end}",
   "status": "done",
   "notes": ""
  },
@@ -974,7 +974,7 @@
   ],
   "used": true,
   "jp": "……すきなんだな、\n{call:@2A5B}のこと…。{end}",
-  "en": "...You like her, don't you? {call:@2A5B}, I mean...{end}",
+  "en": "...You like her, don't\nyou? {call:@2A5B}, I mean...{end}",
   "status": "done",
   "notes": ""
  },

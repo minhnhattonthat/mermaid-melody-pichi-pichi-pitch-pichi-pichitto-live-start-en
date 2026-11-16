@@ -380,7 +380,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}おや？\n{call:@2B27}が\nふたり。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}Oh? Not one {call:@2B27}, but two.\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}Oh? Not one\n{call:@2B27}, but two.\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -523,7 +523,7 @@
   ],
   "used": true,
   "jp": "{call:@2B38}！？{FA:06}いや～！　{call:@2B4F}ちゃん\nまだダメ、はやすぎるよ～！{end}",
-  "en": "{call:@2B38}?!{FA:06}Nooo! {call:@2B4F}-chan, not yet, it's too soon~!{end}",
+  "en": "{call:@2B38}?!{FA:06}Nooo! {call:@2B4F}-chan, not\nyet, it's too soon~!{end}",
   "status": "done",
   "notes": ""
  },
@@ -677,7 +677,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}………さあ、{call:@2B27}\nたちよ。はやくすがたをおみせ！{FA:06}きょうこそ、この{call:@2B0A}が、\nつかまえてやるわ！{FA:06}{call:@2B23}さまのために……。\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}...Come out, Mermaid Princesses! Show\nyourselves at once!{FA:06}Today, I, {call:@2B0A}, will catch you for sure!{FA:06}For {call:@2B23}-sama's sake...\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}...Come out, Mermaid Princesses! Show\nyourselves at once!{FA:06}Today, I, {call:@2B0A}, will\ncatch you for sure!{FA:06}For {call:@2B23}-sama's sake...\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },
@@ -699,7 +699,7 @@
   ],
   "used": true,
   "jp": "{FA:FF0201}あらわれたな、\n{call:@2B27}！{FA:06}３にんまとめて、ガイトさまへの\nてみやげにしてくれる！\n{FA:FF0200}{end}",
-  "en": "{FA:FF0201}So you've appeared, Mermaid Princesses!{FA:06}I'll take all three of you to Gaito-sama as\na gift!\n{FA:FF0200}{end}",
+  "en": "{FA:FF0201}So you've appeared,\nMermaid Princesses!{FA:06}I'll take all three of you to Gaito-sama as\na gift!\n{FA:FF0200}{end}",
   "status": "done",
   "notes": ""
  },

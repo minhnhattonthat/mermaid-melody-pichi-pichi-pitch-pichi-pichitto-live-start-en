@@ -177,11 +177,12 @@ BOLD_WIDE = {
 }
 
 
-def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lead=12, shadow=None, gap=1):
+def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lead=12, shadow=None, gap=1, heavy=False):
     """Draw lines centred in box = (x0, y0, x1, y1) with the dialogue font (fonts/en12.txt): core pixels plus a bold
     column, ink `fill` (`top` for the first `top_rows` core rows), and a 1 px `outline` ring (8-neighbour); a list
     of indices draws one ring per entry, innermost first. shadow = (index, dx, dy): the inked shape again, offset,
-    under the text. gap = px between letters. lead = px from one line's core top to the next. Raises if a line is
+    under the text. gap = px between letters. lead = px from one line's core top to the next. heavy: every core
+    pixel also inks the one below (2 px horizontal strokes, for art the game scales down). Raises if a line is
     wider than the box (rings included)."""
     rings = outline if isinstance(outline, list) else [outline]
     pad = max(len(rings) - 1, 0)  # rings past the first need room inside the box
@@ -205,7 +206,8 @@ def typeset(img, lines, box, fill, outline, top=None, top_rows=4, bold=True, lea
                 for i, ch in enumerate(row):
                     if ch == "#":
                         for dx in range(1 + bold):
-                            ink[(x + i + dx, y + r)] = top if top is not None and r < top_rows else fill
+                            for dy in range(1 + heavy):
+                                ink[(x + i + dx, y + r + dy)] = top if top is not None and r < top_rows else fill
             x += cw
         y += lead
     for ring in rings:

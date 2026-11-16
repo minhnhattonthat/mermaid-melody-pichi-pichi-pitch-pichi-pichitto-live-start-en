@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "ちょっと！\nそれ、どういういみよ！{end}",
-  "en": "Hey! What's that supposed to mean?!{end}",
+  "en": "Hey! What's that\nsupposed to mean?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "おのれ、\n{call:@2AC6}めっ！\nもうすこしのところで！{end}",
-  "en": "Curses, {call:@2AC6}! We were so close!{end}",
+  "en": "Curses, {call:@2AC6}!\nWe were so close!{end}",
   "status": "done",
   "notes": ""
  },
@@ -523,7 +523,7 @@
   ],
   "used": true,
   "jp": "でも、{call:@2AC6}の\nひかりが、よわまって\nきているよ！{FA:06}あとちょっとガマンすれば！{end}",
-  "en": "But {call:@2AC6}'s light is getting weaker!{FA:06}Just hold out a little longer!{end}",
+  "en": "But {call:@2AC6}'s\nlight is getting weaker!{FA:06}Just hold out a little longer!{end}",
   "status": "done",
   "notes": ""
  },
@@ -556,7 +556,7 @@
   ],
   "used": true,
   "jp": "あなたたちに、あたらしいうたを\nさずけましょう。{end}",
-  "en": "I shall bestow upon you a new song.{end}",
+  "en": "I shall bestow upon\nyou a new song.{end}",
   "status": "done",
   "notes": ""
  },
@@ -743,7 +743,7 @@
   ],
   "used": true,
   "jp": "じぶんでも、なぜあんなことを\nしたのか、わからない……。{FA:06}あんたたちを、たすけずにいられ\nなかった……。{wait}きっとねえさんも、おなじだった\nだろうな、って。{FA:06}すこしだけ、ねえさんのきもちが\nわかったようなきがした……。{wait}……{call:@2A96}、あんたがねえさんを\nうらぎったっていうのは、わたしの\nごかいだったのかもしれないな。{end}",
-  "en": "I don't even know why I did that myself...{FA:06}I just couldn't leave you to your fate...{wait}I bet Sis would have done the same.{FA:06}I felt like I understood how Sis felt, just\na little...{wait}...{call:@2A96}, maybe I was wrong about you\nbetraying Sis.{end}",
+  "en": "I don't even know why\nI did that myself...{FA:06}I just couldn't leave you to your fate...{wait}I bet Sis would have done the same.{FA:06}I felt like I understood how Sis felt, just\na little...{wait}...{call:@2A96}, maybe I was wrong about you\nbetraying Sis.{end}",
   "status": "done",
   "notes": ""
  },
@@ -864,7 +864,7 @@
   ],
   "used": true,
   "jp": "マーメイドプリンセス！\nおまえをまっていた……。{FA:06}しんじゅとともに、おまえを\nわがものとするためにな！{end}",
-  "en": "Mermaid Princess! I've been waiting\nfor you...{FA:06}To make you mine, along with your pearl!{end}",
+  "en": "Mermaid Princess! I've been waiting\nfor you...{FA:06}To make you mine,\nalong with your pearl!{end}",
   "status": "done",
   "notes": ""
  },

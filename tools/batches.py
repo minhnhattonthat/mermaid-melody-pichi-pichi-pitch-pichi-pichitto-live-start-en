@@ -3,7 +3,8 @@
     python -X utf8 tools/batches.py split [--size 3500]   work/tl/bNNN.tsv and build/terms_bNNN.txt for untranslated JP
     python -X utf8 tools/batches.py check [bNNN ...]      a batch's .out.tsv; with no batch, all shipped English (for check.py)
     python -X utf8 tools/batches.py merge bNNN ... [--overwrite]   check, then write the English into script/
-    python -X utf8 tools/batches.py rewrap | unwidow       batch of units to rewrap (box rule changed) / unwidow
+    python -X utf8 tools/batches.py rewrap | unwidow | uncursor   batch of units to rewrap (box rule changed) /
+                                                           unwidow / break the line the wait cursor covers
 
 Copied from the skill's assets/batches.py. Fit the ADAPTER section to this game's text format; the rest is shared.
 Batch TSV: id, speaker, form, limit, JP. Output: work/tl/bNNN.out.tsv, id<TAB>English, every id once, same order.
@@ -106,7 +107,42 @@ def wrap(entry, en):
             out = out.rstrip(" ") + "\n" + word
         else:
             out = cand
-    return unwidow(entry, out)
+    return unwidow(entry, uncursor(entry, out))
+
+
+def _cursor_limit(entry):
+    b = box_limit(entry)
+    return _ctx()["boxes"].cursor_limit(b[0].rstrip("?"), b[1]) if b else None
+
+
+def _text_line(line):
+    return bool(re.sub(r"\{[^}]*\}", "", line).strip())
+
+
+def uncursor(entry, en):
+    """A page's last line that runs under the wait cursor (boxes.cursor_limit) splits in two at the space that
+    balances the halves best."""
+    cl = _cursor_limit(entry)
+    if not cl:
+        return en
+    c = _ctx()
+
+    def px(t):
+        return c["boxes"].pages(t, "en", c["units"], c["widths"])[-1][-1][0]
+
+    parts = re.split(r"(\{FA:06\}|\{wait\})", en)
+    for i in range(0, len(parts), 2):
+        lines = parts[i].split("\n")
+        k = max((j for j, ln in enumerate(lines) if _text_line(ln)), default=None)
+        if k is None or px(re.sub(r"\{end\}$", "", lines[k])) <= cl:
+            continue
+        ln = lines[k]
+        cuts = [m.start() for m in re.finditer(r" (?=[^ ])", ln) if _text_line(ln[:m.start()])]
+        if cuts:
+            s = min(cuts, key=lambda s: max(px(ln[:s]), px(re.sub(r"\{end\}$", "", ln[s + 1:]))))
+            lines[k] = ln[:s] + "\n" + ln[s + 1:]
+            parts[i] = "\n".join(lines)
+    return "".join(parts)
 
 
 def unwidow(entry, en):
@@ -133,7 +169,8 @@ def unwidow(entry, en):
         head, word = prev.rstrip(" ").rsplit(" ", 1)
         cand = lines[:-2] + [head, word + " " + lines[-1]] + codes
         meas = re.sub(r"\{end\}$", "", "\n".join(cand))
-        if c["boxes"].need_px(c["boxes"].pages(meas, "en", c["units"], c["widths"])) <= b[1]:
+        pg = c["boxes"].pages(meas, "en", c["units"], c["widths"])
+        if c["boxes"].need_px(pg) <= b[1] and c["boxes"].cursor_px(pg) <= (_cursor_limit(entry) or 9999):
             parts[i] = "\n".join(cand)
     return "".join(parts)
 
@@ -152,17 +189,17 @@ def rewrap_batch():
     print(f"{len(rows)} units in {TL / 'rewrap.out.tsv'}")
 
 
-def unwidow_batch():
-    """work/tl/unwidow.tsv + .out.tsv: every shipped unit unwidow() changes; then `merge unwidow --overwrite`."""
+def fix_batch(name, fn):
+    """work/tl/<name>.tsv + .out.tsv: every shipped unit fn(entry, en) changes; then `merge <name> --overwrite`."""
     rows = []
     for _, _, entries in docs():
         for e in entries:
-            if e.get("en") and e.get("status") != "keep-jp" and (new := unwidow(e, e["en"])) != e["en"]:
+            if e.get("en") and e.get("status") != "keep-jp" and (new := fn(e, e["en"])) != e["en"]:
                 rows.append((e, new))
-    (TL / "unwidow.tsv").write_text("".join(f"{e['id']}\t\t\t\t\n" for e, _ in rows), encoding="utf-8", newline="\n")
+    (TL / f"{name}.tsv").write_text("".join(f"{e['id']}\t\t\t\t\n" for e, _ in rows), encoding="utf-8", newline="\n")
     out = [e["id"] + "\t" + n.replace("\n", "\\n") + "\n" for e, n in rows]
-    (TL / "unwidow.out.tsv").write_text("".join(out), encoding="utf-8", newline="\n")
-    print(f"{len(rows)} units in {TL / 'unwidow.out.tsv'}")
+    (TL / f"{name}.out.tsv").write_text("".join(out), encoding="utf-8", newline="\n")
+    print(f"{len(rows)} units in {TL / f'{name}.out.tsv'}")
 
 
 def width_problems(entry, en):
@@ -175,6 +212,8 @@ def width_problems(entry, en):
     out = []
     if (need := c["boxes"].need_px(pg)) > b[1]:
         out.append(f"line needs {need} px, {b[0]} limit {b[1]}")
+    elif (cl := _cursor_limit(entry)) and (cp := c["boxes"].cursor_px(pg)) > cl:
+        out.append(f"line before a wait needs {cp} px, under the cursor past {cl}: shorten or break it")
     jp_lines = c["boxes"].lines_needed(c["boxes"].pages(entry["jp"], "jp", c["units"], c["widths"]))
     if (n := c["boxes"].lines_needed(pg)) > max(b[2], jp_lines):
         out.append(f"{n} lines on a page, box {b[2]}: add a {{FA:06}} page break or shorten")
@@ -370,8 +409,8 @@ def main(argv):
     cmd, args = argv[0], argv[1:]
     if cmd == "split":
         return split(int(args[args.index("--size") + 1]) if "--size" in args else 3500)
-    if cmd == "unwidow":
-        return unwidow_batch()
+    if cmd in ("unwidow", "uncursor"):
+        return fix_batch(cmd, unwidow if cmd == "unwidow" else uncursor)
     if cmd == "rewrap":
         return rewrap_batch()
     overwrite = "--overwrite" in args

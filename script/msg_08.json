@@ -182,7 +182,7 @@
   ],
   "used": true,
   "jp": "{call:@2B27}を\nつかまえちゃったら、\nこれはもう、いらないですわね。{end}",
-  "en": "Now that I've caught a {call:@2B27},\nI shan't be needing this anymore, shall I?{end}",
+  "en": "Now that I've caught a {call:@2B27},\nI shan't be needing\nthis anymore, shall I?{end}",
   "status": "done",
   "notes": ""
  },
@@ -620,7 +620,7 @@
   ],
   "used": true,
   "jp": "このまま{call:@2AE7}と、\nあさまでいっしょ……。{end}",
-  "en": "Staying like this with {call:@2AE7} until morning...{end}",
+  "en": "Staying like this with\n{call:@2AE7} until morning...{end}",
   "status": "done",
   "notes": ""
  },
@@ -1016,7 +1016,7 @@
   ],
   "used": true,
   "jp": "きみは……。{wait}きみを、\nずっとさがしてた…。{wait}オレは、\nきみのことがす………\n{FA:18}{end}",
-  "en": "You're...{wait}I've been looking for you, all this time...{wait}I... I li...\n{FA:18}{end}",
+  "en": "You're...{wait}I've been looking for\nyou, all this time...{wait}I... I li...\n{FA:18}{end}",
   "status": "done",
   "notes": ""
  },
@@ -1093,7 +1093,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A5B}{call:@2B92}………………{call:@2AE7}…………。{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}……あのとき、{call:@2AE7}はどうして\n「るちあ！」って、\nさけんだんだろう……？{FA:06}もしかして、にんげんのときの\nあたしと、かんちがいして……？{FA:06}それとも、ほんとうに…………？{end}",
-  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...{call:@2AE7}...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...Back then, why did {call:@2AE7}\nshout \"Lucia!\"...?{FA:06}Maybe he mistook me for the human me...?{FA:06}Or maybe he really...?{end}",
+  "en": "{call:@2B8C}{call:@2A5B}{call:@2B92}...{call:@2AE7}...{wait}{call:@2B8C}{call:@2A5B}{call:@2B92}...Back then, why did {call:@2AE7}\nshout \"Lucia!\"...?{FA:06}Maybe he mistook me\nfor the human me...?{FA:06}Or maybe he really...?{end}",
   "status": "done",
   "notes": ""
  }

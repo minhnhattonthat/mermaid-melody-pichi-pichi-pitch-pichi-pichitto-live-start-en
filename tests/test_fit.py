@@ -13,7 +13,8 @@ import build  # noqa: E402
 import msgcodec  # noqa: E402
 
 needs_rom = pytest.mark.skipif(not build.ROM.is_file(), reason="no ROM dump in rom/")
-LONG = "{FA:FF0201}Hee hee... so you came after all, did you?\n{FA:FF0200}{end}"  # 202 px: needs W 27
+LONG = "{FA:FF0201}Hee hee... so you came after all, did you?\nHm.\n{FA:FF0200}{end}"  # 202 px: needs W 27
+CURSOR_LINE = LONG.replace("\nHm.", "")  # the long line now holds the wait cursor: needs 202 + 22 px, W 28
 
 
 @pytest.fixture(scope="module")
@@ -73,6 +74,8 @@ def test_lint_flags_overflow_and_extra_lines(rom, entries):
     assert [r[0] for r in wide if r[1] == "6689"] == ["error"]
     tall = boxes.lint(with_en(entries, "6689", "a\nb\nc\nd{end}"), "en", bub)  # H 4 box, Japanese 1 line
     assert [r[0] for r in tall if r[1] == "6689"] == ["error"]
+    cur = [r[2] for r in boxes.lint(with_en(entries, "6689", CURSOR_LINE), "en", bub) if r[1] == "6689"]
+    assert len(cur) == 1 and "line before a wait" in cur[0] and cur[0].endswith("needs 208 px, cursor limit 202")
 
 
 @needs_rom
@@ -84,3 +87,5 @@ def test_grow_widens_only_bubbles_that_need_it(rom, entries):
     off = boxes.bubbles(rom)[1531][0]
     assert struct.unpack_from("<HH", out, off + 2) == (2 << 8 | 11, 27 << 8 | 4)  # W 27, col 4 -> 2
     assert sum(a != b for a, b in zip(out, rom)) <= 2
+    assert boxes.grow(out, with_en(bare, "6689", CURSOR_LINE)) == 1
+    assert struct.unpack_from("<HH", out, off + 2) == (1 << 8 | 11, 28 << 8 | 4)  # room for the cursor: W 28

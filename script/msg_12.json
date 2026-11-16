@@ -512,7 +512,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}（そうだ！）{wait}{call:@2B8C}{call:@2A96}{call:@2B92}「あらわれたな！　わるいまほうつかい\n　め！{FA:06}　そのつかまえた、にんぎょたちを\n　はなすんだ！」{wait}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(That's it!){wait}{call:@2B8C}{call:@2A96}{call:@2B92}\"So you've appeared, you\nwicked sorcerer!{FA:06}Release the mermaids you've captured!\"{wait}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}(That's it!){wait}{call:@2B8C}{call:@2A96}{call:@2B92}\"So you've appeared, you\nwicked sorcerer!{FA:06}Release the mermaids\nyou've captured!\"{wait}",
   "status": "done",
   "notes": ""
  },
@@ -600,7 +600,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2A96}{call:@2B92}…………{call:@2A5B}のやつ、\nほんとうのこくはくをしている……。{FA:06}このままじゃ、あわになってしまう\nかも……！{wait}{call:@2B8C}{call:@2A70}{call:@2B92}で、でもこれは、おしばいだよねっ！？{end}",
-  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...{call:@2A5B}... that girl... She's confessing\nfor real...{FA:06}At this rate, she might turn into foam...!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
+  "en": "{call:@2B8C}{call:@2A96}{call:@2B92}...{call:@2A5B}... that girl... She's confessing\nfor real...{FA:06}At this rate, she\nmight turn into foam...!{wait}{call:@2B8C}{call:@2A70}{call:@2B92}B-but this is just a play, right?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -611,7 +611,7 @@
   ],
   "used": true,
   "jp": "（どうしたんだよ、{call:@2A5B}…。）{wait}「……おねがいだ、これからも\n　ずっといっしょにいておくれ。{FA:06}　わたしはまだ、なにもおんがえ\n　しをしていない……。」{end}",
-  "en": "(What's wrong, {call:@2A5B}...?){wait}\"...Please, stay by my side forever.{FA:06}I have not yet repaid you for anything...\"{end}",
+  "en": "(What's wrong, {call:@2A5B}...?){wait}\"...Please, stay by my side forever.{FA:06}I have not yet repaid\nyou for anything...\"{end}",
   "status": "done",
   "notes": ""
  },
@@ -952,7 +952,7 @@
   ],
   "used": true,
   "jp": "{call:@2B8C}{call:@2AE7}{call:@2B92}{call:@2A5B}！{FA:06}………おまえはだれだ！{wait}{call:@2B8C}{call:@2B23}{call:@2B92}……これがおまえの、たいせつなもの\nなのかい？{FA:06}それとも…………。{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}おまえには、かんけいないだろ！\nそいつをはなせ！{end}",
-  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}{call:@2A5B}!{FA:06}...Who are you?!{wait}{call:@2B8C}{call:@2B23}{call:@2B92}...Is this what is precious to you?{FA:06}Or perhaps...{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}That's none of your business! Let her go!{end}",
+  "en": "{call:@2B8C}{call:@2AE7}{call:@2B92}{call:@2A5B}!{FA:06}...Who are you?!{wait}{call:@2B8C}{call:@2B23}{call:@2B92}...Is this what is precious to you?{FA:06}Or perhaps...{wait}{call:@2B8C}{call:@2AE7}{call:@2B92}That's none of your\nbusiness! Let her go!{end}",
   "status": "done",
   "notes": ""
  },

@@ -83,7 +83,7 @@
   ],
   "used": true,
   "jp": "{call:@2AB4}、おきていたのね……。{FA:06}あさごはんたべたら、\nどこかいこうか？{FA:06}にんげんかいは、あそべるところ\nいっぱいあるよ。{end}",
-  "en": "{call:@2AB4}, you're awake...{FA:06}After breakfast, want to go somewhere?{FA:06}The human world has tons of fun places\nto play.{end}",
+  "en": "{call:@2AB4}, you're awake...{FA:06}After breakfast, want\nto go somewhere?{FA:06}The human world has tons of fun places\nto play.{end}",
   "status": "done",
   "notes": ""
  },
@@ -116,7 +116,7 @@
   ],
   "used": true,
   "jp": "{call:@2A70}さまは、たのしい\nにんげんかいでくらしていて、\n{call:@2B32}のくにのことなんて\nもうわすれたんでしょ！{FA:06}いま、{call:@2A70}さまはしあわせ\nだから、ほんきでくにの\nみんなをさがすきも、\nなくなっちゃって……。{end}",
-  "en": "{call:@2A70}-sama, you live in the fun human\nworld, so you've already forgotten all\nabout the {call:@2B32} kingdom, haven't you!{FA:06}You're happy now, {call:@2A70}-sama, so you\ndon't even feel like really looking for\neveryone from the kingdom anymore...{end}",
+  "en": "{call:@2A70}-sama, you live in the fun human\nworld, so you've already forgotten all\nabout the {call:@2B32}\nkingdom, haven't you!{FA:06}You're happy now, {call:@2A70}-sama, so you\ndon't even feel like really looking for\neveryone from the kingdom anymore...{end}",
   "status": "done",
   "notes": ""
  },
@@ -281,7 +281,7 @@
   ],
   "used": true,
   "jp": "ピンクしんじゅの\nプリンセスはどこ！{end}",
-  "en": "Where's the princess of the pink pearl?!{end}",
+  "en": "Where's the princess\nof the pink pearl?!{end}",
   "status": "done",
   "notes": ""
  },
@@ -292,7 +292,7 @@
   ],
   "used": true,
   "jp": "えっ！　ピンクちゃん\nもいるの！？\nどこ？　どこ？{end}",
-  "en": "Huh?! Pinky's here too?! Where? Where?{end}",
+  "en": "Huh?! Pinky's here\ntoo?! Where? Where?{end}",
   "status": "done",
   "notes": ""
  },
@@ -303,7 +303,7 @@
   ],
   "used": true,
   "jp": "……おまえが、とらえて\nいるんじゃないのか？{end}",
-  "en": "...Aren't you the one holding her captive?{end}",
+  "en": "...Aren't you the one\nholding her captive?{end}",
   "status": "done",
   "notes": ""
  },
@@ -534,7 +534,7 @@
   ],
   "used": true,
   "jp": "…ほら、くだらねえこと\nいってないで、いくぞ。{FA:06}みんなしんぱいしている\nだろうからな。{end}",
-  "en": "...C'mon, quit talking nonsense. Let's go.{FA:06}Everyone's probably worried.{end}",
+  "en": "...C'mon, quit talking\nnonsense. Let's go.{FA:06}Everyone's probably worried.{end}",
   "status": "done",
   "notes": ""
  },
@@ -656,7 +656,7 @@
   ],
   "used": true,
   "jp": "すてき～！　うみからの\nラブレターなんて～！{end}",
-  "en": "How lovely~! A love letter from the sea~!{end}",
+  "en": "How lovely~! A love\nletter from the sea~!{end}",
   "status": "done",
   "notes": ""
  },

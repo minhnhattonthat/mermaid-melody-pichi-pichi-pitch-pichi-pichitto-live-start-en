@@ -191,6 +191,25 @@ def need_px(pgs):
     return max((px - last for p in pgs for px, last in p if px), default=0)
 
 
+# The wait cursor sits 2 cells in from the box's right edge on the line the text stops at (ink from (W-3)*8 + 3 past
+# the text origin; EP 36 msg 2305 ran "Lucia-sama!" under it, the Japanese keep clear): a page's last line needs
+# px <= W*8 - 22, i.e. the wrap limit (W*8 - 12) minus CURSOR. Kinds whose boxes show it (song boxes are timed).
+CURSOR = 10
+CURSOR_KINDS = ("bubble", "seen", "narration", "guess")
+
+
+def cursor_px(pgs):
+    """Widest line the wait cursor shares (each page's last line), full width."""
+    return max((p[-1][0] for p in pgs if p), default=0)
+
+
+def cursor_limit(kind, limit):
+    """-> the cursor line's px limit, or None for a box without the cursor (8 px mode seen boxes: W*8 - 8 limits)."""
+    if kind not in CURSOR_KINDS or limit is None or (kind == "seen" and limit % 8 == 0):
+        return None
+    return limit - CURSOR
+
+
 def lint(entries, lang="en", bub=None, song=None):
     """-> [(level, unit id, message)], level 'error' or 'warn'. Only units with `lang` text (all used units for jp)."""
     widths = {ch: enfont.width(rows) for ch, rows in enfont.load()}
@@ -212,6 +231,9 @@ def lint(entries, lang="en", bub=None, song=None):
         if need > limit and not (lang == "jp" and (sp == 8 or kind in ("profiles", "seen"))):
             # ^ kana lines the engine auto-wraps at any glyph (song lines; Japanese written as one long line)
             out.append((level, e["id"], f"{kind}: line needs {need} px, limit {limit}"))
+        elif lang != "jp" and (cl := cursor_limit(kind, limit)) and (cp := cursor_px(pgs)) > cl:
+            # ^ Japanese widths are a 12 px guess (… draws narrower): its lines clear the cursor in game
+            out.append((level, e["id"], f"{kind}: line before a wait needs {cp} px, cursor limit {cl}"))
         n = lines_needed(pgs)
         if n > max(lines, jp_lines):
             out.append((level, e["id"], f"{kind}: {n} lines on a page, box {lines}, Japanese {jp_lines}"))
@@ -231,7 +253,8 @@ def grow(rom, entries, lang="en"):
             continue
         for mid in e["ids"]:
             if mid in bub and not fixed(bub[mid]):
-                w = math.ceil((need_px(pages(e[lang], lang, units, widths)) + 12) / 8)
+                pg = pages(e[lang], lang, units, widths)
+                w = math.ceil(max(need_px(pg) + 12, cursor_px(pg) + 12 + CURSOR) / 8)
                 need[bub[mid]] = max(need.get(bub[mid], 0), w)
     changed = 0
     for (off, col, row, w, h, _), nw in need.items():
