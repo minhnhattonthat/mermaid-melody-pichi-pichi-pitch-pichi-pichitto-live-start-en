@@ -2,7 +2,8 @@
 
     python -X utf8 tools/release.py [--version 1.0] [--force] [--skip-build]
 
-build -> tests -> smoke -> Japanese left (script units with no English, `tools/gfx_left.py` graphics rows) -> qa_gate
+build -> tests -> smoke -> Japanese left (script units with no English, skill `jp_left.py` on the message region
+of the build with `docs/jp_known.txt`, `tools/gfx_left.py` graphics rows) -> qa_gate
 check on every work/qa/**/manifest.tsv that a `verdicts` dir sits next to -> text coverage (`tools/cover.py`: this
 game's text is read through message ids, logged as TEXT <id> by tools/lua/msglog.lua) -> no unticked line in
 docs/polish.md -> no template placeholder in README.md -> no debug/marker writes -> BPS patch (re-applied and
@@ -22,6 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import bps  # noqa: E402
+from msgtable import BASE, END  # noqa: E402
 from skill import SKILL  # noqa: E402
 
 ORIG = ROOT / "rom/Mermaid Melody - Pichi Pichi Pitch - Pichi Pichitto Live Start! (Japan).gba"
@@ -73,6 +75,9 @@ def main():
     left = untranslated()
     if left:
         sys.exit(f"release stopped: {len(left)} used units with Japanese left: {left[:8]}")
+    # message region only (graphics/code give thousands of false runs; graphics text is gfx_left's job)
+    step("jp_left", PY + [f"{SKILL}/scripts/jp_left.py", str(BUILT), "--orig", str(ORIG), "--tbl", "tbl/jp.tbl",
+                          "--range", f"{BASE:X}-{END:X}", "--known", "docs/jp_known.txt"])
     step("gfx_left", PY + ["tools/gfx_left.py"])
     for m in sorted(ROOT.glob("work/qa/**/manifest.tsv")):
         if (m.parent / "verdicts").is_dir():

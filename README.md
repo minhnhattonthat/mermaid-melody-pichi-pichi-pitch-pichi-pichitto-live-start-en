@@ -45,7 +45,8 @@ Needs Python 3.12+ (with Pillow) and your own dump of the Japanese game.
 git clone https://github.com/minhnhattonthat/mermaid-melody-pichi-pichi-pitch-pichi-pichitto-live-start-en
 cd mermaid-melody-pichi-pichi-pitch-pichi-pichitto-live-start-en
 # copy your dump to: rom/Mermaid Melody - Pichi Pichi Pitch - Pichi Pichitto Live Start! (Japan).gba
-#   (33554432 bytes, SHA-1 d6bd3140b83fb9b1c2d84b6faf21c7286e29d129; the build refuses any other dump, see rom.sha1)
+#   (No-Intro, 33554432 bytes, CRC32 7A4FDEC3, MD5 e5445bbb91fa514a63fd54bf1ce39cf8,
+#    SHA-1 d6bd3140b83fb9b1c2d84b6faf21c7286e29d129; the build refuses any other dump, see rom.sha1)
 python -X utf8 build.py                                # -> build/mermaid_en.gba
 python -X utf8 tools/check.py                          # tests + text lint
 ```
