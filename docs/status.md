@@ -5,8 +5,8 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
 
 - **Phase:** 9. Release done 2026-11-17: v1.0 zip built and verified by `tools/release.py` (not published). Gates:
   visual QA 397/397 ok, story pass 40/40 ok, text coverage 1591/1591, `jp_left` 0, `gfx_left` 0, polish 0 unticked.
-  Last build: `build.py` -> build/mermaid_en.gba (session 26, sha1 1d0f02a984597e2c3f3c12c596010cfbfb6a11d4,
-  CRC32 7A0E5172; smoke ok, write log clean); marker
+  Last build: `build.py` -> build/mermaid_en.gba (session 27, sha1 5706775acf45426c0aeb9adb8517c808cf42367f,
+  CRC32 9D1DBE19; smoke ok, write log clean); marker
   build `build.py --marker --out build/marker.gba`.
 - **Session 27 (2026-11-17):** user found Japanese on the results screen (pills かんたん/いつもの.., buttons
   すすむ/セーブ). Atlas 1F0F059 pieces had been left as "not seen in a warp yet": the tour's results shot (frame 960)
@@ -65,9 +65,9 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   heavy=True)`: the unselected ones are scaled down) and the yellow bubble's shade 4 cleared ("Usual" specks).
   Verdicts of that round folded into `work/qa/verdicts/round_2.tsv` (old chunks in `verdicts_old/tour5_r2`); re-tour
   into `work/qa/tour5` again.
-- **Next:** nothing left in the pipeline. `tools/release.py --version 1.0` passed every gate (2026-11-17 session 26)
-  and wrote `release/v1.0/` (zip = BPS + README.txt; patched CRC32 7A0E5172, sha1 1d0f02a9...). Publishing
-  (`gh release create`, upload) is the owner's call only. A text change after this needs a re-tour of the touched
+- **Next:** player bug reports only. v1.0 rebuilt in session 27 (`tools/release.py --version 1.0 --force`, every
+  gate passed; patched CRC32 9D1DBE19, sha1 5706775a...; bps sha1 0ca99c58...) and published on GitHub at the owner's
+  request (repo made public, release v1.0). A text change after this needs a re-tour of the touched
   episodes (or `qa_gate.py waive` for an untoured line) and a re-run of the story pass on changed chapters.
   - Re-tour recipe if text changes: fold `verdicts/chunk_*.tsv` into `verdicts/round_N.tsv` and move the chunks out
     before `qa_gate.py init work/qa/manifest.tsv work/qa/tour5/sheets --build build/mermaid_en.gba --glob
