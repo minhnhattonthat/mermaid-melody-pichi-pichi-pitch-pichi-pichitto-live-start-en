@@ -8,6 +8,13 @@ phase 8: graphics redraws and the first visual-QA fixes, see `git log` and `docs
   Last build: `build.py` -> build/mermaid_en.gba (session 26, sha1 1d0f02a984597e2c3f3c12c596010cfbfb6a11d4,
   CRC32 7A0E5172; smoke ok, write log clean); marker
   build `build.py --marker --out build/marker.gba`.
+- **Session 27 (2026-11-17):** user found Japanese on the results screen (pills かんたん/いつもの.., buttons
+  すすむ/セーブ). Atlas 1F0F059 pieces had been left as "not seen in a warp yet": the tour's results shot (frame 960)
+  came before the panels slide in, and VQA passed the blank sheet. Fixed: `SPRITES` in `tools/gfx_score.py`
+  (Easy Normal Hard Usual Mood Random Part Mix, Next, Save); results rows in `scenes.tsv` wait 300 frames. Build
+  sha1 5706775acf45426c0aeb9adb8517c808cf42367f, check 43 passed, smoke ok, 6 atlas scenes re-toured + VQA ok, gate
+  waived for this build. **v1.0 zip is stale: re-run `tools/release.py`.** Open: stray comma after "Rhythm" on
+  results (pre-existing); pills Normal/Hard/Mood/Random/Part/Mix unseen in game (fixture save = Easy/Usual).
 - **Session 26 (2026-11-17), phase 9:**
   - Story pass: `tools/story.py` writes one chapter per episode (`work/qa/story/chapters/epNN.txt`, tour5 log order;
     lines the tour never reaches, after the song, placed by message-id block, marked `(+)`) + `extras` (late

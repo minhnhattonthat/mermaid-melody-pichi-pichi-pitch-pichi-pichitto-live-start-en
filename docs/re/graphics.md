@@ -70,9 +70,10 @@ prompts, ending and credits, story scenes if any.
   1EFF434 entries 26/42): the prompt is drawn as one line in the first 128 px; check it when reached.
 - Group `score` (done): HUD atlas 1F0F059 words pts/songs/Left/Song/Clear goal/High|Score/Rhythm, `tools/gfx_score.py`;
   checked in game over, tokoton, draw, results (`work/qa/p8score`). とくてん alone = と left half at (216,16) + x 48-87
-  of さいこうとくてん. Left in the atlas (not seen in a warp yet): difficulty pills (128-224, 32-128: かんたん ふつう
-  むずかしい いつもの きぶん きまぐれ パート ミックス, white 14-15 on the pill fill) and framed labels セー.. / あおあ.. /
-  ポ / プ at (224-255, 16-64).
+  of さいこうとくてん. Results pills + buttons (session 27, `SPRITES` in `tools/gfx_score.py`, mapped from the OAM of
+  the user's real-song state `work/states/results_real.mss`): pills = 48x16 top at (128|176, y) + 48x8 bottom strip
+  in column x 176-223 (Easy Normal Hard Usual Mood Random Part Mix); buttons すすむ/セーブ -> Next/Save = 32+16 x 16+8
+  pieces at x 224-255. Only Easy/Usual seen in game (fixture save); the other six pills checked on the atlas only.
 - 1F59B31 is a byte-identical copy of 17264E2 (difficulty sheet): a second row in `gfx/diff.tsv` with the same png.
   1F5ABD8 (800x4) has the same layout with パート/ミックス/シンクロ -> Part/Mix/Sync (`gfx_diff.SHEETS`; not warped yet).
 - Group `draw` (done): 1F1345A is an 800x2 chain (not 0x40003): four 32x32 OBJ cells ひ/き/わ/け, each a separate
